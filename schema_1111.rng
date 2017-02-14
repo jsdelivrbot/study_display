@@ -1,0 +1,1684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+    <!-- MACROS -->
+    <define name="macro.paraContent">
+        <zeroOrMore>
+            <choice>
+                <text/>
+                <ref name="model.phrase"/>
+                <ref name="model.inter"/>
+                <ref name="model.global"/>
+            </choice>
+        </zeroOrMore>
+    </define>
+    <define name="macro.specialParaContent">
+        <a:documentation>no model.inter</a:documentation>
+        <zeroOrMore>
+            <choice>
+                <text/>
+                <ref name="model.phrase"/>
+                <ref name="model.global"/>
+            </choice>
+        </zeroOrMore>
+    </define>
+    <!-- ATTRIBUTE CLASSES AND DEFINITIONS -->
+    <!-- global attributes -->
+    <define name="att.global.attributes">
+        <ref name="att.global.rendition.attributes"/>
+        <!--<ref name="att.global.linking.attributes"/>-->
+        <ref name="att.global.responsibility.attributes"/>
+        <ref name="att.global.attribute.xmlid"/>
+        <ref name="att.global.attribute.n"/>
+    </define>
+    <define name="att.global.linking.attributes">
+        <ref name="att.global.linking.attribute.corresp"/>
+        <ref name="att.global.linking.attribute.next"/>
+        <ref name="att.global.linking.attribute.prev"/>
+    </define>
+    <define name="att.global.linking.attribute.corresp">
+        <optional>
+            <attribute name="corresp">
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    >(corresponds) points to elements that correspond to the current element in some
+                    way.</a:documentation>
+                <list>
+                    <oneOrMore>
+                        <data type="anyURI"/>
+                    </oneOrMore>
+                </list>
+            </attribute>
+        </optional>
+    </define>
+    <define name="att.global.linking.attribute.next">
+        <optional>
+            <attribute name="next">
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    >points to the next element of a virtual aggregate of which the current element
+                    is part.</a:documentation>
+                <data type="anyURI"/>
+            </attribute>
+        </optional>
+    </define>
+    <define name="att.global.linking.attribute.prev">
+        <optional>
+            <attribute name="prev">
+                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    >(previous) points to the previous element of a virtual aggregate of which the
+                    current element is part.</a:documentation>
+                <data type="anyURI"/>
+            </attribute>
+        </optional>
+    </define>
+    <define name="att.global.attribute.xmlid">
+        <optional>
+            <attribute name="xml:id">
+                <a:documentation>(identifier) provides a unique identifier for the element bearing
+                    the attribute.</a:documentation>
+                <data type="ID"/>
+            </attribute>
+        </optional>
+    </define>
+    <define name="att.global.attribute.n">
+        <optional>
+            <attribute name="n">
+                <a:documentation>(number) gives a number (or other label) for an element, which is
+                    not necessarily unique within the document.</a:documentation>
+                <data type="string"/>
+            </attribute>
+        </optional>
+    </define>
+    <define name="att.global.rendition.attributes">
+        <ref name="att.global.rendition.attribute.style"/>
+    </define>
+    <define name="att.global.rendition.attribute.style">
+        <optional>
+            <attribute name="style">
+                <a:documentation>(style) indicates how the element in question should be rendered or
+                    presented in the output text.</a:documentation>
+                <list>
+                    <oneOrMore>
+                        <value>italic</value>
+                        <value>underline</value>
+                        <value>bold</value>
+                    </oneOrMore>
+                </list>
+            </attribute>
+        </optional>
+    </define>
+    <define name="att.global.responsibility.attributes">
+        <ref name="att.global.responsibility.attribute.who"/>
+    </define>
+    <define name="att.global.responsibility.attribute.who">
+        <optional>
+            <attribute name="who">
+                <a:documentation>(who) indicates the party responsible for the intervention or
+                    interpretation, for example an instructor or peer reviewer. Be sure to use your
+                    xml:id</a:documentation>
+                <list>
+                    <oneOrMore>
+                        <data type="anyURI"/>
+                    </oneOrMore>
+                </list>
+            </attribute>
+        </optional>
+    </define>
+
+    <!-- for @type and @subtype -->
+    <define name="att.typed.attributes">
+        <ref name="att.typed.attribute.type"/>
+        <!--<ref name="att.typed.attribute.subtype"/>-->
+    </define>
+    <define name="att.typed.attribute.type">
+        <optional>
+            <attribute name="type">
+                <a:documentation>characterizes the element in some sense, using any convenient
+                    classification scheme or typology.</a:documentation>
+            </attribute>
+        </optional>
+    </define>
+    <define name="att.typed.attribute.subtype">
+        <optional>
+            <attribute name="subtype">
+                <a:documentation>provides a sub-categorization of the element, if
+                    needed</a:documentation>
+            </attribute>
+        </optional>
+    </define>
+
+    <!-- for URLs -->
+    <define name="att.resourced.attributes">
+        <ref name="att.resourced.attribute.url"/>
+    </define>
+    <define name="att.resourced.attribute.url">
+        <attribute name="url">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(uniform
+                resource locator) specifies the URL from which the media concerned may be
+                obtained.</a:documentation>
+            <data type="anyURI"/>
+        </attribute>
+    </define>
+    <!-- other attributes -->
+    <define name="att.source">
+        <attribute name="source">
+            <a:documentation>provides a pointer to the bibliographical source from which a quotation
+                or citation is drawn.</a:documentation>
+            <list>
+                <oneOrMore>
+                    <data type="anyURI"/>
+                </oneOrMore>
+            </list>
+        </attribute>
+    </define>
+    <define name="att.review.type">
+        <optional>
+            <attribute name="type">
+                <a:documentation>(type of reviewer) suggested values are 'peer' or
+                    'instructor'</a:documentation>
+                <choice>
+                    <value>peer</value>
+                    <value>instructor</value>
+                </choice>
+            </attribute>
+        </optional>
+    </define>
+    <!-- CONTENT MODELS -->
+    <define name="model.global">
+        <choice>
+            <ref name="model.noteLike"/>
+            <ref name="figure"/>
+        </choice>
+    </define>
+    <define name="model.divLike">
+        <ref name="div"/>
+    </define>
+    <define name="model.divPart">
+        <choice>
+            <ref name="model.pLike"/>
+        </choice>
+    </define>
+    <define name="model.pLike">
+        <choice>
+            <ref name="p"/>
+        </choice>
+    </define>
+    <define name="model.noteLike">
+        <ref name="note"/>
+    </define>
+    <define name="model.biblLike">
+        <choice>
+            <ref name="bibl"/>
+            <ref name="listBibl"/>
+        </choice>
+    </define>
+    <define name="model.phrase">
+        <choice>
+            <ref name="citation"/>
+            <ref name="style"/>
+        </choice>
+    </define>
+    <define name="model.inter">
+        <choice>
+            <ref name="model.listLike"/>
+            <ref name="model.qLike"/>
+        </choice>
+    </define>
+    <define name="model.listLike">
+        <ref name="list"/>
+    </define>
+    <define name="model.qLike">
+        <ref name="q"/>
+    </define>
+
+    <!-- GENRE ANALYSIS ESSAY ELEMENT DEFINITIONS -->
+    <!-- definitions from 9/23-27 schema dev -->
+    <define name="scene">
+        <element name="scene">
+            <a:documentation>indicates a scene, a place where rhetorical interaction occurs in order
+                to accomplish shared objective(s)</a:documentation>
+            <ref name="macro.paraContent"/>
+        </element>
+    </define>
+    <define name="genre">
+        <element name="genre">
+            <a:documentation>indicates a genre; a way of responding to a situation that repeats
+                itself within a scene</a:documentation>
+            <ref name="macro.paraContent"/>
+        </element>
+    </define>
+    <define name="situation">
+        <element name="situation">
+            <a:documentation>indicates the rhetorical interactions happening within a scene,
+                involving participants, subjects, settings and purposes [can include participants
+                and settings tags]</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                    <ref name="participants"/>
+                    <ref name="setting"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="participants">
+        <element name="participants">
+            <a:documentation>indicates participants, the entities that are involved and active in a
+                scene [can appear inside the situation tag]</a:documentation>
+            <ref name="macro.paraContent"/>
+        </element>
+    </define>
+    <define name="setting">
+        <element name="setting">
+            <a:documentation>indicates the location and surroundings in which a scene takes place
+                [can appear inside the situation tag]</a:documentation>
+            <ref name="macro.paraContent"/>
+        </element>
+    </define>
+    <define name="essay.context">
+        <element name="context">
+            <a:documentation>indicates information provided to better understand a claim, argument,
+                or idea. Typically precedes an idea, claim or argument that warrant background
+                info</a:documentation>
+            <ref name="macro.paraContent"/>
+        </element>
+    </define>
+    <define name="aesthetics">
+        <element name="aesthetics">
+            <a:documentation>indicates aesthetic elements of a composition, including pictures, font
+                styles, colors, other material properties, etc. </a:documentation>
+            <ref name="macro.paraContent"/>
+        </element>
+    </define>
+    <define name="sim">
+        <element name="sim">
+            <a:documentation>(similarities) indicates text that points to similarities between two
+                or more texts [can optionally contain any other essay content
+                elements]</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                    <ref name="model.essay.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="diff">
+        <element name="diff">
+            <a:documentation>(differences) indicates text that points to differences between two or
+                more texts [can optionally contain any other essay content
+                elements]</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                    <ref name="model.essay.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+
+    <define name="argument">
+        <element name="argument">
+            <a:documentation>(interpretive claim/argument) indicates a claim/argument made based on
+                evidence presented or to be presented in an essay [requires @type attribute, values
+                of 'main,' 'supporting,' or 'opposing']</a:documentation>
+            <ref name="macro.paraContent"/>
+            <attribute name="type">
+                <choice>
+                    <value>main</value>
+                    <value>supporting</value>
+                    <value>opposing</value>
+                </choice>
+            </attribute>
+        </element>
+    </define>
+    <define name="evidence">
+        <element name="evidence">
+            <a:documentation>(evidence) indicates evidence in support of a claim or
+                argument</a:documentation>
+            <ref name="macro.paraContent"/>
+        </element>
+    </define>
+
+    <define name="model.essay.content">
+        <oneOrMore>
+            <choice>
+                <ref name="scene"/>
+                <ref name="genre"/>
+                <ref name="participants"/>
+                <ref name="setting"/>
+                <ref name="situation"/>
+                <ref name="essay.context"/>
+                <ref name="aesthetics"/>
+                <ref name="sim"/>
+                <ref name="diff"/>
+                <ref name="pattern"/>
+                <ref name="argument"/>
+                <ref name="evidence"/>
+            </choice>
+        </oneOrMore>
+    </define>
+    <define name="intro">
+        <element name="intro">
+            <a:documentation>(introduction) a structural division, contains the text of the
+                introduction of the essay; i.e. an introduction into the material you will be
+                analyzing with some background information; [contains one or more ‘p’ (paragraph)
+                elements]</a:documentation>
+            <oneOrMore>
+                <ref name="intro.special.para"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="intro.special.para">
+        <element name="p">
+            <a:documentation/>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                    <ref name="model.essay.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="bodyPara">
+        <element name="bodyPara">
+            <a:documentation>(body paragraph) a structural division containing a group of related
+                sentences about a particular topic or idea directly relating to the thesis of the
+                essay </a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                    <ref name="model.essay.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="concl">
+        <element name="concl">
+            <a:documentation>(conclusion) a structural division containing a summary of everything
+                that was written in the essay thats ends off on a note that makes the reader think;
+                generally written in a short, concise paragraph, and appearing at the end of an
+                essay; [contains one or more ‘p’ (paragraph) elements] </a:documentation>
+            <oneOrMore>
+                <ref name="concl.special.para"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="concl.special.para">
+        <element name="p">
+            <a:documentation/>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                    <ref name="model.essay.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="model.essay.structure">
+        <ref name="intro"/>
+        <oneOrMore>
+            <ref name="bodyPara"/>
+        </oneOrMore>
+        <ref name="concl"/>
+    </define>
+    <define name="pattern">
+        <element name="pattern">
+            <a:documentation>(generic pattern) indicates an identifiable trait, characteristic,
+                and/or example of a pattern within a genre [requires @type attribute of user-defined
+                value]</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                    <ref name="model.essay.content"/>
+                </choice>
+            </oneOrMore>
+            <attribute name="type">
+                <data type="token">
+                    <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                </data>
+            </attribute>
+        </element>
+    </define>
+    <define name="figure">
+        <element name="figure">
+            <a:documentation>element for inline images; content of element is processed as a caption
+                in formatted docs [requires @url attribute with valid url]</a:documentation>
+            <ref name="macro.paraContent"/>
+            <ref name="att.resourced.attribute.url"/>
+        </element>
+    </define>
+
+
+    <!-- GENERAL ELEMENT DEFINITIONS -->
+    <define name="note">
+        <element name="note">
+            <a:documentation>contains a note made on the text intended to provide additional
+                information or comment upon the text [requires @type attribute and suggested @who
+                attribute]</a:documentation>
+            <optional>
+                <ref name="att.global.responsibility.attribute.who"/>
+            </optional>
+            <attribute name="type">
+                <a:documentation>must specify whether the note is @type peer or
+                    instructor</a:documentation>
+                <choice>
+                    <value>peer</value>
+                    <a:documentation>this note is written from a peer</a:documentation>
+                    <value>instructor</value>
+                    <a:documentation>this note is from the instructor</a:documentation>
+                </choice>
+            </attribute>
+            <text/>
+        </element>
+    </define>
+    <define name="style">
+        <element name="style">
+            <a:documentation>(style/rendition) indicates a segment of text that should be styled in
+                a particular way that is otherwise not marked up [required @type attribute e.g.,
+                'italics', 'bold', 'underline']</a:documentation>
+            <ref name="macro.paraContent"/>
+            <attribute name="type">
+                <choice>
+                    <value>italics</value>
+                    <value>bold</value>
+                    <value>underline</value>
+                    <data type="token">
+                        <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                    </data>
+                </choice>
+            </attribute>
+        </element>
+    </define>
+    <define name="bibl">
+        <element name="bibl">
+            <a:documentation>(bibliographic citation) contains a bibliographic
+                citation</a:documentation>
+            <zeroOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                </choice>
+            </zeroOrMore>
+            <optional>
+                <ref name="att.global.attribute.xmlid"/>
+            </optional>
+            <empty/>
+        </element>
+    </define>
+    <define name="listBibl">
+        <element name="listBibl">
+            <a:documentation>(bibliographic list) contains a list of bibliographic
+                citations</a:documentation>
+            <choice>
+                <oneOrMore>
+                    <choice>
+                        <ref name="model.biblLike"/>
+                    </choice>
+                </oneOrMore>
+            </choice>
+            <!-- <ref name="att.global.attributes"/>
+            <ref name="att.typed.attributes"/>  -->
+        </element>
+    </define>
+    <define name="q">
+        <element name="q">
+            <a:documentation>(quote) indicates quoted text; for quoted material, should be
+                accompanied by a citation element</a:documentation>
+            <ref name="macro.paraContent"/>
+            <optional>
+                <ref name="att.typed.attribute.type"/>
+            </optional>
+        </element>
+    </define>
+    <define name="item">
+        <element name="item">
+            <a:documentation>(item) a member of a list</a:documentation>
+            <ref name="macro.paraContent"/>
+        </element>
+    </define>
+    <define name="list">
+        <element name="list">
+            <a:documentation>(list) a group of item elements</a:documentation>
+            <oneOrMore>
+                <ref name="item"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="citation">
+        <element name="citation">
+            <a:documentation>(in-text citation) an in-text citation [requires @source attribute
+                corresponding to the @xml:id of a bibl element]</a:documentation>
+            <text/>
+            <optional>
+                <ref name="att.source"/>
+            </optional>
+        </element>
+    </define>
+    <define name="author">
+        <element name="author">
+            <a:documentation>author of text</a:documentation>
+            <text/>
+            <ref name="att.global.attribute.xmlid"/>
+        </element>
+
+    </define>
+    <define name="title">
+        <element name="title">
+            <a:documentation>title of document or section, where appropriate</a:documentation>
+            <text/>
+        </element>
+    </define>
+    <define name="date">
+        <element name="date">
+            <a:documentation>date of publication or composition</a:documentation>
+            <text/>
+        </element>
+    </define>
+    <define name="p">
+        <element name="p">
+            <a:documentation>(paragraph) a division of text indicating a
+                paragraph.</a:documentation>
+            <zeroOrMore>
+                <choice>
+                    <ref name="macro.paraContent"/>
+                </choice>
+            </zeroOrMore>
+            <ref name="att.global.attributes"/>
+            <ref name="att.typed.attributes"/>
+        </element>
+    </define>
+    <define name="div">
+        <element name="div">
+            <a:documentation>(division of text) arbitrary division of text [optional @title
+                element]</a:documentation>
+            <zeroOrMore>
+                <choice>
+                    <ref name="model.divPart"/>
+                    <ref name="model.inter"/>
+                </choice>
+            </zeroOrMore>
+            <optional>
+                <ref name="att.typed.attribute.type"/>
+                <attribute name="title">
+                    <a:documentation>title of the textual division (e.g. Introduction, Conclusion,
+                        etc.)</a:documentation>
+                    <text/>
+                </attribute>
+            </optional>
+        </element>
+    </define>
+    <define name="reviewer">
+        <element name="reviewer">
+            <a:documentation>name of reviewer [requires @type attribute (value of either
+                'instructor' or 'peer') and @xml:id equal to reviewer's ID]</a:documentation>
+            <optional>
+                <text/>
+            </optional>
+            <ref name="att.review.type"/>
+            <ref name="att.global.attribute.xmlid"/>
+        </element>
+    </define>
+    <define name="report">
+        <element name="report">
+            <a:documentation>(report) a report on the text by someone other than the document author
+                [requires @type attribute (value of either 'instructor' or 'peer') and @who
+                attribute equal to corresponding @xml:id)</a:documentation>
+            <zeroOrMore>
+                <choice>
+                    <ref name="model.divPart"/>
+                    <ref name="model.inter"/>
+                </choice>
+            </zeroOrMore>
+            <ref name="att.review.type"/>
+            <ref name="att.global.responsibility.attribute.who"/>
+        </element>
+    </define>
+    <define name="docReview">
+        <element name="docReview">
+            <a:documentation>(document review section) section of document where peer review and
+                instructor reports are located</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="model.global"/>
+                    <group>
+                        <ref name="reviewer"/>
+                        <ref name="report"/>
+                    </group>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="docFoot">
+        <element name="docFoot">
+            <a:documentation>(document footer) footer for essay; contains a title element and a list
+                of bibliographic citations.</a:documentation>
+            <ref name="title"/>
+            <ref name="model.biblLike"/>
+        </element>
+    </define>
+    <define name="essay.body">
+        <element name="body">
+            <a:documentation>main body for essay; contains one or more div
+                elements</a:documentation>
+            <zeroOrMore>
+                <ref name="model.essay.structure"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="docHead">
+        <element name="docHead">
+            <a:documentation>(document header) contains metadata about the document (title, author,
+                date)</a:documentation>
+            <group>
+                <interleave>
+                    <ref name="title"/>
+                    <ref name="author"/>
+                    <ref name="date"/>
+                    <zeroOrMore>
+                        <ref name="model.global"/>
+                    </zeroOrMore>
+                </interleave>
+            </group>
+        </element>
+    </define>
+    <define name="essay">
+        <element name="essay">
+            <a:documentation>container element for essay genre</a:documentation>
+            <group>
+                <ref name="docHead"/>
+                <ref name="essay.body"/>
+                <optional>
+                    <ref name="docFoot"/>
+                </optional>
+            </group>
+            <ref name="att.global.attributes"/>
+            <ref name="att.typed.attributes"/>
+        </element>
+    </define>
+
+    <!-- GROUP 1: MOVIE REVIEWS -->
+
+    <define name="macro.reviewParaContent">
+        <oneOrMore>
+            <choice>
+                <ref name="macro.specialParaContent"/>
+                <ref name="opinions"/>
+                <ref name="review.context"/>
+            </choice>
+        </oneOrMore>
+    </define>
+
+    <define name="review.summary">
+        <element name="summary">
+            <a:documentation>(summary) usually ties up the analysis in a succinct fashion,
+                oftentimes summarizing the main opinion with a rating scale of the movie [optional
+                @type attribute: gross income, rating and release date] </a:documentation>
+            <optional>
+                <attribute name="type">
+                    <choice>
+                        <value>gross_income</value>
+                        <a:documentation>gives details on the amount of money made on the movie in
+                            its respective release districts </a:documentation>
+                        <value>rating</value>
+                        <a:documentation>gives a rating based on the reviewers (authors) opinion of
+                            the movie</a:documentation>
+                        <value>release date</value>
+                        <a:documentation>optional, reiterates once again, the release date of the
+                            movie.</a:documentation>
+                    </choice>
+                </attribute>
+            </optional>
+            <ref name="macro.reviewParaContent"/>
+        </element>
+    </define>
+    <define name="model.review.conclusion">
+        <oneOrMore>
+            <choice>
+                <ref name="macro.reviewParaContent"/>
+                <ref name="review.summary"/>
+                <ref name="review.date"/>
+                <ref name="review.comparison"/>
+            </choice>
+        </oneOrMore>
+    </define>
+    <define name="review.conclusion">
+        <element name="conclusion">
+            <a:documentation>The final paragraph, contains final remarks on the movie, and may be
+                combined with summary to form just one paragraph </a:documentation>
+            <oneOrMore>
+                <element name="p">
+                    <ref name="model.review.conclusion"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="synopsis">
+        <element name="synopsis">
+            <a:documentation>Paragraph summarising the movie plot points, themes. Can be used in
+                intro, or under p [requires @type attribute]</a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>plot_points</value>
+                    <a:documentation>declares the major flow of the movie progression through peaks
+                        and valleys in the story </a:documentation>
+                    <value>themes</value>
+                    <a:documentation>explores through argument the major directive decisions that
+                        are explored </a:documentation>
+                </choice>
+            </attribute>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.reviewParaContent"/>
+                    <ref name="review.context"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="review.context">
+        <element name="context">
+            <a:documentation>Can be separate paragraph if not placed with synopsis, contains the
+                information required to understand the movie such as who the actors are and their
+                roles, the director and his role, and the optional attribute of the history of the
+                franchise (if franchise) [requires @type attribute]</a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>actor</value>
+                    <a:documentation>(Who is acting) contains the roles of the actors. Usually only
+                        mentions the leads, villains, heroes, co-leads and other important actors
+                        and roles to the movie. </a:documentation>
+                    <value>director</value>
+                    <a:documentation>contains the information about the director of the movie such
+                        as how many movies directed, notable movies directed, etc </a:documentation>
+                    <value>franchise_history</value>
+                    <a:documentation>contains the history of the franchise (optional and conditional
+                        if it is a franchise), and usually acts as a point to further the movie
+                        review by giving the necessary details of previous installments to make
+                        sense of the current installment </a:documentation>
+                </choice>
+            </attribute>
+            <ref name="macro.reviewParaContent"/>
+        </element>
+    </define>
+    <define name="review.intro.p">
+        <element name="p">
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.reviewParaContent"/>
+                    <ref name="synopsis"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="review.intro">
+        <element name="intro">
+            <a:documentation>The introduction, container element of the first few paragraph of the
+                movie review. Has context, as a necessary sub-elements, movie reviews may contain
+                one intro paragraph or multiple &lt;p&gt; </a:documentation>
+            <oneOrMore>
+                <ref name="review.intro.p"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="review.comparison">
+        <element name="comparison">
+            <a:documentation>A direct comparison between a medium of choice according to the author.
+                The type attribute being book, if the movie is based off a book, or another movie
+                [requires @type attribute] </a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>book</value>
+                    <a:documentation>(how close the book is followed) is an optional observation or
+                        analysis on how well a story that is based off of a text follows the
+                        progression of the book in terms of content, or main characters present in
+                        the movie.</a:documentation>
+                    <value>movie</value>
+                    <a:documentation>s the type attribute depicting when two or more movies are
+                        being compared</a:documentation>
+                </choice>
+            </attribute>
+            <ref name="macro.reviewParaContent"/>
+        </element>
+    </define>
+    <define name="review.aesthetics">
+        <element name="aesthetics">
+            <a:documentation>The analysis of the production quality that focuses on the visual
+                cinematography, the music score, the locations and scenery and everything that does
+                not include the story plot elements.</a:documentation>
+            <ref name="macro.reviewParaContent"/>
+        </element>
+    </define>
+    <define name="quotes">
+        <element name="quotes">
+            <a:documentation>Contains direct vocal (textual) citations from the movie, usually used
+                as to provide evidence of occurrence in the movie or for analysis of the movie. </a:documentation>
+            <ref name="macro.reviewParaContent"/>
+        </element>
+    </define>
+    <define name="opinions">
+        <element name="opinions">
+            <a:documentation>Direct author's argument that may or may not be based on drawn out
+                analysis. A movie review may contain more than one opinion tag. This tag can be used
+                anywhere, within any other tag [requires @type attribute] </a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>reaction</value>
+                    <a:documentation>An attribute of an opinion of a specific elements from the
+                        movie. Whether it be specific scenes, characters, dialogue, or as simple as
+                        an observation about the color of a suit worn. A general tag for most types
+                        of opinions.</a:documentation>
+                    <value>critique</value>
+                    <a:documentation>An attribute of opinion of how the author thinks the movie
+                        could be better. It might be a simple complaint, or a detailed analysis of
+                        how the director could improve their work in some way. </a:documentation>
+                    <value>first_impressions</value>
+                    <a:documentation>An attribute of an opinion of how the author initially reacted
+                        to the movie. A way to discuss first thoughts, or opening statements for the
+                        movie review.</a:documentation>
+                    <value>recommendation</value>
+                    <a:documentation>An attribute of an opinion for the author telling the reader
+                        whether or not to see the film. Basically sums up the opinions the author
+                        has.</a:documentation>
+                    <value/>
+                    <a:documentation/>
+                </choice>
+            </attribute>
+            <ref name="macro.reviewParaContent"/>
+        </element>
+    </define>
+    <define name="model.review.p">
+        <oneOrMore>
+            <choice>
+                <ref name="macro.reviewParaContent"/>
+                <ref name="quotes"/>
+                <ref name="review.aesthetics"/>
+                <ref name="review.comparison"/>
+                <ref name="synopsis"/>
+            </choice>
+        </oneOrMore>
+    </define>
+    <define name="review.p">
+        <element name="p">
+            <a:documentation>Container element of of the subelements of quotes, opinions,
+                aesthetics, and the optional book_progression. A movie review may contain more than
+                one &lt;p&gt; tag, and is often times the direct analysis of the movie as seen by
+                the author of the movie review. </a:documentation>
+            <ref name="model.review.p"/>
+        </element>
+    </define>
+    <define name="review.body">
+        <element name="body">
+            <a:documentation>body of movie review</a:documentation>
+            <oneOrMore>
+                <ref name="review.p"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="model.review.content">
+        <ref name="review.intro"/>
+        <ref name="review.body"/>
+        <ref name="review.conclusion"/>
+    </define>
+    <define name="review.content">
+        <element name="content">
+            <ref name="model.review.content"/>
+        </element>
+    </define>
+    <define name="review.title">
+        <element name="title">
+            <a:documentation>element for title of review (containing the title of movie also) and
+                photo of movie promotional poster or snapshot of movie in action [requires @type
+                attribute] </a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>title_review</value>
+                    <a:documentation> the name of the review which also contains title of the
+                        movie</a:documentation>
+                    <value>title_movie</value>
+                    <a:documentation>the name of the movie which is also part of the title of
+                        review</a:documentation>
+                    <value>photo_movie</value>
+                    <a:documentation>photo of the movie promotional poster or screen
+                        capture</a:documentation>
+                </choice>
+            </attribute>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="review.date">
+        <element name="date">
+            <a:documentation>the date of the review, or the date of movie premiere [requires @type
+                attribute]</a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>review_date</value>
+                    <a:documentation>The date of which the movie review was published online or
+                        print</a:documentation>
+                    <value>movie_premiere</value>
+                    <a:documentation>The date of which the movie was released in theaters for target
+                        audiences in U.S, or Global, or the date in the specific country it was
+                        aired (i.e during film festivals) </a:documentation>
+                </choice>
+            </attribute>
+            <text/>
+        </element>
+    </define>
+    <define name="review.contact_info">
+        <element name="contact_info">
+            <a:documentation>Element for contact info, usually twitter handles or other information
+                such as email.</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="model.review.header">
+        <oneOrMore>
+            <choice>
+                <ref name="review.title"/>
+                <ref name="author"/>
+                <ref name="review.date"/>
+                <ref name="review.contact_info"/>
+            </choice>
+        </oneOrMore>
+    </define>
+    <define name="review.header">
+        <element name="header">
+            <a:documentation>container element for the movie reviewer’s movie and opinion
+                piece</a:documentation>
+            <ref name="model.review.header"/>
+        </element>
+    </define>
+    <define name="movie_review">
+        <element name="movie_review">
+            <a:documentation>contains elements for movie review </a:documentation>
+            <ref name="review.header"/>
+            <ref name="review.content"/>
+        </element>
+    </define>
+
+    <!-- GROUP 2: SATIRICAL ARTICLES -->
+    <!--    <define name="ad">
+        <element name="ad">
+            <ref name="macro.specialParaContent"/>
+            <optional>
+                <ref name="att.resourced.attribute.url"/>
+            </optional>
+        </element>
+    </define>-->
+    <define name="related_links">
+        <element name="related_links">
+            <a:documentation> Hyperlinks to related articles from the same website </a:documentation>
+            <ref name="macro.specialParaContent"/>
+            <ref name="att.resourced.attribute.url"/>
+        </element>
+    </define>
+    <define name="article.footer">
+        <element name="footer">
+            <a:documentation>Container element for closing article information</a:documentation>
+            <oneOrMore>
+                <ref name="share"/>
+            </oneOrMore>
+            <oneOrMore>
+                <ref name="related_links"/>
+            </oneOrMore>
+            <!--            <oneOrMore>
+                <ref name="ad"/>
+            </oneOrMore>-->
+        </element>
+    </define>
+    <define name="article.hyperlinks">
+        <element name="hyperlink">
+            <a:documentation>a hyperlink will typically follow a website source; these were deemed
+                to be an effective way that satirical articles circulated</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="article.source">
+        <element name="source">
+            <a:documentation>attributing information from a specific website or a person without
+                having direct quotes. Typically any source given would be fake, or, if the source
+                was real, then the information from there would be fake</a:documentation>
+            <ref name="macro.specialParaContent"/>
+            <attribute name="type">
+                <choice>
+                    <value>person</value>
+                    <a:documentation>an individual whose used as a source for the satire at their
+                        expense or to enhance the satire</a:documentation>
+                    <value>website</value>
+                    <a:documentation>a website that is used as source material for
+                        satire</a:documentation>
+                </choice>
+            </attribute>
+        </element>
+    </define>
+    <define name="article.location">
+        <element name="location">
+            <a:documentation>(optional) Articles always start with the city and state that the
+                article is based in</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="article.quote">
+        <element name="quote">
+            <a:documentation>Surrounded by quotation marks, a grouping of words, ranging from
+                phrases to multiples sentences.</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="model.article.p.content">
+        <zeroOrMore>
+            <choice>
+                <ref name="article.quote"/>
+                <ref name="article.source"/>
+                <ref name="article.hyperlinks"/>
+            </choice>
+        </zeroOrMore>
+    </define>
+    <define name="article.other.p">
+        <element name="p">
+            <a:documentation>body paragraph</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.specialParaContent"/>
+                    <ref name="model.article.p.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="article.first.p">
+        <element name="p">
+            <a:documentation>first body paragraph (must have location as first
+                child)</a:documentation>
+            <optional>
+                <ref name="article.location"/>
+            </optional>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.specialParaContent"/>
+                    <ref name="model.article.p.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="article.image">
+        <element name="image">
+            <a:documentation>Image relating to the content of article </a:documentation>
+            <ref name="macro.specialParaContent"/>
+            <ref name="att.resourced.attribute.url"/>
+        </element>
+    </define>
+    <define name="article.body">
+        <element name="body">
+            <a:documentation>Container element for majority of the content </a:documentation>
+            <ref name="article.image"/>
+            <ref name="article.first.p"/>
+            <zeroOrMore>
+                <ref name="article.other.p"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="article_title">
+        <element name="article_title">
+            <a:documentation>Describes the content of the article; usually fragmented or whole
+                sentences</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="category">
+        <element name="category">
+            <a:documentation>Where the article can be found on the website. Categories are listed as
+                sub-headers on website as well. Often same as real news sites (sports, world news,
+                entertainment, etc.)</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="article.date">
+        <element name="date">
+            <a:documentation>Date in which the article was published</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="identification">
+        <element name="identification">
+            <a:documentation>Identifies exactly which article it is [requires @type attribute] </a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>volume</value>
+                    <a:documentation>The number of years the publication has been released. </a:documentation>
+                    <value>issue</value>
+                    <a:documentation>The amount of times the news source has been published that
+                        year. </a:documentation>
+                </choice>
+            </attribute>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="tags">
+        <element name="tags">
+            <a:documentation>Sub-categories and keywords for the article (basketball, agriculture,
+                crime, etc.)</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="share">
+        <element name="share">
+            <a:documentation>Hyperlinks that give the option to share on a multitude of social media
+                platforms [requires @type attribute: facebook, twitter, email,
+                other]</a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>facebook</value>
+                    <a:documentation> Share on Facebook (Facebook logo often used as link) </a:documentation>
+                    <value>twitter</value>
+                    <a:documentation> Share on Twitter (Twitter logo often used as link) </a:documentation>
+                    <value>email</value>
+                    <a:documentation> Share via email (Mail image often used as link) </a:documentation>
+                    <value>other</value>
+                    <a:documentation> Share on less common social media sites (Google+, Pinterest,
+                        etc.) </a:documentation>
+                </choice>
+            </attribute>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="article.header">
+        <element name="header">
+            <a:documentation>Container element for basic article information </a:documentation>
+            <ref name="article_title"/>
+            <ref name="author"/>
+            <ref name="category"/>
+            <ref name="article.date"/>
+            <ref name="identification"/>
+            <ref name="identification"/>
+            <oneOrMore>
+                <ref name="tags"/>
+            </oneOrMore>
+            <zeroOrMore>
+                <ref name="share"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="article">
+        <element name="article">
+            <a:documentation>Container element for article </a:documentation>
+            <ref name="article.header"/>
+            <ref name="article.body"/>
+            <ref name="article.footer"/>
+        </element>
+    </define>
+
+    <!-- GROUP 3: OP EDS -->
+    <define name="op.source">
+        <element name="source">
+            <a:documentation>Sources (Optional) </a:documentation>
+            <optional>
+                <ref name="att.resourced.attribute.url"/>
+            </optional>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <!--    <define name="op.conclusion">
+        <element name="conclusion">
+            <a:documentation>The conclusion </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>-->
+    <define name="op.situation">
+        <element name="situation">
+            <a:documentation>This tag describes a current event that relates to the author’s main
+                opinion. It is tied to the reason the author is writing the Op Ed. This tag can be
+                used anywhere, within any tag. </a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.specialParaContent"/>
+                    <ref name="model.op.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="op.quote">
+        <element name="quote">
+            <a:documentation>Container element of quotes of what a notable person relevant to the
+                situation being written about said. This tag can be used anywhere, within any
+                tag</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.specialParaContent"/>
+                    <ref name="model.op.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="op.bg_info">
+        <element name="bg_info">
+            <a:documentation>Container element of background information that helps the reader to
+                understand a certain topic. This tag can be used anywhere, within any other
+                tag.</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.specialParaContent"/>
+                    <ref name="model.op.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="op.evidence">
+        <element name="evidence">
+            <a:documentation>Container element for evidence that supports any of the types of
+                opinions. This tag can be used anywhere, within any other tag, even within itself
+                [requires @type attribute] </a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>statistics</value>
+                    <a:documentation>Any type of statistics or numbers relating to information </a:documentation>
+                    <value>anecdote</value>
+                    <a:documentation>Describes personal experience of the author or of other people </a:documentation>
+                    <value>supporting</value>
+                    <a:documentation>General tag for evidence that supports an
+                        opinion</a:documentation>
+                    <data type="token">
+                        <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                    </data>
+                </choice>
+            </attribute>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.specialParaContent"/>
+                    <ref name="model.op.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="op.picture">
+        <element name="picture">
+            <a:documentation> A picture to aid in reading </a:documentation>
+            <ref name="att.resourced.attribute.url"/>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="op.opinion">
+        <element name="opinion">
+            <a:documentation>Element that contains the author’s stance on a certain subject or
+                situation. This tag can be used anywhere, within any other tag [requires @type
+                attribute] </a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>main</value>
+                    <a:documentation>The main opinion on which the Op Ed is based
+                        around</a:documentation>
+                    <value>opposing</value>
+                    <a:documentation>An opinion that directly opposes the author’s main
+                        opinion</a:documentation>
+                    <value>general</value>
+                    <a:documentation>A general tag for most types of opinions</a:documentation>
+                    <value>critique</value>
+                    <a:documentation>An opinion on how the author thinks the situation could be
+                        improved</a:documentation>
+                </choice>
+            </attribute>
+            <oneOrMore>
+                <choice>
+                    <ref name="macro.specialParaContent"/>
+                    <ref name="model.op.content"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="model.op.content">
+        <zeroOrMore>
+            <choice>
+                <ref name="op.opinion"/>
+                <ref name="op.evidence"/>
+                <ref name="op.quote"/>
+                <ref name="op.bg_info"/>
+                <ref name="op.situation"/>
+                <ref name="op.picture"/>
+                <ref name="macro.specialParaContent"/>
+            </choice>
+        </zeroOrMore>
+    </define>
+    <define name="model.op.body">
+        <optional>
+            <ref name="op.picture"/>
+        </optional>
+        <element name="p">
+            <a:documentation> A paragraph, the container element of bg_info, opinion, evidence,
+                quote, and situation. Can be used in body. None of its sub elements are required,
+                they are all optional [requires @type attribute]</a:documentation>
+            <attribute name="type">
+                <value>intro</value>
+                <a:documentation>Introductory paragraph of the Op Ed. There can only be one of
+                    these.</a:documentation>
+            </attribute>
+            <ref name="model.op.content"/>
+        </element>
+        <optional>
+            <ref name="op.picture"/>
+        </optional>
+        <oneOrMore>
+            <element name="p">
+                <a:documentation> A paragraph, the container element of bg_info, opinion, evidence,
+                    quote, and situation. Can be used in body. None of its sub elements are
+                    required, they are all optional [requires @type attribute]</a:documentation>
+                <attribute name="type">
+                    <value>body</value>
+                    <a:documentation>Body paragraphs of the Op Ed. There can be several of these.
+                    </a:documentation>
+                </attribute>
+                <ref name="model.op.content"/>
+            </element>
+            <optional>
+                <ref name="op.picture"/>
+            </optional>
+        </oneOrMore>
+        <element name="p">
+            <a:documentation> A paragraph, the container element of bg_info, opinion, evidence,
+                quote, and situation. Can be used in body. None of its sub elements are required,
+                they are all optional [requires @type attribute]</a:documentation>
+            <attribute name="type">
+                <value>conclusion</value>
+                <a:documentation>Concluding paragraph of the Op Ed. There is only one of
+                    these.</a:documentation>
+            </attribute>
+            <ref name="model.op.content"/>
+        </element>
+        <optional>
+            <ref name="op.picture"/>
+        </optional>
+        <zeroOrMore>
+            <ref name="op.source"/>
+        </zeroOrMore>
+    </define>
+    <define name="op.body">
+        <element name="body">
+            <ref name="model.op.body"/>
+        </element>
+    </define>
+    <define name="op.header">
+        <element name="header">
+            <a:documentation>Container element for author, title, and date</a:documentation>
+            <group>
+                <interleave>
+                    <ref name="title"/>
+                    <ref name="author"/>
+                    <ref name="date"/>
+                    <zeroOrMore>
+                        <ref name="model.global"/>
+                    </zeroOrMore>
+                </interleave>
+            </group>
+        </element>
+    </define>
+    <define name="op_ed">
+        <element name="op_ed">
+            <a:documentation>Container element for the elements that make up the Op
+                Ed</a:documentation>
+            <ref name="op.header"/>
+            <ref name="op.body"/>
+        </element>
+    </define>
+
+    <!-- GROUP 4: RESUMES -->
+    <define name="resume.qualifications">
+        <element name="qualifications">
+            <a:documentation>Container element for all relevant qualifications; should include work
+                experience, may include certifications, associations, education, unpaid/volunteer
+                work, languages spoken, etc. </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="additional_information">
+        <element name="additional_information">
+            <a:documentation>Optional element; applicant may include relevant hobbies and interests
+                here. Can include a list of publications, professional courses, licenses and
+                patents, etc. Only use if appropriate. </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="affiliation">
+        <element name="affiliation">
+            <a:documentation>sub-element for affiliations; any associations the applicant is a
+                member of</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="affiliations">
+        <element name="affiliations">
+            <a:documentation>Container element for affiliations, optional element, can have multiple
+                affiliation elements; A list of any associations the applicant is a member
+                of</a:documentation>
+            <oneOrMore>
+                <ref name="affiliation"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="education.degree">
+        <element name="degree">
+            <a:documentation>Container element for the type of degree earned/to be earned [requires
+                @type attribute]</a:documentation>
+            <ref name="macro.specialParaContent"/>
+            <attribute name="type">
+                <choice>
+                    <value>high_school</value>
+                    <a:documentation>attribute to degree type</a:documentation>
+                    <value>ged</value>
+                    <a:documentation>attribute to degree type</a:documentation>
+                    <value>associate</value>
+                    <a:documentation>attribute to degree type</a:documentation>
+                    <value>bachelor</value>
+                    <a:documentation>attribute to degree type</a:documentation>
+                    <value>master</value>
+                    <a:documentation>attribute to degree type</a:documentation>
+                    <value>doctorate</value>
+                    <a:documentation>attribute to degree type</a:documentation>
+                </choice>
+            </attribute>
+        </element>
+    </define>
+    <define name="education.graduation.date">
+        <element name="graduation_date">
+            <a:documentation>When the applicant did or will earn their degree(s) [optional @type for
+                anticipated date]</a:documentation>
+            <ref name="macro.specialParaContent"/>
+            <optional>
+                <attribute name="type">
+                    <value>anticipated</value>
+                    <a:documentation>Optional attribute. Used if currently in school for a degree
+                        specified in resume.</a:documentation>
+                </attribute>
+            </optional>
+        </element>
+    </define>
+    <define name="education.school.location">
+        <element name="school_location">
+            <a:documentation>Container element for the city and state of the
+                school.</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="education.school">
+        <element name="school">
+            <a:documentation>Container element for the name of the school. Can be used for secondary
+                school or higher education. </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="model.education.content">
+        <ref name="education.school"/>
+        <ref name="education.school.location"/>
+        <ref name="education.graduation.date"/>
+        <ref name="education.degree"/>
+        <ref name="macro.specialParaContent"/>
+    </define>
+    <define name="education">
+        <element name="education">
+            <a:documentation>Container element for education, optional element; where the applicant
+                matriculated, degree(s) earned, and year they earned their
+                degree(s).</a:documentation>
+            <ref name="model.education.content"/>
+        </element>
+    </define>
+    <define name="job.summary">
+        <element name="job_summary">
+            <a:documentation>Container element for all summary points per job. </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="job.location">
+        <element name="job_location">
+            <a:documentation>Container element for start and end dates of job. </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="job.date">
+        <element name="job_date">
+            <a:documentation>Container element for start and end dates of job. </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="employer">
+        <element name="employer">
+            <a:documentation>Container element for name of the company the applicant has worked for.
+                Sub-element for work experience.</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="job.title">
+        <element name="job_title">
+            <a:documentation>Container element for title of position held at a job; also contains
+                company name and location.</a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="model.job.content">
+        <ref name="job.title"/>
+        <ref name="employer"/>
+        <ref name="job.date"/>
+        <ref name="job.location"/>
+        <oneOrMore>
+            <ref name="job.summary"/>
+        </oneOrMore>
+    </define>
+    <define name="job">
+        <element name="job">
+            <a:documentation>Container element for each job listed, sub-element of work experience,
+                optional element if not applicable; includes the start and finish dates, location,
+                and a summary of the job, should include employer, and title of position held </a:documentation>
+            <ref name="model.job.content"/>
+        </element>
+    </define>
+    <define name="work_experience">
+        <element name="work_experience">
+            <a:documentation>Container element for work experience, sub-element of qualifications </a:documentation>
+            <oneOrMore>
+                <ref name="job"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="resume.objectives">
+        <element name="objectives">
+            <a:documentation>Optional element; any employment goals you have for the position or the
+                company </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="resume.contact">
+        <element name="contact">
+            <a:documentation>Element for contact information [must include at least one @type
+                attribute from list: address, email, phone, other] </a:documentation>
+            <attribute name="type">
+                <choice>
+                    <value>address</value>
+                    <a:documentation>Attribute to contact info; personal address to send physical
+                        mail </a:documentation>
+                    <value>email</value>
+                    <a:documentation>Attribute to contact info; best email to reach you at </a:documentation>
+                    <value>phone</value>
+                    <a:documentation>Attribute to contact info; phone number that you are most
+                        likely to respond to, can be either cellphone or home phone </a:documentation>
+                    <value>other</value>
+                    <a:documentation>Attribute to contact info; contact information that does not
+                        fall into any other category </a:documentation>
+                </choice>
+            </attribute>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="resume.contact_information">
+        <element name="contact_information">
+            <a:documentation>Container element for contact information; generally at beginning or
+                end of document. Needs to contain at least one piece of contact information </a:documentation>
+            <oneOrMore>
+                <ref name="resume.contact"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="model.resume.content">
+        <interleave>
+            <oneOrMore>
+                <ref name="resume.header"/>
+            </oneOrMore>
+            <optional>
+                <ref name="resume.objectives"/>
+            </optional>
+            <ref name="resume.contact_information"/>
+        </interleave>
+        <interleave>
+            <zeroOrMore>
+                <ref name="resume.header"/>
+            </zeroOrMore>
+            <ref name="work_experience"/>
+            <zeroOrMore>
+                <ref name="education"/>
+            </zeroOrMore>
+            <zeroOrMore>
+                <ref name="affiliations"/>
+            </zeroOrMore>
+            <zeroOrMore>
+                <ref name="additional_information"/>
+            </zeroOrMore>
+            <zeroOrMore>
+                <ref name="resume.qualifications"/>
+            </zeroOrMore>
+        </interleave>
+    </define>
+    <define name="resume.header">
+        <element name="header">
+            <a:documentation>Container element for headers denoting a new section (globally
+                available) </a:documentation>
+            <ref name="macro.specialParaContent"/>
+        </element>
+    </define>
+    <define name="resume">
+        <element name="resume">
+            <a:documentation/>
+            <optional>
+                <ref name="title"/>
+            </optional>
+            <ref name="resume.header"/>
+            <ref name="model.resume.content"/>
+        </element>
+    </define>
+
+
+    <define name="DOC">
+        <element name="DOC">
+            <a:documentation>root element for all ENGW1111 assignments</a:documentation>
+            <oneOrMore>
+                <choice>
+                    <ref name="essay"/>
+                    <ref name="movie_review"/>
+                    <ref name="article"/>
+                    <ref name="op_ed"/>
+                    <ref name="resume"/>
+                </choice>
+            </oneOrMore>
+            <zeroOrMore>
+                <ref name="docReview"/>
+            </zeroOrMore>
+        </element>
+    </define>
+
+    <start>
+        <ref name="DOC"/>
+    </start>
+</grammar>

@@ -1,0 +1,53 @@
+<?xml-model href="../schema_1111.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../testing_format.xsl"?><DOC>
+  <resume>
+    <title>Name
+            <!--deidentified element--></title>
+    <header>Contact Information</header>
+    <contact_information>
+      <contact type="address">address<!--deidentified element--></contact>
+      <contact type="phone">phone<!--deidentified element--></contact>
+      <contact type="address">address<!--deidentified element--></contact>
+    </contact_information>
+    <header>Objectives</header>
+    <objectives>Seeking Co-Op (from July to December) in the Business industry which is in line
+            with my passion and my educational course in Northeastern University. Currently a
+            Mechanical Engineer, but I intend to switch to Business Management. Taking accounting,
+            International Business and Economics courses. Eager to learn and explore opportunities
+            within sales, management and marketing verticals in your organization. </objectives>
+    <header>Qualifications</header>
+    <qualifications>
+      <work_experience>
+        <job>
+          <job_title>Market Analyst Intern <job_date>June 2014</job_date></job_title>
+          <job_summary>Customer prospecting, collaborated with Sales team to reach out and
+                        formulate a database of prospective customers.Tasked to gain insights into
+                        market trends and provide feedback to Sales team. Reported directly to the Regional Sales Director of
+                        Bharti Singapore at age 16. </job_summary>
+        </job>
+      </work_experience>
+      <header>Education</header>
+      <education>Northeastern University Boston Class of 2019 - Mechanical Engineering
+                (Currently a Sophomore)</education>
+      <education> Canadian International School Singapore Class of 2015 - International
+                Baccalaureate</education>
+      <header>Additional Information</header>
+      <additional_information> Experience in MS Suite, XML and 3D modeling Software (AutoCAD
+                and Solidworks).</additional_information>
+      <additional_information>Fluent in English, French and Hindi </additional_information>
+      <additional_information>Prior leadership roles in journalism, sports teams and outreach
+                events</additional_information>
+      <additional_information> Basic understanding of Accounting, Economic and Business
+                principles </additional_information>
+      <additional_information>Expertise in presentations and proficient written and verbal
+                communication skills</additional_information>
+      <additional_information>Prior teaching experience, Teaching Assistant at Canadian
+                International School Singapore (Math and Art)</additional_information>
+      <additional_information>Volunteered at St Joseph’s Nursing Home Singapore, worked in
+                philanthropy activities and charity drives</additional_information>
+      <additional_information>Student athlete, several awards in Basketball, Soccer and Track
+                and Field</additional_information>
+      <additional_information>Aspiring filmmaker, currently working on 2 projects scheduled to
+                be completed by March 2017</additional_information>
+    </qualifications>
+  </resume>
+</DOC>

@@ -1,0 +1,162 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 1: Producing Annotated Bibliographies, a Problem-Seeking
+            Project</title>
+    <version n="1" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt>Virtual reality (VR) is a technology that places users in an interactive
+            simulated environment. Today VR is used beyond entertainment purposes to treat various
+            psychological conditions, including social anxiety and PTSD, by simulating situations
+            that trigger targeted symptoms. Expanding upon this, VR can be leveraged in
+            motor-related rehabilitation. Computer engineering focuses on the development of
+            physical devices that reliably gather and relay data as well as software that interprets
+            and displays data in meaningful ways. In relation to VR motor-related therapy, the
+                discipline is responsible for syncing users’ movement virtually to a viewable
+            device, interpreting the results based on specified criteria, adjusting settings
+            accordingly, and iterating procedures. It is also concerned with the cost efficiency and
+            comfort of such devices. Game development can be considered a branch of CS (or perhaps
+            its own discipline) and is the coding and design (level layout, adjusted difficulty
+            settings, art assets) of games. Motor disorders afflict patients from various age groups
+            from children with cerebral palsy to post-stroke elders. Thus, it is important to tailor
+            the virtual environments to the individual to encourage interactivity, especially for
+            children and those with attention deficiencies. Additionally, designing and adjusting
+            difficulty settings in relation to performance is vital to prevent frustration or
+            boredom and further promote self-engagement. Leveraging VR in motor-related
+            rehabilitation has a promising outlook in that it engages users, provides real-time
+            feedback and progress tracking, cuts setup times, is tailored to the patient, and can
+            potentially move therapies to a home setting.</problem_stmt>
+    <!-- Citation 1 -->
+    <citation n="1" style="APA"><author n="1">Lange, B.</author>, <author n="2">Koenig,
+                S.</author>, <author n="3">Chang, C.</author>, <author n="4">Mcconnell, E.</author>,
+                <author n="5">Suma, E.</author>, <author n="6">Bolas, M.</author>, &amp; <author n="7">Rizzo, A.</author> (2012). <title level="a">Designing informed game-based
+                rehabilitation tasks leveraging advances in virtual reality</title>. <title level="j">Disability and Rehabilitation</title>, 34(22), 1863-1870.
+            doi:10.3109/09638288.2012.670029</citation>
+    <annotation>
+      <background type="source">This article provided by USC, Institute for Creative
+                Technologies, in the journal Disability and Rehabilitation, </background>
+      <summary type="general">highlights the benefits and challenges of implementing VR in
+                therapeutic strategies. VR can be implemented in various ways. Sometimes head-mounts
+                are used to display the view to the user and adjust in relation to his orientation.
+                Body-tracking sensors can also provide a wider range of interactivity. Other times
+                6-wall rooms with projections called Cave Automatic Virtual Environments (CAVEs) are
+                implemented to provide a less restrained, though more expensive, experience.
+                Additionally, VR allows for varied perspectives by offering 1st or 3rd person views,
+                which may give new insights to how patients respond to therapy. VR in therapy has
+                long been hindered by costs of equipment, but commercial technology, such as the Wii
+                and Kinect provide affordable ways to introduce rehabilitation to a home setting. </summary>
+      <summary type="interpretation">Still, commercial technologies were not initially
+                intended for therapeutic practices; therefore, they must be adjusted accordingly;
+                else they may promote improper motor skills.</summary>
+      <relevance type="value_stmt">This source is relevant in that it provides a good
+                introduction to VR in therapy and some associated problems.</relevance>
+    </annotation>
+    <!-- Citation 2 -->
+    <citation n="2" style="APA"><author n="1">Merians, A.</author>, <author n="2">Jack, D.
+            </author>, <author n="3">Boian, R.</author>, <author n="4">Tremaine, M.</author>,
+                <author n="5">Burdea, G.</author>, <author n="6"> Adamovich, S.</author>, <author n="7">Reece, M.</author>, &amp; <author n="8"> Poizner, H.</author> (2002). <title level="a">Virtual Reality–Augmented Rehabilitation for Patients Following
+                Stroke</title>. <title level="j">Physical Therapy</title>, 82(9),
+            898-915.</citation>
+    <annotation>
+      <background type="source">This article from Physical Therapy, a journal that focuses on
+                improving patient care, </background>
+      <summary type="general"> presents a case study following three elderly (50’s, 80’s)
+                post-stroke patients who participated in a 2-week long VR motor training program. </summary>
+      <summary type="approach">For 3.5 hours each training day, the patients practiced 4 VR
+                exercises to test their hand’s: (1) range of movement, measured by how much of a
+                image they could uncover by “wiping” their hand across the screen; (2) speed of
+                movement measured by how fast they could close their hand; (3) finger fractionation
+                measured by their ability to depress a single key on a keyboard piano; and (4)
+                strength of movement measured by how much they could resist pressure applied to
+                their glove. </summary>
+      <summary type="general">At the end of the program, each improved in all tested areas
+                though those with more severe defects improved less so. Overall, the patients
+                responded positively to the exercises but reported frustration over the length,
+                response times, and clarity in information of the display. </summary>
+      <summary type="interpretation">This implies that clear, real-time feedback is vital in
+                keeping users engaged. </summary>
+      <relevance type="value_stmt">The results of the study show the promise of VR in
+                improving mobility in damaged upper extremities, even for elderly patients. However,
+                a larger patient population is needed to test the validity of the findings
+                accurately. </relevance>
+    </annotation>
+    <!-- Citation 3 -->
+    <citation n="3" style="APA"><author n="1">Sveistrup, H.</author> (2004). <title level="a">Motor rehabilitation using virtual reality</title>. <title level="j">Journal of
+                NeuroEngineering and Rehabilitation</title>, 1(1), 10.
+            doi:10.1186/1743-0003-1-10</citation>
+    <annotation>
+      <background type="author">Sveistrup is a professor at the University of Ottawa Brain and
+                Mind Institute at the University and focuses on traumatic brain injury, innovative
+                rehabilitation techniques, and motor learning. </background>
+      <summary type="general"> The article discusses various studies and different VR
+                strategies implemented by them. These include strategies targeting the following:
+                balance and posture using a fixed bicycle, posture platform, flat VR display, and
+                video-capture systems from VividGroup’s GX or IREX; locomotion using GaitMaster2 (a
+                technology that gives the user the illusion of forward movement), and a virtual
+                environment to track walking trajectories; and upper/lower extremities using a
+                CyberGlove (motion capturing glove) and Rutgers ankle/hand systems; exercise and
+                pain tolerance with a mounted bicycle and virtual scene. </summary>
+      <relevance type="application">The article is important in that it cites technologies
+                already used in VR motor-related rehabilitation, which can be implemented in other
+                settings. </relevance>
+      <relevance type="value_stmt">Additionally, it references real cases in which the
+                technology showed promise compared to regular therapies.</relevance>
+    </annotation>
+    <!-- Citation 4 -->
+    <citation n="4" style="APA"><author n="1">Barrett, N.</author>, <author n="2">Swain,
+                I.</author>, <author n="3">Gatzidis, C.</author>, &amp; <author n="4">Mecheraoui,
+                C.</author> (2016). <title level="a">The use and effect of video game design theory
+                in the creation of game-based systems for upper limb stroke rehabilitation</title>.
+                <title level="j">Journal of Rehabilitation and Assistive Technologies
+                Engineering</title>, 3(0). doi:10.1177/2055668316643644</citation>
+    <annotation>
+      <background type="source">This article was published to the Journal of Rehabilitation
+                and Assistive Technologies Engineering this year.</background>
+      <summary type="general">Rehabilitating limb exercises often involve meaningful
+                repetitive motion to induce neural plasticity and to strengthen neural connections
+                associated with normal motor function. This piece discusses game design principles
+                vital in keeping patients motivated during these exercises. </summary>
+      <summary type="approach">Basic principles include a clear presentation of goals,
+                rewards, low learning curves, and motivational feedback. Adjusting difficulty in
+                response to improvement encourages users to continue play for mastery. Additionally,
+                use of a simple interface (muted colors, low sounds) is important <q>to avoid
+                    cognitive overload and fatigue.</q> Multiplayer introduces a social aspect that
+                promotes collaboration and increases interest. It also induces competition, which
+                engages and entertains the user. Presenting varied tasks, tailoring genres, and
+                introducing storylines helps to break the monotony of the exercises. </summary>
+      <relevance type="application"> Overall, the layout of games in therapy is important, as
+                patients are more likely to exert effort continually, thus inducing neural
+                plasticity, if they are immersed in the activity.</relevance>
+      <relevance type="value_stmt">This sets therapeutic VR practices apart from regular
+                practices.</relevance>
+    </annotation>
+    <!-- Citation 5 -->
+    <citation n="5" style="APA"><author n="1">Koenig, S.</author>, <author n="2">Ardanza,
+                A.</author>, <author n="3">Cortes, C.</author>, <author n="4">Mauro, A. D.</author>,
+            &amp; <author n="5">Lange, B.</author> (2013). <title level="a">Introduction to Low-Cost
+                Motion-Tracking for Virtual Rehabilitation</title>. <title level="j">Biosystems
+                &amp; Biorobotics Emerging Therapies in Neurorehabilitation</title>, 287-303.
+            doi:10.1007/978-3-642-38556-8_15</citation>
+    <annotation>
+      <background type="source">An article in Emerging Therapies in Neurorehabilitation
+                (Biosystems &amp; Biorobotics), a collection on the technological advances and
+                practices in neuro-rehabilitation, </background>
+      <summary type="general">this piece discusses how the Microsoft Kinect, a platform that
+                uses depth-sensing cameras, can be used in motor-related rehabilitation. Flexible
+                Action and Articulated Skeleton Toolkit (FAAST) is a middleware that maps body
+                movements from the Kinect skeleton to controls in games and VR applications. This
+                allows clinicians to map desired movements and adjust sensitivities to existing
+                games to match the patient’s needs and preferences. MiddleVR is another middleware
+                platform that can be integrated with the Kinect to integrate with custom games
+                created in Unity, an open-source game development engine. </summary>
+      <relevance type="application">Overall, this piece shows techniques on using middleware
+                with the Kinect to adjust existing games or integrate custom games for mobile
+                rehabilitation. Northeastern’s ReGame VR Lab is in the process of conducting studies
+                on children with cerebral palsy by creating tailored VR Kinect video games, so the
+                techniques in this article can be applied in a similar setting.</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

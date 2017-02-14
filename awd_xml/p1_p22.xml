@@ -1,0 +1,166 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Producing Annotated Bibliographies, a Problem-Seeking Project</title>
+    <version n="6" date="2016-07-12"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> Northeastern University advertises itself as one of the most “green” schools
+            in the country. Meanwhile, this school continues to utilize energy produced at fossil
+            fuel burning facilities. I plan to explore the major arguments against fossil fuels
+            burning energy generation facilities while providing an economical alternative. The
+            argument against burning fossil fuels for energy production is to include the unfair
+            burden of the externalities associated with the electricity we all benefit from as well
+            as the continuation of the cyclical expansion of income inequality. While providing a
+            healthy alternative, I will utilize incentives brought to light by various solar
+            developers. Northeastern University, as an institution of higher learning has a
+            responsibility to show Boston how we can help those less fortunate than us. Not only
+            will running Northeastern University, at least partially, off of solar energy save
+            money, it will help to combat the stigma that for each environmental gain, there is an
+            equal and opposite economic loss. <!--problem statement here--></problem_stmt>
+    <citation style="APA"><author> World Health Organization</author>. (2014, March 25). <title> 7 million
+                premature deaths annually linked to air pollution </title>. Retrieved from
+                <ref>http://www.who.int/mediacentre/news/releases/2014/air-pollution/en/</ref></citation>
+    <annotation>
+      <background type="author"> The World Health Organization was established in 1948 and is
+                now the leading international source of public health information.
+                <!-- can include <q> element(s) for quoted material --></background>
+      <background type="source"> This particular piece by the WHO is valuable to many as it is
+                an update to a previous, popular study on the health effects associated with air
+                pollution. </background>
+      <summary type="approach"> While this article remains broad in the exact location of its
+                studies, it uses advanced technological tools such as <q>satellite data,
+                    ground-level monitoring measurements and data on pollution emissions from key
+                    sources</q> to pinpoint the dispersion of airborne pollutants.
+                <!-- can include <q> element(s) for quoted material --></summary>
+      <summary type="general"> This update to a study conducted in 2012 on the relationship
+                between air pollutants and various diseases shows that the current situation is
+                worse than previously thought. In particular, this study outlines how the most
+                voulnerable groups to air pollution, children and the elderly, are the most exposed
+                to it due to their more stagnant lifestyle. </summary>
+      <summary type="interpretation"> While the statistics in this study generally speak for
+                themselves, it is worth pointing out that the sources of the pollutants do not
+                effect all people equally. For this reason, it is important to understand the actual
+                externality dispersion so that our portions of the burden are put into perspective. </summary>
+      <relevance type="application"> There are many application of this article. First and
+                foremost, it is to be used to set the groundwork for any argument regarding public
+                health as it related to air pollution. No argument can be formed without first
+                establishing the concrete relationship between airbourne pollutants and public
+                health issues. </relevance>
+      <relevance type="value_stmt"> The fact that this article represents an update to a study
+                should only provide more reader confidence in the World Health Organization.
+                Although the original statement made in 2012 had to be updated, the fact that they
+                are on an ever expanding search for information makes their input paramount to any
+                legitimate claim on the current state of worldwide air quality.</relevance>
+    </annotation>
+    <citation style="APA"><author>Israel, B. </author> (2012, November 16). <title> Coal plants smothering
+                communities of color, report finds </title>. <author>The Daily Climate </author>.
+            Retrieved from
+                <ref>http://www.dailyclimate.org/tdc-newsroom/2012/11/coal-power-injustice</ref></citation>
+    <annotation>
+      <background type="author"> The Daily Climate was founded in 2007 and has, to this day,
+                provided readers with a one-stop media outlet that aggregates all climate change
+                news in simple language. <!-- can include <q> element(s) for quoted material --></background>
+      <background type="source"> This article explores the communities most affected by the
+                pollutants put into the air by coal-fired power plants. </background>
+      <summary type="approach"> In this piece, The Daily Climate breaks down a report
+                conducted by the NAACP that focused on the communities surrounding all 378 coal
+                fired power plants in the United States of America in 2012.
+                <!-- can include <q> element(s) for quoted material --></summary>
+      <summary type="general"> The report focused heavily on the layout of minorities and
+                people of color within three miles of the coal-fired power plants. </summary>
+      <summary type="interpretation"> Although there was a slight correlation found between
+                minorities and vicinity to these plants, the stronger relationship can be found
+                between poverty-stricken communities and vicinity to these plants. These people who
+                are the least able to afford medical care are the most exposed to airborne health
+                dangers. </summary>
+      <relevance type="application"> Facts stated by this article must be taken into
+                consideration by anyone evaluating the demographics associated with diseases related
+                to air pollution. </relevance>
+      <relevance type="value_stmt"> Although the study evaluated by this piece was racially
+                driven, the numbers associated with it can be utilized to obtain conclusions not
+                explicitly stated by The Daily Climate. </relevance>
+    </annotation>
+    <citation style="APA"><author>Wilson, J.</author> (2015, May 31). <title> Why cities make people stupid: Air
+                pollution significantly reduces children's IQ, study finds </title><author>. Natural News. </author> Retrieved from
+                <ref>http://www.naturalnews.com/049903_air_pollution_city_life_intelligence.html</ref></citation>
+    <annotation>
+      <background type="author"> Natural News is a media outlet focused on the quality of life
+                people are achieving and how it is related to manmade changed in their
+                environment.<!-- can include <q> element(s) for quoted material --></background>
+      <background type="source"> In 2015, Natural News published this article relaying the
+                findings of a study conducted by Colombia University on the mental effects of air
+                pollution on young children. </background>
+      <summary type="approach"> This article points to several examples of decreased IQs in
+                groups that were subject to increased exposure to air pollutants during their
+                primary developmental stages of life.
+                <!-- can include <q> element(s) for quoted material --></summary>
+      <summary type="general"> Generally speaking, this article only points out that, of the
+                groups studied, there was a linear relationship found between ones exposure to air
+                pollutants in their early stages of life and their IQ later in life. There was,
+                however, no explicit proof of causation. </summary>
+      <summary type="interpretation"> The unfortunate truth that this article outlines is that
+                we outsource the externalities of energy generation so that the wealthy can utilize
+                the benefits without having to endure any of the downsides. </summary>
+      <relevance type="application"> This piece is the final building block to the argument
+                that the cycle of wealth inequality is being continued by the forced exposure to
+                pollutants that would decrease ones ability to gain the means to escape said
+                situation. </relevance>
+      <relevance type="value_stmt"> While this cannot be used to prove direct causation, it
+                will be helpful to point out the correlation between decreased developmental yields
+                in children and their levels of exposure to pollutants in the air. </relevance>
+    </annotation>
+    <citation style="APA"><author>BlueWave Capital.</author> (2016, January 21). <title>BlueWave, Partners with
+                Massachusetts’ Avidia Bank to Deliver Premium Home Solar Loan Product</title> .
+            Retrieved from <ref>http://bluewave-capital.com/?p=2742</ref></citation>
+    <annotation>
+      <background type="author"> BlueWave Capital is a solar developer based in Boston founded
+                by John DeVillars. Mr. DeVillars has been a lifelong advocate for environmental
+                protection.<!-- can include <q> element(s) for quoted material --></background>
+      <background type="source"> BlueWave published this article themselves and can therefore
+                be held accountable for all economic claims made within it. </background>
+      <summary type="approach"> This source makes clear the economic benefit behind solar
+                energy that is currently available in Massachusetts. BlueWave was sure to mention
+                    <q>the launch of its Home Solar Loan, a product that offers residents the
+                    opportunity to reduce their electricity bills by up to 50%+ with a rooftop solar
+                    installation</q>. <!-- can include <q> element(s) for quoted material --></summary>
+      <summary type="general"> By installing solar on one’s roof, one may reduce their yearly
+                electricity bill greatly. BlueWave also offers a community Solar program that allows
+                people to purchase their electricity from a large scale solar array at a discount of
+                approximately 10%. </summary>
+      <summary type="interpretation"> This article makes clear that utilizing renewable energy
+                sources does not necessarily require a large investment. In other terms, economic
+                and environmental benefits do not have an inverse correlation. </summary>
+      <relevance type="application"> By observing the economic benefits associated with solar
+                energy, the argument for local fossil fuels benefiting the American economy can be
+                disregarded. </relevance>
+      <relevance type="value_stmt"> BlueWave does not put out press releases without
+                completion of their objective. For this reason, all sources from their site can be
+                useful tools when looking for examples of economic viability in green energy.
+            </relevance>
+    </annotation>
+    <citation style="APA"><author>SunEdison </author> .(2016, March 22). <title> Why Solar Works for
+                Colleges</title> . Retrieved from
+                <ref>http://www.sunedison.com/blog/why-solar-works-colleges</ref></citation>
+    <annotation>
+      <background type="author"> SunEdison is a solar developer that has been in business
+                since the beginning of the solar boom. They have been through many ups and downs as
+                a company but their experience cannot be overstated.
+                <!-- can include <q> element(s) for quoted material --></background>
+      <background type="source"> This piece found on SunEdison’s blog takes the lessons
+                learned from past experience and takes out case-specific events to generate the
+                overarching benefits solar has to college campuses. </background>
+      <summary type="general"> SunEdison primarily focuses on the social and economic
+                incentives to adopt solar as a university. They outline how young adults are getting
+                more and more interested in renewable energy and sustainability. </summary>
+      <summary type="interpretation"> By providing a school with a means to incur increased
+                applications, SunEdison has appealed to schools capitalistic side, which is normally
+                the most difficult and important aspect of persuasion in the solar market. </summary>
+      <relevance type="application"> As far as convincing Northeastern to accept this proposed
+                change, this source should prove vital in the explanation of an all-encompassing
+                approach. </relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

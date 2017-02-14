@@ -1,0 +1,85 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 3 Cover Letter</title>
+    <version n="2" date="2016-08-22"/>
+  </docHead>
+  <!-- root element for P3 here -->
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Dear Mr. Doe,</greeting>
+    <intro_para><intent type="purpose">I am writing to apply for the electrical engineering position at
+                iRobot that was posted on Northeastern University's co-op search site.</intent><reason> I am currently a fourth-year student in electrical engineering,</reason>
+                and<proposition> I am very interested in gaining more experience with robotic
+                systems. Given my previous experience and interest in this field, I think that I
+                would be a good fit for this position.</proposition></intro_para>
+    <para_background>
+      <experience type="work">At my previous co-op with Corindus Vascular Robotics, I worked
+                in the Research and Development lab on a medical robot that assisted with
+                percutaneous coronary intervention procedures.<programs> Using C#, I wrote code for
+                    the state machine that controlled the embedded robotic system. I also programmed
+                    the robot's display and communication modules with Serious SHIPTide, and I
+                    extensively used CANCapture for debugging. To test the functionality of existing
+                    code, I also wrote unit tests with NUnit.</programs><skills> In addition to writing code, I was involved with software verification
+                    testing. This included writing test protocols to meet various system
+                    requirements and using those protocols to physically test the robot. I also
+                    developed Windows applications to assist with automated reliability testing.
+                    Throughout this work, I collaborated closely with other members of the software
+                    team to meet our goals. This included participating in daily stand-up meetings
+                    to discuss completed tasks, items in progress, and future work. While on the
+                    software team, I also collaborated across disciplines to assist the mechanical
+                    and manufacturing teams.</skills></experience>
+    </para_background>
+    <para_background>
+      <experience type="school">In addition to my work experience, I have developed many
+                technical and communication skills through my classes and labs at
+                    Northeastern.<skills> In my Electronics class, I worked with op-amps, diodes,
+                    BJTs, and MOSFETS . One of these projects was designing an audio
+                    amplifier for a microphone.</skills><programs> In my Embedded Design class, I
+                    wrote C programs in Linux to run on an embedded processor. I also used Simulink
+                    to program a Zedboard's FPGA and control a robotic arm.</programs><skills>I wrote technical reports detailing the projects in these classes, and I
+                    worked effectively with lab partners.</skills></experience>
+      <experience type="work"> While taking classes, I also worked in Northeastern's SMILE
+                lab, which focuses on machine learning and computer vision. I collaborated with a
+                team to gather images for a Kinship Recognition project. I met weekly with a PhD
+                student and other undergraduates to discuss updates on the project.</experience>
+    </para_background>
+    <closing_statements>
+      <compatability>I think that with my strong interpersonal skills and past experience, I
+                would integrate well within iRobot's innovative environment.</compatability>
+      <next_step>I would be excited to meet with you and discuss the position in more detail
+                soon.</next_step>
+      <acknowledgment> Thank you for your consideration.</acknowledgment>
+    </closing_statements>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+  <!-- Writer' Memo -->
+  <!-- I think that I'm far in the process of writing a cover letter. My rheterorical situation is responding to a job position. 
+         I think that my experience is detailed and helps expand what's listed on my resume. Sometimes it can be difficult to condense all of the
+         work experience into concise paragraphs. I would like the reviewer to look at the "school experience" and "compatibility."-->
+</DOC>

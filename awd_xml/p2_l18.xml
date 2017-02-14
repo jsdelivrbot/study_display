@@ -1,0 +1,59 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Title of Assignment</title>
+    <version n="1" date="2016-08-01"/>
+  </docHead>
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Hello Mathworks,</greeting>
+    <intro_para>
+      <intent type="Purpose">I am interested in the C++ Software Engineer job posted on
+                LinkedIn.</intent>
+      <reason><!-- Optional --> I have enjoyed my work with C++ in the past and I think
+                Mathworks provides valuable tools for numerous technical professions.</reason>
+      <proposition>I look forward to solving interesting problems in a high paced
+                enviroment.</proposition>
+    </intro_para>
+    <para_background>
+      <!-- One or More -->
+      <experience type="work">I bring previous experience with <programs>C++ 11</programs>
+                from my work at RKF Engineering. I used C++ while contributing to their satellite
+                communication simulations. There I became familiar with
+                    <skills>multithreading</skills> techniques. I also was one of the main testers
+                in the company so I both have experience in <skills>debugging</skills> and reporting
+                bugs.</experience>
+      <experience type="school">I have used <programs>MATLAB</programs> before in my classes,
+                so I appreciate the work Mathworks does. Your Simulink software in particular has
+                been helpful: one of my more memorable school projects used in in the
+                    <accomplishments>controls for a robotic arm</accomplishments>.</experience>
+    </para_background>
+    <para_closing>
+      <compatability>I think I will fit in well with Mathworks, and</compatability>
+      <next_step>I hope we can further discuss what I can do for Mathworks.</next_step>
+    </para_closing>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

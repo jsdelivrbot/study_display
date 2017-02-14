@@ -1,0 +1,103 @@
+<?xml-model href="../schema_1111.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../testing_format.xsl"?><DOC>
+  <essay>
+    <docHead>
+      <title>Volkswagen Beetle -The People's Car</title>
+      <author>Name
+            <!--deidentified element--></author>
+      <date>October 2016</date>
+    </docHead>
+    <body>
+      <intro>
+        <p>The Volkswagen Beetle is a two door production car that was made from 1938 to
+                    2003. With approximately 20 million produced, the beetle is the longest-running
+                    and most-manufactured car of a single platform ever made. Under Adolf Hitler’s
+                    orders, the car was designed by Ferdinand Porsche, who would later create the
+                    Porsche brand of automobiles a few years later. <argument type="main">Considered
+                        by many to be the most influential car of our time, this essay attempts to
+                        analyze the very flexible genres of historical, cultural and economical
+                        changes that made the Volkswagen Beetle achieve its status of “the people’s
+                        car”. </argument></p>
+      </intro>
+      <bodyPara>Historically, this car is important not because of its age or its popularity,
+                but because of the purpose it was created for. Picture Germany in early 1930s, with
+                its crippled economy after the great depression. Germany was devastated after the
+                First World War, and the great depression in 1930 was the last nail in the coffin.
+                Unemployment was high, and the economy was in shambles. This was the scene for the
+                Beetle. Amidst political turmoil, economic collapse and war, the car was conceived.
+                The political situation paved the way for creating a genre of automobiles that was
+                more accessible to the people. It is important to note that Hitler did not have
+                complete power in the early 1930s, so he wanted to prove to the German people that
+                he wanted to make Germany great again by revamping the economy. So in April 1934,
+                Adolf Hitler gave the order to Ferdinand Porsche to develop a ‘Volkswagen’, which
+                literally meant peoples car. However, this was more of a political move for Hitler
+                to boost the German economy, so that he could create millions of jobs in the
+                manufacturing industry. He intended to reverse Germany’s poor economy by creating
+                infrastructure projects which would require a lot of labor (hence jobs), machinery
+                and resources. And for Hitler, his plan worked.<argument type="main">He used Kairos
+                    to perfectly time his project. By definition, Kairos <citation>“a time when
+                        conditions are right for the accomplishment of a crucial action, the
+                        opportune and decisive moment”</citation> (Merriam-Webster dictionary).
+                    Hitler analyzed the scene and realized that if he proposed the idea at a
+                    different time the people would not have supported him. The situation and scene
+                    were ideal for the car to be successful.</argument> Hitler saw the opportunity
+                and timing, and decided that such a project would work wonders. Post war Germans had
+                little money to spend on cars, and hence many could afford the affordable Beetle
+                (costing 900 Marks). The car played a crucial role in the economic setting and sold
+                in the millions that gave Germany the economic stability it needed, drastically
+                improving the economic scene and situation for the country. These results
+                corresponded with the situation the preceded it. In this complex political mess, the
+                idea of reaching out to the people with an affordable car seemed to be the most
+                appropriate response. </bodyPara>
+      <bodyPara>Perhaps a different perspective would be the cultural impact in the
+                international setting of the Beetle, focusing on its impact in the US. To analyze
+                the interaction of genres (uptake), it is important to represent the context and
+                tone of the era. In the US, the Beetle was famously associated with the hippie
+                movement and surf culture. Because of its unique design and low price, it was truly
+                a car for the masses. The media often portrayed the car in a good light, and the
+                lemon advertisement was a fitting representation of the setting. The advertisement
+                talks about the stringent quality checks in Volkswagen, and then says <citation>“we
+                    pick the lemons, you get the plums.”</citation> This is an important quote
+                because it presents an interesting rhetorical situation. In the 60s, people were
+                interested in thinking big. <argument type="supporting ">The American dream in the
+                    1960s setting led people to believe that bigger is better, so people strived for
+                    big houses and big, ostentatious cars like Cadillacs. Volkswagen intended to
+                    compete with that mindset with a different tone. Volkswagen wanted people to
+                    think small, to think Beetle. The lemon advertisement reflected the practical
+                    and affordable persona that the Beetle represented.</argument> However, it was
+                also a social statement, for those who could afford it in third world nations. For example, in
+                India the Beetle was seen as a luxury vehicle, but in the U.S. it was seen as a
+                symbol of German practicality over American decadence. This presented another
+                interesting rhetorical situation. In the Indian context the car was seen as a
+                representation of wealth, but in the global market it was seen as a cultural and
+                artistic icon. It reflected the situation of the time. It featured in movies,
+                paintings, music and other forms of media. Cars were spray painted with psychedelic
+                designs, which created a new subgenre of street art. Spray painting was seen as a
+                rebellious symbol for the hippies, and the car played a vital role in the genre of
+                cultural expression. For example, used Beetles and Kombis (a VW Van) were
+                transformed. The bland black and white colours were repainted with bold and bright
+                colours, with psychedelic designs. Some cars even had slogans and murals. Hippies
+                were known for their anti Vietnam War campagin, and they painted anti war messages
+                on the car. Their interiors were upgraded too, with funky designs and colours.</bodyPara>
+      <concl>
+        <p>In conclusion, by analyzing the interaction of genres (historical, economic and
+                    cultural) we can understand that the Volkswagen Beetle is truly an iconic car
+                    that has affected the lives of many people. Its birth from a political situation
+                    gave rise to multiple genres that in many ways shaped the way we look at motor
+                    cars today. In a nutshell, the Beetle's incredible flexibility gave rise to
+                    interesting rhetorical situations, and created the genres analysed in this
+                    essay. Born from Hitler’s political intentions, the car consistently transformed
+                    its persona starting from an affordable runabout, to a blank canvas adored by
+                    artists and enthusiasts. with ongoing situational changes and redefined the
+                    genre of automotive production.</p>
+      </concl>
+    </body>
+    <docFoot>
+      <title>Works Cited</title>
+      <listBibl>
+        <bibl>"A Brief History of the Beetle." - VW Type 1. N.p., n.d. Web. 9 Oct. 2016. </bibl>
+        <bibl>"Ad Analysis: Volkswagen Think Small (Major Essay 2)." Connorjv2. Naydan, 05
+                    Dec. 2013. Web. 9 Oct. 2016. </bibl>
+      </listBibl>
+    </docFoot>
+  </essay>
+</DOC>

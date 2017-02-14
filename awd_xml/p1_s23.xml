@@ -1,0 +1,161 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 1: Annotated Bibliography</title>
+    <version n="1" date="2016-07-03"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> Mechanical engineers are involved in nearly all industries that require any
+            kind of problem solving; this ranges anywhere from infrastructure and public works, to
+            pharmaceuticals and product development. There are many engineering companies in Boston
+            in particular that are addressing issues of energy and sustainability. The problem that
+            particularly concerns me is city lighting. Companies like Philips Color Kinetics have
+            taken steps to make Boston more beautiful with the implementation of colorful LEDs in
+            the Prudential Tower and the Zakim Bridge; and even Northeastern has made steps to go
+            greener by installing energy efficient lights from Digital Lumens in many of their
+            campus buildings. Both these companies hire many mechanical engineers to develop
+            efficient LEDs that will last several times longer than a standard incandescent light,
+            will be resilient in bad weather, and will be much easier to install, monitor, and
+            replace. Mechanical engineers are partically
+            well prepared for this kind of work because of their understanding of a range of
+            engineering disciplines and general expertise in material properties and designing for
+            manufacturability. and Right now, many of the less commercialized parts of Boston are
+            still lit by old high pressure sodium lamps(?) which are not nearly as energy efficient, are much
+            less bright, and are more apt to burn out and leave sections of road in the dark. In a
+            city full of families and college students, and with a public transportation system that
+            leaves much to be desired, street lighting can be major issue. Having more street lights
+            that are strategically placed in residential and high traffic areas would increase the
+            communities sense of security and pride in their city.</problem_stmt>
+    <citation style="APA"><author n="1">Ylinen, A.</author>, <author>Tahkamo, L.</author>, <author>Puolakka,
+                M.</author>, &amp; <author>Halonen, L.</author> (2011, July). <title>Road lighting
+                quality, energy efficiency, and mesopic design - LED street lighting case
+                study.</title> General OneFile. Retrieved July 11, 2016. </citation>
+    <annotation>
+      <background type="author"> This article written by doctoral candidates from Aalto
+                University for publication through the Illuminating Engineering Society discusses
+                the practicalities of transitioning to LED lighting for city street lights.
+                <!-- can include <q> element(s) for quoted material --></background>
+      <summary type="approach"> The approach to the discussion of LEDs in this journal is very
+                subjective. It discusses mainly the affect that LEDs would have on visibility for
+                drivers and pedestrians alike at night. The effectiveness and energy conscious
+                benefits of LEDs is undeniable, however Ylinen discusses the capital investments
+                that may dissuade a city from transitioning to new street lights. This article goes
+                into cost analysis, installation obstacles, and health impacts of LED street lights.
+                <!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application"> This article is helpful to anyone interested in gaining
+                an in-depth and scientific understanding of how LEDs work and what exactly makes
+                them so much better to look at. It also gives a relatively concise description of
+                the financial benefits a city could reap from installing LEDs. The authors of this
+                article remained impartial and factual. </relevance>
+    </annotation>
+    <citation style="APA"><author>Welsh, B.</author> (2008). <title>Effects of improved street
+                lighting on crime.</title> Campbell Systematic Reviews. doi:10.4073/csr.2008.13 </citation>
+    <annotation>
+      <background type="author"> Authors Brandon Welsh and David Farrington of The Campbell
+                Collaboration report on the collective findings of dozens of bibliographic
+                databases, literature review, and street lighting studies conducted by leading
+                researchers worldwide. They discuss the rigorous selection process they implemented
+                in selecting data worth reporting on and openly disclose their methodological
+                assessment of each study they included.<!-- can include <q> element(s) for quoted material --></background>
+      <summary type="general"> Welsh and Farrington explore thirteen case studies that
+                considered crime rates and safety as relating to street lighting. Their conclusion
+                states that improved lighting in cities has a significant impact in making cities
+                safer both during the day and at night. However, cities will be unlikely to make
+                efforts to add lighting to roads unless there are other incentives, such as traffic
+                safety. <!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application">This source is beneficial for anyone exploring a more
+                global perspective on the connection between street lighting and decreased crime
+                rates because of the broad range of case studies explored. It is also a good source
+                of examples because of the details Welsh and Farrington included about each of their
+                case studies. This journal article is an effective summary aimed for public
+                officials to gain a concise and inarguable understanding of the effects of street
+                lights on public safety.</relevance>
+    </annotation>
+    <citation style="APA"><author>Samuels, R.</author> (1995). <title>Defensible Design and
+                Management- University Campuses Final Report.</title> Department of
+            Employment, Education and Training, Commonwealth of Australia. Retrieved July 11, 2016. </citation>
+    <annotation>
+      <background type="source"> Samuels conducted an investigation on factors contributing to
+                safety on university campuses for the department of Employment, Education and
+                Training for the Commonwealth of Australia in order to understand what steps could
+                be taken to increase the feelings of security of their students.<!-- can include <q> element(s) for quoted material --></background>
+      <summary type="approach"> Although lighting is only one factor that Samuels says
+                contributes to student safety on campus, he expands on it quite heavily. Samuels
+                takes into account the general feeling of safety and security in pedestrians since
+                college campuses are so heavily travelled by walkers, not vehicles. He states, <q>“
+                    The circumstances contributing most to feelings of insecurity, overall, were
+                    walking to colleges and poor lighting”</q> (4). Samuels investigates four
+                colleges in Australia where he surveys students and listens to their concerns,
+                adding a human aspect into this study and accentuating how relevant abundant outdoor
+                lighting is to students.<!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application">Samuels doesn’t actively explore better ways of lighting
+                public areas, but instead focuses on the importance of adding lighting to public
+                spaces. He highlights the characteristics of areas that cause people to be concerned
+                at night. This argument is particularly relevant to students as many of the points
+                Samuels makes are very relatable to Northeastern’s campus.</relevance>
+    </annotation>
+    <citation style="APA"><author>Tucker, L. E.</author> (2003, March). <title>Safer Stops for
+                Vulnerable Customers.</title> National Center For Transit Research (NCTR). Retrieved
+            July 11, 2016. </citation>
+    <annotation>
+      <background type="source"> Lisa Tucker, a research associate for the National Center for
+                Transit Research (NCTR) wrote this text for the U.S. Department of Transportation in
+                order to express the NCTR’s concerns about the lack of lighting and safety
+                precautions at public bus stops.
+                <!-- can include <q> element(s) for quoted material --></background>
+      <summary type="general"> Tucker takes a professional approach discussing the feelings of
+                insecurity expressed by public transit patrons because of the lack of upkeep of bus
+                stops. The biggest complaint of these patrons is poor lighting at stops. Tucker
+                focuses mainly on “vulnerable” patrons, namely women, children, seniors, and
+                disabled people. She notes that most cases of violence involved in public
+                transportation do not occur in busses or trains, but on peoples’ commutes to and
+                from these modes of public transportation. Tucker bases her findings on data
+                collected by several different national surveys and speaks on the similarities of
+                their findings. By posing older women and other less defensible patrons as a victim
+                to their feelings of danger, Tucker frames improvements to transit stops as an
+                investment in the quality of life of transit users.
+                <!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application"> This report poses an interesting focus on the importance
+                of lighting public areas. Boston has a particularly high number of crimes that occur
+                in MBTA stations and bus stops. These crime rates are even higher in neighborhoods
+                that are home to low income families purely because of peoples’ greater dependency
+                on the MBTA in these neighborhoods. The article mentions how many vulnerable patrons
+                opt for taking buses rather than walking to their destinations because it is the
+                lesser of two dangerous situations at night; the same can likely be said about
+                Boston citizens who are commuting to and from outer neighborhoods like Roxbury
+                Crossing, Jamaica Plain, and Dorchester (which is coincidentally where many students
+                choose to live as well).</relevance>
+    </annotation>
+    <citation style="APA"><author>Gil-De-Castro, A.</author>, <author>Moreno-Munoz, A.</author>,
+                <author>Larsson, A.</author>, <author>Rosa, J. D.</author>, &amp; <author>Bollen,
+                M.</author> (2012, May). <title>LED street lighting: A power quality comparison
+                among street light technologies.</title> Lighting Research and Technology, 45(6),
+            710-728. doi:10.1177/1477153512450866 </citation>
+    <annotation>
+      <background type="author"> This is a technical paper published by the Society of Light
+                and Lighting, and composed by a team of PhDs in the department of computer
+                architecture, and electronics and electronic technology at the University of
+                Cordoba. <!-- can include <q> element(s) for quoted material --></background>
+      <summary type="approach"> Naturally, this is a very technical heavy reading with a very
+                methodical approach describing their research. The authors make good use of tables
+                and visual representations of their findings, which is helpful in understanding the
+                text accompanying their work. This article describes the ‘how’ involved in upgrading
+                street lighting. Like most, they expand upon LED lights in particular, and consider
+                LEDs the only option for retro fitting street lights. However to give credibility to
+                their study, they also engage the reader in the idea of electromagnetic and
+                electronic ballast assisted HPS lamps as a possible adaptation that could be made to
+                classic city street lights. The also experimented with an installed LED street lamp,
+                studying the current, voltage, wattage, and harmonics. This in order to understand
+                how a LED lamp would function as a street light and what possible shortcomings it
+                may have. They also reference other studies similar to compare to their own
+                conclusions. <!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application"> This is a science heavy research paper that discusses
+                important points involved in the viability of LEDs. It communicates on a technical
+                level exactly why LEDs can be challenging to implement and what exactly makes
+                transitioning to LEDs city wide such a high capital expense. However it is presents
+                an airtight argument for LEDs over the existing HPS lamps. </relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

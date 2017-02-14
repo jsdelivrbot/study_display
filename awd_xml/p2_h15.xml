@@ -1,0 +1,201 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>A* Pathfinding Algorithm</title>
+    <version n="3" date="2016-08-09"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <blog_post>
+    <!-- Table of Contents -->
+    <section_header>Table of Contents</section_header>
+    <list type="roadmap">
+      <section_header>Chapter 1: Introduction</section_header>
+      <pb/>
+      <list type="roadmap"> -<section_header>A to B</section_header><pb/> -<section_header>Connect The Dots: Graphs</section_header><pb/></list>
+      <section_header>Chapter 2: Meet the Algorithms</section_header>
+      <pb/>
+      <list type="roadmap"> -<section_header>Bro #1: Dijkstra’s Algorithm</section_header><pb/> -<section_header>Bro #2: Best-First Search Algorithm</section_header><pb/> -<section_header>A* Is Born</section_header><pb/></list>
+      <section_header>Chapter 3: More on A*</section_header>
+      <pb/>
+      <list type="roadmap"> -<section_header>Weighted Tiles</section_header><pb/> -<section_header>Suboptimal Path</section_header><pb/> -<section_header>Comparisons</section_header><pb/></list>
+      <section_header>End: Expanding Horizons</section_header>
+      <pb/>
+    </list>
+    <hr/>
+    <!-- CHAPTER 1 -->
+    <background>
+      <section_header>Chapter 1: Introduction</section_header>
+      <list type="roadmap"> -<section_header>A to B</section_header><pb/> -<section_header>Connect The Dots: Graphs</section_header></list>
+      <hr/>
+      <section_header>A to B</section_header>
+      <question>Okay, so I have this dilemma: How do I get from A to B as quickly as
+                possible?</question>
+      <technical_principle n="1"><visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_00_map.png"/> Hmmm, maybe we can just guess and check like this? <visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_01_map_with_paths.png"/> That’s nice and dandy and all, but we really shouldn’t depend on luck for these
+                things. What if we make this map a little more complicated? <visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_02_complex_map.png"/>
+                Riiight… We need a more procedural way to do this. That’s where these guys come in
+                handy. <visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_03_algorithms.png"/> They’re what you call algorithms, or a set of well-defined rules in sequence.
+                They’ll show you how to get from A to B for any map (if there is a path). Dijkstra’s
+                is guaranteed to give you the shortest path, but he spends a lot of time exploring
+                the map. Best-First is speedy compared to Dijkstra’s because he narrows his search
+                to areas near the goal. However, because his search is narrower, he can sometimes
+                give a suboptimal path. A* is the star of this post. He’s a combo of the two; he
+                notes how far he is from the start like Dijkstra’s but also focuses on the goal like
+                Best-First. Anyway, before you really get to know them, you need to understand some
+                basics first. So! That leads us into graphs! </technical_principle>
+    </background>
+    <answer><!-- Graphs --><section_header>Connect The Dots: Graphs</section_header><technical_principle n="2"> A graph is a collection of nodes or vertices, connected by
+                edges. A square has 4 nodes and 4 edges: <visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_04_square.png"/><analogy> The nodes represent some sort of data, so we don’t need to depict them as
+                    points like above. Think of constellations! <visual type="comic" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_05_constellations.png">Modified
+                        https://www.johndenugent.com/images/big-and-little-dippers.jpg</visual></analogy> Ah, but how does that relate to our problem? Well, let’s look at our map
+                    again.<visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_00_map.png"/> In this case, the nodes represent our terrain tiles, and the edges represent the
+                connection between adjacent tiles (directly horizontal/vertical or diagonal).
+                Throughout, I will use node and tile interchangeably, leaning towards node. The
+                graph representing our tile map is shown below. <visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_06_map_to_graph.png"/> To further clarify, let’s look at tile A. There are 8 adjacent tiles connected to
+                A directly. We call these tiles “neighbors” of A. <visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_07_map_neighbors.png"/></technical_principle> Got it? Great! We can finally move on to our three algo brothers.
+                <visual type="drawing" url="https://raw.githubusercontent.com/huynhta1/awd_p2_final/master/1_intro/1_08_astar_eager.png"/> Shhh, shhh, A*, it’s not your time to shine yet. We need to look at your bros first. <!-- CHAPTER 2 --><hr/><section_header>Chapter 2: Meet the Algorithms</section_header><list type="roadmap"> -<section_header>Bro #1: Dijkstra’s Algorithm</section_header><pb/> -<section_header>Bro #2: Best-First Search Algorithm</section_header><pb/> -<section_header>A* Is Born</section_header></list><hr/><!-- Dijkstra's Algorithm --><specific_topic n="1"><section_header>Bro #1: Dijkstra’s Algorithm</section_header><analogy>Dijkstra's Algorithm is like a dog who's slow but very thorough in his
+                    search.</analogy><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_01_dijkstras_dog.png?raw=true"/> It finds the shortest path from a source node to all other nodes. Each of our
+                nodes holds some data. The main pieces of data they hold are (1) the tentative cost
+                from the start A to the node and (2) the parent of the node (i.e. the previous node
+                that this node came from). Notice how I say “cost” rather than distance. In a graph,
+                we can give our edges any value; it doesn’t necessarily have to be distance between
+                nodes. Think of if we wanted to add a body of water to the map: <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_02_map_water.png?raw=true"/> If we wanted to mark the body of water as more difficult to cross than the
+                grasslands, we can make the cost to cross it greater than that of grass. But for
+                now, we’ll ignore any extra terrain until we meet A* for simplicity. <pb/> Now, if
+                we haven’t reached the nodes yet, how do we know that information? Ah, that’s a good
+                point. Really, we don’t know, so we will initialize all of the nodes, except A, with
+                an infinite distance and say that they have no parent. Giving them an infinite
+                distance may seem weird, but this ensures that we update it the first time we find a
+                path to it (since the cost we find to it will definitely be less than infinity).
+                    <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_03_map_no_parent.png?raw=true"/> We also have a list, initially empty, that tracks the nodes we visited. To begin
+                the algorithm, we place A on this visited list and then repeat the following steps
+                until we run out of nodes to visit. <list type="generic"> (1) Find an unvisited node
+                    closest to our current node <pb/> (2) Go to that node and mark it as visited.
+                    This means that we have found the shortest path from A to the current node.
+                    Thus, if the new node is our goal, we can stop the algorithm. The steps
+                    following it are to ensure that we also get the shortest path from A to its
+                    neighbors. But really, if we reached the end, we don’t care about them anymore.
+                    But if this wasn’t the goal, go on to 3) <pb/> (3) Look at all of the neighbors
+                    of this new node. If the cost of the path going from A to the neighbor in which
+                    we pass through the current node is shorter than any previous distance to the
+                    neighbor, update it with the shorter path (cost and parent). Another way to look
+                    at this is that the cost from A to the particular neighbor we’re looking at is
+                    the cost from A to the current tile + the cost of the current tile to the
+                    particular neighbor. <pb/></list> Eventually, we will run out of nodes to inspect and end up with a list of
+                the shortest paths from A to all other nodes. If we find that the cost from A to a
+                particular node is still infinity, then there is no path to between the two.
+                Alright, that may have been a little confusing, so let me walk you through the
+                algorithm on our map. We place A on our visited list and inspect its neighbors,
+                marking the cost of each neighbor to A. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_04_dijkstra_01.png?raw=true"/> Additionally, we mark A as the parent of those nodes. We do this by drawing
+                arrows from those neighbors to A. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_05_initial_parent.png?raw=true"/> Next, we go to the lowest cost neighbor. In this case, we have four of those
+                (each with a value of 10)! How do we choose? Well, for Dijkstra’s, it doesn’t
+                matter. Implementation-wise, we will probably go to the last node we discovered.
+                What this may affect is which shortest path we end up taking if there are multiple
+                shortest paths. Then, we inspect the neighbors of this new node. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_06_dijkstra_02.png?raw=true"/> Next, we mark place the node on the visited list and go on to inspect the other
+                three lowest cost neighbors of A. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_07_dijkstra_03.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_08_dijkstra_04.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_09_dijkstra_05.png?raw=true"/> Nice! Covered all the 10’s. Now, you continue. What nodes haven’t been visited
+                and have the lowest cost to A now? The diagonal nodes, so visit them and inspect
+                their neighbors to see if going through them gives their neighbors a lower cost path
+                to A (in this case it doesn’t). <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_10_dijkstra_06.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_11_dijkstra_07.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_12_dijkstra_08.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_13_dijkstra_09.png?raw=true"/> We’re done with the 14 cost ones now, so we keep going. Eventually we’ll have
+                something like this: <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_14_dijkstra_end.png?raw=true"/> Tile B is the neighbor of our current node, so we can stop the algorithm and
+                backtrack through the parents we tracked. The shortest path from B to A is
+                highlighted red below (reverse it to get the path from A to B). If you trace the
+                arrows from the other tiles, you’ll also notice that they are shortest paths from
+                themselves to A. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_15_dijkstra_path_parent.png?raw=true"/> And that’s it! If you got all of that, you’ve almost got A* down too, but before
+                we go there, let’s look at Bro #2 to really get the full picture. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/2_dijkstra/2_16_astar_upset.png?raw=true"/></specific_topic><pb/><!-- Best-First Search Algorithm --><specific_topic n="2"><section_header>Bro #2: Best-First Search Algorithm</section_header><analogy>Best-First Search is like a speedy bunny who is so focuses on the end goal
+                    that he ends up ignoring potentially better paths.</analogy><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_01_bestfirst_bunny.png?raw=true"/> Unlike Dijkstra’s, this algorithm uses a heuristic to estimate the shortest path
+                between A and B (recall that Dijkstra’s is from A to any other node). A heuristic is
+                a method where we use an educated “guess” to lead us to the solution. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_02_guessing_bad.png?raw=true"/> What you did before was randomly guessing. This is using an educated guess as a
+                guide. <analogy>Think of a detective who’s searching for a criminal. If she doesn’t
+                    have anything to go off, she has to visit every district. But if she gets a good
+                    clue that the criminal is around District A, she can direct her investigation
+                    there. We can think of the heuristic as a tipoff.</analogy><pb/> In Best-First, the heuristic is the estimated cost from the current node to
+                the end node B. <important_idea n="1"> There are various ways to get the heuristic
+                    value, but the most common way is with the Manhattan method. This method counts
+                    the distance traversed only horizontally and vertically to get to the end,
+                    ignoring any diagonal movement and obstacles. This distance, also called the
+                    taxicab distance, is named after the New York borough Manhattan, which is known
+                    for its grid-like streets. <visual type="comic" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_02_taxi.png?raw=true">Modified
+                        http://img07.deviantart.net/2fd8/i/2011/181/d/a/ny_taxi_by_crunklen-d3kjtt0.jpg</visual></important_idea> Best-First trades accuracy for speed. If we have no obstacles, BFS
+                works well. Below we go through a simple run-through of Best-First. The numbers on
+                the tiles are the Manhattan distance from those nodes to B. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_03_best_nowall_1.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_04_best_nowall_2.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_05_best_nowall_3.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_06_best_nowall_4.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_07_best_nowall_path.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_08_punk.png?raw=true"/> But if we end up introducing a wall, the path will resemble this: <visual type="image" url="https://github.com/huynhta1/awd_p2_final/blob/master/3_bestfirst/3_09_bestfirst_wall_end.png?raw=true"/> That’s because Best-First only thinks of the distance to the end and fails to
+                update the path prior to the wall. In this case, if the wrong lowest cost is chosen,
+                it will keep going and disregard early nodes even if they turn out to be more
+                optimal later. Remember choosing between lowest cost nodes didn’t matter for
+                Dijkstra’s because he goes back to check, but it matters for Best-First because
+                he’ll keep going towards nodes closer to the end. </specific_topic> Anyway, that’s
+            all you really need to know, so let’s finally meet A*! <pb/><!-- A* Is Born --><explanation n="1"><section_header>A* Is Born</section_header><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_01_astar_greeting.png?raw=true"/> A* is a fusion of Dijkstra’s and Best-First. <visual type="comic" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_02_fusion.png?raw=true"/><pb/> He takes into account both the cost from the start to the current node and the
+                cost from the current node to the end. <pb/> F = G + H <pb/> Where <pb/> G = cost
+                from the start to the current node<pb/> H = estimated cost from the current node to
+                the end <pb/> G will be calculated the same way as in Dijkstra’s while H will be
+                calculated the same way as in Best-First with the Manhattan distance. Remember, we
+                say H, the heuristic value, is an estimate because there are many things that it
+                doesn’t take into account, like obstacles. We’ll go back to the steps outlined for
+                Dijkstra’s, except we will update it so that we inspect the nodes with the lowest F
+                cost first. <pb/> To begin the algorithm, we place A on the visited list and then
+                repeat the following steps until we run out of nodes to visit: <list type="generic">
+                    (1) Find an unvisited node with the lowest F cost.<pb/> (2) Go to that node and
+                    mark it as visited. If the new node is our goal, stop the algorithm; else, go on
+                    to 3)<pb/> (3) Look at all of the neighbors of this new node. If the G cost of
+                    the path going from A to the neighbor in which we pass through the current node
+                    is shorter than any previous distance to the neighbor, update it with the
+                    shorter path (cost and parent).<pb/></list> Alright, let’s go through our map now. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_03_astar_1.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_04_astar_2.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_05_astar_3.png?raw=true"/> Now, observe below. When we make the top 50 value node our current node, we
+                update the neighbor above it. That’s because the path from A to that node of 70 is
+                shorter than the path from A to that node if we were to come from the 44-value node.
+                    <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_06_astar_4.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_07_astar_5.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_08_astar_6.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_09_astar_7.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/4_astar/4_10_astar_path_parent.png?raw=true"/> Nice looking path! Great job A*! Let’s dig a bit deeper though. </explanation><!-- CHAPTER 3: More on A* --><hr/><section_header>Chapter 3: More on A*</section_header><list type="roadmap"> -<section_header>Weighted Tiles</section_header><pb/> -<section_header>Suboptimal Path</section_header><pb/> -<section_header>Comparisons</section_header></list><hr/><!-- Weighted Tiles --><important_idea n="2"><section_header>Weighted Tiles</section_header> Let’s say we decide to add a river
+                to our map. We can cross it, but it takes a lot of effort to, so we decide to add an
+                extra value of 30 on top of the normal 10 for going horizontal or 14 to go diagonal.
+                This will make the algorithm skirt around the river to find a less costly way to get
+                to B. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_01_astar_river_1.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_02_astar_river_2.png?raw=true"/><visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_03_astar_river_path.png?raw=true"/></important_idea><!-- Suboptimal Path --><important_idea n="3"><section_header>Suboptimal Path</section_header> Hey, A*! You’re doing so well! What
+                if we add to this river? Let’s go back to where it’ll change. At some point, we’ll
+                get here: <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_04_astar_bad_1.png?raw=true"/> And after we run through completely, we’ll get this: <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_05_astar_bad_2.png?raw=true"/> That gives us this path: <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_06_astar_bad_end.png?raw=true"/> Pretty nice! I think tha- WAIT A MINUTE. THAT’S A SUBOPTIMAL PATH. The optimal
+                one is this: <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_07_astar_bad_end_act.png?raw=true"/> Alright, back up. What just happened? Well, A* is taking after his brother
+                First-Best. At some point we have to choose a lowest cost node (refer back to the
+                image above where the lowest cost node of value 78 is chosen). The estimates place
+                those nodes on the same value, but if we look closely, we can see that the G value
+                of the top value 78 node should be a bit less (because we can get to B through
+                diagonals). This may happen depending on how estimates and lowest cost nodes are
+                chosen during implementation, so just be aware! <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_08_awful_influence.png?raw=true"/></important_idea><!-- Comparison --><important_idea n="4"><pb/><section_header>Comparison</section_header> Besides that occasional mishap,
+                which can be fixed with different implementations, A* is a good combination of
+                Dijkstra’s and Best-First. Let’s do a comparison of the algorithms. Below is a
+                run-through of the three algorithms on a large map. It’s important to note that
+                diagonals are not counted as neighbors here, so we can only move directly
+                horizontally or vertically. Dijkstra’s spends more time exploring the map and gets
+                the correct shortest path. Meanwhile, Best-First, doesn’t spend as much time
+                exploring but also doesn’t find the shortest path. Instead, he bumps into the wall
+                before correcting himself. Lastly, A* spends only a bit of time exploring and finds
+                the correct path. <visual type="drawing" url="https://github.com/huynhta1/awd_p2_final/blob/master/5_more/5_09_algo_comparison.png?raw=true">http://www.redblobgames.com/pathfinding/a-star/introduction.html</visual></important_idea><!-- Expanding Horizons --><conclusion><hr/><section_header>End: Expanding Horizons</section_header><hr/> There’s quite a
+                lot you can do with pathfinding! In this post, I showed you three pathfinding
+                algorithms: Dijkstra’s, Best-First, and A*. We focused on A* because it combines the
+                efficiency of Dijkstra’s with the speed of Best-First. A* is the most popular
+                pathfinding algorithm in game development. If you’re interested in learning more,
+                start checking out how weights can affect your units’ movements. For example, you
+                can add them to particular terrain tiles like we did above with the river or
+                subtract them from tiles acting as stairs/teleporters, which take you closer to the
+                target. Also, your tiles don’t have to be squares. You can use hexagonal shapes, and
+                the algorithms still work the same. That actually makes the math easier since the
+                distance to each neighbor is equal. Additionally, it’ll be good to consider movement
+                restrictions, such as those dealing with cutting corners or units that takes up more than one tile space. I
+                recommend checking out the sources below too. RedBlobGames provides great interactive visuals on the
+                algorithms. The author doesn’t use diagonal neighbors in his examples (so only a max
+                of four neighbors for a node), but don’t be confused! The algorithms work the same
+                way! <pb/> That’s all for now! Happy pathfinding! </conclusion></answer>
+    <sources>
+      <hr/>
+      <section_header>Sources</section_header>
+      <hr/>
+      <citation style="APA" n="1"><author n="1">Patrick Lester</author> (2005, Jul 18) <title level="a">A* Pathfinding
+                    for Beginners</title>. Retrieved fromw
+                http://www.policyalmanac.org/games/aStarTutorial.htm. </citation>
+      <citation style="APA" n="2"><author n="1">Amit Patel</author> (2016, Jun). <title level="a">Introduction to
+                    A*</title>. Retrieved from
+                http://www.redblobgames.com/pathfinding/a-star/introduction.html. </citation>
+      <citation style="APA" n="3"><author n="1">Kevin Thompson</author> (n.d.). <title level="a">Taxicab
+                    Geometry</title>. Retrieved from
+                http://taxicabgeometry.altervista.org/general/definitions.html. </citation>
+      <citation style="APA" n="4"><author n="1">hakimio</author> (2012, Feb 23). <title level="a">Hexagonal Grid:
+                    Path-finding Using A* Algorithm</title>. Retrieved from
+                https://tbswithunity3d.wordpress.com/2012/02/23/hexagonal-grid-path-finding-using-a-algorithm/
+            </citation>
+    </sources>
+  </blog_post>
+</DOC>

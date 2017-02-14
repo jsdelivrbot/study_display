@@ -1,0 +1,142 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Mass Ave. Bike Lane Improvement</title>
+    <version n="5" date="2016-08-22"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <pub_init_proposal>
+    <cover_page>
+      <title>Mass Ave. Bike Lane Improvement</title>
+      <author>
+        <!--deidentified element-->
+      </author>
+      <submit_date/>
+      <audience> To The Commonwealth of Massachusetts and Massachusetts Department of
+                Transportation </audience>
+    </cover_page>
+    <tbl_cont>
+      <section n="1">Introduction</section>
+      <section n="2">Background</section>
+      <section n="3">Purpose</section>
+      <section n="4">Action Plan</section>
+      <section n="5">Feasibility</section>
+      <section n="6">Conclusion</section>
+    </tbl_cont>
+    <intro type="abstract">
+      <!--attribute options: ltr_int, exec_sum, abstract-->
+      <p>Boston is a city well known for its traffic congestion and bad drivers. In an effort
+                to beat the congestion and go green, many people have turned to biking as an
+                alternative method of transportation in the city. While Boston has become
+                increasingly bike friendly over the years, there are still many problem areas, the
+                two most prominent being Commonwealth Avenue and Massachusetts Avenue. These two
+                roadways account for largest contributions to bike accident numbers in the city,
+                with a third of the nine biking fatalities in the last five years occuring on these
+                two roads ("Boston Cyclist Report"). Although Commonwealth Ave. has a higher total
+                number of accidents, Mass Ave. has the most potential to increase the safety of bike
+                travel through upgrades to the roadway.</p>
+    </intro>
+    <background>
+      <p>
+        <crnt_cond> From the Huntington Ave. intersection to the Charles River Bridge is the
+                    most problematic section of Mass Ave. This stretch of road is characterized by
+                    poor road conditions, dark areas, and random sharrows, or shared bike/car
+                    lanes. It should also be noted that on a northern section of the road, the
+                    current safety measures of steel poles separating the bike and car lanes are
+                    actually a major threat to bikers at night, as they are very poorly illuminated.
+                    It is through poor maintenance and improper planning that Mass Ave. has
+                    developed into the unsafe travelway that it is today. </crnt_cond>
+        <subj_hist> The vast majority of Boston bike infrastructure has been installed very
+                    recently, with most improvements taking place within the last decade. Since
+                    2008, over 90 miles of bike lanes and markings have been put in place. An
+                    additional 3600 public bike parking spots have also been installed in the same
+                    time frame ("Infrastructure and Network Overview"). It is clear that the city is
+                    still undergoing the process of becoming bike friendly and the improvements to
+                    Mass Ave. would be the next logical step in this process. </subj_hist>
+      </p>
+    </background>
+    <purpose>
+      <p>
+        <scope type="what"> In order to organize the necessary construction, the
+                    Commonwealth of Massachusetts must give funding to the Massachusetts Department
+                    of Transportation (MassDOT); the agency in charge of upgrades to roadways and
+                    transportation safety. </scope>
+        <scope type="when"> The two major steps towards action being taken are approval by
+                    the Commonwealth, followed by the construction bidding process. At current
+                    processing rates, it would take approximately a year before any phyiscal work
+                    was done. Once started, it should take approximately one month or less to
+                    complete the project in its entirety. If persued immediately, the project could be finished by
+                    fall of 2017. </scope>
+        <scope type="who"> When completed, the improved bike lanes will increase travel
+                    safety and efficiency for commuters while satisfying the demands of Boston bike
+                    advocate groups. </scope>
+        <objective>The proposed project would include repaving most sections of Mass Ave,
+                    followed by creating clear markings for the bike lanes. It would also include
+                    reclaiming the areas around the Huntington Ave. and Boylston St. intersections,
+                    where mismanaged construction has left concrete barriers indefinitely blocking
+                    the bike lanes. Lastly, there would be lighting upgrades along the stretch from
+                    Newbury St. to the Charles River Bridge, where the roadway is very poorly
+                    illuminated at night. </objective>
+      </p>
+    </purpose>
+    <approach>
+      <!--attribute options: execution, action-->
+      <p>
+        <action>To implement the changes, the first step that must be taken once funding is
+                    acquired is having the MassDOT hire out a private construction company to
+                    perform the upgrades. From there, a plan must be created to carry out the
+                    construction process with minimal disruption to daily traffic flows. Ideally,
+                    the ripping, paving, and repainting process could be completed along the
+                    1.2-mile stretch within 2 weeks of night work. Since the installation/upgrade of
+                    streetlights on the sidewalks is a more intensive but much less disruptive
+                    process, it could take closer to a full month to complete. <!--text here--></action>
+      </p>
+    </approach>
+    <feasibility>
+      <!--attribute options: economic, social, environmental-->
+      <p>
+        <economic>The two main obstacles in the process are costs and disruptions to traffic
+                    flow. The latter problem could be best mostly resolved by limiting work to night
+                    shifts and if necessary, weekends. This would eliminate most lost revenues from
+                    employees being late or storefronts being inaccessible. Furthermore, since the
+                    department of transportation already has allotted budgets for roadwork and
+                    improvements, the funding problem is mostly a matter of securing those funds
+                    through petitions and demonstrations as to why the Mass Ave. upgrade is a
+                    pertinent problem. Several years ago the state approved Chapter 90, which
+                    allocated $200 million towards road repeairs ("Massachusetts wins $200 million
+                    in state funds for road projects"). The US DOT average for repaving a 4-lane, 1
+                    mile stretch of road is $502,000 ("Paving Cost / Mile"). For the 1.2 mile
+                    stretch of repaving + light fixtures, the project would likely cost around $1.5
+                    million. Given the funds available and the relevance of Mass Ave. to
+                    transportation, the listed improvements are highly feasible from a financial
+                    standpoint.</economic>
+      </p>
+      <p>
+        <environmental> Since the entire stretch of road already exists, no clearing of any
+                    greenspace or natural elements would be required. As a result, the construction
+                    process would have no environmental impacts on the road or surrounding areas.
+                    </environmental>
+      </p>
+    </feasibility>
+    <conclu>
+      <p> By taking action on this pertinent problem, the Commonwealth of Massachusetts has
+                the potential to increase both the usability and safety of bike travel along a major
+                city road within its capital. If persued, the project would lead to an increase in
+                city bikers and decrease in congestion due to cars. Viewed holistically, the changes
+                will lead to improved transportation and efficiency in the city of Boston. </p>
+    </conclu>
+    <references>
+      <citation style="MLA"> "Boston Cyclist Report". City of Boston. 15 May 2013. web 21 Aug,
+                2016. http://www.cityofboston.gov/news/uploads/16776_49_15_27.pdf </citation>
+      <citation style="MLA"> "Infrastructure and Network Overview". Boston Bikes. Web, nd. 10
+                Aug, 2016 http://www.bostonbikes.org/infrastructure/overview </citation>
+      <citation n="1" style="MLA"> "Paving Cost / Mile". U.S Department of Transportation.
+                Web, nd. 10 Aug, 2016
+                https://www.dot.state.oh.us/Divisions/Finance/GASB%2034%20Documents/PavingCostpermile.pdf</citation>
+      <citation n="1" style="MLA"> Ring, Dan. "Massachusetts wins $200 million in state funds
+                for road projects" Masslive. 12 Jul, 2012, Web. 9 Aug 2016
+                http://www.masslive.com/politics/index.ssf/2012/07/state_funds_fuel_road_projects.html</citation>
+    </references>
+  </pub_init_proposal>
+</DOC>

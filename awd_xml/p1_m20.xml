@@ -1,0 +1,129 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 1: Annotated Bibliographies</title>
+    <version n="num_of_version" date="2016-07-12"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt><!--problem statement here--> Information Science is basically about how to manage
+            information and make the information to be used in a better way. Computer science
+            classes which I have to take, gives me the solving
+                problems skills in a logical way. In
+            other words, Information Science helps things “make more sense”. What I found not making
+            sense is that most of street parking in Boston are 2-hour limit parking. Even if you
+            find a street parking spot, it’s normally a 2-hour limit parking. It’s not enough for
+            visiting a friend, traveling around the city or having a meal in a popular restaurant.
+            What can you do in the city within 2 hours? All the parking space near Huntington Ave
+            are 2-hour parking, if you have a class right after another class, 2 hours won’t be
+            enough and you don’t have time to move your car. A ticket would appear on your car. The
+            only place that have 4-hour parking is Ruggles Street near West Village, but we are
+            sharing that street with Wentworth. I know that school has parking garages for students
+            and staffs. I started to drive to class occasionally, on the first day of this summer, I
+            thought there should be fewer students on campus so I drove on the first day of class.
+            It took me 10 minutes to park the car that I didn’t need to move it every 2 hours. But
+            if I want to park in the garage for Summer2 Day Parking only, it’s going to cost me
+            $230, which only four days a week that I have to come to school. 2-hour limit in Boston
+            is not a reasonable time for parking. If you stay in the city for couples of years, you
+            would know that it’s hard to park with enough time not only around Boston University in
+            Allston but also Harvard and MIT in Cambridge. Thus, I think all the 2-hour limit
+            parking around universities should be changed into 4-hour parking or universities should
+            lower the price of parking.</problem_stmt>
+    <citation n="1" style="APA"><author n="1">Inglis, J.</author>(2015),<title level="a">Technology Can Help Solve Parking Problems</title><title level="w">Frontier
+                Group</title>. Retrieved from http://www.frontiergroup.org/blogs/blog
+            /fg/technology-can-help-solve-parking-problems</citation>
+    <annotation>
+      <background type="source"><q>The city, however, is not managing the supply well. It can be done.</q>When parking
+                issue become a non-ignoring problem not only in Boston but also in a lot of big
+                cities, people start to think a better way to solve the problem.</background>
+      <summary type="general"> The article states parking issues in different
+                    neighborhoods. To solve
+                this problem, some city, such as San Francisco, started to real-time monitor the
+                parking available spots. This technology helps people know where can they park so
+                that they won’t waste time on finding a parking spot. </summary>
+      <relevance type="value_stmt"> In the article, it says that people get frustrating when they can’t find a parking spot. Which
+                is exactly how I feel when I drive to school. The point of using technology is a
+                good way to solve a real world problem.</relevance>
+      <relevance type="application"> As a Information Science student, I not only need to
+                develop a technology like this but also need to think how to use technology to solve
+                a problem like this.</relevance>
+    </annotation>
+    <citation n="2" style="APA"><author n="1">Mcmorrow, P.</author>(2014),<title level="a">Boston’s parking solution is not more parking</title><title level="w">Boston
+                Global</title>. Retrieved from https://www.bostonglobe.com/opinion
+            /2014/04/15/boston-parking-solution-not-more-parking/fXh0u6PejrBTW6L1LfyF8K/story.html</citation>
+    <annotation>
+      <background type="source"> The article was written at the time that a developer
+                    wants to build a 62 apartments condo, with
+                52 parking spots. </background>
+      <summary type="general"> However, it was denied by Roxbury residents. They think the
+                developer should turn the whole building into a parking garage. What will happen
+                next is that it’s harder to drive in Boston and harder to park. <q>One of the
+                    biggest mistakes municipalities make is requiring too much parking. </q></summary>
+      <summary type="interpretation">The demand of parking is way too much than it has right
+                now. If the solution is to build more and more parking garage, it’s not going to
+                work.</summary>
+      <relevance type="value_stmt">However, in the other word, if the government make the
+                public transportation more convenience, there would be fewer people driving.</relevance>
+    </annotation>
+    <citation n="3" style="APA"><author n="1">Conti, K.</author>(2014),<title level="a">ommunities make changes to improve parking</title><title level="w">Boston
+                Global</title>. Retrieved from https://www.bostonglobe.com
+            /metro/regionals/south/2014/07/12/solution-parking-problems-suburban-centers-may-not-more-parking/oShdB1f44
+            xiXdjvtnnWj3H/story.html</citation>
+    <annotation>
+      <background type="source"> Parking in the city is always a problem for people especially
+                for those who live in big cities.</background>
+      <summary type="interpretation"><q>A parking study found that between on-street spots and municipal lots, Dedham
+                    Square actually had plenty of parking, but it was not being managed
+                    properly.</q> But the good thing is that the community is making changes to
+                improve that. At least the community is trying to make it better by making some of
+                the parking spots first 15 minutes free and using electronic pay station instead of
+                the meters. </summary>
+      <relevance type="value_stmt">It looks like there are not lack of parking space but need
+                a good management.</relevance>
+      <relevance type="application"> For example, parking near Northeastern University is not
+                managed well. It’s hard for a person to get something done within 2 hours around
+                school. If the meters’ limit can be changed into 4 hours, there should be less
+                    complaints.</relevance>
+    </annotation>
+    <citation n="4" style="APA"><author n="1">Doyle, P.</author>(2012),<title level="a">Why
+                Parking in Boston Should Be More Expensive</title><title level="w">Boston
+                Magazine</title>. Retrieved from
+            http://www.bostonmagazine.com/2012/10/the-take-parking-in-boston/</citation>
+    <annotation>
+      <background type="source"> Parking in Boston is such a big problem that according to the
+                    article,<q>as bad as driving is in Boston, it’s a dream compared with the
+                    parking.</q></background>
+      <summary type="interpretation"> Compared with other cities, parking fee in Boston is not
+                so correct. People like to park on the street, like me, is because it’s much cheaper
+                than a garage. I pay $1.25/H for street parking but $12/h in garage. However, in
+                other major cities like Chicago or DC, citizens pay more to street parking than
+                garage.</summary>
+      <relevance type="application"> Also, increasing the T fare is not helping the parking
+                problem. I pay 5/day for street parking if I drive to school but 5/day for T with
+                doubled time. If we can increase the street parking fee and decrease the garage
+                parking as well as T fare, the parking problem is Boston shouldn’t be as terrible as
+                now. </relevance>
+    </annotation>
+    <citation n="5" style="APA"><author n="1">Barter, P.</author>(2013)<title level="a">"Cars
+                are parked 95% of the time". Let's check!</title><title level="w">Reinventing Parking</title>. Retrieved from
+            http://www.reinventingparking.org/2013/02/ cars-are-parked-95-of-time-lets-check.html </citation>
+    <annotation>
+      <background type="author"> The author is a person who cares about everything related
+                with parking. I took a glance at his Google+ profile, all the articles and journals
+                are about parking. </background>
+      <background type="source">This article shows the author's one research on
+                parking.</background>
+      <summary type="approach"> The reason that people care a lot and complaint a lot about
+                the parking is that most of time, the car is parked. When the owner is at home, at
+                work, or shopping, the car need to be parked. According to the article<q>Since there
+                    are 168 hours in a week, the typical UK car is parked 96.5% of the time -  even
+                    higher than Shoup's US estimate!</q></summary>
+      <relevance type="application"> The author collected a lot of data and made them into
+                understandable numbers of percentage. One of the most important things of
+                information science is to deal with data. As an information science student, I need
+                to know how to collect data, manage raw data and make it into useful
+                    information.</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

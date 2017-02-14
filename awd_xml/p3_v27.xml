@@ -1,0 +1,95 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>WP3: Cover Letter</title>
+    <version n="3" date="2016-08-22"/>
+  </docHead>
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Hello hiring committee,</greeting>
+    <intro_para><intent type="purpose">I am applying for the lead engineering position in your
+                development department at GE Aviation.</intent><intent type="connection">After
+                attending a seminar hosted by one of your employees, I found out that there were
+                some open positions at the company which made me apply immediately.</intent> I have been looking for a position at GE Aviation for a
+            while now, so when I saw that this position was open, I knew that
+            I had to apply. <reason> Considering my background and qualifications, I think that I
+                would be a perfect fit for the position.</reason><proposition>If I am accepted, I feel that I will translate well into the culture of the
+                company and excel at every opportunity the position throws at me.</proposition></intro_para>
+    <para_background>
+      <!-- One or More -->
+      <experience type="work">In my previous work experience, I've worked at GE Aviation in a
+                business and manufacturing capacity. From that experience I've worked with
+                    <programs>Solidworks and Digital Workbench</programs> to design and review parts
+                of the engine. I've also worked with customers in a business manners, fulfilling their needs and making
+                sure necessary arrangements are made to satisfy their experience. Some of my
+                achievements over the years include <accomplishments>reducing inventory by over a
+                    quarter million dollars, creating engine shipments to multiple nations,
+                    identifying and incorporating process drawings to thousands of parts and
+                    designing apparatuses for fully automated production cells.</accomplishments>
+                Through these experiences I have been able to acquire a lot of knowledge and skills
+                that have enabled me to succeed at my previous positions and hopefully in future
+                ones. From working with other individuals at the company I have developed
+                interpersonal and communication skills that I've used to be successful lead and guide others in team
+                    projects.</experience>
+    </para_background>
+    <para_background>
+      <experience type="personal">Outside of work I have many other skills that I practice or
+                have learned in my spare time. One such skill that I've acquired over the years has
+                been coding in languages such as <programs>C++, Matlab, and Python </programs>,
+                where I've developed many programs and in turn strengthen my ability to comprehend
+                and write within those languages. I also
+                come from a diverse background which enables me to speak languages like
+                    <languages>Serbian, Bosnian, Croatian, and Montenegrin</languages>. Between my
+                work and school experience, I've also <accomplishments>done some research work on
+                    weld samples, measuring the deformations in the samples in relationship to their
+                    material type.</accomplishments> And in my spare time I like to
+                    <interest>read up on new breakthroughs in the aerospace field and learn about
+                    the new engines and air crafts that are being released.</interest></experience>
+    </para_background>
+    <para_background> For my education background, <experience type="school">I have a bachelor's
+                degree in Mechanical Engineering at Northeastern University. There I have developed
+                a strong understanding in the sciences and math, and have learned all of the
+                necessary information that the field of Mechanical Engineering would require. Some
+                of the classes that I've taken that are relevant to the position include:
+                Thermodynamics, Fluid Mechanics, Static and Dynamics, Material Science and
+                Vibrations. From my classes in school I am capable of <skills>understanding the
+                    mechanics and principles with components like turbines, compressors and
+                    combustors</skills>. I've also developed an <skills> understanding behind the
+                    physics and characteristics that exist on an operating
+                aircraft.</skills></experience></para_background>
+    <closing_statements>
+      <compatability>From what I have written, I hope that you can see that I would be right
+                for the position. I get on the same page with others quickly and communicate well
+                with my co-workers. I am very respectful of other individual's views and can conform
+                to the environment that I am placed in swiftly.</compatability>
+      <pb/>
+      <next_step>I hope we can talk about the position in the future, and to reach me you can
+                contact me by phone, 857-285-8415, or email, vlajkovic.d@husky.neu.edu. I appreciate
+                the time you took to go through my application and thank you for your
+                consideration.</next_step>
+    </closing_statements>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

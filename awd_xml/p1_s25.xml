@@ -1,0 +1,122 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title> Project 1: Annotated Bibliographies </title>
+    <version n="1" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> One of the unsolved problems with living in a city such as Boston is the
+            process of package delivery. If a package is being delivered to a dorm, or to an
+            apartment while the resident is not at home to open the door, often times it is
+            redirected to a different location to be picked up at a later time. This means that the
+            recipient would have to take time out of his or her day to grab the package while the
+            building is operating, and carry it all the way back to its intended location. This
+            major inefficiency and inconvenience can be solved if the resident knows or controls
+            exactly when the package is coming, or if it comes so quickly after ordering that the
+            wait time is insignificant. These solutions can be realized through the use of drone
+            technology, and the use of unmanned vehicles for delivery. Drones can send real time
+            information to the recipient, can be activated at any time, and can arrive at the end
+            location independently of the schedule of a mail delivery worker. The successful
+            implementation of drones revolves heavily on the use of sensors, and the successful
+            integration of the mechanical, electrical, and software components that make them work.
+            In terms of technical hurdles, autonomous vehicles must have complex control systems
+            that respond quickly to any and all obstacles. These characteristics are exactly what
+            the mechatronics discipline deals with, and mechatronics engineers would be integral in
+            the development of this idea that could positively benefit the lives of millions of
+                people.</problem_stmt>
+    <citation n="1" style="APA"><author n="1">Brar, S.</author><author n="2">Rabbat, R.</author><author n="3">Raithatha, V. </author><author n="4">Runcie, G.</author><author n="5">Andrew Yu</author> (2015,November 8). <title level="a">Drones for
+                Deliveries</title> (Rep. No. 2015.11.8). Retrieved July 13, 2016, from Sutardja
+            Center for Entrepreneurship and Technology website:
+            http://scet.berkeley.edu/wp-content/uploads/ConnCarProjectReport-1.pdf </citation>
+    <annotation>
+      <background type="source"> This paper, which was created in an open classroom
+                environment within the Sutardja Center for Entrepreneurship and Technology at UC
+                Berkeley, provides an in depth examination on the current climate of package
+                delivery using drones. </background>
+      <summary type="general"> The authors, after looking at current strategies of relevant
+                companies, technological capabilities, and limitations of delivery drones, conclude
+                that the idea <q>will eventually be successful in the last mile delivery
+                space</q>(17). </summary>
+      <relevance type="application">While the report delves heavily into the financial aspect
+                of the concept, it also provides a good summation of the current state of technology
+                related to drone delivery. </relevance>
+      <relevance type="application">In general, it is a good resource for those looking for
+                current solutions for existing technical hurdles, such as battery life, charging
+                technology and flight planning, which is useful information for the design of a
+                drone.</relevance>
+    </annotation>
+    <citation n="2" style="APA"><author n="1">French, S.</author> (2015, December 15). <title level="a">Drone delivery
+                is already here — and it works. </title>Market Watch. Retrieved from
+            http://www.marketwatch.com/story/drone-delivery-is-already-here-and-it-works-2015-11-30</citation>
+    <annotation>
+      <background type="author"> This article, written by drone reporter Sally French,
+                explores an already existing and successful drone delivery service from a tech
+                startup called Matternet. </background>
+      <summary type="general"> The article breaks the process of the delivery down step by
+                step, detailing some of the technical capabilities of the drone, as well as the
+                technical decisions made by the company to create a successful service. </summary>
+      <relevance type="application">Though the drones were implemented to only delivery
+                medically related supplies in other countries, such as Switzerland, Haiti, and the
+                Dominican Republic, the company is a useful case study of what goes into the
+                successful application of a similar drone delivery service in other parts of the
+                world. </relevance>
+      <relevance type="application">For an engineer, many of the decisions made by the
+                company, such as the use of landing pads on both the sending and recieving ends, can
+                influence the conceptualization phase of drone design.</relevance>
+    </annotation>
+    <citation n="3" style="APA"><author n="1">Carr, E. B.</author> (2013, March 27). <title level="a">Unmanned Aerial Vehicles: Examining the Safety, Security, Privacy and
+                Regulatory Issues of Integration into U.S. Airspace.</title> Retrieved from
+            http://www.ncpa.org/pdfs/sp-Drones-long-paper.pdf</citation>
+    <annotation>
+      <background type="source"> This publication, produced by a large public policy research
+                organization called the National Center for Policy Analysis, compiles past and
+                current information regarding unmanned aerial systems. </background>
+      <summary type="general"> The paper reviews the history of unmanned aircraft, examines a
+                plethora of issues regarding the implementation of aerial drones into the national
+                airspace, and concludes with a number of recommendations to work through these
+                issues. </summary>
+      <relevance type="application"> In terms of technical relevancy, the paper provides a
+                good description of the security and privacy issues that have to be considered
+                before drones can successfully be deployed in residential areas. </relevance>
+      <relevance type="application">This information is especially important to those working
+                on drones within cities, since it can help set a threshold for what it means for a
+                drone design to be safe in public places.</relevance>
+    </annotation>
+    <citation n="4" style="APA"><author n="1">Bacon, J.</author> (2016, February 25). <title level="a">Special delivery:
+                Ground drones coming to America.</title> USA Today. Retrieved from
+            http://www.usatoday.com/story/tech/2016/02/23/special-delivery-ground-drones-ready-roll-england/80792992/</citation>
+    <annotation>
+      <background type="author"> This relatively recent article, written by USA Today
+                journalist John Bacon, informs of a British company named Starship Technologies and
+                their development of a land based delivery drone. </background>
+      <summary type="general"> The article provides an overview of the service, and details
+                some of the technical decisions made by the company, such as a four mile an hour
+                travel speed, real time tracking of the vehicle by the customer, and use of cameras
+                for human oversight for theft prevention.</summary>
+      <relevance type="application"> Even though the company is still in the testing phase of
+                their service, this source provides an excellent case study for the initial
+                implementation of land drones for package delivery, a not so common approach to
+                last-mile delivery. </relevance>
+    </annotation>
+    <citation n="5" style="APA"><author n="1">Amzajerdian, F.</author><author n="2">Pierrottet, D.</author><author n="3">Petway, L.</author><author n="4">Vanek, M.</author><title level="a">DEVELOPMENT OF LIDAR SENSOR SYSTEMS FOR AUTONOMOUS SAFE LANDING ON
+                PLANETARY BODIES </title>[Scholarly project]. Retrieved July 13, 2016, from
+            http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20100036247.pdf</citation>
+    <annotation>
+      <background type="source"> This report, produced by the esteemed NASA Langley Research
+                Center, describes the development of Lidar sensors under the Autonomous Landing and
+                Hazard Avoidance project. </background>
+      <summary type="general">The paper describes three different Lidar sensors and details
+                their individual functions and capabilities as they relate to future missions
+                involving precision landings on the Moon or Mars. </summary>
+      <summary type="approach">The authors provide technical diagrams and quantifiable data to
+                thoroughly characterize these Lidar systems.</summary>
+      <relevance type="application">While the report is focused solely on applications for
+                landing on planetary bodies, the technical features of the sensors, which include
+                the generation of elevation maps, hazardous feature avoidance, and highly accurate
+                ground velocity, distance, altitude, and attitude data, are all very relevant to and
+                can be used for the application of delivery drone technology. </relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

@@ -1,0 +1,151 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project Proposal</title>
+    <version n="2" date="2016-08-09"/>
+  </docHead>
+  <pub_init_proposal>
+    <cover_page>
+      <title>City Center Park Redesign</title>
+      <author>
+        <!--deidentified element-->
+      </author>
+      <submit_date>September 1st 2016</submit_date>
+      <audience> To: Members of the Board of Trustees and residents of the city of Kirkland,
+                Washington </audience>
+    </cover_page>
+    <tbl_cont>
+      <section n="1">Introduction</section>
+      <section n="2">Background</section>
+      <section n="3">Purpose</section>
+      <section n="4">Action Plan</section>
+      <section n="5">Feasibility</section>
+      <section n="6">Conclusion</section>
+    </tbl_cont>
+    <intro type="abstract">
+      <!--attribute options: ltr_int, exec_sum, abstract-->
+      <p>The city of Kirkland has published a local request for proposals regarding community
+                improvements at 111 Waverly Way. Currently the empty lot sits partially revamped and
+                partially baren and overgrown with brambles. Our proposal is to completely update
+                the existing park with modern features and sustainable structures. This space holds
+                immense potential to bring added value to the community and meet the needs of a
+                growing and diversifying neighborhood. This project proposal is broken down into
+                four distinct phases so as to allow for flexibility in developement as funds and
+                resources become available to the city. </p>
+    </intro>
+    <background>
+      <p>
+        <crnt_cond> Located at 111 Waverly Way in Kirkland, City Center Park currently
+                    serves as the city's second largest communal gathering space within city limits.
+                    The large plot of land has become overgrown with weeds and blackberry bushes.
+                    <!-- can include <q> element(s) for quoted material --></crnt_cond>
+        <subj_hist> As the site of the former junior high school which burned down in 1987,
+                    this land was left in disrepair for over a year before members of the local
+                    neighborhoods banned together to bring purpose back to the land. Over the years
+                    since the fire, different features have been added progressively. Starting with
+                    the creation of the winding path up to a senic lookout point over Lake
+                    Washington and then building a small
+                    play ground out of local recycled materials. The potential of this space is
+                    obvious to those who live around
+                    it.<!-- can include <q> element(s) for quoted material --></subj_hist>
+      </p>
+    </background>
+    <purpose>
+      <p>
+        <scope type="when"> In the summer of 2017, the city of Kirkland hopes to begin
+                    construction on the vacant lot turned community park in hopes of realizing its
+                    value to the community and the organizations within it. </scope>
+        <!--attribute options: what, who, when, where-->
+        <scope type="who"> When completed this project will bring greatly added value to the
+                    city and to its residence in many forms. </scope>
+        <objective> The proposed project includes a multi-purpose turf sports feild with a small grandstand seating
+                    area to serve as a practice and game space for local teams. It will include an
+                    ecofriendly play area by
+                    updating and reinforcing the existing structure made out of local recycled
+                    materials. The existing lookout point at the top of the park's hill will be
+                    enhanced with a sculptural totem pole designed and carved by local artists and
+                    craftsman. All of which will be surrounded by patches of community gardens for
+                    town residents to manage and attend to.
+                    <!-- can include <q> element(s) for quoted material --></objective>
+      </p>
+      <p>
+        <goal> Goals:</goal>
+      </p>
+      <p>
+        <goal>- Preserve, protect, and improve parkland and recreational
+                    opportunities.</goal>
+      </p>
+      <p>
+        <goal>- Anticipate the needs of the changing community and structure programs and
+                    facilities accordingly.</goal>
+      </p>
+      <p>
+        <goal>- Enhance the city’s arts, cultural and historic assets. </goal>
+      </p>
+      <p>
+        <goal>- Enrich the lives of residents.</goal>
+      </p>
+      <p>
+        <goal>- And build a healthier community. </goal>
+      </p>
+    </purpose>
+    <approach>
+      <!--attribute options: execution, action-->
+      <p>
+        <action>Our number one goal is to provide a safe and productive space that fully
+                    utilizes all of the benefits that this land has to offer. Our proposed design
+                    for City Center Park would maximize its usefulness to the community while
+                    maintaining minimal costs to the city and its residence. The phases of this
+                    project are broken up into four main catergories which can be constructed all at
+                    once or in progression depending on finances and disruption to the surrounding
+                        neighborhoods. The first, and most critical phase
+                    involves clearing the brambles that covers this already well graded plot of land and removing any
+                    remaining building debris and possible hazardous waste that may remain on the
+                    site. The second phase includes structurally fortifying and updating the
+                    existing recycled play structure and surrounding picnic spaces. This phase can
+                    be followed by either the addition of a new multipurpose terf feild and small grandstand area or
+                    improvement of the senic lookout ridge above with the addition of several plots
+                    for community gardens for local residence to use. </action>
+      </p>
+    </approach>
+    <feasibility>
+      <!--attribute options: economic, social, environmental-->
+      <p>
+        <economic>Over the past five years the city of Kirkland has set aside a small budget
+                    each year to be put towards city redevelopment and improvement projects.
+                    Although this fund will not cover the entire cost of the project, it along with
+                    a number of donations from members of the community and local companies will
+                    cover the relatively low costs of this project. Much of the groundwork for this
+                    park has already been laid over the past 20 to 30 years through the small
+                    neighborhood improvement projects that have taken place. The main cost for this
+                    improvement will be the leveling and placement of the sports field. Otherwise
+                    art fixtures and building materials will be made of primarily donated or local
+                    recycled materials.</economic>
+      </p>
+      <p>
+        <social>Socially, this community space would add exponential value to the surrounding
+                    properties and to the lives of those living within and around the city of
+                        Kirkland. Removing any remaining
+                    structural debris from the old school and reintroducing local plant life back to
+                    the land would help to not only improve the local ecosystem and environment, it
+                    would help to stabilize the soft soils and loose gravel that makes up the
+                    existing ridge at the edge of the park. </social>
+      </p>
+    </feasibility>
+    <conclu>
+      <p> In conclusion, we believe that this park would add invaluably to the community. Our
+                design proposal provides an efficient and practical response to a number of the
+                problems called upon by local residents to be added or fixed. This space would
+                provide a space for youth sports leagues to practice, for local organizations to
+                meet, for children to play and for neighbors to gather. <!--text here--></p>
+    </conclu>
+    <references>
+      <citation n="1" style="MLA"> United States. National Park Service. "Learn and Explore
+                (US National Park Service)." U.S. Department of the Interior, n.d. Web. 02 Aug.
+                2016.</citation>
+      <citation n="2" style="MLA">"Online Parks Guide." City of Kirkland, Feb. 2014. Web. 02
+                Aug. 2016.</citation>
+    </references>
+  </pub_init_proposal>
+</DOC>

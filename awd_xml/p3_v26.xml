@@ -1,0 +1,117 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 3</title>
+    <version n="2" date="2016-08-22"/>
+  </docHead>
+  <blog_post>
+    <title>A Second Sun?</title>
+    <background>
+      <question> What would happen if a second sun appeared where Pluto currently is? </question>
+      <pb/>
+      <technical_principle n="1"> The core principle involved here is the theory of
+                gravitation. We will be using the Newtonian theory, first formulated by Isaac Newton
+                in the 17th century. <important_idea n="1"> The gravitational force is predicated on
+                    the mass of each object and the distance between them. </important_idea> This
+                version of gravitation has since been replaced by General Relativity, described
+                first by Albert Einstein, but still serves fine for large-scale approximations,
+                which we will do here. </technical_principle>
+    </background>
+    <answer>
+      <pb/>
+      <section_header>The Situation</section_header>
+      <important_idea n="2"> Imagine it's any other day, like a Tuesday, you're going about
+                your day when suddenly Pluto suddenly becomes a G-type main sequence star (the same
+                type of star as the sun). This star is exactly identical to the Sun. <visual type="drawing" url="http://i.imgur.com/bRLFQnU.jpg">Close up of Pluto</visual></important_idea>
+      <pb/>
+      <section_header>Assumptions</section_header>
+      <important_idea n="3"> In order to make this problem more tractable, we make a few
+                assumptions about the situation. First, the planets are basically aligned and at
+                their furthest distance. This is important as the planets, and particularly Pluto,
+                do not have perfectly circular orbits. Also this helps as the gravitational effect
+                on the planets is more uniform. We will also only be looking at the effects in the
+                short term. The long term effects on orbits is a complex problem that would likely
+                take a fair amount of simulation, so I'll ignore it, for now. <pb/> As a notation
+                note, I'll be using Sol1 to refer to the Sun we have now and Sol2 to refer to the
+                star where Pluto is now. </important_idea>
+      <pb/>
+      <section_header>Effects on Earth</section_header>
+      <technical_principle n="2"> Gravitation, as stated above, is predicated on three
+                variables, the mass of object one, the mass of object 2, and the inverse square of
+                the distance between them. The distance between Earth and the Sun (Sol1) is defined
+                as one astronomical unit (AU), which is about 150 kilometers (93 million miles). The
+                distance between Pluto (Sol2) and Earth is 48 times that distance. </technical_principle>
+      <specific_topic n="1"> We'll first tackle the effects this change would have on us,
+                since we're so self centered. The good news, sort of, is that Earth will remain in
+                orbit mainly around Sol1. Since Sol2 is so very, very far away, its gravitational
+                effect is very, very small compared to Sol1's (around 23 hundred times smaller). The
+                overall effect is, essentially Sol1's gravity becomes slightly weaker and we move
+                slightly further away from the Sol1. <visual type="drawing" url="http://i.imgur.com/jc82jmo.jpg">Force on Earth</visual> The net effect?
+                Earth gets a little colder and slowly drifts outwards, towards an equilibrium point
+                between Sol1 and Sol2. This may sound bad, and it is. </specific_topic>
+      <important_idea n="4"> Net gravitational force from Sol1 is decreased, we drift
+                outwards, and most likely slowly freeze to death. This outcome is predicted even
+                without taking into account other effects of having a second sun. </important_idea>
+      <pb/>
+      <section_header>Effects on Other Planets</section_header>
+      <technical_principle n="3"> What I'll be doing here is comparing the gravitational force
+                exerted by Sol1 with the gravitational force exerted by Sol2 (on each planet). If
+                the force exerted by Sol2 is the larger value, then it "captures" the planet. This
+                is a fairly simplistic way of looking at this, and would only really apply in the
+                short term. </technical_principle>
+      <specific_topic n="2"> Using the mass of each planet along with each planet's distance
+                we can gain an early estimate of what the new solar system will look like. We'll
+                start from the outer solar system and work our way in. Starting, for some reason,
+                with Pluto (not actually a planet). Pluto is gone, completely, vaporized; no
+                gravitational effect from either star. Neptune is captured, just barely, by Sol2
+                whose gravitational effect is around two and a half times larger than that of Sol1.
+                It is, in fact, the only planet captured outright by Sol2. All the other planets,
+                while feeling some gravitational effect from Sol2, are still chiefly affected by
+                Sol1. </specific_topic>
+      <important_idea n="5"> Neptune is the only planet remotely close enough to Sol2 to be
+                more affected by its gravity than that of Sol1. </important_idea>
+      <explanation> The effects on Earth will be similar to effects on the solar system as a
+                whole, with the added downside of the fact that we live here. The general effect on
+                the planets is that at first they will spread out, moving towards Sol2 as it negates
+                some of the gravitational force of Sol1. In a longer time frame, the orbits of the
+                planets will become more and more perturbed and complicated. In fact, at a certain
+                point, some planets may be ejected from the solar system or collide with Sol1 or
+                Sol2. </explanation>
+      <pb/>
+      <conclusion><section_header/><important_idea n="7">The general takeaway here
+                    is that in this situation, the solar system will change drastically. A side
+                    effect of this change: human extinction comes much sooner than most people
+                    currently expect. </important_idea> Luckily this situation has effectively zero
+                percent chance of happening, so we can sleep easy at night knowing that Pluto will
+                not become a star. </conclusion>
+    </answer>
+    <pb/>
+    <sources> Wikipedia was a great help in finding the masses and orbital radii of planets.
+                <ref type="source" url="https://en.wikipedia.org/wiki/Solar_System">Solar System
+                Article</ref></sources>
+  </blog_post>
+  <!-- Writer's Memo 
+        
+    - I would say that I am in the very early rough draft phase. I have an question, for which I have
+    a few answers. However, I am not close at all to this project's final form. I have no pictures and
+    no analogies. My answers are also mainly super short term. 
+    
+    - My rhetorical situation is the answering of a question. I would say that it is geared towards
+    curious people who are relatively scientifically literate. They also should have a mind that
+    would be interested in the answer to the question: "what if Pluto became the sun?"
+    
+    - The main (only) thing that is going well is that I thought of a question to answer. 
+    
+    - It has been difficult thinking of analogies that could go with this, shown by the fact that I
+    have none. Also difficult has been making sure that I'm not saying the same thing over and over
+    again. 
+    
+    - Specific Things:
+    1. Am I writing the same thing over and over again? cause it writing/reading this felt like
+    Groundhog Day. 
+    2. Is the writing too scientific? Not scientific enough? I can't tell.
+    3. Thoughts on analogies? I got nothing. 
+    
+    -->
+</DOC>

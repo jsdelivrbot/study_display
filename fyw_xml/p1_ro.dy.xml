@@ -1,0 +1,98 @@
+<?xml-model href="../schema_1111.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../testing_format.xsl"?><DOC>
+  <essay>
+    <docHead>
+      <title>The Movie Review Genre</title>
+      <author>Name
+            <!--deidentified element--></author>
+      <date>7 October, 2016</date>
+    </docHead>
+    <body>
+      <intro>
+        <p>Movie reviews help many people decide on whether or not they should go see a
+                    movie that they are interested in. <genre>They are a part of the larger review
+                        genre which exists because people enjoy sharing their opinions on products
+                        and many find it helpful to know other’s opinions when deciding on
+                        something. Professional reviews still have the personal opinion of the
+                        reviewer, but they also give an objective view on the product in an attempt
+                        to not have the review be completely bias. Movie reviews generally go over the plot, the actors’
+                        performances, the soundtrack, and the visuals.</genre> Many times if those
+                    aspects of the movie are good, the reviewer’s personal opinion of the movie will
+                    be positive and vice versa. Traditionally reviews are written, but with websites
+                    such as YouTube there are now many reviews that are recorded and posted
+                    as videos. <argument type="main">These written reviews and video reviews are
+                        both very similar, being part of the same genre, but they have a few key
+                        differences that separate them. Video reviews almost feel like a
+                        conversation with the reviewer due to the viewer being able to see and hear
+                        the reviewer, although it is a one-way conversation. Written reviews do not
+                        have this luxury and so they go into more detail about the different aspects
+                        of the movie and how well the reviewer believes they worked.</argument><situation>One way to see these similarities and differences is to look at two
+                        positive reviews of the movie “Star Wars: The Force Awakens”, one written by
+                        Anthony Lane and the other a video created by Chris Stuckmann. “Star Wars:
+                        The Force Awakens” was a highly anticipated movie due to the popularity of
+                        the franchise, so a lot of work went into the many reviews made about it.
+                        These two reviews also try to look at the movie objectively while still
+                        giving personal opinions.</situation></p>
+      </intro>
+      <bodyPara><sim>Both the written review and the video review follow the movie review genre.</sim><genre>They talk about the general plot of the movie and how it was interesting. The
+                    reviews go over how the effects and CGI look great while not being the focus and
+                    how the sounds were great.</genre> With the newest entry in the Star Wars
+                franchise having many new faces in its cast, both reviews talk a lot about the
+                actors and how well they performed. <sim>Both reviewers loved the main protagonist
+                    Rey</sim>, played by Daisy Ridley. “She straps herself in, swats aside any
+                vestige of Mark Hamill, and takes command of the movie” <citation>(Lane)</citation>.
+                Stuckmann said that “she steals the entire film”. <sim>They both liked many of the
+                    new actors as well as the actors from the original Star Wars trilogy, namely
+                    Harrison Ford in the role of Han Solo. Both reviews mention the soundtrack and
+                    visuals being gorgeous. They mention that the movie “feels young”
+                        <citation>(Lane)</citation>, that it is modern and fast paced in contrast to
+                    slower pace of past Star Wars movies. Lane mentions one scene being “a feast for
+                    the ears as well as the eyes, for it unfolds in a wintry forest. In addition to
+                    the usual throbbing hum of the weapons, you can hear the sizzle of sabre on
+                    snow, and the slicing hiss as the fighters miss their target and fell
+                    surrounding pine trees by mistake”. He calls this “genuine cinematic texture”
+                    that he says was missing from previous films <citation>(Lane)</citation>.
+                    Stuckmann goes over this same point when he mentions that the movie “actually
+                    feels like a movie” <citation>(Stuckmann)</citation>. The reviewers also go over
+                    the director of the movie, J.J. Abrams, and how he did a great job with the
+                    movie reassuring fans that the franchise is in good hands. <genre>Both reviews
+                        talk about it all; the plot, the director, the cast, the soundtrack, the
+                        visuals and more. They go over everything that the movie review genre calls
+                        for in a review.</genre> That is how they are similar.</sim> But these two
+                reviews still have differences, mainly the obvious one. <diff>One is a video of
+                    someone talking about the movie and the other is just text.</diff> The written
+                review has everything it needs to be in the movie review genre and that is all. The
+                video review has a lot more. <diff>With the viewer being able to see and hear the
+                    reviewer talk, a video review feels a lot more personal than just reading
+                        words. Seeing
+                    their face and hearing their voice, the viewer can feel like they actually know
+                    the reviewer as a person. In Stuckmann’s video review, the viewers can hear how
+                    excited he is to be talking about the movie. His friendly tone of voice being
+                    able to see his facial expressions also help the viewer trust his opinion more.
+                    It is incredibly easy to tell that Stuckmann loved the movie and is excited to
+                    talk about it. Watching his video review is almost like hearing a trusted
+                    friend’s opinion instead of the opinion of some faceless movie
+                    critic.</diff></bodyPara>
+      <concl>
+        <p>
+          <sim>There are many similarities between the written and video movie reviews.
+                        They are both perfect examples of the movie review genre.</sim>
+          <diff>But the video review is more approachable because of the fact that it is a
+                        video that lets the viewer see who the reviewer is.</diff>
+          <genre>The movie review genre is clearly defined by these two reviews. It is
+                        also easy to see how they fit in the overarching review genre. Despite the
+                        differences between the written review and the video review, they are still
+                        both a part of both the movie review genre and the review genre.</genre>
+        </p>
+      </concl>
+    </body>
+    <docFoot>
+      <title>Works Cited</title>
+      <listBibl>
+        <bibl>Lane, Anthony. "“Star Wars: The Force Awakens” Reviewed - The New Yorker". The
+                    New Yorker. N.p., 2015. Web. 7 Oct. 2016.</bibl>
+        <bibl>Stuckmann, Chris. "Star Wars: The Force Awakens - Movie Review". YouTube.
+                    N.p., 2016. Web. 7 Oct. 2016.</bibl>
+      </listBibl>
+    </docFoot>
+  </essay>
+</DOC>

@@ -1,0 +1,102 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>WP3 Edutainment Blog Post</title>
+    <version n="1" date="2016-08-18"/>
+  </docHead>
+  <blog_post>
+    <title>Traveling at the microscopic level</title>
+    <background>
+      <question>How is it that bacteria travel from one place to another?</question>
+      <misconception>To many, the answer may seem trivial, since motion is a problem solved by
+                nature time and time again, when in reality, there are many concepts at play which
+                complicate this problem. To truly understand the mechanisms for travel and why they
+                are the way they are requires an understanding about microscopic things like
+                bacteria, specifically the world they live in.</misconception>
+      <technical_principle>The first step is to understand the <important_idea>Reynolds
+                    number.</important_idea></technical_principle>
+    </background>
+    <answer>
+      <section_header>What is the Reynolds number?</section_header>
+      <technical_principle n="1">Mathematically, the Reynolds number can be expressed like
+                this: <visual type="other" url="http://ffden-2.phys.uaf.edu/104_2012_web_projects/Daniela_Wilner/Images/ReynoldsNumber.png"/> The Reynolds number (Re in the equation above) is defined as the ratio of
+                inertial forces to viscous forces. What does that mean? Well the first thing that
+                should be noted is that it is a ratio. It has no units attached. The Reynolds number
+                can be 46, it can 46 million. It’s just
+                a number. But it is a very useful number, especially for engineers. Engineers use
+                the Reynolds number to characterize how a fluid (liquid or gas) flows. It
+                characterizes the flow of a liquid, allowing engineers to make certain assumptions
+                and what equations to use. </technical_principle>
+      <section_header>What does the Reynolds number depend on?</section_header>
+      <technical_principle n="2">Here’s the breakdown: ρ is density of the fluid, V is
+                velocity, D is diameter, or the size of the volume being analyzed, and μ is
+                viscosity, which is a fluid's resistance to movement <analogy>(molasses is much more
+                    viscous than water).</analogy></technical_principle>
+      <section_header>So what is low for a Reynolds number?</section_header>
+      <analogy>Let's take a person swimming in water. Let's call him Pichael Melps. <visual type="drawing" url="http://www.how-to-draw-funny-cartoons.com/image-files/cartoon-swimmer-007.jpg"/>Pichael swims at an average speed of 2 mph or .894 m/s in water which has a
+                density of 1000 kg/m^3 and a viscosity of about 10^-3 Pa*s. We can approximate
+                Pichael's size, or diameter, as 1.5 ft or .457 m. Put these numbers into the
+                equation and we get a Reynolds number of about 409000. Now, lets take a look at an
+                E. coli cell. <visual type="drawing" url="http://hyperphysics.phy-astr.gsu.edu/hbase/biology/imgbio/cellprokaryote6.gif"/>A typical cell might be 2 μm or 2*10^-6 m and travel in water at a speed of 30
+                μm/s or 3*10^-7 m/s. In this case your Reynolds number would be 0.00006 . That's
+                several magnitudes smaller than Pichael's situation. If Pichael wanted to experience
+                the same Reynold's number as an E. coli cell he would have to move at a speed of
+                about 1.3*10^-10 m/s. If he were to move at that speed for a whole year he would
+                travel a staggering 4 millimeters.</analogy>
+      <section_header>What does this tell us?</section_header>
+      <important_idea>It tells us fluid flow has different properties at this level. It tells
+                us life is different at low Reynolds numbers. </important_idea>
+      <technical_principle n="3">To understand this further we have to go back to the definition of Reynolds
+                number: the ratio of inertial forces to viscous forces. The lower your Reynolds
+                number, the lower your inertia is compared to the viscous forces of the fluid around
+                you.</technical_principle>
+      <analogy>What does this mean? Imagine you get in the water and push Pichael. He will
+                move while he’s being pushed, and then inertia will carry him so he floats a little
+                bit farther away from you. Do the same in molasses, and he’ll stop almost
+                immediately once the force of your push stops acting on him. <technical_principle n="4">His movement in the molasses only depends on a current force acting on
+                    him, not on the forces acting on him before. In this case, his movement is not
+                    dependent on time. It is said to be <important_idea>time
+                        invariant.</important_idea></technical_principle></analogy>
+      <section_header>Scallop Theorem </section_header>
+      <specific_topic>This concept is the cornerstone of Scallop Theorem, a theorem developed
+                by physicist Edward Mills Purcell in his paper "Life at low Reynolds
+                number."</specific_topic>
+      <technical_principle n="5">”. It states that to travel
+                at low Reynolds number a swimmer has to move or deform in a way that is not
+                reciprocal. </technical_principle>
+      <analogy>. A great example of this is, of course, the scallop. A scallop travels in
+                water by slowly opening its shell to take in water, and quickly squirting it out to
+                propel itself. <visual type="drawing" url="https://upload.wikimedia.org/wikipedia/commons/4/40/Scallop_jump.svg"/><technical_principle n="6">While this works great in a scallop’s environment,
+                    it would be useless at low Reynolds numbers, due to the fact that the movement
+                    is reciprocal. Since motion at low Reynolds flow is time invariant, the fact
+                    that the scallop opened and closed its shell slowly and quickly does not matter.
+                    In this case, the scallop would simply move one way when the shell opens, and
+                    move right back to the same spot when it closes.
+                </technical_principle></analogy>
+      <section_header>How does this apply to microorganisms?</section_header>
+      <explanation>Due to these constraints, bacteria have developed interesting ways to move
+                around. The most common of these methods is the use of flagella, which are whip-like
+                appendages connected to the main cell body by a hook.<visual type="drawing" url="http://i.imgur.com/hDHJp6l.jpg"/> The hook is connected to a biological
+                motor, which spins the flagella. The spinning of these typically helical flagella
+                works since it is not reciprocal; it is different when done in forward or in
+                reverse. <visual type="drawing" url="http://i.imgur.com/l2bQzNs.png"/> The use of
+                flagella is fairly common in the world of bacteria. E coli. use flagella. <visual type="photo" url="http://knowledgeinsider.com/wp-content/uploads/2016/02/e-coli-streptococci.jpg"/> So does Helicobacter pylori, a bacterium found in the stomach. <visual type="photo" url="http://userfiles.steadyhealth.com/userfiles/4540/articles/H.pylori.gif"/>
+                Other bacteria such as the Spirochaete have a spiral shape and move by whole-body
+                undulations. Their spiral shape allow their movement to be non-reciprocal. <visual type="photo" url="https://microbewiki.kenyon.edu/images/thumb/f/f4/Figure1.png/400px-Figure1.png"/></explanation>
+      <section_header>Conclusion</section_header>
+      <conclusion>Given their microscopic size, it's quite fascinating to see such developed
+                forms of movement. A naturally occurring rotating element and motor are certainly
+                surprising characteristics to find in puny bacteria since these are things that
+                cultured humans like Pichael need lots of brainpower and resources to create.
+                Nevertheless, it makes sense, since these traits were the response to a completely
+                different set of rules on the microscopic level. </conclusion>
+      <visual type="comic" url="https://s-media-cache-ak0.pinimg.com/564x/cb/32/6c/cb326c2a1112a7ed8b9484651ae3a3e6.jpg"/>
+    </answer>
+    <sources><section_header>Sources</section_header>I highly recommend reading <ref type="source" url="http://www.uam.es/personal_pdi/ciencias/agrait/nico_archivos/docencia/fisica%20de%20fluidos/Life%20at%20Low%20Reynolds%20Number,%20EM%20Purcell%201973.htm"> Life at Low Reynolds Number </ref> for a more in depth look at this topic. <ref type="source" url="http://www.damtp.cam.ac.uk/user/lauga/papers/114.pdf">This
+                paper</ref> on bacterial hydrodynamics provides a closer look on bacteria mechanism
+            for movement, especially the use of rotating flagella. Additionally, <ref type="source" url="https://www.amherst.edu/users/D/ndarnton/extra/hydrodynamics">this post</ref>
+            on hydrodynamics has great analogies and examples relevant to the Reynolds number.
+        </sources>
+  </blog_post>
+</DOC>

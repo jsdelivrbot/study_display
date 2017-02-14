@@ -1,0 +1,87 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>WP3: Cover Letter</title>
+    <version n="2" date="2016-08-22"/>
+  </docHead>
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Hello,</greeting>
+    <intro_para><intent type="purpose">I am very interested applying for the Foundry Operations Co-op at
+                Ginkgo BioWorks.</intent><intent type="connection">Last year, I had spoken with representatives of the company at
+                a Northeastern University Biotechnology career event, and had proceeded through to a
+                phone interview with a member of the company thereafter, but was deferred due to
+                lack of experience at the time (as it would have been my first co-op).</intent><reason>I am still extremely interested in the type of work that Ginkgo is doing, and
+                the doors it will unlock for further biotechnological innovation,</reason> and
+                <proposition>I believe that an opportunity to work at Ginkgo in Spring 2017 would
+                allow for me to both make a noticeable contribution to the team and work being done,
+                as well as provide a unique and powerful learning and skill-development experience
+                as I strive to further develop my competency in this field.</proposition></intro_para>
+    <para_background>
+      <!-- One or More -->
+      <experience type="school">Through my Bioengineering coursework, with a concentration in
+                Cell and Tissue Engineering, I have gained an understanding of genetics, tissue
+                mechanics, proteomics, and cellular engineering. I continue to pursue opportunities
+                to learn more about the science and find creative ways to apply this knowledge,
+                through conversations with peers and teachers</experience>
+      <experience type="personal">and by reading about advances and research being done in my
+                spare time.  While on campus, I have volunteered my time in two
+                research labs, <skills>developing and executing mechanical engineering
+                    experiments</skills> in the Bubble Imaging Lab and <skills>learning cell
+                    culture/passaging, transfection, and biological assay techniques</skills> in the
+                Addiction Sciences Lab, which I continue to be involved with. When not doing
+                research, I serve as a mentor with multiple organizations on campus, further
+                developing <skills>strong interpersonal and leadership skills that enable my ability
+                    to lead groups and harness initiative.</skills></experience>
+    </para_background>
+    <para_background>
+      <experience type="work">At my first co-op, I gained experience in a neurobiological
+                research setting at Duke Universtiy, gaining proficiency with
+                    <programs>MatLab</programs> and familiarity with <programs>python</programs> to
+                    <accomplishments>develop an automated animal behavior training
+                    paradigm</accomplishments> and <accomplishments>conduct comprehensive
+                    analysis</accomplishments> of both behavioral and <skills>calcium
+                    imaging</skills> experiments. Throughout this experience, I gained <skills>
+                    skill and experience with both digesting and writing technical
+                    documentation,</skills> as well as developed ways to <skills>abstract simple
+                    meaning and explanation of technical concepts.</skills> At the end of my co-op,
+                    <accomplishments>I gave an hour-long comprehensive presentation of my work with
+                    both animal behavior and calcium imaging to the entire lab in a lab
+                    meeting.</accomplishments></experience>
+    </para_background>
+    <closing_statements>
+      <compatability>My coursework in genetic and protein engineering, as well as my
+                experience using coding to automate existing processes while on my previous co-op,
+                would allow me to succeed as a Foundry Operations Co-op at Ginkgo. I believe that
+                this relevant experience, as well as my extreme interest in the work being
+                done/potential applications of the technological paradigm being developed at Ginkgo
+                and my personal qualities, would make this a great fit. </compatability>
+      <pb/>
+      <next_step>I eagerly await your call at 1-800-666-5555 so that we can discuss possible
+                next steps and answer questions about moving forward.</next_step>
+    </closing_statements>
+    <signature>
+      <salutation>Best regards,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

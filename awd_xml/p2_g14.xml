@@ -1,0 +1,183 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>How Toxins Work (Blog Post - WP2)</title>
+    <version n="1" date="2016-07-31"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <blog_post>
+    <background>
+      <pb/>
+      <section_header>How does venom work?</section_header>
+      <question>Are there different kinds and why are some animals resistant or immune to the
+                venom?</question>
+      <pb/>
+      <technical_principle n="1">Venom is a mixture of chemicals that different organisms have
+                evolved to use as a defense mechanism or to immobilize prey. <important_idea n="1">There are different kinds of venoms, namely, neurotoxins (that affect the
+                    nervous system and cause paralysis, convulsions, etc.) and haemotoxins, which
+                    affect the blood (prevent clotting, etc.).</important_idea> We'll focus on
+                neurotoxins.</technical_principle>
+      <misconception n="1">One common misconception people have is the difference between
+                venom and poison. <important_idea n="2">Venom is dealt by biting, stinging, or
+                    otherwise injecting into body tissue through a wound, while poison is a secreted
+                    toxin that, when ingested, inhaled, or absorbed, delivers its
+                    effects.</important_idea><analogy>For example, people can eat many venomous
+                    snakes and scorpions because they do not secrete their toxin onto their skin or
+                    other body tissues. Poison ivy secretes its toxin onto its leaves, and doesn't
+                    go around trying to bite or sting people.</analogy></misconception>
+      <pb/>
+      <visual type="comic" url="http://www.birdandmoon.com/wp-content/uploads/2015/07/toxic.jpg">Comic courtesy
+                of birdandmoon.com</visual>
+    </background>
+    <answer>
+      <pb/>
+      <section_header>What, basically, is going on?</section_header>
+      <technical_principle n="2">Understanding how neurotoxins work relies on a basic understanding of neurobiology.
+                Nerve cells in the body, be they in the brain, spinal cord, or connecting to your
+                muscles, rely on a combination of chemical and electrical signals to transmit
+                information from one cell to the next and one part of the body to the next. Cells in
+                the body exist in a fluid matrix that contains all sorts of different chemicals, and
+                the concentration of these chemicals is often different inside and outside of the
+                cell's membrane that separates it from the rest of the world. Many of these
+                particles are ions, meaning they lack or possess extra electrons, effectively giving
+                them an electric charge. When the concentration of these ions is different inside
+                and outside of the cell, it creates a difference in potential charge, called the
+                Resting Membrane Potential.</technical_principle>
+      <specific_topic n="1">Cells possess
+                tiny channels in their membranes that allow these ions to travel into and out of the
+                cell, which effectively changes the electrical potential difference between the
+                inside and the outside of the cell. These channels can be opened either by a change
+                in the electrical potential in the membrane, or by the presence of a particular
+                chemical that causes them to change shape and open or close them. The act of opening
+                or closing many of these channels at once results in a sudden transfer of ions into
+                or out of the cell, which often changes the balance of charge that was maintained
+                and therefore causing the voltage across the membrane to
+                spike.</specific_topic>
+      <important_idea n="3"> The key ions used by neurons are
+                potassium ions and sodium ions.</important_idea>
+      <pb/>
+      <visual type="drawing" url="https://dundeemedstudentnotes.files.wordpress.com/2012/04/picture22.jpg">Depiction courtesy of dundeemedstudentnotes.wordpress.com</visual>
+      <pb/>
+      <important_idea n="4">The core unit of transmission is called the Action Potential, in
+                which there is a sudden change in this electric potential in a local area of the
+                cell, and the arrangement of channels in the cell membrane allows for this local
+                change in potential to propagate, or travel down, the length of the cell
+                membrane.</important_idea>
+      <technical_principle n="3">Neurons contain a long extension called an axon, which allows
+                this current to travel a relatively far distance before reaching the end of the
+                cell. Once it reaches the end of the cell, the current arrives at a synapse, or a
+                gap between the current cell and the next one. The current has no place left to go,
+                as it has reached the end of its cell, but at the synapse there are structures that
+                can secrete chemicals called neurotransmitters.</technical_principle>
+      <pb/>
+      <visual type="drawing" url="https://figures.boundless-cdn.com/19537/full/figure-35-02-04.%402x.png">Depiction courtesy of Boundless.com, The Nervous System, Figure 35.</visual>
+      <specific_topic n="2">These neurotransmitters can leave the cell, travel through the
+                intercellular space, and make contact with the cell on the other side by interacting
+                with receptors on the next cell's membrane. These receptors respond uniquely to the
+                neurotransmitters they are designed to bind with,</specific_topic>
+      <important_idea n="5">but it is important to note that what is occurring is an
+                interaction between complementary shapes, meaning that if a different molecule had a
+                region that was similar in shape to the neurotransmitter in question, it too would
+                interact with the receptor.</important_idea>
+      <pb/>
+      <visual type="drawing" url="http://www.daviddarling.info/images/neurotransmitter.jpg">Drawing courtesy of
+                daviddarling.info.</visual>
+      <pb/>
+      <analogy>Imagine the shape-fitting toys that
+                toddlers play with, where you insert a triangle or a circle piece into various
+                cutouts, trying to match the correct shape with the correct hole. The
+                neurotransmitter is the inserted piece, and it only inserts into the correct hole,
+                or receptor. As an example, let's say the neurotransmitter dopamine is a triangle
+                piece, and serotonin is a circle. Dopamine will only fit in the triangle receptor,
+                and serotonin will only fit in the circle receptor.</analogy>
+      <technical_principle n="4">Once activated, the receptor continues the signal cascade in
+                the next cell, either chemically or electrically, furthering the transmission of the
+                signal to its destination, whether it be to the brain to signal something, or to a
+                muscle to tell it to move.</technical_principle>
+      <pb/>
+      <visual type="drawing" url="http://i.imgur.com/LsVfrJu.png">In this case, the "triangle" dopamine only fits
+                in the correct "triangle" receptor.</visual>
+      <pb/>
+      <analogy>Now consider a modified
+                version of the shape matching toy mentioned earlier where instead of falling through
+                the hole, the insert has a larger block connected to it, so the piece inserts where
+                the shapes match but the rest of the piece hangs out. The natural neurotransmitter
+                is a triangle inserted into a triangle hole successfully, but there can be other
+                chemicals that can interact with the board too. Another piece with a triangle that
+                fits the hole is referred to as an agonist (one that binds successfully to the
+                receptor), and a piece that partially fits the hole but doesn’t fit perfectly and
+                prevents other pieces from fitting is referred to as an antagonist (obscures the
+                receptor without activating it).</analogy>
+      <pb/>
+      <visual type="drawing" url="http://i.imgur.com/5IeQkm4.png">Other shapes, like a "trapezoid"-shaped
+                chemical, can also fit into the "triangle" dopamine receptor, activating
+                it.</visual>
+      <pb/>
+      <explanation n="1">Neurotoxins are molecules that affect the chemical transmission
+                between neurons, by affecting the cell transmitting the chemicals (pre-synaptic) or
+                receiving them (post-synaptic). Some neurotoxins like tetrodototoxin (TTX), which is
+                found in pufferfish and poison dart frogs, acts by blocking the sodium channels in
+                the pre-synaptic cells. <analogy>TTX is a large chemical (compared to a sodium ion)
+                    that attaches to the channel and stops it like a cork for tens of seconds at a
+                    time.</analogy> This blockage prevents sodium ions from entering the cell, and
+                as a result, the cell can no longer transmit action potentials. Contact to your
+                hands would cause paralysis, as even though your brain is telling your hand to move,
+                the message stops upstream of the muscles, and they do nothing. The toxin becomes
+                fatal when it reaches critical tissue like the heart or lungs, where the stoppage of
+                the involuntary nerve impulses that tell your lungs to expand and contract or your
+                heart to beat causes those organs to become paralyzed. Then you die.</explanation>
+      <pb/>
+      <explanation n="2">Other toxins can interact with other
+                ion channels or receptors to produce various effects, some of which can become very
+                complicated and involved. Some toxins like tetanus bind to presynaptic inhibitory
+                interneurons (neurons that release chemicals to other neurons to prevent them from
+                firing action potentials), resulting in repeated muscle spasms because they can't
+                "turn off" the muscular neurons. This ultimately leads to paralysis. Overall, most
+                neurotoxins lead to paralysis in one way or another, and nature has come up with
+                creative ways to cause this from perceivably every angle that it possibly can.</explanation>
+      <pb/>
+      <explanation n="3">Why some
+                animals are immune or resistant to toxins, animals like the mongoose that can
+                sustain repeated cobra bites, comes down to shape, once again. These animals have
+                evolved channels and/or receptors that have a slightly different shape that prevent
+                the toxin from interacting, while continuing to allow the normal molecules to do
+                their thing. Let's return to our original analogy. <analogy>Imagine if the triangle
+                    hole now had a circular bump around it that prevented larger pieces from staying
+                    in place. The normal piece can still fit fine, but now the toxin piece can no
+                    longer fit properly because of the bump.</analogy> Toxin can't bind, toxin can't
+                block the channel, toxin can't prevent the cell from signaling, and the mongoose
+                goes on its merry way getting bit by cobras. It's not immune, as given enough toxin
+                pieces, eventually as soon as one comes off, another toxin piece takes its place,
+                and the cell can't take in sodium fast enough for an action potential, but the
+                animal is at least resistant to a few bites.</explanation>
+      <pb/>
+      <visual type="drawing" url="http://i.imgur.com/9YFCOhI.png">If the organism evolved a raised
+                "ring" around the "triangle" receptor, molecules with other shapes that hang off the
+                side would bind briefly, then fall off.</visual>
+      <conclusion><pb/><section_header>So, how does venom
+                    work?</section_header><important_idea n="6">Venom is a chemical compound that
+                    interacts with receptors and channels in nerve cell membranes that disrupt the
+                    transmission of messages, namely via action potentials, between the
+                    neurons.</important_idea> This often results in paralysis in some way or
+                another, as the messages from the brain or spinal cord can no longer get to the
+                muscle tissue. The result, a paralyzed animal that either can't move and is much
+                easier to kill, an animal who suffocates to death because their lungs can't move, or
+                a potential predator that now has a paralyzed arm or tentacle and won't come near
+                you ever again (or probably survive much longer). <important_idea n="7">Animals can
+                    resist these toxins by changing the shape of their receptors or channels so that
+                    the toxins can no longer bind to them or block
+                    them.</important_idea><pb/><visual type="photo" url="https://i.ytimg.com/vi/lsLdLKATnyk/maxresdefault.jpg">Image courtesy of
+                    Super Lion's YouTube video</visual></conclusion>
+    </answer>
+    <pb/>
+    <sources>Depending on your neurobiology experience, a myriad of sources can elucidate
+            the mechanisms involved in various toxins. <ref type="source" url="https://bigpictureeducation.com/venoms-and-nervous-system">Big Picture</ref>
+            provides some nice introductory/summary information on neurotoxins and some examples.
+            Rose Eveleth with Ted Ed does a great job explaining what the difference between poisons
+            and venoms are in a <ref type="source" url="http://ed.ted.com/lessons/venom-vs-poison-what-s-the-difference-rose-eveleth">fun and informative video.</ref> Toxipedia is a <ref type="source" url="http://www.toxipedia.org/display/toxipedia/Neurotoxins">fantastic resource for
+                more information</ref> on neurotoxins, providing lots of different mechanisms that
+            have been discovered so far. For more info on TTX, the quintessential neurotoxin used in
+            examples, <ref type="source" url="http://www.life.umd.edu/grad/mlfsc/zctsim/ionchannel.html">see here.</ref></sources>
+  </blog_post>
+</DOC>

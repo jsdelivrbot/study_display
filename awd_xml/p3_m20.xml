@@ -1,0 +1,93 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 3</title>
+    <version n="2" date="2016-08-22"/>
+  </docHead>
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Hello Mr.Morrissey,</greeting>
+    <intro_para><intent type="purpose">I am interested in the Software Engineering job at EMC
+                Corporation.</intent><intent type="connection"/> I became interested in the job, after searching the job
+            position on NEU COOL. Although my major is information science, I took all the computer
+            science classes in college and I meet the requirments of the computer knowledge for this
+                job.<reason> I have enjoyed my past work at EMC in the position of ADS testing in
+                Hopkinton, </reason> and <proposition>I think I will fit well with EMC's culture and
+                bring all the necessary abilities to go above and beyond my job
+                requirements.</proposition></intro_para>
+    <para_background>
+      <experience type="work">I bring previous experience with <programs>Iron
+                    Python</programs> from my work at EMC in spring 2016 for my second co-op. As I
+                mentioned before, I worked at Advanced Design Services group and I coded in
+                    <programs>Iron Python</programs> to <accomplishments>test the newest servers and
+                        equipments.</accomplishments> Our group, ADS, is a sub-team in DFx which
+                stands for Design For X and my boss Dick Miller is the manager of the team. In this co-op, I had<accomplishments>developed a loop testing in Cumulus platform and it had been used by ADS to Qual
+                    Testware and will be used for Debug. </accomplishments>I also earned a
+                    <certifications>Bronze Award</certifications> for this. <accomplishments>In
+                    processing of developing the test sequence, I took the initiative to contact and
+                    work with the Cumulus Software Dev team in Shanghai to compelete it.
+                </accomplishments> Besides the developing of the loop sequence, <accomplishments>I also developed the
+                    test for POST analyzer for Infinity/Arcus.</accomplishments> In the last month
+                of my co-op, my role was changed from a software developer to a SQA.
+                    <accomplishments>I did the SQA job to release the tests for Infinity/Arcus by
+                    running tests on all the Warthogs and fixing the software or potential hardware
+                    problems with the team. </accomplishments><accomplishments>I worked hard and communicated with dev groups from Shanghai, Cork
+                    and Franklin. Since all work is not done by one person, it's important to have
+                    the team work ability to accomplish the work.</accomplishments> Besides the work, I
+                attended the derating class and the IPMI class while I was working at EMC. I also
+                attended the 3D printing workshop which was held in UMASS Lowell. I really enjoyed
+                working at EMC because the EMC community has many events for employees from
+                different cultures. There were Ping Pong competitions and lion dance during the
+                Chinese New Year in February. These events help me put myself as a part of the EMC
+                    community.</experience>
+    </para_background>
+    <para_background>
+      <experience type="work">I had my first co-op at Harvard School of Public
+                Health in IT services, spring 2015. In this co-op, I <accomplishments>developed
+                    strong customer service skills by troubleshooting users’ software and hardware
+                    problems. I communicated with customers by emails, phones and in-person. Because most of my
+                    customers are not experts in computer, I need to explain the reason of causing the problem and the way to
+                    prevent it. </accomplishments> I also <accomplishments>collaborated with team to
+                    manage helpdesk responsibilities and customer issues</accomplishments>. These
+                experience helped me gain communication skills by facing different
+                people.</experience>
+      <experience type="school">Aside from my work experience, I learned
+                    <programs>C++</programs>, <programs>Java</programs>, <programs>C</programs>, and
+                    <programs>XML</programs> from my courses at Northeastern University which is a
+                perfect fit for this job as a software engineer.</experience>
+    </para_background>
+    <closing_statements>
+      <compatability>Because of the previous work at EMC and my computer science knowledge, I
+                think I will fit in well with the culture of EMC Corporation and this job
+                    position.</compatability>
+      <next_step>I hope you will call me at 857-222-0943 so that we can discuss the next step
+                in the hiring process. I look forward to working for this company again. Thank you
+                very much for your consideration!</next_step>
+    </closing_statements>
+    <signature>
+      <salutation>Yours sincerely,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

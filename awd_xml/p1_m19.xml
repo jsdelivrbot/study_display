@@ -1,0 +1,132 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 1 Annotated Bibliography</title>
+    <version n="1" date="2016-07-11"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> Electrical engineering is a broad field that can cover anything from
+            artificial intelligence, to cutting edge healthcare solutions, to personal electronics.
+            There are countless other applications in this discipline, but the end goal is the same
+            – to improve the overall quality of life. One way that engineers are trying to achieve
+            this goal is by designing and implementing solutions to help improve the production and
+            distribution of fresh food. While the lack of access to food is a global problem, it can
+            especially affect urban areas. And as time goes on, the population will only to continue
+            to grow and increase the severity of this problem. While the quantity of available food
+            is certainly important, the quality should be considered too; to feed a hungry
+            community, bringing in more fast food chains is not a healthy solution. This is where
+            electrical engineers can help. By using skills from their discipline, they can create
+            innovative technology to grow and deliver fresh produce year round. This technology
+            already exists here in Boston and Cambridge, and it is led by startups that have visions
+            for a healthier future.</problem_stmt>
+    <citation n="1" style="APA"><author n="1">Vanni, O.</author> (2016, June 22).<title level="a"> Boston's Budding Agricultural Tech Cluster Has a Growing Problem to
+                Solve</title>.<title level="w"> BostInno</title>. Retrieved from
+            http://bostinno.streetwise.co/2016/06/22/boston-agriculture-and-food-tech-companies/</citation>
+    <annotation>
+      <background type="source">The site BostInno, which covers local news about technology
+                and startups, </background>
+      <summary type="general"> gives an overview of the numerous food-related challenges in
+                the world. There is a spectrum of issues from malnutrition and obesity to food
+                scarcity and starvation. Within the U.S., <q>14 percent of households - translating
+                    to 17.4 million of them - throughout the U.S. experienced food insecurity at
+                    some point in 2014</q> (1). In both the U.S. and the rest of the world, the
+                population will only grow and worsen this problem. Thankfully, many companies are
+                currently looking for solutions, including two local startups. Grove Labs in
+                Somerville created a product that allows people to grow produce in their own homes.
+                Freight Farms in Boston repurposed shipping containers to grow crops. </summary>
+      <relevance type="value_stmt">This article is helpful in spotlighting the different local
+                companies that are solving today's food issues with engineering
+                skills.</relevance>
+      <relevance type="application">Interested readers could click
+                through the links provided in the article to find more in-depth information about
+                each company in order to join the solution.</relevance>
+    </annotation>
+    <citation n="2" style="APA"><author n="1">Subbaramann, N.</author> (2015, April 12).<title level="a"> Somerville's Grove Labs Wants to revolutionize fresh food</title>.<title level="w"> Boston Globe</title>. Retrieved from
+            https://www.bostonglobe.com/magazine/2015/04/11/somerville-grove-labs-wants-revolutionize-fresh-food/g4M3EqLuJhRl63OWNiP9wJ/story.html</citation>
+    <annotation>
+      <background type="source"> The Pulitzer Prize winning newspaper Boston Globe </background>
+      <summary type="general"> ran an article about the company Grove Labs and its
+                revolutionary approach to fresh food. Starting in a fraternity room at MIT, founders
+                Jamie Byron and Gabe Blanchet created an indoor aquaponics system and garden. They
+                eventually took this hobby and turned it into a well-funded business. The current
+                working prototype uses <q>well-designed smart lighting and sensors to monitor the
+                    growing conditions within the system, all of which feed data into a smartphone
+                    app</q> (1).</summary>
+      <relevance type="value_stmt">Not only does the article show Grove Labs' success in
+                numbers with its $2 million funding and 50 early customers, it also features a
+                consumer's positive opinion. Alexi Conine, who lives in the South End of Boston,
+                praises the Grove Labs' product for providing fresh food regardless of the season.
+                This is especially important in a city like Boston with its record of cold, snowy
+                winters that make farming difficult.</relevance>
+      <relevance type="application">This
+                article provides Grove Labs' background, product reviews, and product features that
+                could positively influence potential customers to buy a system and reap its
+                benefits. </relevance>
+    </annotation>
+    <citation n="3" style="APA"><author n="1">Here and Now Staff.</author> (2015, February
+                23).<title level="a"> Freight Farms: How Boston Gets Local Greens, Even When Buried
+                in Snow</title>.<title level="w"> NPR</title>. Retrieved from
+            http://www.npr.org/sections/thesalt/2015/02/23/388467327/-freight-farms-grow-local-flavor-year-round</citation>
+    <annotation>
+      <background type="source"> NPR's food blog "The Salt" </background>
+      <summary type="general"> explores how the Boston startup Freight Farms has impacted the
+                local food space. In 2010 the co-founders Jon Friedman and Brad McNamara looked for
+                ways to grow food anywhere. They came up with the idea to use shipping containers as
+                controlled farming environments. Using digital technology, systems that include
+                pumps, irrigation, LEDs, nutrients, and pH levels can be remotely monitored and
+                controlled. </summary>
+      <summary type="interpretation">This article clearly endorses Freight Farms' solution to
+                healthy food distribution in urban areas. It presents the farmers Shawn and Connie
+                Cooney as satisfied customers. </summary>
+      <relevance type="value_stmt">With their four shipping containers, the Cooneys can grow
+                the same amount of produce as on four acres of land. And with the climate controls,
+                they can grow produce every day of the year. NPR's article demonstrates how
+                technology has provided these farmers with the capability to manage a profitable
+                business in a city to the benefit of all. </relevance>
+    </annotation>
+    <citation n="4" style="APA"><author n="1">Schoenfeld, B.</author> (2011, September
+                21).<title level="a"> How the Farm-to-Table Movement Is Helping Grow the
+                Economy</title>.<title level="w"> Entrepreneur</title>. Retrieved from
+            https://www.entrepreneur.com/article/220357</citation>
+    <annotation>
+      <background type="author"> Award-winning author and television writer Bruce Schoenfeld </background>
+      <summary type="general"> discusses the benefits of fresh, locally grown food. Besides
+                the obvious health advantages of accessible agriculture, there are also major
+                economic advantages. In Seattle, small farms are making $10,000 to $1 million
+                anually. In Cleveland, there is the potential to generate $750 million if the city
+                grows just 5% of the total food it consumes. The farm-to-table movement creates jobs
+                and revenue from farm work and the sale and distribution of produce. This movement
+                is not just for fancy restaurteurs; many markets exist near lower income
+                neghborhoods that provide access to healthy food at a steep
+                discount.</summary>
+      <summary type="interpretation">With the numerous examples of
+                economic prosperity resulting directly from local agriculture, Schoenfeld strongly
+                supports the growth of it.</summary>
+      <relevance type="application">This article is a good source for readers interested in
+                learning about the economic effects of locally grown food. It could also inspire
+                them to investigate innovations in this food movement or even create their own.
+            </relevance>
+    </annotation>
+    <citation n="5" style="APA"><author n="1">Bellows, A.</author>, <author n="2">Brown,
+                K.</author>, &amp;<author n="3">Smit, J.</author> (2004).<title level="a"> Health
+                Benefits of Urban Agriculture</title>.<title level="w"> Community Wealth</title>.
+            Retrieved from
+            http://community-wealth.org/content/health-benefits-urban-agriculture</citation>
+    <annotation>
+      <background type="author"> Members of the Community Food Security Coalitions's North
+                American Initiative on Urban Agriculture <q>present research on the practical health
+                    benefits of farming in the city</q> (1). </background>
+      <summary type="general"> When there is easier access to fresh food, community members
+                are more likely to eat healthily. Food security is also increased with this access;
+                when there is personal interaction between a consumer and a local producer, instead
+                of say a massive supermarket, there is an increase in<q>knowledge and commitment to
+                    healthy, sustainable, and secure food products and practices</q> (5). Small
+                scale agriculture also provides economic advantages by saving household food
+                dollars.</summary>
+      <relevance type="application">This paper is a comprehensive source of arguments
+                supporting the practice of urban agriculture.</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

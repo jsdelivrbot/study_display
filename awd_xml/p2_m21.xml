@@ -1,0 +1,63 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>P2 Cover LEtter</title>
+    <version n="4" date="2016-08-08"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Dear Mr. Stefanick,</greeting>
+    <intro_para><intent type="purpose">I am writing to apply for an HVAC engineer co-op position,
+            </intent><intent type="connection"><!-- Optional --> which I was recommneded for through my previous boss,
+                John Donahue at Control Consultants Inc.</intent><reason><!-- Optional --> I am currently enrolled in a BS/MS program at Northeastern University 
+                for Mechanical Engineering and Engineering Management </reason>and <proposition>am looking to gain hands-on experience 
+                    in the HVAC industry.</proposition></intro_para>
+    <para_background>
+      <!-- One or More -->
+      <experience type="school">Through my rigorous coursework, I have gained experience with thermodynamics, 
+                fluid dynamics, heat transfer, and modeling skills with <programs>AutoCAD</programs>and <programs>SolidWorks</programs>. </experience>
+      <experience type="work">During my last coop, I gained valuable experience in the HVAC control field; 
+                I was responsible for <skills>creating point lists</skills> for incoming jobs and AutoCAD system drawings for approved 
+                jobs. I routinely contacted contractors regarding plans and visited active sites to perform inspections.</experience>
+      <experience type="work"> Due to a previous internship at the Naragansett Bay Commission, I also have experience in the water 
+                utility and treatment field.</experience>
+      <experience type="personal">Additionally, this coming fall I plan on joining the Northeastern chapter of MCAA (NUMCAA)
+                to further my skills with mechanical contracting. </experience>
+    </para_background>
+    <closing_statements>
+      <compatability>EMCOR is one of the leading mechanical contractors in the Boston metropolitan area. 
+                After my previous experience with HVAC controls, I am looking to broaden my skills in mechanical 
+                contracting and I believe working at EMCOR would be a challenging and rewarding path to new 
+                knowledge in the industry. I trust that I would be a driven candidate capable of taking on the 
+                adversity and problem solving needed when in the office or out in the field. </compatability>
+      <next_step><pb/>I am eager to start my future in the HVAC industry and appreciate your consideration for 
+                a position at EMCOR Northeast. I look forward to hearing from you soon.</next_step>
+    </closing_statements>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

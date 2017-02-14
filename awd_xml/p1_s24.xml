@@ -1,0 +1,171 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Annotated Bibliography for Automated Trash Sorting</title>
+    <version n="num_of_version" date="2016-07-12"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> World War II saw Americans willfully ration clothes and gasoline, plant war
+            gardens, and participate in scrap metal drives to manufacture bullets. The effort on the
+            home front came as an overlooked victory, proving that the nation could survive — thrive
+            even — without superfluous luxuries when organized under a common cause. Although U.S.
+            government’s propaganda based success to conserve resources at home was a fantastic
+            accomplishment, it came with a disconcerting lesson. Without an enemy, Americans lost
+            their capacity to skirt comforts for conservational purposes. As it happens, the
+            overwhelming amount of research indicates that there still is an enemy — although it
+            does not present itself in a swastika emblazoned SS jacket, but with climbing
+            temperatures and rising sea levels — however a complicated mesh of conflicting interests
+            seems to be hindering Americans from readopting the thrifty traits of their
+            grandparents. The consequence is a culture that continues to increase its consumption,
+            ignoring the all but certain consequences. As the speed at which items are deemed
+            obsolete increases, driving the economy further toward a reliance on disposable
+            commodities, the rate at which our landfills reach max capacity increases in step,
+            despite our technological potential to accomplish the opposite. Further encouragement
+            for America to deal more effectively with its waste addiction should come from an
+            awareness of what is transpiring beyond its own shores. Population growth compounded
+            with the entrance of developing countries in consumer markets guarantees that demand for
+            first world commodities is to skyrocket. The amount of waste produced by such an
+            increase in demand, spells uncertain questions for how factories and our environment
+            will respond to this change. Luckily, a solution to our apathy might be
+            found in new technologies. By levering technology to sort our waste for us, both in our
+            home and in public, the current flow of thousands of tons of metals, rare earth and
+            plastics could be directed out of our landfills rather than into them. This is crucial
+            not only in ensuring that less waste reaches our landfills, but also in ensuring that
+            what does reach our landfills does so safely.</problem_stmt>
+    <!-- 1 -->
+    <citation n="1" style="MLA"><author n="1"> Unni Eikeseth </author><author n="2"> Chris Veløy </author><ref>http://sciencenordic.com/machines-are-better-people-sorting-household-trash</ref><title>Machines are better than people at sorting household trash</title>
+            Sciencenordic.com. N.p., 03 April 2013. Web. 12 July 2016. </citation>
+    <annotation>
+      <!-- can include <q> element(s) for quoted material -->
+      <background type="source"> Science Nordic is an independent news site, focused on the
+                coverage of scientific developments in Nordic countries. As such, their coverage of
+                automated waste assortment in Norway fits nicely into the domain of the website. </background>
+      <summary type="general">A broad overview is given of new waste sorting technology at a
+                waste disposal plant on the outskirts of Oslo. In addition to providing coverage of
+                the capabilities of the plant (in sorting between plastic and food waste), the
+                article also refers back to failures in similar technology that had been attempted
+                in the 1980s.</summary>
+      <summary type="approach">With improvements in spectrography, infra-red sensors and
+                hardware it seems the Oslo plant has found its solution. </summary>
+      <summary type="interpretation"> Although only an industrial level of trash separation is
+                discussed in this article, there might be replicable methods for the residential
+                setting as well.</summary>
+      <relevance type="value_stmt">There is little evidence to suggest that sorting technology
+                has developed much beyond what is addressed in the article, making the technology
+                discussed still of pinnacle importance. </relevance>
+      <relevance type="application"> Communities scouting to find functional technologies for
+                their waste processing could find inspiration from the Oslo plant discussed.</relevance>
+    </annotation>
+    <!-- 2 -->
+    <citation n="2" style="IEEE">
+      <author n="1">Mahmudul Hasan Russel</author>
+      <author n="2">Mehdi Hasan Chowdhury</author>
+      <author n="3">Md. Shekh Naim Uddin</author>
+      <author n="4">Ashif Newaz</author>
+      <author n="5">Md. Mehdi Masud Talukder</author>
+      <title>Development of Automatic Smart Waste Sorter Machine</title>
+    </citation>
+    <annotation>
+      <background type="author">The paper's authors are a group of engineers based out of
+                Bangladesh's Chittagong University and the University of Rajshashi. The authors
+                present an in-depth technical report on how they sought to address the automated
+                sorting of recyclable goods.</background>
+      <summary type="general">The paper is broken into eight sections. The authors open with a
+                broad overview of the world's waste problem, followed by discussion of potential
+                resources that could be harvested from this waste. They then delve into the fine
+                level details of their sorting system before resurfacing in the last three sections
+                to critique their project. </summary>
+      <summary type="approach">The technical solution -- detailed in sections three to five --
+                discusses a replicable system of OP Amps, IR, LDR, and other components accompanied
+                by flowcharts and explanations. </summary>
+      <summary type="interpretation">Although the project in question doesn't address the
+                issue of waste storage through a particularly novel approach, it is a logical one,
+                and is fit for the task at hand. </summary>
+      <relevance type="value_stmt">The issues with grammar in the paper are far outweighed by
+                the technically challenging solution to a serious problem that is put on display.</relevance>
+      <relevance type="application">Engineers looking for a highly detailed report on creating
+                a control flow to develop sensor based systems can gain insight from this
+                paper.</relevance>
+    </annotation>
+    <!-- 3 -->
+    <citation n="3" style="MLA"><author n="1">Kelsey Campbell-Dollaghan</author><ref>http://gizmodo.com/this-trash-sorting-robot-could-revolutionize-recycling-511989613</ref><title>This Trash-Sorting Robot Could Revolutionize Recycling</title> Gizmodo.com. 06
+            June 2013. Web. 12 July 2016. </citation>
+    <annotation>
+      <background type="author">Campbell-Dollaghan, a popular Gizmodo contributor, details an
+                innovative approach to waste sorting specifically outfitted for use on construction
+                sites created by ZenRobotics.</background>
+      <summary type="general">The article opens by making the staggering point that the
+                construction center is responsible for a third of all waste created. By
+                reintroducing the materials from active demolition cites into future projects, this
+                number could be successfully and profitably lessened.</summary>
+      <summary type="approach">Of particular interest in the article is the approach taken by
+                ZenRobotics. Rather than using the more conventional servos to merely push or drop
+                waste into different bins, the system relies upon a mobile arm to grab waste from a
+                conveyor belt and sort it accordingly. </summary>
+      <summary type="interpretation">This approach provides a novel means of addressing the
+                issue of waste sorting. </summary>
+      <relevance type="value_stmt">What the source seems to lack is critical insight into the
+                more nuanced potential of the system in question. As a result, it comes across more
+                as a public service announcement for social media than as a serious intellectual
+                investment.</relevance>
+      <relevance type="application">Engineers looking to think outside the box can certainly
+                find inspiration from within the lines of this text, however if they seek more
+                in-depth knowledge they should visit the ZenRobot's website.</relevance>
+    </annotation>
+    <!-- 4 -->
+    <citation n="4" style="IEEE">
+      <author n="1"> H.G. Barrow </author>
+      <author n="2">J.M. Tenenbaum </author>
+      <author n="3">R.C. Bolles </author>
+      <author n="4">H.C. Wolf </author>
+      <title>Parametric Correspondence and Chamfer Matching: Two New Techniques for Image
+                Matching</title>
+    </citation>
+    <annotation>
+      <background type="author">The authors in question are all published and highly
+                referenced members of the artificial intelligence community. In this instance, they
+                use their knowledge of the field to discuss two areas of computer
+                vision.</background>
+      <summary type="general"> By combining parametric correspondence and chamfer matching,
+                the researchers demonstrated a means by which a camera can automatically reorientate
+                itself to a predetermined setting. </summary>
+      <summary type="approach"> The paper addresses parametric correspondence as being the
+                ability to distinguish the offset of an image by referencing small predetermined
+                landmarks. These landmarks are identified through the use of chamfer matching.
+                Chamfer matching was used to identify these landmarks due to its fast computation
+                speed and resistance to lighting disturbances.</summary>
+      <summary type="interpretation">Although the methods discussed provide useful object
+                recognition results in environments with variable parameters, most trash sorting can
+                likely be done in a contained environment.</summary>
+      <relevance type="value_stmt">The credentials of the authors speak for themselves, as
+                they make a highly complex topic both informational and accessible.</relevance>
+      <relevance type="application">This paper serves as a strong display of how engineers
+                might think about object recognition in a slightly unorthodox manner.</relevance>
+    </annotation>
+    <!-- 5 -->
+    <citation n="5" style="IEEE">
+      <author n="1">Duncan Furness</author>
+      <title>SYSTEM AND METHOD FOR PRECISELY POSITIONING A ROBOTIC TOOL</title>
+    </citation>
+    <annotation>
+      <background type="source">Although the patent in question was published in 1994, it
+                maintains relevance through a large number of citations referring to it due to its
+                novel methods of handling vision parallax. </background>
+      <summary type="general">The patent details a robot arm and camera setup, whereby a
+                camera positioned at an angle to the camera is used to guide a fixed robot arm to a
+                destination. </summary>
+      <summary type="approach">By breaking from the norm, and placing the camera to the side
+                of the arm, rather than on the arm itself, the inventor was able to address parallax
+                errors in order to operate more accurately in three dimensions. </summary>
+      <summary type="interpretation">Using this technology could provide for more precise
+                motor movements if a robot arm were used to sort the trash.</summary>
+      <relevance type="value_stmt">Although most readers would find following the terms and
+                mathematics behind this patent to be rightfully confusing, such a proven technology
+                is rarely done simply.</relevance>
+      <relevance type="application">The problem addressed in the patent provides a useful
+                solution for skilled engineers operating in controlled environments.</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

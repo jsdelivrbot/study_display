@@ -1,0 +1,151 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 2: Feasibility Study</title>
+    <version n="2" date="2016-08-01"/>
+  </docHead>
+  <fsb_rpt>
+    <!-- Title Page, Page 1 -->
+    <page type="ttl">
+      <contributors>
+        <!--deidentified element-->
+      </contributors>
+      <date>09 August 2016</date>
+      <title>Revamping MyNEU COOL</title>
+    </page>
+    <!-- Table of Contents, Page 2 -->
+    <page type="tbl_contents">
+      <sect lvl="1" n="1">Executive Summary</sect>
+      <sect lvl="1" n="2">Preliminary Requirements Analysis</sect>
+      <sect lvl="2" n="1">Objectives</sect>
+      <sect lvl="2" n="2">Rules</sect>
+      <sect lvl="2" n="3">Interactions with existing infrastructure </sect>
+      <sect lvl="1" n="3">Success Criteria</sect>
+      <sect lvl="1" n="4">Cost Estimates</sect>
+      <sect lvl="2" n="1">Developers</sect>
+      <sect lvl="2" n="2">Hardware</sect>
+      <sect lvl="1" n="5">Reporting Outline</sect>
+      <sect lvl="1" n="6">Risk Analysis</sect>
+      <sect lvl="1" n="7">Conclusion</sect>
+    </page>
+    <!-- Executive Summary, Page 3 -->
+    <page type="exec_sum"> Northeastern University is well known for our exceptional co-op
+            program. As it stands, we are not representing this program well. The purpose of this project is to create a new web portal
+            to replace the current MyNEU COOL. As student here at Northeastern University I am
+            wholly committed to this project and believe it can be done in a reasonable time frame.
+            Here is why: What we're talking about here is mostly changing the interface and I
+            believe the back end usability is already present, it is just not utilized. There are
+            few limitations to the project with the major limitation being reliable co-op position
+            liaisons and tangible benefits for participants, but this is outside of the feasibility
+            of the application itself, and more related to general improvements. The revamping of
+            our web portal will put a new face on the NEU co-op search process and encourage our
+            students to use the service, in turn yielding more support for our student feedback
+            database and overall improvements to the co-op process on the faculty and student end. </page>
+    <!-- Preliminary Requirements Analysis, Page 4 -->
+    <page type="pre_req_ana">
+      <app_ovr type="obj" title="Co-op Search Improvements">The primary objective of this
+                project is to improve the overall quality of the co-op search process. This process
+                is undertaken by the overwhelming majority of students, making this a very visible
+                improvement on the part of the university. The goal is in part to increase user
+                feedback, make the process easier and more intuitive, overall replace and improve
+                what is generally considered a poor service. </app_ovr>
+      <app_ovr type="obj" title="Experiential Learning">As students of the University, this
+                project will help provide valuable development experience to multiple students. This
+                includes students from different majors collaborating for a full cross discipline
+                project. This exemplifies Northeastern's experiential learning goals, and creates
+                student involvement. </app_ovr>
+      <app_ovr type="rls" title="Graphic Identity">The design and implementation of this web
+                portal will uphold Northeastern University's expectations for colors, logos, and
+                branding. The primary colors used will be Northeastern Red (CC0000), Warm Grey 11
+                (615445), and Black (000000), along with the thematic Northeastern header standard
+                on all digital front end space. </app_ovr>
+      <app_ovr type="synergy" title="Existing myNEU COOL">This portal will require all of the
+                previous information in the system to work. This includes the current list of jobs,
+                all archived jobs, all student reviews, and all stored student coop history, in
+                whatever format the database uses. This is make transition rather seamless, and
+                allow for users to keep the information they are accustomed too. The goal here is to
+                prevent users from having to relearn a new system, rather they will immediately know
+                how to use it. </app_ovr>
+    </page>
+    <!-- Success Criteria, Page 5 -->
+    <page type="sccs_crt">
+      <req_sect>User Interactions <req title="Seamless Transition" n="1">Our new web portal
+                    must be able to utilize all of the existing MyNEU COOL data. This includes co-op
+                    reviews, individual user preferences, and just the list of jobs itself. These
+                    aspects of COOL will not be changed, so that users experience no loss of the
+                    past functionality. </req><req title="Improved Feedback" n="2">The web portal will only be considered a
+                    success if feedback from students and faculty shows an improved satisfaction.
+                    This includes not only improved levels of student feedback within the system
+                    (co-op reviews) but also of the overall sentiment towards the service.</req></req_sect>
+      <req_sect>Technical <req title="Interactions with existing Systems" n="1">This Web
+                    Portal must integrate with the existing database models supporting MyNEU COOL.
+                    The only back end changes deemed acceptable are those aimed at improving
+                    database interactionary tools on the user end. This may include changing the
+                    type of database used, but all the data will have to be migrated. </req><req title="Improved navigability and New Features" n="2">The new MyNEU web Portal
+                    will allow for new ways to interact with the co-op database, and make it more
+                    straight forward to use the existing filters. On top of adding new filters, the
+                    web portal will have a new feedback system. </req></req_sect>
+    </page>
+    <!-- Cost Estimates, Page 6 -->
+    <page type="cost">
+      <est type="fnc"> Developers: The project's main cost will be the wage of 5 Northeastern
+                University Students. They will be paid a negotiable group upon beginning the
+                project, and another upon successful implementation and approval of their web
+                portal. </est>
+      <est type="fnc"> Hardware: The project's implementation may require new or updated
+                hardware. This is yet to be determined, but every effort will be made to use the
+                existing hardware. </est>
+    </page>
+    <!-- Reporting Outline, Page 7 -->
+    <page type="rpt">
+      <tmln date="2016-09-01">Research and design Phase Begins: The development team will
+                begin researching and drafting designs for the portal and its aesthetics. </tmln>
+      <tmln date="2016-10-01">Initial Design up for Approval: Mockups of the actual page will
+                be presented. Presentation will also include any believed changes to the database.
+                Sample data will be taken from the current database for example usage. </tmln>
+      <tmln date="2016-10-02">Project will begin development after official design undergoes
+                approval. This includes slowly migrating parts of the current MyNEU COOL database to
+                the system for testing. Bi weekly IPR (In progress review) will be held with the
+                same liaison staff.</tmln>
+      <tmln date="2016-10-14">IPR #1</tmln>
+      <tmln date="2016-10-28">IPR #2: Demo included for staff usage.</tmln>
+      <tmln date="2016-11-14">IPR #3: Student feedback requested.</tmln>
+      <tmln date="2016-11-28">IPR #4: Demo included for staff usage. </tmln>
+      <tmln date="2016-12-05">Final approval: Projected time frame for seeking final design
+                approval. This will include an in-depth trial of the web portal with migrated data.
+                Students from NEU will attend and provide feedback. </tmln>
+      <tmln date="2016-12-10">Integration and integration testing: The service will be
+                replaces and we will be monitoring it constantly for errors or unexpected
+                behavior.</tmln>
+    </page>
+    <!-- Risk analysis, Page 8 -->
+    <page type="rsk_ana">
+      <img url="http://i.imgur.com/7Ksx9aU.png"/>
+    </page>
+    <!-- Conclusion, Page 9 -->
+    <page type="conc">
+      <fsb>The project is feasible. All of the students working on it have web development
+                experience and with the provided time frame of three months we are fully confident
+                that this project can be completed, on time. The addition of student feedback
+                throughout the process increases our ability to create the ideal improvements,
+                securing the valuable student approval. We are also provided in-depth views for NEU
+                staff and increasing our availability for feedback.</fsb>
+      <cond>The only condition is that our time line not be shortened. This time line is
+                already short for a standard web package development, and any attempts to rush the
+                product compromise the result. That being said, the team is confident it can be
+                delivered on time on the condition that new hardware is not needed to host the
+                service. In the event that we need to purchase new hardware the time line may be
+                increased, or we can look into external hosting.</cond>
+      <sum> In summary, this project will provide Northeastern University with a valuable
+                student experiential learning program and improve a widely used service. It is no
+                secret that our current co-op database (MyNEU COOL) is antiquated, and student
+                feedback is very low. By developing a replacement web portal and migrating all of
+                the current data, we can improve that service without losing any aspect of the
+                service that students are accustomed too. By minimizing changes to the current
+                system's under workings and instead "re-skinning" it, we can avoid a costly
+                experience, and utilize our current system in the improvement.</sum>
+    </page>
+  </fsb_rpt>
+  <!--paste body of your template file here-->
+</DOC>

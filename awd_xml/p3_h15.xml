@@ -1,0 +1,90 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 3: Cover Letter</title>
+    <version n="2" date="2016-08-14"/>
+  </docHead>
+  <!-- root element for P3 here -->
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Hello Filament Games,</greeting>
+    <intro_para><intent type="purpose">I am interested in applying for the Unity Programmer position
+            </intent>that <intent type="connection"> I discovered while browsing your site. </intent><reason>Your company takes a fun, unique approach to education</reason> that I would
+            love to be a part of it. </intro_para>
+    <para_background>
+      <experience type="work">I currently work at Northeastern University’s ReGame VR Lab,
+                which leverages video games for motor rehabilitation. Here, <skills>I develop Unity
+                    games</skills> in <skills>C#</skills> for two platforms: the <programs>Microsoft
+                    Surface tablet</programs> and another that uses the <programs>Microsoft
+                    Kinect</programs>. Our games are targeted towards children with
+                cerebral palsy and aim to engage and encourage patients during therapy. I enjoy the
+                work I do here as it makes me feel that I am making a big difference, and I believe
+                I will be able to contribute to Filament Games with a similar drive.
+            </experience>
+    </para_background>
+    <para_background>
+      <experience type="school">From my coursework towards a BA in Computer Engineering at
+                Northeastern University, I have developed strong skills in <skills>design
+                    patterns</skills> and <skills>algorithms</skills> and an interest in
+                    <interests>multiplayer networked games</interests>, <interests>procedural
+                    generation</interests>, and <interests>3D modeling</interests>.</experience>
+      <experience type="personal">One of my current projects is a turn-based strategy game
+                created in Unity that uses procedural generated maps and the A* pathfinding
+                algorithm for unit movements. Development stages of this project along with my other
+                personal projects highlighting the principles and topics outlined above can be
+                viewed at <accomplishments>examplesite.com.</accomplishments></experience>
+    </para_background>
+    <para_background>
+      <experience type="work">Additionally, I have two years of development experience at
+                Novartis Pharmaceuticals and ChoiceStream, where I <skills>collaborated with
+                    developers, designers, managers, and other professionals in various
+                    fields</skills> to <accomplishments>create internal web
+                    applications</accomplishments>. At Novartis, I worked on
+                    <languages>Python</languages><accomplishments>web services for Oncology that connected a web application used to
+                    register samples and a Java thick client used to manage
+                    samples.</accomplishments> I also <accomplishments>laid out the front-end of a
+                    web application used to track samples from registration to testing stages; this
+                    project won the company's Innovation award.</accomplishments> At ChoiceStream, I
+                worked on a <accomplishments>web application to generate ad
+                    campaigns</accomplishments> and <accomplishments>automated project
+                    environments</accomplishments> with <programs>Chef</programs>. While at these
+                companies, I applied universal standards of <skills>debugging</skills>,
+                    <skills>testing</skills>, <skills>automation</skills>,
+                    <skills>documentation</skills>, and <skills>version control</skills>. These
+                opportunities taught me to <skills>follow a fast schedule of daily stand-ups and
+                    weekly sprints</skills> and appreciate flexible, collective design.this paragraph is excellent</experience>
+    </para_background>
+    <closing_statements>
+      <compatability>Filament Games is a great example of how video games can enrich our
+                lives. Thus, as an individual with a passion for games, </compatability>
+      <next_step> I would love to meet to see how I can become a part of this community. Thank
+                you for your time and consideration!</next_step>
+    </closing_statements>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

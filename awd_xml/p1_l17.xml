@@ -1,0 +1,70 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 1-Annotated Bibliography</title>
+    <version n="1" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> In the US, every ten years states redraw the boundaries of voting districts
+            to conform with the most recent census data. Gerrymandering is the intentional and
+            strategic drawing of voting district boundaries to diminish your political rivals'
+            influence. This can be done by either "packing" a district by relegating a large group
+            of demographically similar people into only a few districts where they make up a
+            majority, or by "cracking" a group by dispersing them between many districts so they
+            never constitute a large enough portion of a constituency to win. This practice
+            deliberately undermines our intended system of representative government. However, with
+            the advent of the computer and the compilation of detailed demographic information into
+            digital databases such as GIS (geographic information system) the use of what are
+            conventionally engineering methods has been suggested as a way to mitigate this. Through
+            the marriage of data optimization with the political process steps can be taken toward
+            depoliticizing a task that should simply be an unbiased and mundane piece of
+            housekeeping to keep our democracy functioning properly.</problem_stmt>
+    <citation n="1" style="APA"><author n="1">Olson, B.</author> (2016, June). <title level="a">Brian Olson: Engineering
+                Elections Without Bias</title> [Video file]. Retrieved from
+            http://tedxtalks.ted.com/video/engineering-elections-without-b </citation>
+    <annotation>
+      <background type="author"> Olson is a software engineer at PatientsLikeMe. He has been
+                working on redistricting software for over a decade. </background>
+      <summary type="general"/>
+      <relevance type="value_stmt"/>
+    </annotation>
+    <citation n="2" style="APA"><author n="1">Altman, M.</author> , &amp; <author n="2">McDonald, M. P.</author> (2011,
+            January). <title level="a">The dawn of do-it-yourself redistricting? Online software
+                puts redistricting tools in the hands of the public</title> . <title level="j">Campaigns and Elections</title> [2010], 32(1), 38+. </citation>
+    <annotation>
+      <background type="source"> Published in a periodical for professional political
+                consultants. </background>
+      <summary type="general"/>
+      <relevance type="value_stmt"/>
+    </annotation>
+    <citation n="3" style="APA">
+      <author n="1"/>
+      <title level="a"/>
+    </citation>
+    <annotation>
+      <background type="author"/>
+      <summary type="general"/>
+      <relevance type="value_stmt"/>
+    </annotation>
+    <citation n="4" style="APA">
+      <author n="1"/>
+      <title level="a"/>
+    </citation>
+    <annotation>
+      <background type="author"/>
+      <summary type="general"/>
+      <relevance type="value_stmt"/>
+    </annotation>
+    <citation n="5" style="APA">
+      <author n="1"/>
+      <title level="a"/>
+    </citation>
+    <annotation>
+      <background type="author"/>
+      <summary type="general"/>
+      <relevance type="value_stmt"/>
+    </annotation>
+  </annotated_bib>
+</DOC>

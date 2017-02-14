@@ -1,0 +1,79 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Modeling and Producing Genre</title>
+    <version n="1" date="2016-08-01"/>
+  </docHead>
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Dear Hiring Committee: </greeting>
+    <intro_para>
+      <intent type="purpose">I am writing to apply for the MotorSports development engineer
+                position at A123 Systems Inc. listed on Northeastern University’s job search
+                website.</intent>
+      <reason>I was excited to see a growing company invested in making progress into the
+                future of clean energy in the automotive industry.</reason>
+      <proposition>I have experience with startups similar to A123 and find that I am most driven in
+                such an environment. </proposition>
+    </intro_para>
+    <para_background>
+      <experience type="work">Working at Amphenol PCD, I was introduced to the types of
+                standards mandated by military and aerospace industries. The rigorous standards
+                implemented on us by ITAR and military arms suppliers taught me the importance of
+                well-organized and effective documentation. This job is also where I became
+                accomplished using <programs>Pro-E/Creo</programs> and implementing <skills>quality
+                    control processes</skills>. </experience>
+    </para_background>
+    <para_background>
+      <experience type="work">While working at Infinium, Inc., I worked on a small research
+                team refining a process to create primary aluminum via electrolysis. I modelled in
+                    <programs>AutoCAD Inventor</programs> and helped to <skills>build
+                    infrastructure</skills> for the developing process. I also performed material
+                compatibility tests and <skills>post experiment analysis using x-ray diffraction,
+                    scanning electron microscopy, and data analysis</skills> in
+                    <programs>MatLab.</programs></experience>
+    </para_background>
+    <para_background>
+      <experience type="school">Aside from my work experience, I am a recent student at
+                Northeastern University. In my labs and classes, I have developed strong technical
+                writing and communication skills, the ability to work effectively with teams of
+                people, and resourceful problem solving skills. </experience>
+    </para_background>
+    <para_closing>
+      <compatability>I believe I work best in a fast paced, energetic environment and think I
+                would be able to integrate well into a team like A123 Systems' MotorSports. </compatability>
+      <next_step>I would welcome the opportunity to further discuss the position and my
+                qualifications in the near future. </next_step>
+      <acknowledgment>Thank you very much for your consideration! </acknowledgment>
+    </para_closing>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <pb/>
+      <pb/>
+      <pb/>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

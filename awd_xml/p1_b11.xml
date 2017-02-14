@@ -1,0 +1,177 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 1 - Annotated Bibliography</title>
+    <version n="3" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> The web app Northeastern University uses to help students search for co-ops
+            is antiquated. The tools provided to navigate the site are lackluster and the whole
+            service suffers from poor contributer (co-op
+            providers) input. It is important to focus on the issue being one of usability and
+            interface quality rather then this being a back end problem. This meaning the
+            issue is primarily related to the aspects of the web service that the user can see and
+            interact with (or not in the case of a lack of features). </problem_stmt>
+    <citation style="MLA" n="1">
+      <author>Julie M. Rinder</author>
+      <ref>https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/12257/Rinder2012.pdf?sequence=1</ref>
+      <title>The Importance of Website Usability Testing</title>
+      <!-- Rinder, Julie M. The Importance of Website Usability Testing. University of Oregon, 12 July 2012. 
+                Web. 11 July 2016. <https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/12257/Rinder2012.pdf?sequence=1>.-->
+    </citation>
+    <annotation>
+      <background type="source">Rinder's capstone report brings together a large collection of
+                professional works regarding the history of website usability and the actual process
+                of testing it. The author brings this to us in the form of a scholarly annotated
+                bibliography This University of Oregon report also provides us with a large scope of
+                website usability, including recent influences on web usability all the way through
+                how businesses can adapt to these influences. </background>
+      <summary type="approach">The Importance of Website Usability starts off with a strong
+                idea: that perceived usability is key to user satisfaction. Though Rinder often
+                takes a business focused lens when discussing usability and why it is important, the
+                ideas are relevant to all circles. The report outlines the criteria it used for
+                sources, including looking for authority and quality. After the bulk of the report
+                consisting of annotated bibliographies, Rinder has a lengthy conclusion, breaking
+                down what the author considers to be the defining principles of usability, comparing
+                and contrasting researched ideas and often noting the similarities. The majority of
+                    his analytical work comes in
+                the conclusion, and it focuses heavily on the importance and process of reliable
+                testing. </summary>
+      <relevance type="application"> Rinder presents this simple idea: Users use and return to
+                websites if they can easily find useful information-in other words, the
+                acceptability of web applications relies on their usability. This is well said.
+                Unfortunately in some cases, users don't have the choice. If you are looking for
+                compelling reading into why you should appreciate well made web services, look no
+                further. Although Rinder focuses heavily on usability testing rather then the
+                philosophy behind usability, readers may find the conclusion detailing usability
+                more relevant for creating arguments for and how to improve services. </relevance>
+    </annotation>
+    <citation style="MLA" n="2">
+      <author n="1">Rex P. Singular</author>
+      <author n="2">Roselle S. Basa</author>
+      <ref>Journal of Educational Technology and Society 14.4</ref>
+      <title>Factors Affecting Faculty Web Portal Usability</title>
+      <!-- Bringula, Rex P., and Basa, Roselle S. "Factors Affecting Faculty Web Portal Usability."
+                 Journal of Educational Technology & Society 14.4, Advanced Learning Technologies (2011):
+                 253-65. Web. 12 July 2016. <http://www.ifets.info/journals/14_4/21.pdf>. -->
+    </citation>
+    <annotation>
+      <background type="author">From the College of Computer Studies and Systems at the
+                University of East-Manila, Philippines, Singular and Basa investigate what can
+                impact web portal usability. The results of their research were intended to aid the
+                university's online services, specifically in the interest of developing new ones.
+                Included in their work is a large study of the present faculty including the
+                questionnaire used. </background>
+      <summary type="general"> The article takes an analytical approach to different paradigms
+                explaining the common occurs low usability of web services. The two authors look at
+                a number of publications that analyze similar topics and add to previous work in the
+                field. Similar to other medium analysis work, the two authors develop their own principles of web
+                design and go into an in-depth explanation of each. The authors also provide
+                evidence for a number of original thesis statements relevant to the development of
+                faculty and staff web portals. </summary>
+      <relevance type="application"> As outlined in preface of their research, the majority of
+                the authors' claims are targeted at university web portals for faculty and students.
+                If this is what you are researching, this is paper is loaded with relevant original
+                data and analysis. That should not discourage other researchers. The two authors
+                make a number of important queries into the effects of images and layouts to
+                navigability, which could be applied to any web service. The data the two authors
+                collected is gathered mostly from tech savy
+                students, which presents a clear bias. Although that may be unavoidable at such a
+                technical college.
+                Despite this the research is valuable and the authors make a number of interesting
+                arguments throughout the piece that anyone interested in digital interfaces would
+                benefit from reading.</relevance>
+    </annotation>
+    <citation style="MLA" n="3">
+      <author n="1">Alexiei Dingli</author>
+      <author n="2">Sarah Cassar</author>
+      <ref>http://www.hindawi.com/journals/ahci/2014/479286/</ref>
+      <title>An Intelligent Framework for Website Usability</title>
+      <!-- Dingli, Alexiei, and Sarah Cassar. "An Intelligent 
+                Framework for Website Usability." An Intelligent Framework for
+                Website Usability. Department of Intelligent Computer Systems, 
+                Faculty of ICT, University of Malta, Malta, 14 Apr. 2014. Web. 
+                12 July 2016. <http://www.hindawi.com/journals/ahci/2014/479286/>. -->
+    </citation>
+    <annotation>
+      <background type="source"> The introduction to this article discusses a very common
+                theme among web design research; websites play a central role in modern marketing.
+                Specifically that at one time, it was enough to just own a website, but now that
+                website are forced to compete vigorously. This paradigm influences the majority of the piece,
+                and and provides the reader with a valuable bare bones history. </background>
+      <summary type="interpretation"> The meat of article is the discussion surrounding the
+                technical elements and procedures to automate usability. The authors suggest discuss
+                a number of empirical testing methods and already available analysis tools. The
+                articles can be summed up with this: <q>As a means of assisting website designers in
+                    developing usable websites, the aim of this paper is to present a tool which
+                    automates the process of website usability evaluation in order to eliminate the
+                    current obstacles preventing this process from being exercised in practice.
+                    </q></summary>
+      <relevance type="application"> Despite the overwhelming majority of the article being a
+                discussion about automated usability testing, this article has a number valuable
+                outlines regarding what is expected of usability, referencing a number of previously
+                existing standards. Although the bulk of the tools listed and the discussion itself is
+                oriented at an professional audience, anyone can benefit from reading this article
+                by internalizing the paradigms that influenced it. In regards to the paper's
+                credibility, it is incredibly well sourced and provides a lengthy look into the
+                research process. </relevance>
+    </annotation>
+    <citation style="MLA" n="4">
+      <author n="1">Rodrigo Coutinho</author>
+      <ref>https://www.outsystems.com/blog/2011/01/what-makes-a-great-web-app-great.html</ref>
+      <title>What makes a great web app great?</title>
+      <!-- Coutinho, Rodrigo. "What Makes a Great Web App Great?" Web log post. N.p.,13 Jan. 2011. Web. 12 July 2016. 
+                <https://www.outsystems.com/blog/2011/01/what-makes-a-great-web-app-great.html>.-->
+    </citation>
+    <annotation>
+      <background type="author"> Coutinho is an author and developer at Outsystems. Outsystems
+                is a business oriented application service that focuses on providing total packages.
+                For example: complete services like a web app and mobile that are integrated. </background>
+      <summary type="summary"> The author's short blog post provides us with a developer's
+                experience of web application design. He begins to talk about the external (user
+                end) experiences that create a valuable service, but then switches his focus to the
+                inner workings of a great web app. The author summarizes the characteristics that he
+                believes set an application up for success. The author also reminds of a common
+                pitfall of web development, and that is how the back end of the application must set
+                the front end up for success. </summary>
+      <relevance type="value_stmt"> Although short, the author uses the size of this blog post
+                well. Straight to the point, the author identifies what he wants to convey quickly
+                and effectively. Anyone in or outside the industry can benefit from reading this
+                blog post, especially if you are considering developing a web application.</relevance>
+    </annotation>
+    <citation style="MLA" n="5">
+      <author n="1">Paul Boag</author>
+      <ref>https://www.smashingmagazine.com/2011/08/how-to-build-a-better-web-application-for-your-business/</ref>
+      <title>How to Build a Better Web Application for Your Business</title>
+      <!-- Boag, Paul. "How To Build A Better Web Application For Your Business – Smashing Magazine." Smashing Magazine. N.p., 10 Aug. 2011.
+                Web. 12 July 2016. <https://www.smashingmagazine.com/2011/08/how-to-build-a-better-web-application-for-your-business/>.-->
+    </citation>
+    <annotation>
+      <background type="source"> Right out of the gate, Boag's blog post smacks you in the
+                face with its intentions. <q>Are you fed up with hearing about yet another Silicon
+                    Valley Web application built with fairy dust and funded by magic pixies?</q> The
+                answer for many is yes, and Boag's candid humor sets the mood the reader. The post
+                is long, and detailed, but segmented in a way that is easy to digest. </background>
+      <summary type="approach"> As Boag puts it: <q>For us, developing a web application is
+                    about meeting a particular business need</q> A clear and concise explanation,
+                Boag explains how most developers have to work around business interests.
+                Specifically stating that it is a luxury for a developer to have the digital
+                infrastructure as the primary concern. Without actually stating it, Boag explains
+                why it is common to see poor usiablity on
+                highly funded projects. As a developer himself, Boag uses this blog post to share
+                his "secrets" of working with web applications within the confines of business
+                interests. Interestingly, they are not technical solutions, but personal ones. This
+                isn't always the approach of software developer, and it leaves the reader with more
+                to think about than just the relevant software development issues. </summary>
+      <relevance type="application"> Anyone looking to develop business oriented web
+                applications should read this blog post. The questions asked not only point out ways
+                to create better software, but also how to better interact in compartmentalized
+                corporations. Contractors, outside developers, or in-house developers will benefit
+                from Boag's ideas. This personal approach to developing is something all industry
+                workers should be conscious of, whether you lead a product or just joined a scrum
+                team. </relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

@@ -1,0 +1,101 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 1</title>
+    <version n="1" date="2016-07-11"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> My discipline of mechanical engineering typically deals with problems of
+            efficiency and in turn sustainability. It addresses current systems in place and works
+            to improve their output while reducing their energy consumption. In the case of Boston’s
+            public transportation and sanitation, it is important to address the problem of high
+            amounts of fossil fuels being burned to keep the city functioning. A change in this area
+            will not only help combat global warming as a whole, it will lead to reductions in both
+            air and noise pollution in the city. It will affect both the general public who use
+            public transportation as well as many residents who live at or near street level in the
+            city. My discipline offers insights into the differences between internal combustion
+            engines and electric motors. It can compare the cost/benefits of each in terms of
+            accessibility, reliability, feasibility, and price. The input it provides can then be
+            used to move forward in making a decision on how to best improve or alter the current
+            fleet of vehicles that the city uses. </problem_stmt>
+    <citation n="1" style="APA"><author n="1">Peter Kelly-Detwiler</author> (Mar 4, 2015).
+                <title level="a">Electric Garbage Trucks: Huge Energy Savings And They Won't Wake
+                You Up In The Morning</title>. <title level="j">Forbes Magazine</title>, 51 (4),
+            541-554. </citation>
+    <annotation>
+      <background type="source">Ian Wright, a Tesla cofounder, saw vast potential for electric
+                motors in trucks and other vehicles beyond cars.
+                <!-- can include <q> element(s) for quoted material --></background>
+      <summary type="general">Garbage trucks are known to be among the biggest wasters of
+                energy due to their nature of highly frequent stops. Electrically powered garbage
+                trucks are highly efficient due to their nature of capturing all of the energy used
+                in braking and then reusing it, while also not releasing any carbon emissions.
+                <!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application"> Electric garbage trucks would have one of the most
+                profound impacts on the energy efficiency of Boston’s public vehicles.</relevance>
+    </annotation>
+    <citation n="1" style="APA"><author n="1">Mayor's Office</author> (Apr 7, 2015). <title level="a">Mayor Walsh Announces Ordinance to Reduce Diesel Emissions</title>. <title level="j">City of Boston.gov</title>, 51 (4), 541-554. </citation>
+    <annotation>
+      <background type="author">Mayor Martin Walsh has announced his support for reducing the
+                emissions from diesel vehicles owned or operated by the city of Boston.
+                <!-- can include <q> element(s) for quoted material --></background>
+      <summary type="general">There are a growing number of health concerns both in the city
+                and in the world regarding the problems created by carbon emissions from vehicles.
+                <q>“The asthma rate in Boston’s neighborhoods continues to climb," </q>said
+                Councilor Murphy in a statement regarding the declining health of certain areas of
+                Boston. <!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application"> A large step to solving this public health issue could
+                lie within eliminating all emissions from the city’s vehicles.</relevance>
+    </annotation>
+    <citation n="1" style="APA"><author n="1">Rachel Dovey</author> (Jul 17, 2015). <title level="a">Ex-Tesla Employee Wants Electric City Bus to Beat Out
+                Diesel</title>. <title level="j">Next City</title>, 51 (4), 541-554. </citation>
+    <annotation>
+      <background type="author">Many people look to electric cars as the best way to decrease
+                emissions, but often overlook other modes of transportation that could be improved
+                <!-- can include <q> element(s) for quoted material --></background>
+      <summary type="general">Buses are among the least environmentally friendly forms of
+                transportation, averaging around 4mpg. When confronted with the improved versions of
+                diesel vehicles, Proterra founder Ryan Popple adds, <q>“Natural gas is harder to
+                    see, but it doesn’t really solve the problem and still creates a lot of ozone.
+                    Bottom line: It’s a really bad idea to burn fossil fuels in an urban
+                    environment.”</q><!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application"> Switching the city’s fleet of natural gas and hybrid
+                buses over to electric would greatly improve transportation efficiency while
+                lowering emissions in highly populated areas and travel routes. </relevance>
+    </annotation>
+    <citation n="1" style="APA"><author n="1">Tina Casey</author> (Jun 10, 2015). <title level="a">Electric Buses Could Beat CNG Buses By A Mile — Or Nearly
+                6</title>. <title level="j">CleanTechnica</title>, 51 (4), 541-554. </citation>
+    <annotation>
+      <background type="source">The newest versions of electric buses not only beat current
+                CNG (Compressed Natural Gas) and diesel buses in terms of emissions, but also in how
+                efficiently they use the energy they do have.
+                <!-- can include <q> element(s) for quoted material --></background>
+      <summary type="general">Proterra is among the largest of recent electric bus
+                manufacturers to enter the market. Their product is set apart from other current
+                buses not only in the lack of emissions, but also in the efficiency of their buses
+                as a whole; they have swapped out heavier building materials in favor of carbon
+                fiber and other materials to make their buses lighter and perform better.
+                <!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application"> Boston could benefit from implementing electric buses
+                because they not only use cleaner energy, they also use less energy. </relevance>
+    </annotation>
+    <citation n="1" style="APA"><author n="1"> Kristin Toussaint</author> (Aug 28, 2015). <title level="a">Breathing Boston air is like smoking 5 cigarettes a year</title>. <title level="j">Boston.com</title>, 51 (4), 541-554. </citation>
+    <annotation>
+      <background type="source">Although most people can’t tell, there is still a fair amount
+                of pollution in the air of Boston.
+                <!-- can include <q> element(s) for quoted material --></background>
+      <summary type="general">Air pollution comes in different forms, including gaseous and
+                particulate. In regards to particulate matter, John Walke, Clean Air Director for
+                the Natural Resources Defense Council, notes <q>“These are very fine particles, and
+                    those particles are particularly dangerous because they’re so small, they can
+                    penetrate past the body’s natural defense system.’’</q> Particulate matter is
+                one of the leading health hazards the EPA is trying to address in its ordinances
+                regarding emissions standards because lower CO2 does not necessarily mean lower
+                particle byproducts. <!-- can include <q> element(s) for quoted material --></summary>
+      <relevance type="application">Eliminating particulate matter as a whole from emissions
+                would be a large step forward in the respiratory health of the city. </relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

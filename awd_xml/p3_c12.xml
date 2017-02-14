@@ -1,0 +1,138 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 3</title>
+    <version n="2" date="2016-08-20"/>
+  </docHead>
+  <pub_init_proposal>
+    <cover_page>
+      <title>Police Body Camera Requirement</title>
+      <author>
+        <!--deidentified element-->
+      </author>
+      <submit_date>August 20th, 2016</submit_date>
+      <audience>Carl Graziano, Chief of Police</audience>
+    </cover_page>
+    <tbl_cont>
+      <section>Introduction</section>
+      <section>Background</section>
+      <section>Purpose</section>
+      <section>Approach</section>
+      <section>Feasibility</section>
+      <section>Conclusion</section>
+    </tbl_cont>
+    <intro type="ltr_int">
+      <p> Over the course of the past several years, there have been a large number of
+                unfortunate situations involving police and their decision making throughout the
+                United States. In some of the situations, the police made correct decisions in
+                addressing a potentially violent situation. In other cases, there was blatant misuse
+                of police power, which resulted in the death of innocent citizens. In many of these
+                cases, the end result is a 'he said, she said' situation. Witnesses of the event
+                will tell what they saw and the police officer will give his account of the event as
+                well. There is no way to tell which of these accounts is correct, and the benefit of
+                the doubt has generally been given to the police officer versus the average citizen.
+                There needs to be a definite way for the correct and accurate story to be told, and
+                that can be done by requiring police body cameras for all members of the Scranton
+                police force. In addition to keeping officers in check, the cameras have a mutual
+                benefit to police departments where the cameras can be used for performance
+                evaluations and as evidence in court cases. </p>
+    </intro>
+    <background>
+      <p>
+        <crnt_cond> In the city of Scranton, there are currently no body cameras
+                    implemented. The last public mention of adding body cameras to the police force
+                    for the city of Scranton came in 2014 when an article was published in the Times
+                    Tribune about the lack of budget for the cameras (Kohut).</crnt_cond>
+      </p>
+      <p>
+        <subj_hist> Due to a number of incidents in the past several years, more and more
+                    departments are implementing body cameras with their squadrons. One of the most
+                    progressive cities in recent times has been the city of Los Angeles. Just two
+                    months ago in June, the city council unanimously approved an almost 70 million
+                    dollar budget to have body cameras on 7,000 police officers by 2018. Since the
+                    recent incidents in places like Ferguson and Baton Rouge, it is becoming more
+                    and more necessary for footage of questionable police situations to be
+                    available. This allows a correct representation of the incident without any
+                        doubts. The neighboring city of Wilkes-Barre is the 18th on the list
+                    of most violent crimes, and in many cases, police body cameras could be of use
+                    to depict what happened in these situations (Seibel). </subj_hist>
+      </p>
+    </background>
+    <purpose>
+      <p><scope type="when">In the Winter 2017-18</scope>, <scope type="who">the city of
+                    Scranton Police Department </scope><scope type="what">should begin to implement
+                    body cameras on all active police officers.</scope><objective>The proposed system of body cameras will include cameras for all active
+                    police officers in the city. The system will provide assurance that correct
+                    police procedures are being followed in all situations. It will ensure that all
+                    police are operating with the public's safety in mind. </objective></p>
+    </purpose>
+    <approach>
+      <p>
+        <execution>The initial plan for the system is to roll it out in several phases. This
+                    is how the city of Boston is planning on implementing their system and it seems
+                    like it would be a good idea to follow suit (Ransom). The first phase will be a
+                    test run for 15 police officers. The usefulness of the cameras will be evaluated
+                    in different situations including court trials and performance reviews. If the
+                    trial goes well, the program can be expanded to other officers in waves. The
+                    entire police force could be outfitted with cameras in two years. Each camera's
+                    battery would last a full 24 hour day and record to an SD card. The camera will
+                    be impossible to turn off and the SD card will be removable at the end of each
+                    day with the video stored for a week. If any complaints arises, the video of
+                    the certain event can be saved. </execution>
+      </p>
+    </approach>
+    <feasibility>
+      <p>
+        <economic> The main issue that has come up across police forces regarding body
+                    cameras has been the lack of budget space to purchase cameras. In order for the
+                    Los Angeles Police Department to implement their body cameras, they acquired a
+                    budget of $70 million (Elinson). This will provide cameras for about 9,000
+                    officers. Scranton Police Department has around 200 officers, so the cost of the
+                    program should only be around $1.5 million.
+                    Despite the large cost, this is an important program that will provide a safer
+                    environment for everyone in the city. President Obama has mentioned on several
+                    occasions the need for body cameras and has requested federal funding to be
+                    provided in order to equip officers with them (Dann). </economic>
+      </p>
+      <p>
+        <social> Socially, this should be a welcomed change in the city of Scranton. Having
+                    body cameras should help the citizens of the city feel safer. There is an
+                    obvious concern of people not wanting to be video taped, especially privately,
+                    but this should not cause a large concern due to the videos only being used as
+                    evidence in court cases or in police reviews. The videos would not be released
+                    publicly without people's identities being blurred out of the video. People may
+                    also be concerned with thinking that police could review tapes to look for
+                    illegal activities, but this would not be the case. Tapes would only be reviewed
+                    if a crime has been committed in the eyes of an officer. </social>
+      </p>
+    </feasibility>
+    <conclu>
+      <p> Although Scranton is not a huge city with large records of police violence, body
+                cameras are a necessity for all police. They provide two main purposes. They can
+                ensure that police are handling situations appropriately and they can act as
+                evidence in court cases where a defendant may be questioning the police's handling
+                of the situation. Overall, the safety that the cameras will provide should outweigh
+                the drawback of allocating funds to purchase the cameras. Many of the larger cities
+                such as New York City and Los Angeles are implementing programs and it would be a
+                good idea to get on the right side of this situation and acquire body cameras as
+                soon as the budget will allow the city to. </p>
+    </conclu>
+    <references>
+      <citation style="MLA"><author><!--deidentified element--></author>, and <author><!--deidentified element--></author>.
+                    <title>"Obama Requests $263 Million for Police Body Cameras, Training"</title>
+                NBCNews.com. NBC News, n.d. Web. 20 Aug. 2016. </citation>
+      <citation style="MLA" n="1"><author><!--deidentified element--></author>. <title>"Los Angeles Approves $60 Million to
+                    Outfit Police Force With Body Cameras."</title> WSJ. Wall Street Journal, n.d.
+                Web. 15 Aug. 2016. </citation>
+      <citation style="MLA" n="2"><author><!--deidentified element--></author>. <title>"Local Police Departments Mull Body
+                    Cameras in Wake of Federal Funding Proposal."</title> Thetimes-tribune.com. The
+                Times Tribune, n.d. Web. 15 Aug. 2016. </citation>
+      <citation style="MLA" n="3"><author><!--deidentified element--></author>. <title>"Deal Reached on Body Cameras for Boston
+                    Police."</title> BostonGlobe.com. The Boston Globe, n.d. Web. 19 Aug. 2016. </citation>
+      <citation style="MLA"><author><!--deidentified element--></author>. <title>"Deadly 2013 Lands Wilkes-Barre on
+                    'murder Capital' List."</title> Thetimes-tribune.com. The Times Tribune, n.d.
+                Web. 20 Aug. 2016. </citation>
+    </references>
+  </pub_init_proposal>
+</DOC>
