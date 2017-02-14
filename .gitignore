@@ -1,0 +1,6 @@
+.DS_Store
+*.xpr
+*~
+tmp/
+student_xml/*.html
+examples/*.html
