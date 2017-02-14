@@ -1,7 +1,7 @@
 <?php
 /*
 This document includes links to the supporting documents that correspond to a genre.
-The genre variable should be set on index.php
+The genre variable should be set on index.php.
 */
 
 if(isset($genre)) {
