@@ -70,22 +70,23 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #771D1C;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #771D1C;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #AC3E27;
 }
 
 .title {
     color: white;
+    font-size: 2.5em;
 }
 
 /* ==============
@@ -108,7 +109,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: #771D1C;
 }
 
 nav a:hover,
@@ -159,6 +160,10 @@ nav a:hover {
 }
 
 
+section.docs {
+  float: right;
+}
+
 div.xsl_v2
 {
 
@@ -195,7 +200,7 @@ pre.prettyprint {
 .main h2 {
 font-size: 1.6em;
 margin: 10px;
-  color: #e44d26;
+  color: #771D1C;
 }
 
 .students a, .students a:visited {
