@@ -28,12 +28,18 @@
                       <header>
                         <h2>Genre: Analysis Essay</h1>
                       </header>
+                      <section class="docs">
+                        <?php
+                        $genre='essay';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
                       <section>
                         <p>
                           <ul class="students">
                             <?php
-                            $proj=1;
-                            include('./php/list_students.php')
+                            $genre='essay';
+                            include('./php/list_students_essay.php')
                             ?>
                           </ul>
                         </p>
@@ -49,7 +55,7 @@
                       </header>
                       <section class="docs">
                         <?php
-                        $genre='essay';
+                        $genre='review';
                         include('./php/docs.php')
                         ?>
                       </section>
@@ -57,8 +63,7 @@
                         <p>
                           <ul class="students">
                             <?php
-                            $proj=1;
-                            include('./php/list_students_' .$genre. '.php')
+                            include('./php/list_students_review.php')
                             ?>
                           </ul>
                         </p>
@@ -68,11 +73,16 @@
                       <header>
                         <h2>Genre: Satirical Article</h1>
                       </header>
+                      <section class="docs">
+                        <?php
+                        $genre='article';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
                       <section>
                         <p>
                           <ul class="students">
                             <?php
-                            $proj=3;
                             include('./php/list_students_article.php')
                             ?>
                           </ul>
@@ -83,11 +93,16 @@
                       <header>
                         <h2>Genre: Op-Ed</h1>
                       </header>
+                      <section class="docs">
+                        <?php
+                        $genre='oped';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
                       <section>
                         <p>
                           <ul class="students">
                             <?php
-                            $proj=3;
                             include('./php/list_students_oped.php')
                             ?>
                           </ul>
@@ -98,11 +113,16 @@
                       <header>
                         <h2>Genre: Resume</h1>
                       </header>
+                      <section class="docs">
+                        <?php
+                        $genre='resume';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
                       <section>
                         <p>
                           <ul class="students">
                             <?php
-                            $proj=3;
                             include('./php/list_students_resume.php')
                             ?>
                           </ul>

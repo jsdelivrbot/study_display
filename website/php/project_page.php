@@ -11,8 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="../css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -53,19 +53,19 @@
                       function p1regXML() {
                         $id = $_GET['id'];
                         $proj = $_GET['proj'];
-                        include_once(dirname(__FILE__) . '/content/_transformations/XML.php');
+                        include_once(dirname(__FILE__) . '../content/_transformations/XML.php');
                       }
 
                       function p1TransformedXML () {
                         $id = $_GET['id'];
                         $proj = $_GET['proj'];
-                        include_once(dirname(__FILE__) . '/content/_transformations/XML_v2.php');
+                        include_once(dirname(__FILE__) . '../content/_transformations/XML_v2.php');
                       }
 
                       function p1AnnotatedXML () {
                         $id = $_GET['id'];
                         $proj = $_GET['proj'];
-                        include_once(dirname(__FILE__) . '/content/_transformations/XML_v3.php');
+                        include_once(dirname(__FILE__) . '../content/_transformations/XML_v3.php');
                       }
 
                       if (isset($_GET['xml'])) {
