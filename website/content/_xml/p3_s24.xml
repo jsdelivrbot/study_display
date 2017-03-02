@@ -1,0 +1,175 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Automated Magnet Based Anti-Drone System Feasibility Report</title>
+    <version n="1" date="2016-08-20"/>
+  </docHead>
+  <!-- root element for P3 here -->
+  <fsb_rpt>
+    <page type="ttl">
+      <title>Automated Magnet Based Anti-Drone System</title>
+      <subTitle>Automating drone movements with target based optical tracking</subTitle>
+      <contributors>
+        <!--deidentified element-->
+      </contributors>
+      <date>August 16th 2016</date>
+    </page>
+    <page type="tbl_contents">
+      <sect lvl="1" n="1">Executive Summary</sect>
+      <sect lvl="1" n="2">Preliminary Analysis</sect>
+      <sect lvl="2" n="1">Tracking</sect>
+      <sect lvl="2" n="2">Target Acquisition</sect>
+      <sect lvl="2" n="3">Regulations</sect>
+      <sect lvl="1" n="3">Feasibility</sect>
+      <sect lvl="1" n="4"> Success Criteria Success
+                Criteria</sect>
+      <sect lvl="2" n="1">Hardware Design</sect>
+      <sect lvl="2" n="2">Automated Flight</sect>
+      <sect lvl="2" n="3">Target Acquisition</sect>
+      <sect lvl="1" n="5">Cost</sect>
+      <sect lvl="1" n="6">Report </sect>
+      <sect lvl="1" n="7">Risk Analysis</sect>
+      <sect lvl="1" n="8">Conclusion</sect>
+    </page>
+    <page type="exec_sum">
+      <background>The proliferation of single board computers has greatly
+                reduced the cost and complexity of drone development. As a result, an exponential
+                number of drones are taking to the skies each year, outpacing the FAA and local
+                authorities' ability to regulate them. The difficulty of regulating aerial vehicles
+                compounded with the ability of pilots to navigate their drones from remote locations
+                exposes serious vulnerabilities with maintaining privacy, safety and
+                security.</background>
+      <pb/>
+      <report_purpose>This report will investigate a novel way to police drones using an
+                anti-drone system.</report_purpose>
+      <fsb.approach> The approach proposed surveys an
+                anti-drone that would autonomously track and capture a target drone using
+                electromagnets.</fsb.approach>
+      <key_findings>The project carries a high number of developmental difficulties -- chiefly
+                due to the fact research is being performed in tandem with engineering -- making
+                predicting success highly difficult. Even with these risks in consideration however,
+                the design remains feasible enough to develop as a worthwhile proof of concept.
+            </key_findings>
+    </page>
+    <page type="prelim_ana">
+      <app_ovr type="obj" title="Tracking">The anti-drone will be able to takeoff from a given
+                location while being operated by a pilot. Once the target is in frame and
+                recognized, the drone should be capable of autonomously moving above the target. </app_ovr>
+      <app_ovr type="obj" title="Target Acquisition">Once the anti-drone is in position,
+                electromagnets will be deployed to neutralize the target. At this point the pilot
+                can resume control and navigate the anti-drone to a position which releasing the
+                disabled drone will not jeopardize the public or property. </app_ovr>
+      <app_ovr type="rls" title="Regulations">The FAA has been regularly advancing regulations
+                on drone usage. The most up to date rules can be found at:
+                    <ref>https://www.faa.gov/uas/media/Part_107_Summary.pdf</ref>. Relevant to our
+                project are the weight constraints (55lb), licensing requirements and flight
+                regulations (Cannot be operated indoors, drone must be visible from pilot's location
+                and drone cannot fly over individuals not involved in its development). </app_ovr>
+    </page>
+    <page type="fsb">
+      <fsb_hlgt type="econ">This project has been allotted a budget of $1,000.  Although there are avenues available for additional funding,
+                there do not exist products on the market that could directly address our goals even
+                with blank check funding. It is worth noting that many equal and more advanced DIY
+                projects have achieved success on smaller budgets. </fsb_hlgt>
+      <fsb_hlgt type="tcnl">The project can be broken down into four stages. 1) Determine
+                necessary equipment to assemble a quad-copter drone with an attached camera. 2)
+                Develop long range object tracking software for stationary targets. 3) Develop long
+                range object tracking software for moving targets. 4) Develop and attach the magnet
+                capturing system. 5) Accommodate object tracking and automated capture for
+                stationary targets. 6) Develop tracking and capture of moving targets. <pb/>1) In
+                order to allow for ample time to tackle the advances in research put forth by our
+                project, it is vital to minimize the amount of time dedicated to "reinventing the
+                wheel". With this in mind, the minimal quad-copter style frame is justified rather
+                as opposed to investing in the more difficult to control (although more steady) hex
+                or octo-copter designs. Additionally, by using a frame kit time can be saved by
+                avoiding the difficult build and tuning process inherent to a custom frame.
+                Similarly, the choice of the Pixy CMUcam5 for our camera system allows all object
+                detection to be automated. This not only frees up time for the software development
+                team -- allowing them to focus on other goals -- but it also justifies the use of
+                the Raspberry Pi 3b -- which has a less complex set of barriers than the more
+                powerful SOCs on the market. <pb/>2) The data being output from the Pixy should
+                allow for object identification and location. Determining motor commands in order to
+                move toward an identified object is straightforward in a low-variable environment,
+                however the movement of our anti-drone and the frame size of the Pixy (risking the
+                visual loss of the target) pose significant issues. This will likely need to be
+                accommodated by slow movements and a mobile camera. <pb/>3) The chief concerns for
+                the magnetic system are the weight that it will add to the drone and issues that EMF
+                interference might cause. A Faraday cage might be able to offset the EMF
+                interference, however time intensive tests must be performed in order to determine
+                its viability. <pb/>4) Acquisition of the target must be performed in a way that
+                does not damage the anti-drone, and does not cause an irreconcilable weight
+                increase. <pb/>5) Capture poses issues with kinematics. Movements must be made much
+                more precise in order to preserve downward visuals of the target drone.<pb/>6) The
+                processes described above are made significantly more challenging due to both
+                objects being in movement. Developing a successful mobile tracking algorithm -- even
+                without the integration of capture technology -- would be a highly commendable
+                technological achievement. </fsb_hlgt>
+      <fsb_hlgt type="lgl">Lastly, acquiring the FAA required license and executing the above
+                processes should be of no great impediment. </fsb_hlgt>
+    </page>
+    <page type="sccs_crt">
+      <req_sect>Hardware Design <req>The anti-drone must be capable of flying and must be
+                    tuned such that moderate gusts of wind and sudden weight gains do not cause the
+                    vehicle to malfunction. </req><req>A flying time of roughly 10 minutes is to be expected. </req></req_sect>
+      <req_sect>Automated Flight <req>The anti-drone should be capable of autonomously
+                    following a test drone. No required target acquisition times are being
+                    considered for this project, however it is worth noting that a perfected system
+                    should be able to identify and capture a target drone under time
+                    constraints.</req></req_sect>
+      <req_sect>Drone Acquisition <req>The anti-drone should be able to make contact with at
+                    least a 5lb target drone. After acquisition, the drone should be able to fly at
+                    least 100 yards with the target drone in tow before releasing it.
+                </req></req_sect>
+    </page>
+    <page type="cost">
+      <est type="fnc"> Pixy motion sensor : $69.00</est>
+      <est type="fnc"> 1400 mAh LiPo Battery Pack: $28.99 </est>
+      <est type="fnc"> Carbon Fiber Frame Kit: $98 </est>
+      <est type="fnc"> Flip32 Flight Controller </est>
+      <est type="fnc"> Connectors and Cables : $50 </est>
+      <est type="fnc"> Supplementary Components (Power cables, connectors, etc.): $86.95 </est>
+      <est type="fnc"> Misc (Shipping, tax, nuts and bolts etc.): $120 </est>
+      <est type="fnc"> Total : $469</est>
+    </page>
+    <page type="rpt"> All stages of this process will be monitored and developed with the help
+            of Dr. Bahram Shafai. <tmln date="2016-09-02">Kit drone fully assembled (but un-tuned)
+                with with stage 1 of parts added. Stage 1 parts: Pixy, Raspberry Pi3, Flip32 flight
+                controller, power distribution components. </tmln><tmln date="2016-09-04"> Drone Assembly </tmln><tmln date="2016-09-18"> Establish WiFi Control and Tuning </tmln><tmln date="2016-09-18"> Independent Subsystem API Dev. </tmln><tmln date="2016-09-25"> Faraday cage testing.</tmln><tmln date="2016-10-02"> Finalize capture Method.</tmln><tmln date="2016-10-09"> Stationary Object Tracking. </tmln><tmln date="2016-10-16"> Hardware Design Finalization. </tmln><tmln date="2016-11-06"> Independent Capture System Working. </tmln><tmln date="2016-11-06"> Mobile Object Tracking. </tmln><tmln date="2016-11-27"> Mobile Tracking and Acquisition. </tmln><tmln date="2016-12-24"> Organize Capstone Report. </tmln><tmln date="2016-12-11"> Capstone presentation week</tmln></page>
+    <page type="rsk_ana"> The project lends itself to many potential developmental issues. <pb/><img url="http://i.imgur.com/EI8HSAk.png"/><pb/>These risks can be mitigated as follows : <pb/>• Severe Crash : Maintain a low cost
+            of components. Less than half of the proposed expenditures relate to the on-board
+            systems. Replacing these components is trivial if economical device choices are made.
+            <pb/>• Connectivity Issues : Time spent solving connectivity issues can be offset by
+            choosing devices that are well supported and are known for their ease of development.
+            <pb/>• Unworkable EMF : Should the electromagnet not be a viable solution, other
+            alternatives of capture can be investigated. <pb/>• System Compatibility: Perform
+            preliminary analysis on all additional components to ensure compatibility. <pb/>•
+            Processor Overwork : Using the Pixy to perform image analysis can heavily reduce the
+            workload expected of the Raspberry Pi. <pb/>• Time frame : Weekly assessments of
+            development must be in place to ensure the workload keeps pace. Given our project
+            tackles two new ares (tracking and capture) of drone technology, if the capture portion
+            of the project fails to be developed in time, the group will still have presentable
+            material using the tracking research. <pb/>• Under-budgeting : We have received notice
+            that an additional $200 can likely be made available should our project run over budget. </page>
+    <page type="conc">
+      <fsb>To meet the goals set by our capstone design, not only does the project require
+                well executed engineering, but it also contains a research aspect. The engineering
+                portion is represented by the leveraging of existing tools, whereas the research
+                portion is represented by the development of tracking and capture algorithms. Due to
+                the inherent uncertainty of research, not only is it impossible to accurately
+                predict the time frame for the development process, but it also obfuscates what is
+                realistic.</fsb>
+      <cond>Technical difficulties are accentuated by the limited time frame allotted. The
+                goals presented are in the realm of possibility, however budgeting time is of
+                paramount importance. Minimizing time spent on "reinventing the wheel" will allow us
+                to focus on the unique aspects of our project. Even with proper time management
+                however, it seems reasonable to doubt that the full manifestation of tracking and
+                development will be functional before December 4th. Fortunately, assessment of the
+                current achievements in drone technology establishes that an autonomous tracking
+                system for moving objects in three dimensional space can be considered a
+                satisfactory achievement on its own. The team should prioritize the tracking system,
+                and reevaluate at a later date to determine if time allows to develop and integrate
+                the capture mechanisms.</cond>
+    </page>
+  </fsb_rpt>
+</DOC>

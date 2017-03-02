@@ -1,0 +1,167 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Individual Assignment for Project 2</title>
+    <version n="3" date="2016-08-08"/>
+  </docHead>
+  <!--paste body of your template file here-->
+  <pub_init_proposal>
+    <cover_page>
+      <title> Bringing Solar to Boston </title>
+      <author>
+        <!--deidentified element-->
+      </author>
+      <submit_date> 8/15/2016 </submit_date>
+      <audience> Mr. Marty Walsh </audience>
+    </cover_page>
+    <tbl_cont>
+      <section n="1">1.0: Abstract </section>
+      <section n="2">2.0: Background </section>
+      <section n="3">3.0: Purpose </section>
+      <section n="4">4.0: Approach </section>
+      <section n="5">5.0: Feasibility </section>
+      <section n="6">6.0: Conclusion </section>
+    </tbl_cont>
+    <intro type="abstract">
+      <!--attribute options: ltr_int, exec_sum, abstract-->
+      <p> As it stands, Massachusetts is one of the nations foremost clean energy friendly states. One would infer that
+                Boston, the state capitol, would lead the way and set the example for the rest of
+                the Massachusetts. Boston is a diverse, growing city and its energy policy should
+                reflect that. By decentralizing the energy generation of Boston, the associated
+                financial gain can be properly distributed across all income levels. By providing a
+                tax credit equal to 25% the value of the investment associated with using solar
+                energy, Boston could greatly reduce its load on the grid and its yearly carbon
+                emissions. </p>
+    </intro>
+    <background>
+      <p>
+        <crnt_cond> Currently, there are several federal and state incentives associated
+                    with meeting a portion of ones energy demand with solar energy. The Federal ITC
+                    reimburses investors of photovoltaics with a tax credit equal to 30% of their
+                    invested capital. In Massachusetts, there is a SREC (Solar Renewable Energy
+                    Credit) that also provides money to counter the required upfront investment
+                    associated with solar. Net metering allows generators of solar energy to sell
+                    their excess energy back to the grid at a price that is slightly less than what
+                    the grid charges to supply energy.
+                    <!-- can include <q> element(s) for quoted material --></crnt_cond>
+      </p>
+      <p>
+        <subj_hist> Sustainability focuses on the environmental, social, and economic costs
+                    associated with actions. However, in terms of getting people to adopt a
+                    movement, economic terms seem to be the most persuasive. Providing an incentive
+                    that is able to put the social and environmental externalities associated with
+                    the burning of fossil fuel into economic terms allows for a more fair comparison
+                    of energy generation techniques. The Daily Climate reported, <q>"Coal plants
+                        place a disproportionate burden on poor and largely minority communities,
+                        exposing residents to high levels of pollutants that affect public
+                        health"</q>. It is easy to see that, without taking the cost of
+                    externalities into account, people that compare things strictly economically
+                    will not change their ways and distributed burdens will continue to go largely
+                    ignored. <!-- can include <q> element(s) for quoted material --></subj_hist>
+      </p>
+    </background>
+    <purpose>
+      <p>
+        <scope type="what"> Providing an incentive that will allow for greater adoption of
+                    solar energy generation techniques will benefit all in the target area as well
+                    as surrounding communities. There are many advantages to going solar that span
+                    all facets of society. </scope>
+        <!--attribute options: what, who, when, where-->
+        <objective> Boston should provide a citywide financial incentive to people that
+                    adopt photovoltaic-based energy production methods.
+                    <!-- can include <q> element(s) for quoted material --></objective>
+        <goal> By using more photovoltaics, Bostonians would decrease their carbon
+                    footprint, increase consumer awareness, and start to mitigate the health
+                    concerns associated with air pollution from fossil fuel burning facilities.
+                    <!-- can include <q> element(s) for quoted material --></goal>
+      </p>
+    </purpose>
+    <approach>
+      <!--attribute options: execution, action-->
+      <p>
+        <execution> Understandably, there will be some push back to this proposal. This is
+                    due to the fact that to generate the necessary capital to supply a PV tax
+                    credit, some will have to be charged more than their current electricity rate.
+                    However, by increasing the cost of energy generated from fossil fuels, Boston
+                    would be forcing people who contribute to the pollution of the environment pay
+                    for the cost of this externality. This price correction would not be large
+                    because the number of ratepayers using fossil fuel generated energy is so much
+                    greater than those that would receive the benefit of this incentive that their
+                    rate would not increase greatly. As more and more people go solar, the ratio of
+                    ratepayers funding the incentive to those benefiting would decrease. For this
+                    reason, there will be an obvious reason to join this program as early as
+                    possible. That being said, this also adds the constraint that this incentive
+                    program is to be reevaluated over time as not to eventually have an unfair
+                    burden on those that do not adopt this program. <!--text here--></execution>
+      </p>
+      <p>
+        <action> Immediately, a citywide incentive program should be brought to town council
+                    and be introduced to the public. As public meetings evaluate this proposal, a
+                    community-specific program will be hashed out that would incorporate the desires
+                    of the citizens and give lawmakers greater insight as to how smaller communities
+                    react to such energy credit programs. Community insight will also be able to
+                    help establish an appropriate time period for this incentive regime. </action>
+      </p>
+    </approach>
+    <feasibility>
+      <!--attribute options: economic, social, environmental-->
+      <p>Environmental</p>
+      <p>
+        <environmental> Per unit area, solar panels can offset more
+                    carbon emission than a tree. This is the justification most solar developers use
+                    to clear-cut a wooded area to replace it with panels. However, if Boston were to
+                    adopt a greater solar incentive program, panels would be used on rooftops,
+                    bridges, and as parking overhangs. Since such a large portion of Boston is
+                    covered with impermeable surfaces, panels would not be displacing any carbon
+                    sequestering organisms and would also deplete the solar radiation that is
+                    constantly being absorbed by the dark roofs and streets of Boston. </environmental>
+        <!--text here-->
+      </p>
+      <!--attribute options: economic, social, environmental-->
+      <p>Social</p>
+      <p>
+        <social> There are many links associated with air pollution and mental health.
+                    NaturalNews outlines this issue by stating that <q>"While previous studies have
+                        linked urban air pollution to type 2 diabetes and increased blood sugar
+                        levels in pregnant women, among other ailments, new research suggests that
+                        poor air quality might also be responsible for reducing children's IQs,
+                        affecting their ability to learn and access information"</q>. By allowing
+                    residents to stop contributing to the pollution of their own air, Boston will be
+                    promoting greater mental health that disproportionately affects those living in
+                    poorer communities who bear the brunt of this pollution. The other health
+                    affects associated with air pollution would also start to be remediated by the
+                    reduction in energy demand from the grid. <!--text here--></social>
+      </p>
+      <!--attribute options: economic, social, environmental-->
+      <p>Economic</p>
+      <p>
+        <economic> By allowing individual households to produce their own energy and sell
+                    the remainder back to the grid, Boston could help to decentralize wealth and
+                    help those living in poverty to overcome their current financial problems. <pb/>
+                    Adopting solar will also prove beneficial to those in the large rental market of
+                    Boston. As landlords compete for tenants, a large group will be drawn to
+                    apartments and offices that can boast a renewable energy connection. These
+                    landlords may also be able to pass along a portion of there electric savings to
+                    their tenants. <!--text here--></economic>
+      </p>
+    </feasibility>
+    <conclu>
+      <p> Boston is among the worlds most educated and diverse cities. Logic would indicate
+                that such a city should have an energy policy that reflects its communities. I
+                propose that a 25% tax credit be issued to Bostonians who adopt rooftop solar energy
+                generation. This credit, partnered with other government incentives will allow a
+                wider range of society to save money, reduce pollution, and increase awareness
+                through solar. <!--text here--></p>
+    </conclu>
+    <references>
+      <citation n="" style="APA"> Wilson, J. (2015, May 31). Why cities make people stupid:
+                Air pollution significantly reduces children's IQ, study finds . Natural News.
+                Retrieved from
+                http://www.naturalnews.com/049903_air_pollution_city_life_intelligence.html </citation>
+      <citation style="APA"> Israel, B. (2012, November 16). Coal plants smothering
+                communities of color, report finds . The Daily Climate . Retrieved from
+                http://www.dailyclimate.org/tdc-newsroom/2012/11/coal-power-injustice </citation>
+    </references>
+  </pub_init_proposal>
+</DOC>

@@ -1,0 +1,158 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Public Initiative Proposal</title>
+    <version n="1" date="2016-08-16"/>
+  </docHead>
+  <pub_init_proposal>
+    <cover_page>
+      <title>WRTA Redesign</title>
+      <author>
+        <!--deidentified element-->
+      </author>
+      <submit_date>August 30th 2016</submit_date>
+      <audience> To: The
+                City of Worcester’s Executive Office of Economic Development </audience>
+    </cover_page>
+    <tbl_cont>
+      <section n="1">Introduction</section>
+      <section n="2">Background</section>
+      <section n="3">Purpose</section>
+      <section n="4">Approach</section>
+      <section n="5">Feasibility</section>
+      <section n="6">Conclusion</section>
+      <section n="7">References</section>
+    </tbl_cont>
+    <intro type="exec_sum">
+      <!--attribute options: ltr_int, exec_sum, abstract-->
+      <p>Over the past several years, the city of Worcester, MA has invested several millions
+                of dollars into improving the city. Federal and state money has been dedicated to
+                cleaning up parks and neighborhoods, reconstructing the entire down town area
+                including Union Station, establishing community centers and helping create jobs for
+                the citizens of Worcester. Despite all the work going into these projects, public
+                transportation has been completely overlooked. How does the city expect to increase
+                employment if half of it’s population doesn’t have a reliable way to get to work?
+                Worcester has long been a city dependent on cars since so much of it’s work force
+                resides in suburbs and neighboring towns. Most people know that the WRTA (Worcester
+                Regional Transit Authority) exists, but they don’t know how to use it. This is
+                because of the small number of bus stops, inconvenient routes, and completely lack
+                of outreach by the WRTA. Implementing something like Boston’s MBTA is not realistic
+                in a city like Worcester, however major reorganization and improvements to the WRTA
+                could provide huge benefits in driving forward economic growth in Worcester, as well
+                as making it much more pleasant place to live. Rerouting existing routes to reach
+                major residential areas (especially low income neighborhoods) and heavy
+                commercialized areas, adding busses and bus stops, making public transportation more
+                affordable and accessible to students and young adults, and providing more rigorous
+                training for bus drivers would dramatically turn around the state of Worcester’s
+                public transportation. All this could be achieved with predetermined yearly
+                milestones being funded by the city’s federal grant under the Community Development
+                Block Grant Program over the course of 5-7 years.</p>
+    </intro>
+    <background>
+      <p>
+        <crnt_cond> As of right now, only 55% of all jobs in Worcester have access to public
+                    transportation routes; and only 6% of people who reside in suburbs (where rent
+                    and mortgages are more affordable) have public transportation available to their
+                    work within 90 minutes (5). On top of this, Worcester Public Schools have
+                    consistently cut school bus services for students to get to school every day. </crnt_cond>
+        <subj_hist> In past years, Worcester Public Schools has charged students hundreds of
+                    dollars to be able to take a school bus to school, and have even suspended bus
+                    transportation for students in high school or who live within 2 miles of their
+                    schools. Considering the level of financial diversity in Worcester and how harsh
+                    winters can be in the Northeast, these scenarios pose a clear need for more
+                    accessible public transportation in Worcester. </subj_hist>
+        <crnt_cond>Most bus routes currently just connect downtown Worcester to major
+                    shopping centers in the Greater Worcester Area, but none go to residential,
+                    commercialized, or school areas. The WRTA is, at best, inconvenient to use. This
+                    is a major barrier in the economic growth of the city because of how difficult
+                    it is for anyone to get around to be able to get to work or school (2). Aside
+                    from this, the existing transportation facilities are difficult to find, dingy
+                    and unsafe looking, unadvertised, and generally inaccessible (1).</crnt_cond>
+      </p>
+    </background>
+    <purpose>
+      <p><objective> Even with all the money that Worcester is putting into developing the
+                    city and giving it this much needed ‘face lift’, all the progress
+                    will reach a glass ceiling without improvements made to the public
+                    transportation system. Economic growth will only be stimulated from an improved
+                    bus system, despite the capital costs of investing in
+                    transportation.</objective><scope type="what">Better bus routes could increase accessibility for</scope><scope type="who">students to get to school every day, and lower and middle class
+                    persons</scope> to get to work. <scope type="when">If money could be spared in
+                    the next 5-7 years to make the initial capital investments in a better bus
+                    system for the WRTA, then this would be a massive stimulus for the city of
+                    Worcester.</scope><!-- who, what, when are mandatory --><!--attribute options: what, who, when, where--></p>
+    </purpose>
+    <approach>
+      <p> Worcester is a recipient of a $3.8 million annual grant funding from the HUD called
+                the Community Development Block Grant Program (CDBG). Each year it submits a request
+                for proposals to investigate ideas for how this money could be spend to benefit low
+                and moderate income persons, eliminate slums or blight, or meet urgent needs of the
+                city (3). The transportation system addresses all three of these types of needs that
+                the grant funding is intended for. With a team of financial representatives of the
+                city, officials from the Worcester WRTA, and contractors invested in building
+                infrastructure in the city, a 5-7 year plan could be made to invest a percentage of
+                this grant funding annually into the reworking of the WRTA. Milestones could be
+                predetermined based on priority areas in the city and necessary development of
+                Worcester Transit Authority. Milestones each year will include buying new energy
+                efficient busses to serve the city, construct safe, well lit, strategically placed
+                bus stops, advertise bus travel within Worcester and it’s surrounding towns,
+                subsidize transportation services for students, reorganize routes that reach into
+                more suburban areas, and hire more well qualified drivers and officials for the
+                WRTA. </p>
+    </approach>
+    <feasibility>
+      <p>
+        <!-- possible subelements are: economic, environmental, social,
+                    legal, or other -->
+        <economic> Now that Worcester has achieved so much federal funding for city
+                    development and has gained momentum in the community’s investment in the city,
+                    it is a perfect time to make major changes within the city. The funding exists
+                    and the need is evident. Planning would require input from financial
+                    professionals and zoning committees in order to figure out the best way to
+                    invest in the WRTA and where there is most need for public transportation. This
+                    initial set up would be the biggest capital investment, however most of the
+                    costs could be covered by the CDBG grant and could be spread out over several
+                    years. The only lasting costs would be salaries for the increase in WRTA drivers
+                    and employees and maintenance to buses and new infrastructure. The hope would be
+                    that these long term costs will be insignificant compared to the financial
+                    benefits the city would gain by becoming more accessible and making work more
+                    possible for residents. </economic>
+        <social>If needed, there are many big businesses and organizations that could
+                    benefit from public transportation in the city. Big business owners and
+                    surrounding towns could be willing to invest in a public transportation system
+                    that could bring people to their business and make their own communities more
+                    accessible. Also, as it is the few buses that do exist in Worcester reach out to
+                    surrounding towns like Leicester, Millbury, and Charlton. Theoretically, all of
+                    central Worcester County would benefit from developments to the WRTA, which is
+                    about twenty towns that could also contribute to WRTA developments and would be
+                    more invested in the greater Worcester community. </social>
+      </p>
+    </feasibility>
+    <conclu>
+      <p> Investing in public transportation within Worcester would be investing in the future
+                growth of Worcester. It would make holding a job more possible for low and middle
+                income populations and increase accessibilities to commercial and residential areas
+                of the city. It would also make it possible for kids to miss less school. It would
+                also benefit surrounding towns that are considered “bedroom towns” to Worcester and
+                allow residents of lower income neighborhoods to seek work all over the city. </p>
+    </conclu>
+    <references>
+      <citation n="1" style="MLA"> "Groundbreaking Ceremony for WRTA Transportation Hub | City
+                of Worcester, MA." Groundbreaking Ceremony for WRTA Transportation Hub | City of
+                Worcester, MA. N.p., n.d. Web. 15 Aug. 2016.</citation>
+      <citation n="2" style="MLA">"GoLocalWorcester | News | Worcester’s Public Transportation
+                Critical to Economic Growth." GoLocalWorcester Main. N.p., n.d. Web. 15 Aug.
+                2016.</citation>
+      <citation n="3" style="MLA">United States. Worcester City Hall. The City of Worcester’s
+                Executive Office of Economic Development. City Fiscal Year 2017 Community
+                Development Block Grant Program. Worcester: n.p., n.d. Web.</citation>
+      <citation n="4" style="MLA">"GoLocalWorcester | Politics | Grace Ross: How to Solve
+                Worcester’s Public Transportation Problems." GoLocalWorcester Main. N.p., n.d. Web.
+                15 Aug. 2016.</citation>
+      <citation n="5" style="MLA"> "GoLocalWorcester | News | Worcester’s Public
+                Transportation 2nd Worst in NE." GoLocalWorcester Main. N.p., n.d. Web. 15 Aug.
+                2016.</citation>
+    </references>
+  </pub_init_proposal>
+</DOC>

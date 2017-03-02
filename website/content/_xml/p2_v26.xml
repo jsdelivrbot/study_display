@@ -1,0 +1,148 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 2 - Phase 2</title>
+    <version n="2" date="2016-08-09"/>
+  </docHead>
+  <fsb_rpt>
+    <!-- container element for writing project 2. Contains any number of pages. -->
+    <page type="ttl">
+      <title>Distributed Weather Data Collection System: Feasibility Report</title>
+      <date>August 1st, 2016</date>
+      <contributors>
+        <!--deidentified element-->
+      </contributors>
+    </page>
+    <!-- Todo: Report -->
+    <page type="tbl_contents">
+      <sect n="1" lvl="1">Executive Summary</sect>
+      <sect n="2" lvl="1">Preliminary Requirements Analysis</sect>
+      <sect n="1" lvl="2">Application Overview</sect>
+      <sect n="1" lvl="3">Objectives</sect>
+      <sect n="3" lvl="1">Technical Feasibility</sect>
+      <sect n="1" lvl="2">Overview</sect>
+      <sect n="4" lvl="1">Success Criteria</sect>
+      <sect n="5" lvl="1">Design</sect>
+      <sect n="6" lvl="1">Cost</sect>
+      <sect n="7" lvl="1">Report</sect>
+      <sect n="8" lvl="1">Risk Analysis</sect>
+      <sect n="9" lvl="1">Conclusion</sect>
+      <sect n="1" lvl="2">Feasibility</sect>
+      <sect n="2" lvl="2">Feasibility Conditions</sect>
+      <sect n="3" lvl="2">Summary</sect>
+    </page>
+    <page type="exec_sum"> The system outlined in this study is a distributed method for the
+            collection of weather-related data. The system consists of a network of
+            micro-controllers with attached sensors to measure temperature and pressure. Associated
+            with this system is a web application for the viewing and acquisition of collected data.
+            The distributed nature of the system allows for a more granular view of weather data,
+            allowing for better reporting and prediction of weather patterns. In addition, this
+            system will attempt to be as open as possible as to effect the best possible analysis.
+            <pb/> Based on preliminary research, this project is feasible. </page>
+    <page type="pre_req_ana">
+      <app_ovr type="obj"> The primary functionality provided is a system that collects
+                weather data, specifically temperature and pressure, in a highly distributed manner.
+                Micro-controllers will host the sensors that directly collect data; they will also
+                contain networking functionality in order to send data to a centralized database.
+                The data will be exposed to the public via a web application. Features provided by
+                the web application include direct download of the data and visualizations based on
+                the data. </app_ovr>
+    </page>
+    <page type="fsb">
+      <fsb_hlgt type="tcnl" n="1"> This project has two broad components, the sensor and the web applications. The
+                sensor portion is composed of a micro-controller and multiple sensors. The
+                micro-controller will also have some form of network connection and possibly some
+                form of rudimentary data filtering mechanism. Network connectivity will be in the
+                form of an ad-hoc network between all of the devices, with certain devices used as
+                "exit nodes" which connect to the internet at large in order to upload to a central
+                database and, by extension, the web application. Sensors to be included are for
+                temperature (thermometer) and pressure (barometer). Data sent to the central
+                database will be a timestamp, location data, and the data collected by the sensors.
+                The web application is build on top
+                of a database containing the data sent from the sensors. The two main features for
+                the web application are data download and visualization creation. </fsb_hlgt>
+    </page>
+    <page type="sccs_crt">
+      <req_sect> Sensors <req n="1" title="Micro-Controller">The base
+                    platform, essentially a small computer which provides power to all of the other
+                    components. It also may contain some basic data filtering software in order to
+                    prune noise from the collected data. </req><req n="2" title="Network Connectivity">The sensors will be connected via an ad-hoc
+                    network model. In this model, most units will only be connected to other units.
+                    Pre-programed into each unit, will be the routing data which provides a path to
+                    a unit that has connection to the actual internet (an "exit node"). Thus, each
+                    unit will push its data towards the unit that is "closer" to an "exit node"
+                    until the data is pushed to the database. </req><req n="3" title="Temperature Sensor">A basic thermometer, this will collect the
+                    temperature at an appropriate precision. </req><req n="4" title="Pressure Sensor">A barometer, this will collect pressure data at
+                    an appropriate precision. </req><req n="5" title="Location Data">In order for the system to work, each sensor must
+                    have its own location. This will be programmed in upon installation, likely in
+                    the form of a latitude, longitude pair. </req></req_sect>
+      <req_sect> Web Application <req n="1" title="User Interface">The user interface should
+                    provide easy and intuitive access to all of the functionality provided. The
+                    interface should be optimized for use on desktop computers of all screen sizes.
+                    It also should have at least the basic ability to be used on mobile devices. </req><req n="2" title="Data Download">Data download is the ability to pull ranges of data
+                    and possibly all data from the database. Also provided is the ability to
+                    download data in many different formats. </req><req n="3" title="Visualizations">This feature will create various forms of visual
+                    representations of the data. This includes map overlays of the data, animations
+                    of the data, and various charts that show changes in the data over time. </req></req_sect>
+    </page>
+    <page type="dsn">
+      <img url="https://cdn-shop.adafruit.com/1200x900/50-07.jpg"> Potential Micro-Controller
+                (Arduino Uno) </img>
+    </page>
+    <page type="cost">
+      <est type="fnc"> This sensors could use
+                many commercial off the shelf products. For the micro-controller, an Arduino based
+                chip could be used. These kinds of controllers are widely available and have the
+                additional advantage of being open-source. The cheapest appropriate model would be
+                rather expensive at fifteen to twenty dollars, but that price could go down as the
+                boards are bought in bulk. Sensors provided by the Arduino project could also be
+                used. A temperature sensor costs around one dollar and fifty cents and a pressure
+                sensor costs around five dollars. Both of these prices, as with the chip, could go
+                down with bulk purchases. The most expensive piece of equipment to buy would be
+                network connectivity module, which would likely cost more than twenty dollars.
+                Assuming a cost of twenty dollars for both the chip and the network module, this
+                adds up to an overall cost of about forty seven dollars per unit. This price seems
+                quite restrictive on the surface, but the price could decrease with bulk pricing
+                and/or the possible development of specialized micro-controllers. </est>
+      <est type="fnc"> The costs for the web application consist of payment to developers and
+                hosting fees. </est>
+    </page>
+    <page type="rpt">
+      <tmln n="1" date="2017-01-01"> Complete research into technical feasibility. Begin
+                research into implementation details, i.e., actual components, financial details. </tmln>
+      <tmln n="2" date="2017-02-01"> Complete implementation details. Begin creation of proof
+                of concept. </tmln>
+      <tmln n="3" date="2017-03-01"> Show proof of concept to potential investors and/or
+                public officials. </tmln>
+      <tmln n="4" date="2016-04-01"> Obtain funding. Begin actual implementation. </tmln>
+    </page>
+    <page type="rsk_ana"> Potential risks to this system include, but are not limited to, loss
+            of funding and public disinterest in the project. These two
+            risks are intertwined as each can lead to the other. Mitigating the risk of public
+            disinterest could be achieved by hiring a public relations firm to create and/or
+            maintain enthusiasm for a distributed weather system. <pb/> Causes of funding loss for
+            the project depend on the actual source of said funding. If most of the financing for the
+            project is public, disinterest in the project is a likely cause, which was discussed in
+            the previous paragraph. If funding is generally private, the causes are numerous and
+            mitigation strategies more nebulous and possibly less effective. Again, a downturn in
+            public opinion could reduce funding. The most general and likely cause of private
+            funding loss is the fiscal state of the company providing funding. Once a downturn of
+            the funding company has started, it is out of the hands of the executors of this
+            project. The only real way to reduce this risk is to choose a funding company that
+            stable for the foreseeable future. </page>
+    <page type="conc">
+      <fsb> Based on preliminary research, this project seems to be technologically feasible.
+                From a practical perspective, these systems should be designed to be deployed in
+                small segments, e.g., a neighborhood, as deploying in a entire city at one time
+                would be fiscally and technically challenging.</fsb>
+      <cond> The main hurdle to any actual implementation of this project is funding. A
+                significant amount of the funding to this project would likely need to be public.
+                The need for public funding necessitates a campaign in order to drum up general
+                support for this project. </cond>
+      <sum> This is a project that would provide more granular and open granular weather data.
+                The described implementation is made of commercially available, common parts. This
+                system is quite feasible in the current environment. </sum>
+    </page>
+  </fsb_rpt>
+</DOC>

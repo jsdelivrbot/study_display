@@ -1,0 +1,68 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Cover Letter - Writing Project 3</title>
+    <version n="1" date="2016-08-11"/>
+  </docHead>
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Dear Mr. Sarkisian,</greeting>
+    <intro_para><intent type="purpose">I am interested in applying for a summer internship position
+                within the structural engineering group at Skidmore, Owings and Merrill during the
+                summer of 2017.</intent><intent type="connection">After speaking with you over the phone this past summer about
+                the different opportunities at SOM, I became increasingly interested in pursuing a
+                job within the engineering department.</intent><reason>I have a strong interest in both architecture and structural
+                engineering</reason> and <proposition>I think I would be a great fit with the SOM
+                culture. I have the necessary technical skills and passion for learning that would
+                help me to succeed in a fast paced environment.</proposition></intro_para>
+    <para_background>
+      <experience type="personal">Growing up I was exceedingly interested in the study of
+                architecture and the design of the built environment. However it was not until late
+                in highschool that I realized that my interests were more technical in nature. </experience>
+      <experience type="school">Now in my fourth year at Northeastern University I am pursuing
+                a master's degree in civil engineering with a focus in structural.<accomplishments>
+                    I have taken courses in both the technical aspects of engineering and design as
+                    well as on the history of architecture in America.</accomplishments></experience>
+      <experience type="work">Entering into the industry I did not realize how isolated each
+                of the different companies working on a project could be. In the past two years I
+                have co-oped with two different companies within the building industry. With Skanska
+                I <accomplishments>developed a better understanding of the technical and
+                    coordination aspects involved with the construction of a project.</accomplishments> While working at Simpson Gumpertz
+                and Heger I was able to apply my <skills>technical knowledge from classes</skills>
+                and improve my design skills with programs such as <programs>AutoCAD, Revit and RAM
+                    Steel.</programs> Ultimately I hope to one day use my technical background and
+                project management skills to bring the separate groups together to work as a
+                cohesive unit under each project.</experience>
+    </para_background>
+    <closing_statements>
+      <compatability> For these reasons I think I will fit in well with the holistic design
+                culture of SOM.</compatability>
+      <next_step>I have attached my resume to this letter and I hope to hear from you in the
+                future regarding possible opennings for interns in the Summer of 2017.</next_step>
+    </closing_statements>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <pb/>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

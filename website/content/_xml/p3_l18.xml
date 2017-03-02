@@ -1,0 +1,97 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>The Production and Revision of (Disciplinary) Genres</title>
+    <version n="1" date="2016-08-22"/>
+  </docHead>
+  <!-- root element for P3 here -->
+  <fsb_rpt>
+    <page type="ttl">
+      <title>Feasibility of a Voting Machine Test Suite</title>
+      <contributors>
+        <!--deidentified element-->
+      </contributors>
+      <date>8/16/2016</date>
+    </page>
+    <page type="tbl_contents">
+      <sect n="1" lvl="1"> Executive Summary </sect>
+      <sect n="2" lvl="1"> Preliminary Requirements Analysis </sect>
+      <sect n="3" lvl="1"> Feasibility </sect>
+      <sect n="4" lvl="1"> Success Criteria </sect>
+      <sect n="5" lvl="1"> Cost Estimates </sect>
+      <sect n="6" lvl="1"> Risk Analysis </sect>
+      <sect n="7" lvl="1"> Conclusion </sect>
+    </page>
+    <page type="exec_sum"> In the course of the 2016 elections, certain candidates have
+            expressed concern about voter fraud. Although voting machines are currently built
+            according to voluntary certifications and tested by accredited laboratories, these
+            processes do not take into account the social and administrative factors involved in
+            running a voting precinct. Therefore, a field testing suite has been proposed to get a
+            fuller understanding of the entire voting architecture. <pb/> For reasons explained in
+            the following report, it is currently infeasible for the Election Assistance Commission
+            to move forward with this project. </page>
+    <page type="pre_req_ana">
+      <app_ovr type="obj">There have been various demonstrations of weaknesses in the security
+                of current voting systems, primarily in labs. The Election Assistance Commission has
+                the opportunity to demonstrate the security or lack thereof of voting systems in the
+                field. To that end, a set of tools and procedures could be developed to test various
+                polling locations nationwide. </app_ovr>
+      <app_ovr type="rls">Depending upon how the suite is designed to be used, its
+                implementation will likely require extensive cooperation from state governments
+                where the suite is used. It may also require legislation from congress.</app_ovr>
+    </page>
+    <page type="fsb">
+      <fsb_hlgt type="tcnl">The testing suite will need to work with many different voting
+                machines. Beyond a basic plan, there is uncertainty on whether any work can be
+                reused between them. Also, the suite will need to be flexible enough to incorporate
+                new machines as they are produced. Beyond these problems, the development of the
+                suite should be possible with standard computer security techniques.</fsb_hlgt>
+      <fsb_hlgt type="suits">There will likely be legality problems with testing the security
+                at the actual polling places and times. The only way around this is likely a change in laws passed at the
+                federal and possibly even state levels. Due to the current gridlock in congress and
+                the varying makeups of state governments, it is very unlikely that the EAC will be
+                able to deploy the testing suite with any sort of uniformity nationwide.</fsb_hlgt>
+      <fsb_hlgt type="econ">The EAC likely does not have the financial flexibility to support
+                this project. With its budget of ten million dollars already being used for other
+                important and required functions, and with congress unlikely to allocate more money
+                in the foreseeable future, it is highly unlikely the EAC will be able to find the
+                money for a new major project. As it is the EAC is only capable of supporting about
+                30 full time equivalent workers</fsb_hlgt>
+    </page>
+    <page type="sccs_crt">
+      <req_sect>Versatility <req>The test suite must be compatible with all currently used
+                    voting machines</req><req>The test suite must be adaptable to the different types of locations and setups
+                    of polling places</req></req_sect>
+      <req_sect>Adaptability <req>The testing suite must be flexible enough to adapt to new
+                    types of voting equipment</req></req_sect>
+      <req_sect>Reporting <req>The results of the security tests must clearly describe any
+                    vulnerabilities so they can be monitored and fixed</req></req_sect>
+    </page>
+    <page type="cost">
+      <est type="inst">If the EAC goes forward with this project, I do not foresee any major capital costs. Instead, the
+                major cost will be labor. Some of this work can likely be handled by existing
+                employees. This could have a negative impact on their other responsibilities. </est>
+      <est type="fnc">It is unlikely that existing workers can handle the increase in tasks by
+                themselves, so new full and part time workers will need to be hired. This could cost
+                a significant amount of money depending on wage rate and how many people end up
+                being hired.</est>
+    </page>
+    <page type="rsk_ana">The major risk of using a testing suite on the actual election
+            infrastructure is that a bad actor could use the tools to commit election fraud. This
+            could be mitigated by redoing all the polls in locations that were tested. There are
+            major downsides to that solution though, as it would be very burdensome on governmental
+            resources and would almost certainly decrease final voter turnout.</page>
+    <page type="conc">
+      <fsb>In this researcher's opinion, a field based testing suite would be highly
+                infeasable. There would be major obsticals in legality, coordination, and monetary
+                cost. In return there would be a minimal improvement over current labratory and
+                specification based testing.</fsb>
+      <cond>If a large amount of political will to
+                complete this testing program manifests itself uniformly across the United States,
+                the EAC could move forward with this project.</cond>
+      <sum>I reccomend scrapping this project and looking
+                into other ways to improve current testing.</sum>
+    </page>
+  </fsb_rpt>
+</DOC>

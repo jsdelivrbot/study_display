@@ -1,0 +1,56 @@
+<?xml-model href="../schema_1111.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../testing_format.xsl"?><DOC>
+  <!-- paste your genre here, after <DOC> and before the <docReview> section -->
+  <resume>
+    <title>Name
+            <!--deidentified element--></title>
+    <header>Contact Information</header>
+    <contact_information>
+      <contact type="address">address<!--deidentified element--></contact>
+      <contact type="email">email<!--deidentified element--></contact>
+      <contact type="phone">phone<!--deidentified element--></contact>
+    </contact_information>
+    <header>Objective</header>
+    <objectives> I am seeking a cooperative position in the field of public relations to gain
+            experience and demonstrate the skills I have learned through previous job experience and
+            formal education </objectives>
+    <header>Work Experience</header>
+    <work_experience>
+      <job>
+        <job_title>Model</job_title>
+        <employer>Maggie Inc</employer>
+        <job_date>April 2013–Present</job_date>
+        <job_location>Boston, MA</job_location>
+        <job_summary> Work with international brands in the Greater Boston area for
+                    e-commerce use. Work closely with photographers, fashion coordinators,
+                    directors, producers, stylists, makeup artists, other models, and clients to
+                    produce the desired looks, and to finish photo shoots on schedule.</job_summary>
+      </job>
+      <job>
+        <job_title>Receptionist</job_title>
+        <employer>Turnstyle Cycle Studios</employer>
+        <job_date>April 2016–Present</job_date>
+        <job_location>Boston, MA</job_location>
+        <job_summary> Check in customers and assist with bike set-up Create a warm and
+                    welcoming environment for customers </job_summary>
+      </job>
+      <job>
+        <job_title>Caller</job_title>
+        <employer>University of San Diego Telefunding</employer>
+        <job_date>September 2015–December 2015</job_date>
+        <job_location>San Diego, CA</job_location>
+        <job_summary> Utilized effective sales skills to raise money
+                    in the form of donations to USD. Brought in 15 new donors within 3 months.
+                    Raised a total of $7215.00 as of December 1st, 2015. </job_summary>
+      </job>
+    </work_experience>
+    <education>
+      <school>Northeastern University</school>
+      <school_location>Boston, MA</school_location>
+      <graduation_date>2019</graduation_date>
+      <degree type="bachelor">Communication Studies. Minors in Media Production and Business
+            </degree>
+    </education>
+    <additional_information>Surfrider Foundation member. Participate in beach cleanups and
+            fundraising events. July 2015- Present. </additional_information>
+  </resume>
+</DOC>

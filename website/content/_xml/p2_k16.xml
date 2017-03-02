@@ -1,0 +1,84 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 2</title>
+    <version n="num_of_version" date="2016-08-01"/>
+  </docHead>
+  <blog_post>
+    <background><pb/> If you have read any technology news or blogs in the past few years, you probably
+            have heard of something called “machine learning” being thrown around constantly.
+            Everybody seems to be using it now: car companies are using to make self driving cars, phones companies are using it to
+            make digital assistants that can understand what you're saying, and social media
+            websites are using it to detect your face in your friends pictures. However, even with
+            all of these useful applications of machine learning, most people have no idea
+                whats going on behind the scenes to
+            make all of this work. <technical_principle>If you skim through
+                a book on machine learning, you will probably see a lot of complicated looking math
+                and statistics,<misconception>which makes most people think that it’s something that
+                    would require an advanced degree to understand, but the idea behind it really
+                    isn’t that complicated.</misconception></technical_principle><question>So how exactly does this thing called “machine learning” really work?
+            </question></background>
+    <answer>
+      <section_header>Is machine learning just black magic? </section_header>
+      <technical_principle> At it’s heart, machine learning is just statistics and
+                probability. <analogy>From a statistical perspective, it works in the same way a
+                    professional poker player would look at the cards in their hand and what is on
+                    table, and then try to make a decision on what move they should make
+                    next.</analogy> But we have had mathematicians working on and developing
+                statistical ideas for centuries now, which leads to the question: </technical_principle>
+      <section_header> Why has machine learning only been becoming popular in the past few
+                years? </section_header>
+      <technical_principle> Outside of mathematical theory, we haven’t been able to do much
+                with statistics until computers came around. When computers first started being used
+                commonly a few decades ago, there were a few people trying to build these
+                statistical models and do some machine learning but it was extremely slow and
+                inefficient, even with the most powerful computers at the time. However with huge
+                advances in computing power over the past few years, being able to create these
+                statistical models became much faster, accessible, and reliable. </technical_principle>
+      <section_header>What kind of statistics does machine learning use?</section_header>
+      <specific_topic>For this example, we are just going to explain how classification by
+                logistic regression in machine learning works. Classification is just a way to label a set of information, such as
+                labeling a set of pictures of dogs by the breed of dog in each photo. All this
+                specific machine learning algortihm does is generate a math equation that looks like
+                    this:<visual type="drawing" url="http://i.stack.imgur.com/5vpYa.png">Logistic
+                    Regression</visual>Let says our dog photos only have pictures of poodles and
+                huskies. The machine learning algorithm will take a photo, run it through another
+                generated equation which would spit out a number, and it finds this number on the x
+                axis and calculates the corresponding value on the y axis. Since we are only trying
+                to classify two differnt types
+                of dogs, there are only two cases we care about: <list type="generic"> 1. The y
+                    value is between 0.5 and 1, in which case we can say we have a husky in the
+                    photo. <pb/> 2. The y value is between 0 and 0.5, in which case we can say we
+                    have a poodle in the photo. <pb/></list><pb/></specific_topic>
+      <section_header>But how do we come up with all of these equations?</section_header>
+      <explanation n="1"> This is where the “learning” part of machine learning comes in. In
+                the example we had an equation that could tell the difference between a poodle and a
+                husky, but to come up with the equation, we needed to “teach” the computer how to
+                create it. To do this, we need to give a computer a training set of already labeled
+                dog photos. It can go through the photos and identify differing features between
+                poodles and huskies, such as pointless of it’s ears. The way it identifies these
+                features is by using something called a “convolutional neural network”, but that is
+                another whole can of worms (you can read more about them in <ref type="supplement" url="https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721#.v1l1nui91">a blog post here</ref> if you're interested). Now since we want the
+                classification equation to output a number between 0 and 0.5 if we have a poodle and
+                0.5 and 1 if we have a husky, the computer will form the equation in a way so that
+                the pointier the ears are, the higher number the equation will output. We can see
+                approximately where some dog photos would be plotted in the following graph using
+                our newly trained equation: <pb/><visual type="drawing" url="http://i.imgur.com/iO8lFWg.png"/> Since the difference
+                between huskies and poodles is more than just pointy ears, we can create multiple
+                equations that look at different features such as tail shape, number of fur colors,
+                or eye shape and use all of them to create a better and more accurate classifier. </explanation>
+      <conclusion>If you look past all of the complex math and statistics involved in machine
+                learning, it really is just the computer giving its best guess. Although it is far
+                from perfect, with the amount of research being done in the field and the pace at
+                which computing power is advancing, machine learning is becoming more and more
+                accurate and more prevalent in our everyday lives. </conclusion>
+    </answer>
+    <sources>
+      <citation style="MLA">Brownlee, Jason. "Logistic Regression for Machine Learning -
+                Machine Learning Mastery." Machine Learning Mastery. N.p., 1 Apr. 2016. Web. 01 Aug.
+                2016.</citation>
+    </sources>
+  </blog_post>
+  <!--paste body of your template file here-->
+</DOC>

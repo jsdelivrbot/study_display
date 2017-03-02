@@ -1,0 +1,64 @@
+<?xml-model href="../schema_1111.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../testing_format.xsl"?><DOC>
+  <resume>
+    <title>Name
+            <!--deidentified element--></title>
+    <header>
+      <style type="underline">Contact Information</style>
+    </header>
+    <contact_information>
+      <contact type="address">address<!--deidentified element--></contact>
+      <contact type="address">address<!--deidentified element--></contact>
+      <contact type="phone">phone<!--deidentified element--></contact>
+      <contact type="email">email<!--deidentified element--></contact>
+    </contact_information>
+    <header>
+      <style type="underline">Objectives</style>
+    </header>
+    <objectives>Looking for a working opportunity in the Computer Science Industry during the
+            summer of 2017 (from May to July). My aim is to work in a cutting-edge and challenging
+            work environment, wherein I can effectively convert my innovative ideas into fruitful
+            results. </objectives>
+    <header>
+      <style type="underline">Qualifications</style>
+    </header>
+    <work_experience>
+      <job>
+        <job_title><style type="bold">Title:</style> Software Developer.</job_title>
+        <employer>Fazlani L'Académie Globale School</employer>
+        <job_date>Duration: November 2015 - April 2016.</job_date>
+        <job_location>Mumbai, India</job_location>
+        <job_summary>Developed a Student Council Voting System for the Sports Department of
+                    my high-school.</job_summary>
+        <job_summary> Programmed in Java and maintained the backend in .dat files
+                </job_summary>
+      </job>
+    </work_experience>
+    <header>
+      <style type="underline">Education</style>
+    </header>
+    <education>
+      <school>Northeastern University</school>
+      <school_location>Boston, MA</school_location>
+      <graduation_date>2020</graduation_date>
+      <degree type="bachelor">Computer Science with Business
+            Administration</degree>
+    </education>
+    <education>
+      <school>Fazlani L'Académie Globale School</school>
+      <school_location>Mumbai, India</school_location>
+      <graduation_date>2016</graduation_date>
+      <degree type="high_school">Diploma in International Baccalaureate</degree>
+    </education>
+    <header>
+      <style type="underline">Additional Information</style>
+    </header>
+    <header>Softwares/Languages</header>
+    <additional_information> Proficient in Java, DrRacket and XML.</additional_information>
+    <additional_information>Fluent in English, French and Hindi.</additional_information>
+    <header>Volunteer/Leadership</header>
+    <additional_information>Prior leadership roles in sports teams.</additional_information>
+    <additional_information>Hosted my high-school annual concert.</additional_information>
+    <additional_information> Volunteered at Muktangan NGO in India. Directed a play for their
+            school concert with the help of my classmates.</additional_information>
+  </resume>
+</DOC>

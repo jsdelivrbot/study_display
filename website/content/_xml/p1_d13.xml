@@ -1,0 +1,171 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Title of Assignment</title>
+    <version n="1" date="2016-07-11"/>
+    <version n="2" date="2016-07-13"/>
+    <version n="3" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt>As oil reserves diminish and concern for the environment increases, cities
+            will increasingly be required rely upon renewable energy to provide basic services to
+            the residents of their communities. In addition to decreasing oil reserves, switching to
+            renewable sources of energy is necessary if the world is to be perserved for future
+            generations. However, cities have limited space and the types of renewable energy
+            sources available are limited by geographical location and climate. Boston is limited by
+            its geographical location to solar and wind power to supply a majority of its renewable
+            energy if it is to eventually become 100% dependent on sustainable sources. In order to
+            achieve this goal, renewable energy sources must become economically viable and be able
+            to compete with traditional sources of energy on the open market. Solar technology is
+            currently very expensive to implement and suffers intermittent power generation due its
+            dependence on the sun shining directly onto solar panels. In addition solar panels
+            suffer from low energy efficiency, losing much of the sun's potential energy to the form
+            of heat. The problems with the economics and energy efficiency of solar technology must
+            first be resolved if cities are going to become 100% renewable energy dependent.</problem_stmt>
+    <citation n="1" style="APA"><author>Cusick, Daniel</author> (2013). <title level="a">Fossil
+                Fuel Use Continues to Rise</title>. <title level="j">Scientific American Global
+                RSS</title></citation>
+    <annotation><background type="author"> Daniel Cusick is a reporter for American Scientific who frequently writes about topics
+                concerning the intersection of renewable energy and the economy</background>.
+                <summary type="general">This article comments on the increasing use and dependence
+                on fossil fuel despite <q>concerted global efforts to reduce carbon emissions
+                    through the expansion of clean and renewable energy sources</q>. Cusick
+                discusses recent 2012 data that show that reliance on fossil fuels continues to
+                increase, largely due to the increasing urbanization of third world continues and
+                the increase of natural gas production via shale fracking in the U.S.</summary><relevance type="application">This article is mainly a summary of recent fossil fuel
+                production data from 2012 but does offer insight on the reasons behind the increase
+                in fossil fuel consumption as a portion of the total energy market. Energy
+                development remains a business, and traditional sources or energy continue to offer
+                larger profit margins for energy developers and cheaper energy for the average
+                consumer. This article underlines the main obstacle to renewable energy development,
+                which is the economic viability of the energy program. Until sustainable and clean
+                energy sources, such as solar, can compete with fossil fuels without government
+                subsidization, the world, and especially developing cities, will continue to depend
+                on traditional energy sources.</relevance></annotation>
+    <citation n="2" style="APA"><title>Renewable Energy Tax Credit</title><title level="w">U.S.
+                Department of Energy</title> (2015). Retrieved from
+                <ref>http://energy.gov/savings/residential-renewable-energy-tax-credit</ref></citation>
+    <annotation>
+      <background type="source">This information was retrieved from the U.S. Department of
+                Energy's website concerning the tax rebates the U.S. government offers to those individuals who
+                    purchase solar power for their homes or
+                businesses.</background>
+      <summary type="general">In order to encourage renewable energy development in the United
+                States, the government voted to extend the tax breaks offered in the Consolidated
+                Appropriations Act of 2015 for those that purchase solar or thermal energy systems
+                for their homes. The tax breaks are necessary as solar systems have high initial
+                investment costs that most homeowners cannot afford. To promote development, the
+                government voted to offer a 30% Personal Tax Credit to anyone who purchases a solar
+                system prior to 2019, in order to offset the high investment costs.</summary>
+      <summary type="interpretation">It is clear that the government recognizes the fact that
+                most people do not have the required capital to make the switch to renewable energy,
+                even if they wanted to. However, this program only offers the 30% tax credit until
+                2019, with a decreasing credit offered for renewable energy systems purchased prior
+                to 2022. For the development of private solar energy systems to continue in the
+                United States, the tax credit will have to be extended or there must be significant
+                developments in solar technology that increase its economic viability for the
+                average citizen.</summary>
+      <relevance type="application">As there is no guarantee that the U.S. government will
+                renew this tax credit before it expires completely in 2022, it is essential that
+                increased funding be put towards the continued development of solar technology. Solar energy can be made more affordable by increasing panel
+                efficiency and the development of large-scale energy storage system capable of
+                supporting urban population centers. By continuing to make solar energy more
+                economical, small scale personal renewable energy development will continue in the
+                United States, which could significantly impact climate change and reduce carbon
+                emissions if enough individuals participate.</relevance>
+    </annotation>
+    <citation n="3" style="APA"><author n="1">Yu, J.</author>, <author n="2">Gao, J</author>,
+                <author n="3">Hummelen, J.C.</author>, &amp; <author n="4"> Heeger, A.J.</author>
+            (1995). <title level="a">Polymer Photovoltaic Cells: Enhanced Efficiencies via a Network
+                of Internal Donor Accepted Heterojunctions</title>. <title level="j">American
+                Association for the Advancement of Science</title></citation>
+    <annotation><background type="author">This article was written by a group of researchers at the
+                Institute for Polymers and Organic Solids at the University of California at Santa
+                Barbara</background>, <summary type="approach"> who tested various polymer blends in
+                photovoltaic cells to observe the effects on the electron transfer rate and
+                efficiency of the panels.</summary><summary type="general">This article focused on an alternative approach to designing
+                solar panels with the use of blended polymers as photovoltaics in place of
+                traditional inorganic semiconductors such as silicon, which are found in most
+                commercial solar panels. The authors cite the low production cost of polymer-based
+                photovoltaic cells and the faster transition of the electron to the conducting
+                polymers as economic motivators for the research. They conclude that a panel
+                designed with a polymer photovoltaic conductor would lower the cost of solar panels
+                and at the same time, have the potential to greatly improve panel efficiency from
+                the current average of 15% as a result of the reduced contact time of the electrons
+                with the polymer based conductors in the photovoltaic cells.</summary><relevance type="value_stmt">This article provides a brief yet complex overview of the
+                potential impact of using polymers in photovoltaic cells to improve the efficiency
+                of the panels and reduce their high economic cost. It is important to keep in mind
+                that while the higher efficiencies of 30-40% observed in this study are promising,
+                polymers have yet to be tested on a large scale, which could have a significant
+                impact on the actual effectiveness of the polymers.</relevance></annotation>
+    <citation n="4" style="APA"><author>Braff, William Allen</author> (2014),
+                <title>Membraneless Hydrogen Bromine Laminar Flow Battery for Large-Scale Energy
+                Storage</title><title level="a"> Massachusetts Institute of
+            Technology</title></citation>
+    <annotation>
+      <background type="author">William Allen Braff was a candidate for PhD at MIT when he
+                published this research as his thesis to the Department of Mechanical
+                Engineering.</background>
+      <background type="source">While Braff submitted his thesis
+                to the Department of Mechanical Engineering as part of his doctoral requirements, he
+                was also advised by the Departments of Chemical Engineering and Mathematics as Ion
+                Flow Batteries are highly complex storage systems that involve aspects of all three
+                disciplines.</background>
+      <summary type="general">The development of electrochemical storage systems as a new
+                means of energy storage for renewable energies has the potential to make solar power
+                much easier to implement on a large scale. Braff examines Hydrogen Bromine
+                batteries, which are a specific type of ion flow battery, and the benefits of
+                operating the battery system without a membrane. Ion flow batteries store energy
+                during peak generation hours for later use by using excess energy to power a
+                reversible chemical reaction that separates electrons, thus storing energy. When
+                this energy is needed, the reaction can be reversed and the electrons will again be
+                exchanged, thus releasing energy to the grid.</summary>
+      <summary type="approach">Ion flow batteries are currently very expensive and cannot
+                compete economically with conventional storage methods, though they have better
+                efficiencies and a larger storage capacity potential. To reduce the costs of the
+                battery systems, Braff suggests removing the membrane that divides the two
+                electrolytes solutions which exchange electrons to store and release energy. Instead
+                of a membrane, the two electrolytes would be moved through the battery in a laminar
+                flow pattern, that is uniform, which would not allow the two different electrolytes
+                to mix and thus ruin the battery system. By keeping the electrolyte solutions at
+                very low velocities while they move through the battery, laminar flow would be
+                achieved.</summary>
+      <relevance type="value_stmt">The removal of the membrane from the Ion Flow Battery would
+                make the storage system a practical option for large scale energy storage. The
+                suggestion of using laminar flow to prevent the two solutions from mixing would
+                increase the lifetime of the batteries, as the membrane degrades over time and must
+                be periodically replaced. This would greatly reduce the cost of the battery system,
+                as the membrane is often the most expensive component. This membraneless battery
+                system can be easily scaled up by adding addition stacks, chambers in which the
+                electrolyte solutions interact, and represents a completely reversible system. This
+                storage system has the potential to make solar energy economical viable on a large
+                scale as it greatly reduces the impact of solar's intermittent energy production and
+                can be scaled to support peak periods of energy demand.</relevance>
+    </annotation>
+    <citation n="5" style="APA"><author> U.S. Department of Energy</author> (2013, December).
+                <title level="a">Grid Energy Storage</title></citation>
+    <annotation>
+      <background type="source">This report was compiled by the U.S. Department of Energy to
+                outline its goals for future energy storage development within the United
+                States.</background>
+      <summary type="general">This report specifically focuses on the goal of enhancing energy
+                storage systems to incorporate and support more renewable energy sources, and to
+                make this economical competitive with
+                other technologies performing a similar function. In respect to this goal, the
+                Department of Energy narrowed in on four criteria that must be met for any energy
+                storage system, which are: <q>cost competitive storage technology, validated
+                    reliability, equitable regulatory environment and industry
+                acceptance.</q></summary>
+      <relevance type="value_stmt">Through this report, it is clear that the Department of
+                Energy (DOE) agrees with the scientific community that their is a significant need
+                to focus on the development of energy storage systems capable of incorporating
+                renewable technology while maintaining economic viability. The Department of Energy
+                seeks to catalyze the development of these improved energy systems and is attempting
+                to provide some guidelines and general goals for developers to focus on, as those
+                who work alongside the DOE to achieve its goal are more likely to receive federal
+                funding for the development of improved energy storage systems.</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

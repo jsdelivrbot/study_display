@@ -1,0 +1,81 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Assignment 1: Using Data to Find Residences With Lead Based Paint </title>
+    <version n="1" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt>
+            Living in Boston over the past few years, it’s clear that it’s a city that prides itself on its rich history. While walking around you see monuments and landmarks around every corner, and its residents have been fighting to keep that culture alive. Although it is important for the city to keep its historic atmosphere, there are a few dated aspects that need to be changed, namely the use of lead based paint. In the early 1900s, the dangers of using lead weren’t extensively studied and as a result it became a chemical used in common household items. It wasn’t until the 1970’s that awareness was spread of its harmful side effects and soon afterwards, a law was passed banning its use in paint. Since then, there has been an sharp decline in the use of lead in common household products, but many apartments still have that same 40 year old lead paint in their walls. Many residents just repainted over it, thinking that would fix the issue, but it only hid the lead paint behind another layer and when the paint eventually chips off, the residents become exposed to lead again. At this point, the issue the city is facing isn’t that residents are unaware of the dangers of lead exposure, the issue is residents are unaware their apartment still contains lead paint. As a result, every year, hundreds of children are admitted to the hospital after getting sick from accidentally ingesting these paint chips. The city has been trying to spread awareness to each resident about the presence of lead paint, but this hasn't been as effective as they would have liked. Trying to make the entire population aware leads to a situation similar to the bystander effect, and telling everyone to test their walls without directly pointing fingers at a specific people tends to result in nobody testing their walls. A solution to this problem would be to find which residences were at the highest risk of having lead paint and focus on making them aware that they have a much higher chance of living in a contaminated household than a normal household. This route should make them significantly more concerned of the issue and it would be more likely that they would try to get their apartment tested. As a Computer Science major, my initial thoughts on a how to implement this solution would be to build a model from various sources of data that would be fed in addresses, and it would spit out a number representing the chances of an apartment having lead paint. The model could be trained using relevant factors such as apartment construction dates, addresses of hospital patients who were admitted with lead poisoning, and dates when the apartments were last renovated. The residences with highest chances of having lead paint could then be targeted for spreading awareness. This model could be further developed to prioritize demographics who are most at risk of having serious side effects after exposure to lead. Since there aren't many datasets that currently exist with the exact information required to build this solution, a substantial part of development would be building this dataset from various sources.</problem_stmt>
+    <citation n="1" style="APA"><title>Learn about Lead. </title>(2015, October/November). Retrieved July 12, 2016, from https://www.epa.gov/lead/learn-about-lead#effects</citation>
+    <annotation>
+      <background type="author">
+                The authors, the Environmental Protection Agency, compiled this informational article about the effects exposure to lead can have on the human body.
+            </background>
+      <summary type="general">
+                In this piece, they claim that exposure to lead in children can cause developmental issues such as behavioral and learning problems, and slowed physical growth. They go on to give information about the risks of pregnant women being exposed to lead, and how the fetus' development can be slowed down by any buildup in a mothers body. 
+            </summary>
+      <relevance type="value_stmt"> This article is able to convey direct facts about lead based on extensive research, and is a source useful for understanding the demographic of who is most at risk when exposed to lead.    
+            </relevance>
+    </annotation>
+    <citation n="2" style="APA"><author>The Editorial Board.</author> (2015, July 29). <title>New requirements needed on lead paint</title> - The Boston Globe. Retrieved July 12, 2016, from https://www.bostonglobe.com/opinion/editorials/2015/07/28/new-requirements-needed-lead-paint/pGYUwXDg88k88JTPTqGneK/story.html</citation>
+    <annotation>
+      <background type="source">
+                This editorial post in the Boston Globe expresses concern with the prevalence of lead in modern day Boston, and the factors that would cause a family to be living in a house contaminated with lead. 
+            </background>
+      <summary type="interpretation">
+                The authors of the article start off by initially make shocking claims to convey the severity of the issue in the city of Boston, and they clearly want a solution to be developed for this issue.   
+            </summary>
+      <summary type="general">
+                For example, they start off by stating that out of all of the children who tested positive for elevated levels of lead in the country, <q>close to 11 percent of those children live in Boston</q>. The author goes on to discuss a glaring issue facing many of the owners of these contaminated homes: it's just too expensive for them to afford test the house, and then to de-lead it. Finally, the author stresses the importance of developing a procedure to alert families that are at risk before any substantial harm can be done.
+            </summary>
+      <relevance type="application">
+                This post could be used not only as a confirmation that lead based paints are a serious problem that exists in Boston, but also provides some insight into the kinds of families and households that still have contaminated paint. It also provides confirmation that the current methods of spreading awareness about lead based paints are not nearly as effective as they can be.
+            </relevance>
+    </annotation>
+    <citation n="3" style="APA"><author>Thornton, S. </author>(2013, July 12). <title>Using Predictive Analytics to Combat Rodents in Chicago | Data-Smart City Solutions.</title> Retrieved July 12, 2016, from http://datasmart.ash.harvard.edu/news/article/using-predictive-analytics-to-combat-rodents-in-chicago-271</citation>
+    <annotation>
+      <background type="source">
+                In this article Sean Thornton, a data scientist who specializes in researching city infrastructure, writes about his experience with trying to combat rodent infestations using data. 
+            </background>
+      <summary type="general">
+                He discusses the various data sources he pulled from to try to come up with solutions to solve his problems. He explains how he gathered information from 311 calls regarding rat infestations, and tried to find a reasonable correlations them between other events. After messing around with the data, he concluded that shortly after calls to 311 were received regarding delayed garbage pickups, there was a spike in calls about rats in the same area for about a week. Along with that, after listening to a rat baiters anecdotes from his time on the job, he was able to find a positive correlation between the severity water main breaks and amount of calls about rodents infestations in the same area. Using this information, rat-baiters cam now predict where these rodents will pop up and try to exterminate them before they cause an issue.
+            </summary>
+      <summary type="approach">Thornton exibits  that when trying to find solutions to problems, it is important to examine both the quantitative and qualitative data.</summary>
+      <relevance type="application">  
+                This resource could be used as an example of a rough outline for procedure to follow when trying to extract conclusions when using various sources of data.</relevance>
+    </annotation>
+    <citation n="4" style="APA"><author>U.S. Department of Housing and Urban Development</author>. (2016). <title>American Healthy Homes Survey Lead and Arsenic Findings.</title> U.S. Department of Housing and Urban Development. Retrieved from http://portal.hud.gov/hudportal/documents/huddoc?id=AHHS_Report.pdf</citation>
+    <annotation>
+      <background type="source">
+                In this extensive report, the U.S Department of Housing and Urban Development publishes  statistics about homes that are knowns to contain various harmful chemicals, including lead.
+            </background>
+      <summary type="general">
+                The results, from a survey conducted in 2005-2006, is packed with useful data such as breakdowns of residences that have lead paint by their location, age, resident details and more.    
+            </summary>
+      <summary type="interpretation">Although this source might seem tedious and dull to look through through, it provides an invaluable insight into the characteristics of a stereotypical household that is plagued with an issue of containing harmful chemicals such as arsenic or lead.</summary>
+      <relevance type="application">   
+                This piece isn't a paper a reader would want to pick up to casually read, but it would be indispensable for any data scientist looking to process this report using a computer, and building up a dataset about residences that are facing an issue with harmful chemicals. The information could be further used to generate a predictive model for finding what houses have a high risk of containing harmful chemicals.</relevance>
+    </annotation>
+    <citation n="5" style="APA"><author>Hailemariam, D.</author> (2015). <title>Predicting the Price of Housing Using Python</title>. Retrieved July 13, 2016, from http://datascience-is-fun.com/Python/Housing.html</citation>
+    <annotation>
+      <background type="author">
+                In this blog post Desta Hailemariam, a PhD student at Binghamton University, works through the problem of building a model to predict housing prices in an area.
+            </background>
+      <summary type="general">
+                He goes through the explanation of his method using an IPython notebook, which is essentially used as a means to breakdown the individual steps he takes toward coming to his conclusion. The post follows a consistent pattern of using a IPython cell to explain a step he is about to take, and then a cell consisting of the code required to perform that step.
+            </summary>
+      <summary type="approach">
+                The author approaches the problem with little background in real estate, but is able to use his data analytics expertise to build up a reasonable solution that fits well with previous housing trends.   
+            </summary>
+      <summary type="interpretation">
+                Along with showing some of the technical aspects of inspecting datasets, Hailemariam shows that the field of data science can have extensive applications in almost every other field. 
+            </summary>
+      <relevance type="application">
+                This post would be practical to anybody looking to learn about the computer programming aspect involved in dissecting data, and using it to build a functional predictive model.
+            </relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

@@ -1,0 +1,75 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 2</title>
+    <version n="1" date="2016-08-01"/>
+  </docHead>
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Dear Joshua Elvander,</greeting>
+    <intro_para>
+      <intent type="purpose">I am writing to express my interest in the mechanical engineering
+                fall internship position, which I found through Northeastern's co-op
+                network.</intent>
+      <reason> I am approaching my fourth year as a BS/MS candidate for Mechanical Engineering
+                with a concentration in Mechatronics and am eager to gain more hands-on experience
+                in new industries.</reason>
+      <proposition>I believe my previous experience and passion for automation and
+                interdisciplinary work make me an ideal candidate for this role.</proposition>
+    </intro_para>
+    <para_background>
+      <experience type="work">During my time at Portal Instruments, another start up in the
+                area, I worked on a <accomplishments>complex electromechanical assembly, which was
+                    later used as a in human studies for a needle-free drug delivery
+                    device.</accomplishments> This project involved a lot of independent
+                    <skills>design, fabrication, and testing,</skills> which I believe is not unlike
+                the work I would be doing at Piaggio. At my last co-op at Bio-Rad, <accomplishments>I worked mostly
+                    independently on a piece of automation equipment, meant to automate a complex
+                    manufacturing process of a DNA sequencing consumable.</accomplishments> This
+                involved the integration of <skills>mechanical, electrical, and software
+                    disciplines</skills>. Specifically, this meant extensive experience with
+                    <skills>CAD design of precision parts, wiring,</skills> and
+                    <programs>programming a TRIO motion controller.</programs></experience>
+    </para_background>
+    <para_background>
+      <experience type="personal">In addition to my work experience, I also participate in
+                AIAA, where I have begun to help with the <skills>mechanical design of an RC plane
+                    as well as the electrical and software implementation of several
+                    components.</skills> This involves more <skills>Solidworks design, as well as
+                    learning how to read various sensors such as altimeters and gyroscopes using an
+                    Arduino.</skills></experience>
+    </para_background>
+    <closing_statements>
+      <compatability> My previous supervisors have described me as a self motivated worker
+                with an eagerness to learn, which I believe would make me a great fit for the start up
+                environment of Piaggio.</compatability>
+      <next_step>I would appreciate an opportunity to meet with you to discuss my
+                qualifications in further detail. </next_step>
+      <acknowledgment>Thank you for your consideration, and I look forward to speaking with
+                you soon.</acknowledgment>
+    </closing_statements>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

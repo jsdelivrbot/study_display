@@ -1,0 +1,211 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 2</title>
+    <version n="2" date="2016-08-09"/>
+  </docHead>
+  <pub_init_proposal>
+    <cover_page>
+      <title>Improving the MBTA</title>
+      <author>
+        <!--deidentified element-->
+      </author>
+      <submit_date>August 9, 2016</submit_date>
+      <audience>The City of Boston </audience>
+    </cover_page>
+    <tbl_cont>
+      <section n="1">1.0 Introduction</section>
+      <section n="2">2.0 Background</section>
+      <section n="3">3.0 Purpose</section>
+      <section n="4">3.1 Scope</section>
+      <section n="5">3.2 Objectives</section>
+      <section n="6">4.0 Approach</section>
+      <section n="7">5.0 Feasibility</section>
+      <section n="8">6.0 Conclusion</section>
+      <section n="9">7.0 References </section>
+    </tbl_cont>
+    <intro type="abstract">
+      <!--attribute options: ltr_int, exec_sum, abstract-->
+      <p>The MBTA was created in 1964 to replace the Metropolitan Transit Authority (MTA). The
+                MBTA is the fourth largest public transportation system in the country, averaging
+                1.3 million riders on a weekday, and is responsible for operating the commuter rail,
+                subway and bus systems in Boston. The Green Line is the single busiest subway system
+                in the country and averages over 250,000 riders a day. The MBTA is the single
+                largest consumer of electricity in the state and is used by 33% of workers in the
+                city proper as their primary method of commuting. Given Boston's high dependence on
+                the public transportation system, it is essential for the subway to operate
+                efficiently for commuters to reach their place of work and for the economic success
+                of the city of Boston. However, in recent years the MBTA has suffered a variety of
+                incidents that highlight the major problems with the system and show that
+                improvements must be made. The MBTA is $8 billion dollars in debt and has put off
+                much needed maintenance due to budget concerns. As a result, the MBTA has become a
+                poorly run organization has numerous issues with all aspects of their operation.
+                However, the most frequent complaints about the MBTA are centered around the subway
+                system and rightly so. The subway system is outdated, overcrowded and often delayed
+                due to technical issues. If Boston is going to continue to be a modern city that
+                seeks to reduce the consumption of fossil fuels by supporting public transportation,
+                the subway system must be updated.</p>
+    </intro>
+    <background>
+      <p>
+        <crnt_cond> The Boston subway system can only be described as old. The four main
+                    lines in the city, the Red Line, Green Line, Orange Line and Blue Line all use
+                    cars that were constructed prior to 1990. While all the lines use older subway
+                    cars, the Red Line is the worst as, <q>"Out of the MBTA's 218 Red Line cars, 132
+                        are over 25 years old." (Annear)</q>. The Orange Line cars were all
+                    implemented between 1979-1981 and have not undergone any major upgrades since,
+                    and a majority the of Green Line fleet has been in operation since the 1980's.
+                    These cars were never meant to accommodate the heavy commuter traffic they
+                    support daily and depend on outdated forms of technology that often fail and
+                    create delays, interrupting the city's economy. </crnt_cond>
+        <subj_hist> The problems of the MBTA subway system were especially apparent during
+                    the winter of 2014-2015, when Boston received record snowfall levels that
+                    paralyzed the city. The frequent storms resulted in massive subway delays and
+                    the complete closure of the sections of the Red, Orange and Green lines that
+                    were above ground. These delays were mainly caused by engine failure, as the
+                    older cars utilize Direct Current (DC) systems that struggle in the snow and
+                    freezing temperatures. Cities such as New York have resolved this problem by
+                    implementing cars using Alternating Current systems, which are more capable of
+                    handling inclement weather. Furthermore, the state of the subway system was a
+                    major reason that the citizens of Boston rejected consideration to host the 2024
+                    Summer Olympics as it was widely believed the MBTA was incapable of handling the
+                    surge of riders in its current state and incapable of securing the funding for
+                    the necessary improvements if the Olympic bid progressed (Manning). The state of
+                    the subway system in Boston negatively impacts the economy, environment and the
+                    society in which we live and must be provided with significant investment to
+                    allow Boston to continue to develop into a truly modern and green city.
+                </subj_hist>
+      </p>
+    </background>
+    <purpose>
+      <p>
+        <scope type="what"> Massachusetts must provide the MBTA with significant funding to
+                    completely overhaul the subway system to implement much needed improvements that
+                    will allow the subway to operate efficiently.</scope>
+        <scope type="who"> The Massachusetts legislature has consistently left the MBTA
+                    underfunded since 2000 when it imposed a cap on their budget due to serious
+                    concerns about financial mismanagement at the MBTA. As a result, the MBTA has
+                    been forced to delay major improvements until such time when they receive the
+                    necessary funding, causing the subway's infrastructure to fall into
+                    disrepair.</scope>
+        <scope type="when">The MBTA has maintained the subway system with small projects
+                    meant to improve one or two stations at a time and make temporary fixes to the
+                    outdated rail cars. However, this cannot continue indefinitely and the State
+                    Legislature must allocate the appropriate funding to modernize the subway system
+                    as soon as possible.</scope>
+        <!--attribute options: what, who, when, where-->
+        <objective> The main objectives of this project are to replace all cars constructed
+                    prior to 1990 with modern cars, repair the subway tracks and stations, and
+                    extend the subway lines to accommodate additional riders once the system is
+                    capable of handling the increase in traffic. </objective>
+        <goal> By improving the efficiency and service of the MBTA subway system, more
+                    commuters will choose to use public transportation as their primary means of
+                    transportation. The subsequent reduction of the amount of cars driving into the
+                    city each days will make Boston a greener, more environmentally friendly city as
+                    it will reduce the amount of fossil fuels required for the city to function.
+                    Increased use of an efficient subway system that gets workers to their places of
+                    business on time will improve the standard of living in the city and reduce the
+                    anger caused daily by traffic delays.
+                    <!-- can include <q> element(s) for quoted material --></goal>
+      </p>
+    </purpose>
+    <approach>
+      <!--attribute options: execution, action-->
+      <p>
+        <action>To modernize the subway system, the MBTA must first be granted the necessary
+                    funds to purchase modern cars that are better suited for Boston's harsh winter
+                    conditions and can accommodate more passengers. Boston has purchased 284
+                    replacement cars for the Red and Orange lines from a Chinese company but this
+                    deal now faces scrutiny and an investigation following accusations of unfair
+                    business practices as CRRC, a Chinese State-subsidized company, was able to
+                    undercut their American competitors (Metzger). Even if this deal is allowed to
+                    proceed, there is still a large portion of the subway system that has not yet
+                    received funding for renovations. The State Legislature must be petitioned to
+                    allocate $3.2 billion in funding to the MBTA to implement the necessary repairs
+                    and improvements to the subway system (Vaccaro). Approval of this funding may
+                    require a public marketing campaign to persuade the residents of the greater
+                    Boston area that the benefits from improving of the subway system outweigh the
+                    costs. Once funding has been secured, new cars using modern AC technology will
+                    be purchased from a reliable company with a proven record and implemented as
+                    soon as they are constructed. While the cars are being built, the subway
+                    stations and lines should undergo renovations and extensions to be finished
+                    prior to the delivery of the new subway cars. When the cars are completed,
+                    Boston will have a fully functional, modern and reliable subway system, capable
+                    of handling a greater capacity of riders and inclement weather.</action>
+      </p>
+    </approach>
+    <feasibility>
+      <!--attribute options: economic, social, environmental, cannot add more than 1 feasbility section?-->
+      <p>
+        <economic>In the 2016 Capital Investment Report, the MBTA had programmed $1.05
+                    billion towards their Capital Investment Program (MBTA 2016 CIP). However, over
+                    63% of this funding or $666 million is allocated to State of Good Repair costs,
+                    or the cost to maintain the current state of the MBTA. Only 10% has been
+                    designated for the modernization and expansion of the MBTA system, most of which
+                    is meant for the subway system. With such a low percentage of the funding
+                    allocated towards modernization, the MBTA will consistently lag behind modern
+                    technology. Additional funding must be granted to the MBTA through the increased
+                    allocation of taxpayer money and revenue collection. This will meet significant
+                    resistance due to the MBTA's past financial mismanagement and fundamental ethics
+                    issues involving huge pension payments, absenteeism and corruption. However,
+                    these fears can be mitigated by Gov. Charlie Baker's recent overhaul of the
+                    MBTA's Governing Board that involves increased oversight from Beacon Hill. The
+                    MBTA has also raised fares and is enforcing the collection of them more
+                    consistently on the commuter rails, increasing their revenues. The economic
+                    benefits of an upgraded subway system are numerous. Most importantly, an
+                    efficient transportation system that does not suffer from frequent delays will
+                    not interrupt the business of the city. During the winter of 2015, it was
+                    estimated the a statewide travel ban would result in a loss of $265 million a
+                    day, and the complete shutdown of the MBTA several times that winter resulted in
+                    the loss of hundreds of millions of dollars in profits for businesses in Boston.
+                    The estimated total loss in business revenues of over $1 billion during the
+                    winter of 2014 justifies the allocation of $3.2 billion over the next seven
+                    years for the modernization and expansion of the subway system. An overhaul of
+                    the T system would result in fewer economic interruptions and make Boston a more
+                    attractive location for economic development, which would provide more jobs and
+                    opportunity for the citizens of Boston.</economic>
+      </p>
+    </feasibility>
+    <conclu>
+      <p> Funding the suggested repairs in this proposal will greatly benefit the citizens,
+                businesses and culture of the City of Boston in the years to come. By improving the
+                efficiency of the subway by funding modern technology, the T's capacity and
+                reliability will be increased, resulting in more commuters utilizing its services.
+                This will reduce the amount of cars traveling into the city each day and lower the
+                amount of carbon pollutants released by cars. This will make Boston an
+                environmentally friendly city capable of accommodating larger crowds such as those
+                seen during the Olympics, which would provide further economic opportunity to the
+                city.</p>
+    </conclu>
+    <references>
+      <citation n="1" style="APA"><author><!--deidentified element--></author> Published July 19, 2016. <title level="a">US urged to
+                    probe Chinese company building MBTA subway cars</title> [Online] Available:
+                    <ref>https://www.bostonglobe.com/metro/2016/07/19/urged-probe-chinese-company-building-mbta-subway-cars/wRTd80HIyx3oDxT1o2KheK/story.html</ref>
+                [July 28, 2016] </citation>
+      <citation n="2" style="APA"><author><!--deidentified element--></author> Published June 30, 2015. <title level="a">Boston
+                    2024 has no budget to fix MBTA</title> [Online] Available:
+                    <ref>https://www.boston.com/news/local-news/2015/06/30/boston2024-has-no-budget-to-fix-mbta</ref>
+                [August 6, 2016] </citation>
+      <citation n="3" style="APA"><author><!--deidentified element--></author> Published August 31, 2015 <title level="a">Fixing the
+                    MBTA will now cost more than $7 Billion</title> [Online] Available:
+                    <ref>https://www.boston.com/news/business/2015/08/31/fixing-the-mbta-will-now-cost-more-than-7-billion</ref>
+                Accessed: [August 8, 2016] </citation>
+      <citation n="4" style="APA">
+        <author>
+          <!--deidentified element-->
+        </author>
+        <title>Capital Investment Program 2016 FY2016</title>
+        <ref>http://www.mbta.com/uploadedfiles/About_the_T/Financials/FY16CIP.pdf</ref>
+      </citation>
+      <citation n="5" style="APA">
+        <author>
+          <!--deidentified element-->
+        </author>
+        <title level="a">The MBTA Will Replace Orange and Red Line Trains, Offering More
+                    Space for Riders</title>
+        <ref>http://www.bostonmagazine.com/news/blog/2013/10/22/mbta-ornage-line-trains-upgrades-red-line-governor-patrick/</ref>
+      </citation>
+    </references>
+  </pub_init_proposal>
+</DOC>

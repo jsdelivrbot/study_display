@@ -1,0 +1,122 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 1 - Annotated Bibilography</title>
+    <version n="2" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> Every day throughout the city of Boston, thousands of commuters spend large
+            portions of their drive waiting in traffic. All it takes for traffic to build up is one
+            accident on a main street and cars will be backed up for miles. Part of this issue is
+            due to the volume of commuters entering and leaving the city during rush hour, but part
+            of the blame can also be placed on traffic control. Traffic control, specifically the
+            use of traffic signals, is fairly far behind today's technology. Although traffic
+            signals are monitored and timings are adjusted every five years, the results are still
+            not optimal. There needs to be a way for signals to utilize current technologies in order to optimize
+            commute times and allow for people's already sparse free time to be spent how they like.
+            Along with people's free time being wasted, there is also a large amount of unnecessary
+            fuel consumption happening while waiting in traffic. Something needs to be done about traffic issues throughout high
+            population cities such as Boston. </problem_stmt>
+    <citation style="MLA" n="1"><title>Activity Report for FY 2013.</title> Rep. Boston Traffic
+            Management Center, n.d. Web.</citation>
+    <annotation>
+      <background type="source"> The Boston Traffic Management Center produces an annual
+                activity report in order to publish the statistics and usage of its department. </background>
+      <summary type="general">Currently, the Traffic Management Center (TMC) <q>"has computer
+                    control of 544 out of the 845 traffic signals operated by the Boston
+                    Transportation Department (64%)"(1).</q> The department made 31,000 real-time manual changes
+                to the timing of traffic signals based on current traffic conditions. The department
+                also owns 195 traffic monitoring cameras throughout the city.</summary>
+      <relevance type="application">These statistics show that the Boston Transportation
+                Department has part of the infrastructure to implement an automated real-time
+                traffic control system. The automated system would be able to make the 31,000 manual
+                changes that employees made throughout the year by itself and reduce
+                traffic.</relevance>
+    </annotation>
+    <citation style="MLA" n="2"><author n="1">DeMarco, Peter</author>. <title>"Exploring the
+                Science behind Traffic Lights."</title> Boston.com. N.p., 09 May 2010. Web. 13 July
+            2016.</citation>
+    <annotation>
+      <background type="source">An article published by Boston.com discusses the current
+                technology used in traffic signals in the Quincy area.</background>
+      <summary type="general">Jack Gillon, a traffic engineer in Quincy, explained how he has
+                total control of the lights from a central location. He also quickly showed how
+                sensors detect cars at traffic signals.</summary>
+      <summary type="approach">Most traffic signals have an electrically charged wire
+                underneath the pavement. When a car passes over this wire, a change in magnetic
+                field is measured and sent to the control box of the light. This tells the light
+                that there is a car waiting to go through the intersection or make a turn.</summary>
+      <relevance type="application">This technology could be implemented in an automated
+                traffic light system by sending the readings from the charged wire to a central
+                network. The central network could then take in these readings and account for the
+                incoming traffic at the next lights that the car would encounter.</relevance>
+    </annotation>
+    <citation style="MLA" n="3"><author n="1">Gilmore, John F.</author>, <author n="2">Khalid J.
+                Elibiary</author>, and <author n="3">Naohiko Abe</author>. <title>"Neural Network
+                System for Traffic Flow Management."</title> AAAI Technical Report (1993): 85-95.
+            Web.</citation>
+    <annotation>
+      <background type="author"> John Gilmore along with Khalid Elibiary of the Georgia Tech
+                Research Institute produced a paper for Association for the Advancement of
+                Artificial Intelligence regarding the use of neural networks to control traffic in
+                1993 with the assistance of Naohiko Abe of Mitsubishi Heavy Industries in Japan. </background>
+      <summary type="general"> Gilmore and his associates go into depth about how neural
+                networks can be implemented into a traffic control system to improve traffic
+                conditions. They introduce the idea of using the Hopfield neural network model in
+                order to allow the network to learn and build off of its knowledge of previous
+                congestion situations to improve traffic conditions.</summary>
+      <summary type="approach">The group forms an energy function which allows them to assign
+                lights and traffic conditions different weights. Higher weighted traits, such as how
+                busy an intersection generally is, allow lights to have a higher priority and change
+                faster. </summary>
+      <relevance type="application"> The usage of a neural network as described by Gilmore,
+                Elibiary, and Abe can be used as a base for a city wide traffic control system,
+                where the system learns and adapts based on previous traffic data. This could cut
+                out a large amount of traffic by optimizing the traffic flow.</relevance>
+    </annotation>
+    <citation style="MLA" n="4"><author n="1">Santi, Paolo</author>, and <author n="2">Carlo
+                Ratti</author>. <title>"Revisiting Street Intersections Using Slot-Based
+                Systems."</title> PLOS ONE. N.p., n.d. Web. 13 July 2016.</citation>
+    <annotation>
+      <background type="author">Paolo Santi of the Senseable City Lab and Carlo Ratti of MIT
+                outlined a plan to eliminate the need for traffic lights at all using automation in
+                cars.</background>
+      <summary type="general">For Santi's system, called a slot-based system, to work, cars
+                need to be autonomously operated. The cars need to be able to communicate with each
+                other to determine where they are on the road and what their planned route is at
+                each light. The cars would then decide amongst themselves which car is turning when
+                with no need for traffic lights. </summary>
+      <relevance type="application">If all cars could communicate and turn without interfering
+                with each other, it would eliminate the need for stop lights and would greatly
+                decrease traffic given that the cars will harmoniously move through the
+                streets.</relevance>
+      <relevance type="value_stmt">Although this seems like the optimal solution, it would
+                first require that all cars be autonomous, so this would not be a solution for the
+                    near-term.</relevance>
+    </annotation>
+    <citation style="MLA" n="5"><author n="1">Srinivasan, Dipti</author>, <author n="2">Min Chee
+                Choy</author>, and <author n="3">Ruey Long Cheu</author>. <title>"Neural Networks
+                for Real-Time Traffic Signal Control."</title> IEEE Trans. Intell. Transport. Syst.
+            IEEE Transactions on Intelligent Transportation Systems 7.3 (2006): 261-72.
+            Web.</citation>
+    <annotation>
+      <background type="author">Dipti Srinivasan and her colleagues explore the use of
+                real-time neural networks in order to assist with traffic control in this paper for
+                an Institute of Electrical and Electronics Engineers journal on Intelligent
+                Transportation Systems. </background>
+      <summary type="general">Srinivasan uses the concept of a neural network to take in
+                real-time traffic statistics and adjust traffic lights accordingly. The current
+                conditions of traffic are available to the system and can be included in
+                calculations made to determine how long to have lights turned green.</summary>
+      <relevance type="value_stmt">Her results showed that the implementation of a real-time
+                neural network can allow a greater number of cars to pass through congested
+                    intersections.</relevance>
+      <relevance type="application">Dipti's real-time neural network could be applied in a
+                city like Boston where sensors could be installed to acquire real-time data used in
+                the program to control the lights. Traffic control based on current conditions would
+                produce much better traffic flow than average timed lights.</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

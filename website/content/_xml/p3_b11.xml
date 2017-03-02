@@ -1,0 +1,100 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Project 3: Penetration Testing Edutainment</title>
+    <version n="4" date="2016-08-22"/>
+  </docHead>
+  <blog_post>
+    <title>Penetration Testing: the basics</title>
+    <background>
+      <section_header>What is Penetration Testing?</section_header>
+      <technical_principle n="1"> Penetration testing is what you might call ethical hacking.
+                Now hacking is a large and arguably misused term, but it is the best term we have.
+                Penetration testing involves an individual, team, or software, actively analysing a
+                system for vulnerabilities. This takes can take many forms, which we will get into
+                later, many of which are not what you might think of as "hacking". There is always a
+                written consent by the party, almost always with a payment involved, making
+                penetration testing a service, sought after by those looking to improve the security
+                of whatever property or infrastructure they have. 
+                
+                <!-- Cringy hacker image --><visual type="photo" url="http://blog.venturesity.com/wp-content/uploads/2016/06/the-nsa-trained-edward-snowden-to-be-an-elite-hacker.jpg"/><misconception n="1">"Hacking", the wildly used term that it is,
+                    will be defined thus: "a person interfering with another system without
+                    permission from the system owner". The first thought that comes to mind is
+                    someone in a dark basement typing line after line into an arbitrary command
+                    prompt. This media portrayal, while cool, is misleading. Lot of "hacking" and
+                    most commonly seen cases of what most of us may call hacking, is more
+                    appropriately scamming, or misleading a human into giving up their valuable
+                    information. Actual attempts to penetrate a system often involve very methodical
+                    approaches, not really the high-speed action that we see in movies. Successful
+                    penetration of a system is what you would call genuine hacking, usually
+                    accompanied with the stealing of sensitive information. </misconception><!-- examples: Steam forums, Sony Pictures, Team Viewer--><important_idea> An individual breaking into a system is primarily looking for sensitive
+                data. </important_idea> You can see this with the kinds of systems that are targeted. On a more serious
+                level banks and pentagon computers receive millions of un-authorized access attempts
+                every day, but the majority of this work is done through automated software. More human 
+                attempts (by human I mean small scale and operated by human beings) target services like 
+                forums in attempts to gain large amounts of emails, or online small financial services or
+                stores looking for debit or credit card numbers. These emails or financial information can
+                then be sold on under-belly websites, but that is different conversation. The important part
+                is that it is very profitable, and there are little repercussions for those outside of western
+                jurisdictions. 
+                
+                    You can see examples of this with the recent  
+                    <ref type="source" url="http://arstechnica.com/security/2016/06/teamviewer-says-theres-no-evidence-of-2fa-bypass-in-mass-account-hack/">team viewer service hack: </ref> 
+                    here, any one retrieving user accounts gets access to sensitive network information and
+                    potentially access to their computer through the popular screen sharing service. 
+                    
+                    Another example is the <ref type="supplement" url="http://www.neogaf.com/forum/showpost.php?p=32479729&amp;postcount=7264">
+                    steam user forums hack: </ref><visual type="photo" url="http://i.imgur.com/NEBfk.jpg"/>
+                    Here you might not see that value, but the group gets notoriety and advertising to a large audience (even if
+                    their damage was quickly fixed). 
+                    
+                    
+            </technical_principle>
+    </background>
+    <answer><section_header> How do you "penetrate" a system? Exploits!</section_header><technical_principle n="2">The main purpose of penetration testing is to identify
+                vulnerabilities. These vulnerabilities, are then tested, and a penetration tester
+                usually offers a solution along with identifying the problem. Generally speaking a
+                vulnerability is a security "hole". This means it offers a way for an outside entity
+                to gain access into the system, this most commonly manifests as weak passwords, but
+                can also take much more complex routes such as database interactions flaws. These
+                vulnerabilities are exactly what penetration testers are hired to find. 
+                
+                <!-- Image for SQL injection --><ref type="supplement" url="https://blog.hostonnet.com/wp-content/uploads/2014/08/sql-injection.jpg"><visual type="photo" url="https://blog.hostonnet.com/wp-content/uploads/2014/08/sql-injection.jpg"/>
+                    A common exploit  is sql injection, which allows you to send commands to a database from outside of the system. 
+                    It is usually the result of insufficient authentication for all protocols. Think of it as someone entering a bank
+                    from the employee entrance.</ref>
+                
+                Now if you still don't understand, think of this: someone is able to issue commands to your computer from their computer. That's what 
+                "gaining access" to a system involves. Sometimes not entirely, often your functionality is limited for fear of exposing your presence
+                and leaving a trail. When you can control a computer without the user's knowing, you can send a file to be executed, what is called a payload. 
+                
+            </technical_principle><section_header> What do you do after you "penetrate" a system? Deliver a payload of course!</section_header><technical_principle n="3'"> After gaining access to a system, you need to find or
+                develop a way to take advantage of it. This is typically called an "payload".
+                The exploits we spoke about above allow you deliver a payload. Now this can be confusing but here is a great
+                analogy: Think of a payload as a warhead, and an exploit as your propulsion system.
+                Together you have a missile, but they are both rather useless alone. (credit to user
+                "NULLZ" from security.stackexchange.com) .
+                
+                <!-- Payload & exploit diagram (from user "NULLZ")--><visual type="photo" url="http://i.stack.imgur.com/2mykq.png"/>
+                
+                So a payload is software that uses an exploit to gain access to a system. This can 
+                take different forms, there are completely independent payloads, that you cannot interact 
+                with once injected into a system. A staged payload, for example, established a communication
+                channel between the hacker and the targeted system. This kind of payload gives the
+                penetration tester control over his program by feeding remote commands. Getting into
+                why you would use different kinds of payloads is a bit beyond this blog post but it
+                is often about what kind of system you're using and any traces you leave behind for
+                digital forensic investigation. </technical_principle><technical_principle n="4"> Metasploit</technical_principle>
+            If you're looking to learn about penetration testing, or want to try it yourself, 
+            you should checkout <ref type="source" url="https://www.metasploit.com/">Metasploit</ref>. Metasploit
+            is an open source penetration testing community. Any software you would need to get started is
+            available there, and they even have a number of guides! Penetration testing can be lucrative career, 
+            or just a hobby. Many corporations have "bug bounties". you can see google's page  
+            <ref type="supplement" url="https://www.google.com/about/appsecurity/reward-program/">here</ref>. 
+            Regardless of what your intentions are, if you're looking to learn I encourage to delv deeper with
+            some hands on experience.
+        </answer>
+    <sources/>
+  </blog_post>
+</DOC>

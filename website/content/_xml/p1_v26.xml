@@ -1,0 +1,72 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project 1</title>
+    <version n="1" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> Many members of the populace of the city of Boston, along with the United
+            States and the World, do not have access to the benefits of modern technology. The
+            problem stems from systemic inequality which is well beyond the scope of this class, or
+            any single discipline. Reducing the problem to just that of the distribution of
+            technology, it becomes more manageable. A simple statement of the problem: how could the
+            distribution of technology expand to the disparate of the world? The following will
+            focus on possible litigious or business facing solutions.</problem_stmt>
+    <citation n="1" style="IEEE"><author n="1">Thomas, J.</author>, (2013). "<title level="a">Association for Molecular
+                Pathology et al. v. Myriad Genetics et al.</title>." <title level="j">United States
+                Reports</title>. 569. Available:
+            http://www.supremecourt.gov/opinions/12pdf/12-398_1b7d.pdf. </citation>
+    <annotation>This judgement, <background type="source">rendered by the Supreme Court of the
+                United States, the highest court in the United States,</background><summary type="general">deals with the patentability of isolated deoxyriboneucleic acid
+                (DNA). Decided by the court, was that isolated DNA was not patentable.</summary><summary type="general">It more broadly deals with the patentability of <q>laws of
+                    nature, natural phenomena, and abstract ideas</q>(2)</summary>. <relevance type="application">This judgement, while not exactly perfectly to the problem, could
+                be used as a model argument against such patented technologies that some may view as
+                human rights or fundamental to life.</relevance></annotation>
+    <citation n="2" style="IEEE"><author n="1">United Nations Human Rights Council</author>. (2016, June, 27). "<title level="a">The promotion, protection, and enjoyment of human rights on the
+                Internet</title>." <title level="j">United Nations General Assembly</title>. 32nd
+            Session. Agenda item 3. Available:
+            http://www.un.org/ga/search/view_doc.asp?symbol=A/HRC/32/L.20. </citation>
+    <annotation>This statement, <background type="source"> from the United Nations (UN) Human
+                Rights Council, which deals with the promotion and protection of human rights
+                worldwide,</background><summary type="general">broadly states that access to the internet is a "universal"
+                right.</summary><summary type="general"/><relevance type="value_stmt">This declaration is non-binding, meaning that it does not
+                compel member states to act. However, it does represent the conviction of the UN
+                that internet access is a fundamental human right.</relevance></annotation>
+    <citation n="3" style="IEEE"><author n="1">Circuit Judge Tatel</author> and <author n="2">Circuit Judge
+                Srinivasan</author>. (2016, June 14). "<title level="a">United States Telecom
+                Association et al. v. Federal Communications Commission and United States of
+                America</title>." <title level="j">United States Court of Appeals for the District
+                of Columbia Circuit</title>. 15-1063. </citation>
+    <annotation>This judgement, <background type="source">from the District of Colombia Circuit,
+                a court on the second highest level in the United States,</background><summary type="general">states that the an order from the Federal Communications
+                Commission (FCC) is valid. The order stated, generally, that broadband service
+                providers must treat all network traffic the same.</summary><summary type="general">The FCC order essentially ensured that internet providers follow
+                the rules of "net neutrality" which has been a governing principle since its
+                inception.</summary><relevance type="application">This judgement and the order that it upheld could be used
+                to prevent internet providers from throttling internet connection speeds to the
+                lower classes of society.</relevance></annotation>
+    <citation n="4" style="IEEE"><author n="1">Daron Acemoglu</author>. (2003). "<title level="a">Technology and
+                Inequality</title>," <title level="j">National Bureau of Economic Research
+                Reporter</title>. Winter 2003. Available:
+            http://www.nber.org/reporter/winter03/technologyandinequality.html </citation>
+    <annotation><background type="source">The National Bureau of Economic Research (NBER) is a United
+                States based organization focusing on non-biased economic research.</background>
+            This paper <summary type="general">gives a high level overview of the causes of
+                inequality with respect to technology.</summary><relevance type="application">This paper could be used, by analyzing the enumerated
+                problems, in an attempt to reverse some inequalities.</relevance></annotation>
+    <citation n="5" style="IEEE"><author n="1">C.K. Prahalad</author> and <author n="2">Allen Hammond</author>. (2002)
+                "<title level="a">Serving the World's Poor, Profitably</title>." <title level="j">Harvard Business Review</title>. September 2002. Available:
+            http://www.hbr.org/2002/09/serving-the-worlds-poor-profitably. </citation>
+    <annotation>
+      <background type="source">The Harvard Business Review is a publication affiliated with
+                Harvard University.</background>
+      <summary type="general">This article lists ways that large businesses could help the
+                disparate of the world while also serving their own interests.</summary>
+      <relevance type="application">The ideas laid out in this piece could be used as a
+                template for multi-national corporations as they attempt to start human-rights
+                programs.</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

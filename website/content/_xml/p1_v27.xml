@@ -1,0 +1,119 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>MBTA Train System Space Issue</title>
+    <version n="1" date="2016-07-13"/>
+  </docHead>
+  <annotated_bib>
+    <problem_stmt>In today's Boston, an outdated public transportation system known as the MBTA
+            is using older model train cars to transport its passengers. The limited amount of space
+            in these cars fill up quickly and eventually there is nowhere for these people to go.
+            This leads to delays and extremely uncomfortable conditions in which riders must endure
+            on their commutes. The lack of space can also lead to the spread of bacteria, germs and
+            viruses that could infected commuters who are squished together like packed sardines. It
+            is crucial that this problem be addressed because this form of transportation is used by
+            many who find it to be the most practical and affordable way to travel around the city.
+            But with proper help in the mechanical engineering discipline and funding, these issues
+            can be resolved. This solution will lead to an an outcome where the transportation
+            service will provide a more comfortable, healthier and enjoyable experience for
+                customers.</problem_stmt>
+    <citation style="APA"><author>Grabar, H.</author> (2016, February 12). <title>Subway Cars
+                Should Be Like Centipedes.</title> Retrieved July 11, 2016, from
+            http://www.slate.com/articles/business/metropolis/2016/02/subways_should_have_open_gangway_cars_why_does_the_u_s_resist_it.html </citation>
+    <annotation>
+      <background type="source">This article by the Slate, a popular magazine that examines
+                and analyzes issues in today's society,</background>
+      <summary type="general">takes a look into the space situation with subway systems in
+                America. The article first examines why subway cars are becoming so overcrowded in
+                these American cities compared to other global cities. Then it looks at the
+                solutions these other cities like Paris, Tokyo and Toronto have come up with to fix
+                this issue. There are also examinations into methods like taking out seating which
+                would provide more space and allow the trains to move faster without the extra
+                    weight.</summary>
+      <relevance type="application">What the author finds to be the best solution to improving
+                the space in these subway cars is having gangway trains instead of the string of
+                separate cars that attach to one and another. The article goes on to say that these
+                gangway trains have shown encouraging results and do show an effect on the
+                crowdedness of these train systems.</relevance>
+    </annotation>
+    <citation style="APA"><author>Annear, S.</author> (2013, October 22). <title>MBTA Orange
+                Line Trains Will Be Replaced, Red Line Vehicles Added.</title> Retrieved July 11,
+            2016,from
+            http://www.bostonmagazine.com/news/blog/2013/10/22/mbta-ornage-line-trains-upgrades-red-line-governor-patrick/</citation>
+    <annotation>
+      <background type="author">The article, written by Steve Annear a digital writer at
+                Boston Magazine and former writer at Boston Metro newspaper, </background>
+      <summary type="general">discusses the newly passed bill that will improve the MBTA
+                system. The article discusses how the MBTA will be <q>replacing the entire fleet of
+                    120 Orange Line cars, and 74 Red Line cars,</q> which will provide more seating
+                and space for riders. The article goes on to discuss the planned timetable for these
+                improvements which were estimated to go into effect by 2019. </summary>
+      <relevance type="application"> For people already using the subway and train systems
+                these new additions to the Orange and Red line will provide them with a more
+                comfortable riding experience. These new improvements may also lead to more timely
+                and accurate scheduling that will lead to less delays and faster commutes.
+            </relevance>
+    </annotation>
+    <citation style="APA"><author>Gans, F.</author> (2015, December 22).<title> MBTA Riders
+                Demand Improvements in Service amid Fare Hike Plan.</title> The Boston Globe
+            (Boston, MA). Retrieved July 12, 2016, from
+            https://www.bostonglobe.com/metro/2015/12/22/next-stop-resistance-prospect-higher-fares/2MSl8eUccvmczziTtY9haP/story.html</citation>
+    <annotation>
+      <background type="source"> This article from the Boston Globe, one of the most
+                prestigious newspaper companies in the country, </background>
+      <summary type="general">takes a look into the new fare hikes by the MBTA and overall
+                reception by their customers. First the article goes into the 10 percent hike
+                increase and the frequency at which these prices are going up at. When interviewing
+                some of the riders of the MBTA, the reception was seen be as negative, as one rider
+                put it, <q>It’s not a big amount, but think ahead. If every 24 months they keep on
+                    raising it, one day, it’s going to be $40 a week. And then one day, it’s going
+                    to be $50 a week. I don’t know why they can’t just keep it a normal fare</q>.
+                Later the article goes on to examine the demand by the customers for improved
+                services, but also acknowledges that people are skeptical of these upcoming
+                improvements. </summary>
+      <relevance type="value_stmt">It seems as if the author was able to understand and
+                amplify the overall reception and feeling of the public. </relevance>
+    </annotation>
+    <citation style="APA"><author>McDonald, C.</author> (2016, June 28). <title>Meet The Germs
+                Sharing Your Seat On The Subway.</title> Retrieved July 12, 2016, from
+            http://www.popsci.com/subway-bugs-boston</citation>
+    <annotation>
+      <background type="source">Popular Science, a long running, award winning magazine that
+                finds all of the new and most popular topics in the science community, </background>
+      <summary type="approach">takes a look at the microbes and germs that infest the inside
+                of a subway cars in large cities. First the author goes through previous studies
+                done by researches in cities like San Francisco and New York who took samples from
+                subway cars and were able to find a plethora of germs and microbes that exist within
+                these trains. From there it goes on to talk about how recently in Boston, a research
+                team went to examine some of these subway cars where they collected and analyzed the
+                samples they acquired. From there it divulges into more of the research, examining
+                the results and what actually exists in these subway cars. </summary>
+      <relevance type="application"> The article brings more awareness to the idea that public
+                transportation can be a simple way of contracting these germs and bugs from other
+                individuals. What can be done to prevent this is having these systems to implement
+                improvements that will provide less opportunities for these germs to spread and
+                grow. </relevance>
+    </annotation>
+    <citation style="APA"><author>Fishbein, R.</author> (2016, May 3).<title> Report: The Subway
+                Is Crowded and Getting More Crowded So Please Everyone Stop Moving To NYC.</title>
+            Retrieved July 12, 2016, from
+            http://gothamist.com/2016/05/03/sorry_guys_at_capacity.php</citation>
+    <annotation>
+      <background type="author">The author, Rebecca Fishbein, who is an associate editor and
+                writer at the Gothamist </background>
+      <summary type="general">addresses the overcrowding crisis found in subway systems. The
+                story goes more in depth with the issue in New York City, where this has been a
+                reoccurring problem for years and how it is only getting worse. The article talks
+                about the upcoming projects that should address this issue,</summary>
+      <summary type="interpretation">but then shows skepticism on whether or not it will actually
+                ever happen. Throughout the piece there is continual jest at the New York subway
+                city and the overcrowding epidemic.</summary>
+      <relevance type="application"> The message that is being sent to all people living in
+                large metropolitan areas, who use public transportation is to apply pressure on the
+                officials running these transportation systems. It is a calling to make the people's
+                voices be heard and react the diminishing quality of public transportation.
+            </relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

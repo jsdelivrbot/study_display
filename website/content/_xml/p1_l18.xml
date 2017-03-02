@@ -1,0 +1,86 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Producing Annotated Bibliographies, a Problem-Seeking Project</title>
+    <version n="1" date="2016-08-24"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt>
+            Computer Engineers often deal with electronics and any sort of embedded computational and communicating ability in them.
+            This makes them uniquely suited to solve an irritating problem faced by Boston residents.  Boston is a wonderful city
+            to walk around, but time spent walking can be limited by cell phone battery.  People often need their cell phones while
+            walking to use as maps in unfamiliar areas or for the standard use of providing a point of contact for people who need to
+            get in touch.  Some people also are getting their batteries drained by whatever new popular app is out.  While people can 
+            stop and find an outlet somewhere, this is an annoying break in the walk and outlets aren’t readily available in Boston’s
+            many wonderful parks.   Battery capacity itself is currently a hard problem due to safety among other things, but Computer
+            Engineers could help by creating a gadget to circumvent that problem.  One possible idea would be a tracked battery swapping
+            system similar to a past proposal by Tesla Motors.   Creating the hardware for tracking battery usage would be right within
+            a Computer Engineer’s expertise.           
+         </problem_stmt>
+    <citation style="IEEE"><author>R. Ellis</author> et al., <title>"Battery Recharging and Testing Swap Stations,"</title> in 1st IEEE Conf. SusTech, Portland, OR, 2013, pp. 208-211.</citation>
+    <annotation>
+      <background type="author">
+                This article was a collaboration between a students' capstone group from Portland State University and the private company BETTERY.  It involved the 
+                design of a battery swap station.
+            </background>
+      <summary type="general">
+                The paper includes various details on the design of the swap station.  These details include, but are not limited to: the method
+                of testing battery capacity, and the hardware used for controls.
+            </summary>
+      <relevance type="application">
+                This article could be used to determine previously attempted methods in the swap station industry.  This could be helpful for
+                ensuring no intellectual property is infringed on.  It could also lead to collaborations if the researcher believed they could 
+                substantially build on the previous work.
+            </relevance>
+    </annotation>
+    <citation style="IEEE"><author>Z. He</author> et al., <title>"The location studies of charging station for replacing batteries,"</title> in 2011 International Conf. Advanced Power System Automation and Protection (APAP), Beijing, 2011, pp. 2013-2017.</citation>
+    <annotation>
+      <background type="author">This paper is from a collaboration between Electrical Engineering and Economics researchers at the 
+                Beijing jiao tong University.  The paper focuses on applications to car charging stations in China.</background>
+      <summary type="approach">The paper presents a mathematical model for optimal deployment of charging stations.  It uses a 
+                particle swarm approach where particles have various suitability as charging locations.  It provides a analogy for the algorithm used:
+                <q>"PSO algorithm originates from the research of bird flock
+                    searching for food, bird flock look for food randomly, there
+                    is only one piece of food and all the birds do not know
+                    where the food is, but they know how far they from the
+                    food, the simplest and most effective way is to seek in the
+                    area around the bird which is nearest to the food."</q></summary>
+      <relevance type="application">The paper provides an interesting method for modeling charging, as well as further references
+                about the particle swarm method.  Any researcher wanting to do a test deployment of a set of battery swap stations would find
+                this useful in determining how to ensure greatest utilization.</relevance>
+    </annotation>
+    <citation style="IEEE"><author>D. Zheng</author>, <author>F. Wen</author> and <author>J. Huang</author>, <title>"Optimal planning of battery swap stations," </title> Int. Conf. Sustainable Power Generation Supply (SUPERGEN 2012), Hangzhou, 2012, pp. 1-7.</citation>
+    <annotation>
+      <background type="source">This paper was presented at an international conference on how to provide sustainable forms of energy</background>
+      <summary type="interpretation">The paper looks at the costs benefits of charging stations for electric buses.  It uses a Monte Carlo 
+            Simulation to optimize battery swap station deployment.  The simulation is the used on a case study.</summary>
+      <relevance type="application">This is useful as an additional source in approaching the problem of where swap stations should be deployed.
+            Different results between the methodology described in this source and the previous could bring to light the consequences of the assumptions 
+            in the respective models.  For example, the swaps in this model are more coordinated.</relevance>
+    </annotation>
+    <citation style="IEEE"><author>B. Sun</author>, <author>X. Tan</author> and <author>D. H. K. Tsang</author>, <title>"Optimal charging operation of battery swapping stations with QoS guarantee,"</title> 2014 IEEE Int. Conf. Smart Grid Communications (SmartGridComm), Venice, 2014, pp. 13-18.</citation>
+    <annotation>
+      <background type="source">This paper was presented at a conference on communications, however it dealt more with charging policy.  The motivation
+                was to guarantee a certain quality of service to impatient electric vehicle users: <q>"The price of EVs will be more acceptable for ordinary
+                    customers and they could be free from the battery maintenance
+                    problems. Second, the BSS can finish the battery swapping
+                    service within 90 seconds, which is even faster than the
+                    traditional gasoline refueling."</q></background>
+      <summary type="general">This source discusses how batteries are handled after being deposited in a charging station.  It uses probabilistic 
+            approaches to model the battery queuing. </summary>
+      <relevance type="application">This source deals with the prioritization and methodology of charging batteries deposited.  It also 
+            discusses the importance of charging capacity of individual stations.  This is a welcome viewpoint compared to the more network wide
+            focus of other sources.</relevance>
+    </annotation>
+    <citation style="IEEE"><author>K. Korosec</author> 2015, JUNE 10, <title>Tesla's battery swap program is pretty much dead</title> [Online]. Available: http://fortune.com/2015/06/10/teslas-battery-swap-is-dead/</citation>
+    <annotation>
+      <background type="source">Fortune is a well circulated business magazine.  Its website provides well source business new.</background>
+      <summary type="interpretation">The article deals with the failures of the Tesla Motors' battery swap program.  It mentions some 
+                possible reasons for the unpopularity: <q>"Maybe its because drivers initially had to make an appointment to use, or that they have to pay to use it."</q></summary>
+      <relevance type="application">This source warns of possible pitfalls in creating a battery swap system.  Anyone developing swap systems in
+            the future should avoid Tesla Motors' mistakes.</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

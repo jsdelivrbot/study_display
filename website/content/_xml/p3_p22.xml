@@ -1,0 +1,73 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Writing Project Three </title>
+    <version n="3" date="2016-08-20"/>
+  </docHead>
+  <!-- root element for P3 here -->
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Hello,</greeting>
+    <intro_para><intent type="purpose">I am interested in the Analyst position within the Ameresco
+                Project Management team.</intent><intent type="connection"><!-- Optional --> During my time at BlueWave Capital, I
+                recieved some exposure to Ameresco submittals and was immediately impressed by the
+                quality of work. </intent> After evaluating Ameresco's development history and continual production of
+            quality projects, I became interested in persuing a role on their project management team. <reason><!-- Optional --> I have enjoyed my work with Solar Project Development in the
+                past</reason> and <proposition>I think I will fit well with Ameresco's challenging
+                culture and contribute to your goal of expanding sustainable energy generation.</proposition></intro_para>
+    <para_background>
+      <!-- One or More -->
+      <experience type="work">Throughout my three co-ops at Northeastern University, I was
+                able to hone my <programs>AutoCAD and Excel</programs> skills in a manner that
+                increased the efficiency of my work as well as that of my peers'.
+                    <programs>Excel</programs> proved to be increasingly useful <accomplishments>as
+                    I recognized areas of inneficiency within my previous companies'
+                    workflow</accomplishments> and <accomplishments>was able to develop macros to
+                    automate previously manual processes.</accomplishments></experience>
+      <experience type="school"> At Northeastern, I gained <skills>technical
+                    communication</skills> skills from my work within the Sustainable Energy Systems
+                minor. Through various projects within the graduate classes associated with this
+                program I was able to utilize the knowledge gained in my earlier classes as well as
+                on my co-ops to work towards unique solutions to proposed issues. Advanced classes
+                within this minor evaluated the leglislative, economic, and environmental issues
+                assocated with solar energy.</experience>
+      <experience type="school"> My capstone project at Northeastern will
+                allow me to improve my <skills>ability to communicate effectively with various
+                    specialists</skills> working towards a common goal. Our project goal, to design
+                a potable water distribution system as well as an energy generation facility in
+                Haiti, will give me the opportunity to communicate with environmental and electric
+                specialists as I fill the role of solar development specialist. </experience>
+    </para_background>
+    <closing_statements>
+      <compatability>I believe my skills and passion for renewable energy will help me to fit
+                in well with the Ameresco team and have a positive impact on the
+                Project Management Team.</compatability>
+      <pb/>
+      <next_step>Please reach out to me at the contacts listed above to discuss the
+                possibility of an interview. I look forward to hearing from you. </next_step>
+    </closing_statements>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

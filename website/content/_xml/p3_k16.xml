@@ -1,0 +1,100 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Title of Assignment</title>
+    <version n="num_of_version" date="2016-01-01"/>
+  </docHead>
+  <!-- root element for P3 here -->
+  <cover_letter>
+    <header>
+      <name>
+        <!--deidentified element-->
+      </name>
+      <contact_info>
+        <!-- One or More Contact -->
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+        <name>
+          <!--deidentified element-->
+        </name>
+      </contact_info>
+    </header>
+    <greeting>Dear Mr. O'Brein: </greeting>
+    <intro_para>
+      <intent type="purpose">I am writing to apply for the Software Engineering Co-p role over at
+                <!-- Repeated word -->Smartleaf. </intent>
+      <reason>Currently I am going into my last coop here at Norteastern. With my previous two
+                    coops I have working in
+                finance related positions. First I worked at a small startup company of about four
+                people, and for my second I was at a much larger company of more than 30,000
+                    people. Not only
+                do I find what Smartleaf is working on to be fascinating, I also would love to get
+                experience working in a medium sized company.
+                <!-- Long sentence - break up for conciseness + clarity --></reason>
+      <proposition> I believe that my experience as a Computer Science student working in more
+                finance oriented
+                positions would make me a perfect candidate for this position.</proposition>
+    </intro_para>
+    <para_background>
+      <experience type="school"> Currently, I am a Computer Science student here at
+                Northeastern University. I believe that my experiences with going through my classes
+                and projects has helped me build skills to excel in industry. For example, I
+                have taken classes where I have learned about object oriented programming and other
+                software design patterns, and worked on projects with common industry languages such
+                as Java and tools such as Intellij. However, I believe that one of the main
+                advantages of going to Northeastern was being able to gain experience through
+                different coops. </experience>
+    </para_background>
+    <para_background>
+      <experience type="work">My first coop was working at Mavenomics, a small company in
+                Cambridge. I created and implemented tools for data analysis and visualization into
+                their main product using languages such as <programs>python and
+                    JavaScript</programs>, and frameworks such as <programs>d3.js and
+                    React.</programs> My tools were used by portfolio managers at hedge funds to aid
+                in research into investment opportunities in multiple industries. Due to the small
+                nature of the company, I gained exposure different aspects of the company such as
+                accounting, management, and day to day operations. It gave me a deeper
+                understanding of how businesses are run, and how they develop over
+                time.</experience>
+    </para_background>
+    <para_background>
+      <experience type="work"> My next coop was working for Goldman Sachs in New York, a much
+                larger company. During my time there, I learned more about applications of Computer
+                Science in the field of finance. I worked with traders daily to build tools to
+                analyze risk on different portfolios using a mixture of their proprietary technology
+                and some open source frameworks, such as Elasticsearch. Not only did I improve my
+                software skills during my time there, but I also learned how to clearly express my
+                software ideas to individuals with no background in software. On top of that, I
+                gained experience with working in a team oriented environment and learned how to
+                navigate my way though a corporate environment to get tasks done.</experience>
+    </para_background>
+    <closing_statements>
+      <!-- Include element "closing statements -->
+      <compatability>I believe that I have the experience and skill set to excel in a position
+                at SmartLeaf, and I feel like the medium sized company environment would be a great
+                fit for me. My experience in working with financial technology will make it so I can
+                hit the ground running, and immediately start contributing to a project I am
+                    assigned.</compatability>
+      <next_step> I'm excited to hear back from you, and would appreciate the opportunity to
+                meet and talk in person. </next_step>
+      <acknowledgment>Thank you for your consideration.
+                <!-- Run spell check on final draft --></acknowledgment>
+    </closing_statements>
+    <signature>
+      <salutation>Sincerely,</salutation>
+      <pb/>
+      <pb/>
+      <name>
+        <!--deidentified element-->
+      </name>
+    </signature>
+  </cover_letter>
+</DOC>

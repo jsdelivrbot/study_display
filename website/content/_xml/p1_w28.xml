@@ -1,0 +1,137 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Annotated Bibliography</title>
+    <version n="3" date="2016-07-13"/>
+    <!--note that the date must be YYYY-MM-DD for the document to be valid-->
+  </docHead>
+  <annotated_bib>
+    <problem_stmt> If you have ever lived in a apartment, worked in an office, went to a grocery
+            store, or visited a museum, you have interacting with the work of architects and engineers. Although it is common
+            to pay little attention to the structures around you, these buildings, bridges, and
+            roadways play such a crucial part of how you live every day. Boston is an old city full
+            of beautiful old buildings. Brownstone homes and shops line our streets. Ornate works of
+            art such as the YMCA stand on our campus. However, these structures are failing, as all
+            old buildings do. The stairs and floors are sagging. The walls are crumbling and the
+            beams are splintering. What these buildings need is a little bit of attention.
+            Unfortunately people do not want to invest in a fixer upper. Institutions like
+            Northeastern and property management companies such as Alpha Realty would rather use a
+            building until it has deteriorated to a point of being unsafe and getting condemned.
+            They would rather knock it down and build an efficient utilitarian cinderblock box that
+            will make them profit rather than invest in a piece of history or work to increase the
+            aesthetic value of our beautiful city. When we look to countries like Germany,
+            Switzerland, and France we see numerous examples of old buildings that were preserved
+            and modernized while still maintaining the historical significance of the structure.
+            Modern construction and design technologies have made structural rehabilitation
+            increasingly accessible to building owners and property managers. It is my hope to one
+            day work in an industry that is not simply about demolition and new construction, but
+            one that can take the essence of a beautiful old thing and make it safe and great
+                again.</problem_stmt>
+    <citation n="1" style="MLA"><author n="1">Branco, Miguel</author>, and <author n="2">Luís Manuel Guerreiro</author>.
+                <title level="a">Seismic Rehabilitation of Historical Masonry Buildings.</title><title level="j">Engineering Structures</title>. 33.5 (2011): 1626-1634. Web. 12 July
+            2016. </citation>
+    <annotation>
+      <background type="author"> Written by two professors at the Technical University of
+                Lisbon in Portugal, this journal article presents their research on seismic
+                retrofitting in historic masonry buildings similar to those in and around Boston. </background>
+      <summary type="approach"><q>Of the degraded buildings, masonry construction is the typology that presents
+                    more problems and is more in need of rehabilitation.</q> This study focuses on
+                two aspects of historical building design that present safety concerns today
+                including the unreinforced masonry walls and the use of flexible wooden floor
+                systems. In part one researchers test four different methods for stiffening and
+                strengthening the existing wooden floors forcing them to act as rigid diaphragms to
+                the overall structural system. Additionally in part two of this study the
+                researchers attempt to increase seismic resistance by the use of three different
+                techniques; adding new reinforced concrete walls to the system, introducing a base
+                isolation solution, and using viscous dampers. </summary>
+      <summary type="general"> They found that the use of steel ties within the existing
+                wooden floor system along with allowed for more effective force distribution
+                throughout the system and decreased displacement of existing features and materials. </summary>
+      <relevance type="application"> This extensive research serves as a great resource for
+                professionals working in the rehabilitation industry in older cities containing a
+                high quantity of older masonry buildings. </relevance>
+    </annotation>
+    <citation n="2" style="MLA"><author n="1">Costa, Aníbal</author>, and <author n="2">João Miranda Guedes</author>.
+                <title level="b">Structural Rehabilitation of Old Buildings</title>. Berlin:
+            Springer, 2014. Web. 12 July 2016. </citation>
+    <annotation>
+      <background type="author"> Edited by department chairs for the Department of Civil
+                Engineering at the University of Aveiro and Porto University both in Portugal, this
+                book is a collaboration of pieces written by professors and researchers at each
+                school. </background>
+      <summary type="general"> This book addresses the different structural systems and
+                construction methods used in a number of different masonry building styles. By
+                examining the structural behavior of the systems today and addressing the damages
+                that have occurred due to different environmental stresses these researchers are
+                able to provide a solid basis for their arguments for and against certain styles of
+                retrofitting and reinforcement. </summary>
+      <summary type="interpretation"> For masonry buildings located in zones of seismic
+                activity it is very important to provide updated reinforcing systems as traditional
+                masonry alone provides no tensile strength to resist movement during seismic events. </summary>
+      <relevance type="value_stmt"> With chapters focusing on adobe, brick, and stone masonry,
+                this source provides a very thorough and individualized assessment of popular
+                historic methods of construction, conducting vulnerability assessments and analyzing
+                construction maintenance on each. </relevance>
+    </annotation>
+    <citation n="3" style="MLA"><title level="a">Guidelines for Rehabilitating Historic Buildings: Structural
+                Systems.</title><title level="w">Historic Preservation - Technical Procedures.</title><author>U.S. Department of the Interior</author>, 2 June 2015. Web. 12 July 2016. </citation>
+    <annotation>
+      <background type="source"> Published by the General Services Administration (GSA), an
+                independent agency formed by the US Government in 1949 to help with the support and
+                management of all functioning federal agencies, this list of guidelines for
+                preservation of historic buildings was originally written by the U.S. Department of
+                the Interior as a reference for rehabilitation and remodel of older structural
+                systems. </background>
+      <summary type="general"> The general format of this reference article breaks the process
+                of updating or altering a historic building with regards to its structural system
+                into five basic steps of discovery, protection, repair, replacement and alterations. </summary>
+      <relevance type="application"> By stressing the importance of a full discovery
+                investigation and the use of appropriate materials in the updated structure, this
+                article and its accompanying articles serve as a valuable reference for members of
+                the general public inexperienced in the business of existing construction remodel or
+                historic building systems.</relevance>
+    </annotation>
+    <citation n="4" style="MLA"><author n="1">Meli, Roberto</author>, and <author n="2">Roberto
+            Sanchez-Ramirez</author>. <title level="a">Criteria and Experiences on Structural
+                Rehabilitation of Stone Masonry Buildings in Mexico City.</title><title level="j">International Journal of Architectural Heritage</title>. 1.1 (2007):
+            3-28. Web. 12 July 2016. </citation>
+    <annotation>
+      <background type="author"> Professor at the National University of Mexico, Roberto Meli
+                is a highly published researcher specializing in earthquake engineering. </background>
+      <summary type="general"> This investigation focuses on the major rehabilitation of the
+                Mexico City Cathedral and includes an evaluation of many relevant investigations
+                involving other colonial era masonry structures. Much of the damage that these
+                buildings have faced is due to the impact of vertical loading, differential
+                settlement and seismic vibrations. </summary>
+      <summary type="approach"> This study uses extensive structural monitoring systems, field
+                and lab testing of structural members and relevant materials to determine the main
+                causes of damage and the most effective methods of restoration. </summary>
+      <relevance type="application"> In the case of Mexico city, the severe changes in ground
+                settlement is a result of over extraction of local groundwater. Boston, although
+                less severe, also experiences a lot of differential ground settlement due to the
+                fact that a large portion of the city is built on fill and other unstable and
+                largely unknown materials. </relevance>
+    </annotation>
+    <citation n="5" style="MLA"><author n="1">Weeks, Kay D.</author>, and <author n="2">Anne E. Grimmer</author>. <title level="b">The Secretary of the Interior’s Standards for the Treatment of Historic
+                Properties with Guidelines for Preserving, Rehabilitating, Restoring and
+                Reconstructing Historic Buildings</title>. DIANE Publishing, 1 Feb. 1995. Web. 12
+            July 2016. </citation>
+    <annotation>
+      <background type="source"> Published in 1995, this book still serves today as a strong
+                basis with the general guideline for people looking to perform work on a historic
+                structure in the United States. </background>
+      <summary type="general"> For many structures the biggest concern when starting a
+                rehabilitation project is the fact that other than the obvious facade, most of the
+                structure and its materials are largely unknown until work has begun. </summary>
+      <summary type="interpretaiton"> Without going into the technical aspects of design this
+                piece focuses on the architecture and materials detailing of buildings and
+                structures throughout history it does bring our attention to a few interesting
+                requirements that would affect structural system changes or updates. </summary>
+      <relevance type="application"> This book largely references the publishings of the U.S.
+                Secretary of the Interior and serves to “provide guidance to historical building
+                owners and building managers, preservation consultants, architects, contractors, and
+                project reviewers prior to treatment.”</relevance>
+    </annotation>
+  </annotated_bib>
+</DOC>

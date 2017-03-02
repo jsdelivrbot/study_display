@@ -1,0 +1,116 @@
+<?xml-model href="../schema_3302.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--the second line in the document associates the schema, so be sure not to change it-->
+<DOC>
+  <docHead>
+    <!--required header includes metadata about the assignment (title, author, version)-->
+    <title>Assignment 2</title>
+    <version n="2" date="2016-07-30"/>
+  </docHead>
+  <fsb_rpt>
+    <page type="ttl">
+      <title>Waitless App Feasibility Report</title>
+      <contributors>
+        <!--deidentified element-->
+      </contributors>
+      <date>2016-07-30</date>
+    </page>
+    <page type="tbl_contents">
+      <sect n="1" lvl="1">Exclusive Summary</sect>
+      <sect n="2" lvl="1">Preliminary Requirements Analysis</sect>
+      <sect n="1" lvl="2">Application Overview</sect>
+      <sect n="3" lvl="1">Feasibility</sect>
+      <sect n="4" lvl="1">Success criteria</sect>
+      <sect n="5" lvl="1">Cost Estimates</sect>
+      <sect n="6" lvl="1">Report page</sect>
+      <sect n="7" lvl="1"> Risk Analysis</sect>
+      <sect n="8" lvl="1">Financial</sect>
+      <sect n="9" lvl="1">Conclusion</sect>
+    </page>
+    <page type="exec_sum"> The app is called Waitless and it's designed for helping people get a
+            seat for a restaurant which doesn't take reservations so that they don't need to be
+                arrived and wait for
+            45 minutes. If you always have dinner outside in Boston, you may find this situation
+            very common. This new app is going to short the waiting time. After the customer
+            downloads this app on their phones and the restaurant also has this app downloaded on
+            their device, the time saving trip is started. Customers can start to wait in the list
+            when they heading to the place and they
+            can see the waiting time so that customers can check the time and decide which place
+            they want to go. It's similar with using Google Map to check the route and the app will
+            tell the customers that how long it will take for them to get there and how long the
+            waiting time is. Waitless is a combination of Google Map, Yelp and waiting time of all
+            the restaurants. Also, it can make the points card electronical too. </page>
+    <page type="pre_req_ana">
+      <app_ovr type="rls"> Currently, people need to go to the restaurant first, get in a line
+                if it’s busy there, and wait until your turn. Since there won’t be enough space for
+                customers to wait inside the restaurant, customers will have to wait outside. In
+                Boston, the winter is cold and long which is up to 6 months of a year. Therefore, by
+                possibility, there will be 50% of times that a customer waits for food is going to
+                be in the cold winter. Some of the restaurants call by name which means the customer
+                can’t leave. Some of restaurants use the “buzz thing” to let customers know their
+                turn but they can’t stay too far from the restaurant.</app_ovr>
+      <app_ovr type="obj"> After installing Waitless, all these problems solved! No need for
+                waiting outside in the wind for a long time and you can plan your time for your
+                meal. Besides, you don’t need to remember to carry all the points cards with you or
+                get more points cards if you didn’t bring your own.</app_ovr>
+    </page>
+    <page type="fsb">
+      <fsb_hlgt type="tcnl" n="1"> In order to develop an app like this, we need to understand
+                how does a restaurant calculate the time. Also, the other problem is that how can we
+                make everything live. Making the points card electronic is the easy part, as long as
+                the restaurant has some kind of points card. A good way to develop the calculating
+                the time is that every restaurant has its own average of dinning time for every
+                numbers of party. As long as we have the average, it will be easy to calculate time.
+                The app is a live based app which means it will sync the changes at backend every
+                few seconds. </fsb_hlgt>
+      <fsb_hlgt type="econ" n="2"> Sometimes the cost of developing a software can be huge
+                like Windows10. Sometimes it can be small, for example, the coast of developing
+                Flappy Bird is tinny where it only
+                needs one developer to code on the IOS platform. What this app will do is not only
+                saving time for customers but also saving time for parking spots. Suppose, the
+                average time for a meal is 40 minutes, after the customer using this app, customer
+                should only use the parking spot for at most 1 hour instead of 1.5 hour now.</fsb_hlgt>
+    </page>
+    <page type="sccs_crt">
+      <req_sect> Equipments<req n="1" title="Hardware">Needs usable computers with
+                    required software installed. </req><req n="2" title="Software">The computers need IOS Xcode installed and Java access.
+                    Xcode is for the IOS app design and Java is for the Android.</req></req_sect>
+    </page>
+    <page type="cost">
+      <est type="lgl">$5000 for attorney to get the app licence and patent</est>
+      <est type="fnc">$5000 for paying the computer developers to develop the code</est>
+      <est type="fnc">$5000 for advertising and publicize</est>
+    </page>
+    <page type="rpt">
+      <tmln date="2016-08-01" n="1">Get the idea and find people to work with</tmln>
+      <tmln date="2016-08-05" n="2">Start the GUI design</tmln>
+      <tmln date="2016-09-20" n="3">Get data from restaurant</tmln>
+      <tmln date="2016-10-20" n="4">Inner testing</tmln>
+      <tmln date="2016-10-31" n="5">Trail
+                testing</tmln>
+      <tmln date="2016-11-01" n="6">Release</tmln>
+    </page>
+    <page type="rsk_ana"> The risk of this app is the lack of users. The way to avoid it is to
+            send advertisements in popular restaurants around Boston. The app is free first 6-months
+            to restaurants so that they will get to know it well and starting using it.</page>
+    <page type="fnc">
+      <fnc type="fund"> The cost of developing the IOS app is the cost of human. It may need 3
+                person to get all these done. One for the GUI design for the customer side, one for
+                GUI design for the restaurant side and the last one is to get all the data from
+                customer and restaurants. There will be no more cost other than people. Thus,
+                developing a software doesn't need huge funds. </fnc>
+    </page>
+    <page type="conc">
+      <fsb>This app is a feasible application.
+                According to the design, this app should be capable on IOS and Android which are the
+                two most popular operating system on phones.</fsb>
+      <cond>On the restaurant side, most of them have one device to take waiting list, other
+                wise, it needs a person to count the tables and calculate the time. If we can make
+                it as a app, things are going to be a lot much easier. On the customer side, with
+                this app, it will save a lot of time. Instead of waiting outside the restaurant in
+                the cold freezing weather, it's better to have an app like this to get on the
+                waiting list before you arrive.</cond>
+      <sum> The Waitless will give both customers and restaurants convenience and help them
+                save time. There is an old saying: "Time is gold." Thus, saving time is the same as
+                saving money which is the core idea of the Waitless app. </sum>
+    </page>
+  </fsb_rpt>
+</DOC>
