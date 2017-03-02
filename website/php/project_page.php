@@ -35,9 +35,9 @@
             if(isset($_GET['id'])) {
               $_GET['id'];
               echo '<h4>Student id: ' . $id . '</h4>';
-              echo '<p>To select another student or project, return to the <a href=\'./index.php\'>Project Page</a>.<p>';
+              echo '<p>To select another student or project, return to the <a href=\'../index.php\'>Project Page</a>.<p>';
             } else {
-              echo '<p>No student selected, please return to <a href=\'./index.php\'>Project Page</a>.</p>';
+              echo '<p>No student selected, please return to <a href=\'../index.php\'>Project Page</a>.</p>';
             }   ?>
             <p>
               <a href='project_page.php?xml=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>'>View XML Source</a>
@@ -53,19 +53,19 @@
                       function p1regXML() {
                         $id = $_GET['id'];
                         $proj = $_GET['proj'];
-                        include_once(dirname(__FILE__) . '../content/_transformations/XML.php');
+                        include_once(dirname(__DIR__) . '/content/_transformations/XML.php');
                       }
 
                       function p1TransformedXML () {
                         $id = $_GET['id'];
                         $proj = $_GET['proj'];
-                        include_once(dirname(__FILE__) . '../content/_transformations/XML_v2.php');
+                        include_once(dirname(__DIR__) . '/content/_transformations/XML_v2.php');
                       }
 
                       function p1AnnotatedXML () {
                         $id = $_GET['id'];
                         $proj = $_GET['proj'];
-                        include_once(dirname(__FILE__) . '../content/_transformations/XML_v3.php');
+                        include_once(dirname(__DIR__) . '/content/_transformations/XML_v3.php');
                       }
 
                       if (isset($_GET['xml'])) {
@@ -81,21 +81,13 @@
 
         </section>
       </article>
-        <!--<aside class="projectpage">
-        <h3>Students</h3>
-
-
-            <ul><?php include('list_students.php') ?></ul>
-        </aside>-->
-
-
-
 </div> <!-- #main -->
 </div> <!-- #main-container -->
 <div class="footer-container">
     <footer class="wrapper">
-      <h2>Project <?php echo $_GET['proj']?>: Select Student</h2>
-        <ul><?php include('list_students.php') ?></ul>
+      <!--<h2>Project <?php echo $_GET['proj']?>: Select Student</h2>
+        <ul><?php include('list_students.php') ?></ul>-->
+        <a href="../index.php">Return to student section page</a>
     </footer>
 </div>
 

@@ -3,22 +3,21 @@ $genre = $_GET['genre'];
 if($genre = 'essay') {
   $proj = '1';
   echo
-  '<li><a href=\'project_page.php?id=test&proj=' .$proj. '\'>Example file</a></li>
-  <li><a href=\'project_page.php?id=al.su&proj=' .$proj. '\'>Sultan Abdullah Aldabal</a></li>
-  <li><a href=\'project_page.php?id=bu.an&proj=' .$proj. '\'>Andrew Burcham</a></li>
-  <li><a href=\'project_page.php?id=ch.an&proj=' .$proj. '\'>Anders Chen</a></li>
-  <li><a href=\'project_page.php?id=dh.mo&proj=' .$proj. '\'>Mohit Dhinakaran
+  '<li><a href=\'project_page.php?id=al.su&proj=' .$proj. '\'>student id: al.su</a></li>
+  <li><a href=\'project_page.php?id=bu.an&proj=' .$proj. '\'>student id: bu.an</a></li>
+  <li><a href=\'project_page.php?id=ch.an&proj=' .$proj. '\'>student id: ch.an</a></li>
+  <li><a href=\'project_page.php?id=dh.mo&proj=' .$proj. '\'>student id: dh.mo
 </a></li>
-  <li><a href=\'project_page.php?id=ga.ar&proj=' .$proj. '\'>Arlen Gaba</a></li>
-  <li><a href=\'project_page.php?id=ho.jo&proj=' .$proj. '\'>Jack Hoyt</a></li>
-  <li><a href=\'project_page.php?id=ko.di&proj=' .$proj. '\'>Divit Koradia</a></li>
-  <li><a href=\'project_page.php?id=li.em&proj=' .$proj. '\'>Emma Lindberg</a></li>
-  <li><a href=\'project_page.php?id=lo.va&proj=' .$proj. '\'>Valentina Longcroft</a></li>
-  <li><a href=\'project_page.php?id=mi.as&proj=' .$proj. '\'>Ashwin Misra</a></li>
-  <li><a href=\'project_page.php?id=ro.dy&proj=' .$proj. '\'>Dylan Robinson</a></li>
-  <li><a href=\'project_page.php?id=sa.jh&proj=' .$proj. '\'>Jhadley Sanchez</a></li>
-  <li><a href=\'project_page.php?id=to.fr&proj=' .$proj. '\'>Francheska Torres</a></li>
-  <li><a href=\'project_page.php?id=we.sp&proj=' .$proj. '\'>Spencer Webb</a></li>';
+  <li><a href=\'project_page.php?id=ga.ar&proj=' .$proj. '\'>student id: ga.ar</a></li>
+  <li><a href=\'project_page.php?id=ho.jo&proj=' .$proj. '\'>student id: ho.jo</a></li>
+  <li><a href=\'project_page.php?id=ko.di&proj=' .$proj. '\'>student id: ko.di</a></li>
+  <li><a href=\'project_page.php?id=li.em&proj=' .$proj. '\'>student id: li.em</a></li>
+  <li><a href=\'project_page.php?id=lo.va&proj=' .$proj. '\'>student id: lo.va</a></li>
+  <li><a href=\'project_page.php?id=mi.as&proj=' .$proj. '\'>student id: mi.as</a></li>
+  <li><a href=\'project_page.php?id=ro.dy&proj=' .$proj. '\'>student id: ro.dy</a></li>
+  <li><a href=\'project_page.php?id=sa.jh&proj=' .$proj. '\'>student id: sa.jh</a></li>
+  <li><a href=\'project_page.php?id=to.fr&proj=' .$proj. '\'>student id: to.fr (Zooey)</a></li>
+  <li><a href=\'project_page.php?id=we.sp&proj=' .$proj. '\'>student id: we.sp</a></li>';
   }
   elseif(isset($_GET['genre'])) {
     $genre = $_GET['genre'];
