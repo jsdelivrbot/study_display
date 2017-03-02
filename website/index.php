@@ -26,7 +26,7 @@
             <div class="main wrapper clearfix">
                 <article>
                       <header>
-                        <h2>Genre: Analysis Essay</h1>
+                        <h2>Genre: Analysis Essay (FYW)</h1>
                       </header>
                       <section class="docs">
                         <?php
@@ -51,7 +51,7 @@
                 </aside>
                 <article>
                       <header>
-                        <h2>Genre: Movie Review</h1>
+                        <h2>Genre: Movie Review (FYW)</h1>
                       </header>
                       <section class="docs">
                         <?php
@@ -71,7 +71,7 @@
                 </article>
                 <article>
                       <header>
-                        <h2>Genre: Satirical Article</h1>
+                        <h2>Genre: Satirical Article (FYW)</h1>
                       </header>
                       <section class="docs">
                         <?php
@@ -91,7 +91,7 @@
                 </article>
                 <article>
                       <header>
-                        <h2>Genre: Op-Ed</h1>
+                        <h2>Genre: Op-Ed (FYW)</h1>
                       </header>
                       <section class="docs">
                         <?php
@@ -111,7 +111,7 @@
                 </article>
                 <article>
                       <header>
-                        <h2>Genre: Resume</h1>
+                        <h2>Genre: Resume (FYW)</h1>
                       </header>
                       <section class="docs">
                         <?php
@@ -124,6 +124,106 @@
                           <ul class="students">
                             <?php
                             include('./php/list_students_resume.php')
+                            ?>
+                          </ul>
+                        </p>
+                  </section>
+                </article>
+                <article>
+                      <header>
+                        <h2>Genre: Annotated Bibliography (AWD)</h1>
+                      </header>
+                      <section class="docs">
+                        <?php
+                        $genre='bib';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
+                      <section>
+                        <p>
+                          <ul class="students">
+                            <?php
+                            include('./php/list_students_bib.php')
+                            ?>
+                          </ul>
+                        </p>
+                  </section>
+                </article>
+                <article>
+                      <header>
+                        <h2>Genre: Science Blog (AWD)</h1>
+                      </header>
+                      <section class="docs">
+                        <?php
+                        $genre='blog_post';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
+                      <section>
+                        <p>
+                          <ul class="students">
+                            <?php
+                            include('./php/list_students_blog_post.php')
+                            ?>
+                          </ul>
+                        </p>
+                  </section>
+                </article>
+                <article>
+                      <header>
+                        <h2>Genre: Feasibility Report (AWD)</h1>
+                      </header>
+                      <section class="docs">
+                        <?php
+                        $genre='report';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
+                      <section>
+                        <p>
+                          <ul class="students">
+                            <?php
+                            include('./php/list_students_report.php')
+                            ?>
+                          </ul>
+                        </p>
+                  </section>
+                </article>
+                <article>
+                      <header>
+                        <h2>Genre: Public Project Proposal (AWD)</h1>
+                      </header>
+                      <section class="docs">
+                        <?php
+                        $genre='proposal';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
+                      <section>
+                        <p>
+                          <ul class="students">
+                            <?php
+                            include('./php/list_students_proposal.php')
+                            ?>
+                          </ul>
+                        </p>
+                  </section>
+                </article>
+                <article>
+                      <header>
+                        <h2>Genre: Cover Letter (AWD)</h1>
+                      </header>
+                      <section class="docs">
+                        <?php
+                        $genre='cover_letter';
+                        include('./php/docs.php')
+                        ?>
+                      </section>
+                      <section>
+                        <p>
+                          <ul class="students">
+                            <?php
+                            include('./php/list_students_cover_letter.php')
                             ?>
                           </ul>
                         </p>
