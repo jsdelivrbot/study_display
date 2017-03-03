@@ -8,7 +8,8 @@
             <!--deidentified element--></author>
       <date type="review_date"> November 21st, 2016</date>
       <date type="movie_premiere">July 15th, 2016</date>
-      <contact_info/>
+        <contact_info>email
+            <!--deidentified element--></contact_info>
     </header>
     <content>
       <intro>
