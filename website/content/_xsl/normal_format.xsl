@@ -648,7 +648,7 @@
     
     <!-- ______3302 TEMPLATES_______-->
     
-    <xsl:template match="DOC">
+    <!--<xsl:template match="DOC">
         <html>
             <head>
                 <title>Example</title>
@@ -669,7 +669,7 @@
             <h4>Date: <xsl:value-of select="version"/></h4>
             
         </div>
-    </xsl:template>
+    </xsl:template>-->
     <!--templates specific to annotated bib assignment-->
     <xsl:template match="DOC//annotated_bib">
         <div id="text">

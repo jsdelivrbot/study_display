@@ -98,7 +98,7 @@
     </xsl:template>
 
     <xsl:template
-        match="essay//bodyPara//*[not(self::q) and not(self::citation) and not(self::note)]">
+        match="essay//bodyPara//*[not(self::q) and not(self::citation) and not(self::note) and not(self::citation) and not(self::note) and not(self::figure) and not(self::style)]">
         <xsl:if test="@type = true()">
             <span class="{name()} {@type}"> [<xsl:value-of select="name()"/> (type = <xsl:value-of
                     select="@type"/>): <xsl:apply-templates/>] </span>
