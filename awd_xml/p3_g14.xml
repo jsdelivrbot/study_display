@@ -3,24 +3,19 @@
   <docHead>
     <!--required header includes metadata about the assignment (title, author, version)-->
     <title>WP3: Cover Letter</title>
+    <author>Name
+            <!--deidentified element--></author>
     <version n="2" date="2016-08-22"/>
   </docHead>
   <cover_letter>
     <header>
       <name>
-        <!--deidentified element-->
-      </name>
+            Name de-identified<!--deidentified element--></name>
       <contact_info>
         <!-- One or More Contact -->
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
+        <contact type="address">address<!--deidentified element--></contact>
+        <contact type="phone">phone<!--deidentified element--></contact>
+        <contact type="email">email<!--deidentified element--></contact>
       </contact_info>
     </header>
     <greeting>Hello,</greeting>
@@ -80,8 +75,7 @@
     <signature>
       <salutation>Best regards,</salutation>
       <name>
-        <!--deidentified element-->
-      </name>
+            Name de-identified<!--deidentified element--></name>
     </signature>
   </cover_letter>
 </DOC>

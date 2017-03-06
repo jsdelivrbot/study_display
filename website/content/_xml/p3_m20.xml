@@ -3,26 +3,19 @@
   <docHead>
     <!--required header includes metadata about the assignment (title, author, version)-->
     <title>Project 3</title>
+    <author>Name
+            <!--deidentified element--></author>
     <version n="2" date="2016-08-22"/>
   </docHead>
   <cover_letter>
     <header>
       <name>
-        <!--deidentified element-->
-      </name>
+            Name de-identified<!--deidentified element--></name>
       <contact_info>
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
+        <contact type="address">address<!--deidentified element--></contact>
+        <contact type="address">address<!--deidentified element--></contact>
+        <contact type="phone">phone<!--deidentified element--></contact>
+        <contact type="email">email<!--deidentified element--></contact>
       </contact_info>
     </header>
     <greeting>Hello Mr.Morrissey,</greeting>
@@ -86,8 +79,7 @@
     <signature>
       <salutation>Yours sincerely,</salutation>
       <name>
-        <!--deidentified element-->
-      </name>
+            Name de-identified<!--deidentified element--></name>
     </signature>
   </cover_letter>
 </DOC>

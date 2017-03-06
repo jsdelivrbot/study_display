@@ -30,19 +30,19 @@
           <header>
             <?php
             $proj = $_GET['proj'];
+            $genre = $_GET['genre'];
             $id = $_GET['id'];
-            echo '<h3>Project ' .$proj. '</h3>';
+            echo '<h3>Genre: ' .$genre. '</h3>';
             if(isset($_GET['id'])) {
               $_GET['id'];
               echo '<h4>Student id: ' . $id . '</h4>';
-              echo '<p>To select another student or project, return to the <a href=\'../index.php\'>Project Page</a>.<p>';
             } else {
               echo '<p>No student selected, please return to <a href=\'../index.php\'>Project Page</a>.</p>';
             }   ?>
             <p>
-              <a href='project_page.php?xml=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>'>View XML Source</a>
-              <a href='project_page.php?transformed=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>'>View Formatted File</a>
-              <a href='project_page.php?annotated=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>'>View Annotated File</a>
+              <a href='project_page.php?xml=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>&genre=<?php echo $genre ?>'>View XML Source</a>
+              <a href='project_page.php?transformed=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>&genre=<?php echo $genre ?>'>View Formatted File</a>
+              <a href='project_page.php?annotated=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>&genre=<?php echo $genre ?>'>View Annotated File</a>
             </p>
           </header>
           <section>
@@ -79,6 +79,9 @@
                       }
                     ?>
 
+        </section>
+        <section>
+          <p><a href="../index.php">Return to the main page</a></p>
         </section>
       </article>
 </div> <!-- #main -->

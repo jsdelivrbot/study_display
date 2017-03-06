@@ -158,7 +158,15 @@ nav a:hover {
 #text {
   margin-bottom: 2em;
 }
-
+#container {
+  padding: 2em;
+  margin-bottom: 1em;
+  border: 1px dotted black;
+  background-color: white;
+}
+#text p.citation {
+  font-weight: bold;
+}
 
 section.docs {
   float: right;

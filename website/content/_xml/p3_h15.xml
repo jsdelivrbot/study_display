@@ -3,28 +3,21 @@
   <docHead>
     <!--required header includes metadata about the assignment (title, author, version)-->
     <title>Project 3: Cover Letter</title>
+    <author>Name
+            <!--deidentified element--></author>
     <version n="2" date="2016-08-14"/>
   </docHead>
   <!-- root element for P3 here -->
   <cover_letter>
     <header>
       <name>
-        <!--deidentified element-->
-      </name>
+            Name de-identified<!--deidentified element--></name>
       <contact_info>
         <!-- One or More Contact -->
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
+        <contact type="address">address<!--deidentified element--></contact>
+        <contact type="phone">phone<!--deidentified element--></contact>
+        <contact type="email">email<!--deidentified element--></contact>
+        <contact type="url">url<!--deidentified element--></contact>
       </contact_info>
     </header>
     <greeting>Hello Filament Games,</greeting>
@@ -83,8 +76,7 @@
     <signature>
       <salutation>Sincerely,</salutation>
       <name>
-        <!--deidentified element-->
-      </name>
+            Name de-identified<!--deidentified element--></name>
     </signature>
   </cover_letter>
 </DOC>

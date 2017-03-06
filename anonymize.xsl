@@ -33,14 +33,14 @@
     </xsl:template>
 
     <xsl:template match="cover_letter//name">
-        <name>Name
-            <xsl:comment>deidentified element</xsl:comment>
+        <name>
+            Name de-identified<xsl:comment>deidentified element</xsl:comment>
         </name>
     </xsl:template>
     <xsl:template match="cover_letter//contact">
-        <name>Name
-            <xsl:comment>deidentified element</xsl:comment>
-        </name>
+        <contact type="{@type}">
+            <xsl:value-of select="@type"/><xsl:comment>deidentified element</xsl:comment>
+        </contact>
     </xsl:template>
 
     <xsl:template match="pub_init_proposal//author">

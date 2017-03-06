@@ -3,28 +3,21 @@
   <docHead>
     <!--required header includes metadata about the assignment (title, author, version)-->
     <title>Title of Assignment</title>
+    <author>Name
+            <!--deidentified element--></author>
     <version n="num_of_version" date="2016-01-01"/>
   </docHead>
   <!-- root element for P3 here -->
   <cover_letter>
     <header>
       <name>
-        <!--deidentified element-->
-      </name>
+            Name de-identified<!--deidentified element--></name>
       <contact_info>
         <!-- One or More Contact -->
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
-        <name>
-          <!--deidentified element-->
-        </name>
+        <contact type="address">address<!--deidentified element--></contact>
+        <contact type="address">address<!--deidentified element--></contact>
+        <contact type="phone">phone<!--deidentified element--></contact>
+        <contact type="email">email<!--deidentified element--></contact>
       </contact_info>
     </header>
     <greeting>Dear Mr. O'Brein: </greeting>
@@ -93,8 +86,7 @@
       <pb/>
       <pb/>
       <name>
-        <!--deidentified element-->
-      </name>
+            Name de-identified<!--deidentified element--></name>
     </signature>
   </cover_letter>
 </DOC>
