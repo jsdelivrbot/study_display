@@ -87,7 +87,8 @@
     <footer class="wrapper">
       <!--<h2>Project <?php echo $_GET['proj']?>: Select Student</h2>
         <ul><?php include('list_students.php') ?></ul>-->
-        <a href="../index.php">Return to student section page</a>
+        <h2>More from this genre: <?php echo $_GET['genre']?></h2>
+        <ul><?php $genre = $_GET['genre']; include('list_students_' .$genre. '.php') ?></ul>
     </footer>
 </div>
 

@@ -103,7 +103,7 @@
                         <p>
                           <ul class="students">
                             <?php
-                            include('./php/list_students_oped.php')
+                            include('./php/list_students_op-ed.php')
                             ?>
                           </ul>
                         </p>

@@ -25,7 +25,7 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-    <xsl:template match="DOC/essay/docHead">
+    <xsl:template match="essay/docHead">
         <div id="head">
             <div>
                 <ul class="right-just">
@@ -126,7 +126,7 @@
         </li>
     </xsl:template>
 
-    <xsl:template match="DOC//figure">
+    <xsl:template match="essay//figure">
         <figure>
             <img src="{@url}" alt="{child::text()}"/>
             <figcaption>
@@ -134,12 +134,12 @@
             </figcaption>
         </figure>
     </xsl:template>
-    <xsl:template match="DOC//list">
+    <xsl:template match="essay//list">
         <ul>
             <xsl:apply-templates/>
         </ul>
     </xsl:template>
-    <xsl:template match="DOC//list/item">
+    <xsl:template match="essay//list/item">
         <li>
             <xsl:apply-templates/>
         </li>
@@ -671,10 +671,15 @@
         </div>
     </xsl:template>-->
     <!--templates specific to annotated bib assignment-->
+    <xsl:template match="DOC/docHead"/>
     <xsl:template match="DOC//annotated_bib">
+        <div id="container"><div id="head">
+            <h3>Title: <xsl:value-of select="../docHead/title"/></h3>
+            <h3>Author: (deidentified)<xsl:value-of select="../docHead/author"/></h3>
+        </div>
         <div id="text">
             <xsl:apply-templates/>
-        </div>
+        </div></div>
     </xsl:template>
     <xsl:template match="annotated_bib//problem_stmt">
         <p class="problem">
@@ -760,8 +765,13 @@
             </span>
         </xsl:if>
     </xsl:template>
+    
+    
     <xsl:template match="DOC//blog_post">
         <div id="blog_post">
+            <xsl:if test="title = false()">
+                <h1><xsl:value-of select="../docHead/title"/></h1>
+            </xsl:if>
             <xsl:apply-templates/>
         </div>
     </xsl:template>
@@ -784,7 +794,7 @@
         <hr/>
     </xsl:template>
     <!-- global elements -->
-    <xsl:template match="blog_post//pb">
+    <xsl:template match="blog_post//pb[not(ancestor::list)]">
         <br/>
         <br/>
     </xsl:template>
@@ -823,6 +833,11 @@
         <strong>
             <xsl:apply-templates/>
         </strong>
+    </xsl:template>
+    <xsl:template match="blog_post//citation">
+        <p class="citation">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
     <!-- templates for feasibility reports -->
     <xsl:template match="DOC//fsb_rpt">
