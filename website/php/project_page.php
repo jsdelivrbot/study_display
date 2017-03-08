@@ -39,7 +39,7 @@
             } else {
               echo '<p>No student selected, please return to <a href=\'../index.php\'>Project Page</a>.</p>';
             }   ?>
-            <p>
+            <p class="transform">
               <a href='project_page.php?xml=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>&genre=<?php echo $genre ?>'>View XML Source</a>
               <a href='project_page.php?transformed=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>&genre=<?php echo $genre ?>'>View Formatted File</a>
               <a href='project_page.php?annotated=true&id=<?php echo $id ?>&proj=<?php echo $proj ?>&genre=<?php echo $genre ?>'>View Annotated File</a>
@@ -81,7 +81,7 @@
 
         </section>
         <section>
-          <p><a href="../index.php">Return to the main page</a></p>
+          <p class="transform"><a href="../index.php">Return to the main page</a></p>
         </section>
       </article>
 </div> <!-- #main -->

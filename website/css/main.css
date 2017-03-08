@@ -243,6 +243,28 @@ footer a:hover {
   color: #ffccb3;
 }
 
+p.transform a {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #AC3E27;
+}
+
+p.transform a:visited {
+    color: white;
+}
+
+p.transform a:hover {
+    color:#fbded0;
+}
+
+
 /*MAIN STYLES FROM 1111*/
 div.root {
   padding: 4em;
@@ -1061,7 +1083,7 @@ li.situation {background-color: #e31a1c;}
     nav a {
         width: 25%;
         margin: 0 1.7%;
-        padding: 25px 2%;
+        padding: 15px 2%;
         margin-bottom: 0;
     }
 
