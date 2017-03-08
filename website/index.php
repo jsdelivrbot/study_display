@@ -28,12 +28,12 @@
                       <header>
                         <h2>Genre: Analysis Essay (FYW)</h1>
                       </header>
-                      <section class="docs">
+                      <!--<section class="docs">
                         <?php
                         $genre='essay';
                         include('./php/docs.php')
                         ?>
-                      </section>
+                      </section>-->
                       <section>
                         <p>
                           <ul class="students">
@@ -47,18 +47,13 @@
                 </article>
                 <aside>
                     <h3>Display site</h3>
-                    <p>This is a site for the display of de-identified student work.</p>
+                    <p>This is a site for the display of de-identified student work. You can view the accompanying doumentation
+                      (element and attribute definitions) for <a href="https://docs.google.com/document/d/1BtBP2lXhl5EKoJmQFa9Ny0kGjURrpRHMNaB7dWzHL8c/edit?usp=sharing" target="_blank">FYW here</a> and for <a href="/php/crib_sheet.php">AWD here</a>.</p>
                 </aside>
                 <article>
                       <header>
                         <h2>Genre: Movie Review (FYW)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='review';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">
@@ -73,12 +68,6 @@
                       <header>
                         <h2>Genre: Satirical Article (FYW)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='article';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">
@@ -93,12 +82,6 @@
                       <header>
                         <h2>Genre: Op-Ed (FYW)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='oped';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">
@@ -113,12 +96,6 @@
                       <header>
                         <h2>Genre: Resume (FYW)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='resume';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">
@@ -133,12 +110,6 @@
                       <header>
                         <h2>Genre: Annotated Bibliography (AWD)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='bib';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">
@@ -153,12 +124,6 @@
                       <header>
                         <h2>Genre: Science Blog (AWD)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='blog_post';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">
@@ -173,12 +138,6 @@
                       <header>
                         <h2>Genre: Feasibility Report (AWD)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='report';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">
@@ -193,12 +152,6 @@
                       <header>
                         <h2>Genre: Public Project Proposal (AWD)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='proposal';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">
@@ -213,12 +166,6 @@
                       <header>
                         <h2>Genre: Cover Letter (AWD)</h1>
                       </header>
-                      <section class="docs">
-                        <?php
-                        $genre='cover_letter';
-                        include('./php/docs.php')
-                        ?>
-                      </section>
                       <section>
                         <p>
                           <ul class="students">

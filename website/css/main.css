@@ -100,7 +100,7 @@ nav ul {
 }
 
 nav a {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
     padding: 15px 0;
 
@@ -311,6 +311,10 @@ footer a:hover {
   text-decoration: none;
   color: #ffccb3;
 }
+aside a {
+  color: white;
+}
+
 /* HOVER TOOL TIPS FOR NOTES */
 sup {
 
@@ -1055,20 +1059,12 @@ li.situation {background-color: #e31a1c;}
    ==================== */
 
     nav a {
-        float: left;
-        width: 40%;
+        width: 25%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
     }
 
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -1100,13 +1096,10 @@ li.situation {background-color: #e31a1c;}
     WIDE: Menu
    ============ */
 
-    .title {
-        float: left;
-    }
 
     nav {
-        float: right;
-        width: 38%;
+
+        width: 90%;
     }
 
 /* ============
