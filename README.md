@@ -1,12 +1,13 @@
-# Writing in Markup Display Site
+# Writing in Markup Data and Display Site
 This is a repo for anonymized XML data generated in my dissertation research and for a site to display and interact with that data.
 
 ## Description
-The XML files in this repository were generated in the summer and fall semesters of 2016 in two undergraduate writing courses: Advanced Writing for the Technical professions (summer) and First-year Writing (fall). Students in those classes collaboratively developed schema files based on genres of writing that they chose to research and produce. They then used those schemas to produce individual examples of their chosen genres, iteratively revising the schemas according to their experiences composing.
+The XML files in this repository were generated in the summer and fall semesters of 2016 in two undergraduate writing courses: Advanced Writing for the Technical professions (summer) and First-year Writing (fall). Students in those classes collaboratively developed schema files based on genres of writing that they chose to research and produce. They then used those schemas to produce individual examples of their chosen genres, iteratively revising the schemas according to their experiences composing. My dissertation project, “(Re)Making/(Re)Marking: Genre and Markup in the Writing Classroom,” is a qualitative teacher-research study of these courses, which you can read more about on [my blog](http://kevingeraldsmith.com).
+
 
 ## Usage
 
-To explore the data individually, visit [markup.kevingeraldsmith.com](http://markup.kevingeraldsmith.com).
+To explore the data individually, visit the display site at [markup.kevingeraldsmith.com](http://markup.kevingeraldsmith.com).
 
 ## Contributing
 
