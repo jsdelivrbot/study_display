@@ -47,7 +47,7 @@
                 </article>
                 <aside>
                     <h3>Display site</h3>
-                    <p>This is a site for the display of de-identified student work. Check out <a href="http://markup.kevingeraldsmith.com/">my GitHub</a> if you are interested in playing wiht the raw XML or looking at the schemas. You can view the accompanying doumentation
+                    <p>This is a site for the display of de-identified student work. Check out <a href="https://github.com/smithkevin1/study_display">my GitHub</a> if you are interested in playing wiht the raw XML or looking at the schemas. You can view the accompanying doumentation
                       (element and attribute definitions) for <a href="https://docs.google.com/document/d/1BtBP2lXhl5EKoJmQFa9Ny0kGjURrpRHMNaB7dWzHL8c/edit?usp=sharing" target="_blank">FYW here</a> and for <a href="/php/crib_sheet.php">AWD here</a>.</p>
                 </aside>
                 <article>

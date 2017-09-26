@@ -7,7 +7,14 @@ The XML files in this repository were generated in the summer and fall semesters
 
 ## Usage
 
-To explore the data individually, visit the display site at [markup.kevingeraldsmith.com](http://markup.kevingeraldsmith.com).
+There are two classes included here, Advanced Writing for the Technical Professions (AWD) and First-year Writing (FYW).
+
+* The AWD schema is schema_3302.rng and the student XML files are included in the awd_xml folder.
+* The FYW schema is schema_1111.rng and the student XML files are included in the fyw_xml folder.
+* Each of the two courses includes three XML files for each student. The naming conventions for the XML files are p[#1-3]_[unique student ID].
+
+
+To explore the transformed XML data, visit the display site at [markup.kevingeraldsmith.com](http://markup.kevingeraldsmith.com).
 
 ## Contributing
 
