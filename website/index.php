@@ -47,8 +47,8 @@
                 </article>
                 <aside>
                     <h3>Display site</h3>
-                    <p>This is a site for the display of de-identified student work. Check out <a href="https://github.com/smithkevin1/study_display">my GitHub</a> if you are interested in playing wiht the raw XML or looking at the schemas. You can view the accompanying doumentation
-                      (element and attribute definitions) for <a href="https://docs.google.com/document/d/1BtBP2lXhl5EKoJmQFa9Ny0kGjURrpRHMNaB7dWzHL8c/edit?usp=sharing" target="_blank">FYW here</a> and for <a href="/php/crib_sheet.php">AWD here</a>.</p>
+                    <p>This is a site for the display of de-identified student work growing out of my dissertation research. For an overview of the project and the approach to using markup in writing classes, take a look at this <a href="http://wwp.northeastern.edu/blog/classroom-markup/" target="_blank">blog post I wrote for the Women Writers Project</a> at Northeastern University. Check out <a href="https://github.com/smithkevin1/study_display">my GitHub</a> if you are interested in playing with the raw XML or looking at the schemas. You can view the accompanying doumentation
+                      (element and attribute definitions) for <a href="https://docs.google.com/document/d/1BtBP2lXhl5EKoJmQFa9Ny0kGjURrpRHMNaB7dWzHL8c/edit?usp=sharing" target="_blank">FYW here</a> and for <a href="/php/crib_sheet.php">AWD here</a>. Notes: 1) All students displayed here consented to sharing their work as a part of this research. 2) This research is partially supported by a grant from the <a href="http://www.northeastern.edu/nulab/" target="_blank">NULab for Texts, Maps, and Networks</a>.</p>
                 </aside>
                 <article>
                       <header>
