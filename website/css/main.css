@@ -135,7 +135,7 @@ nav a:hover {
 
 .main aside {
     color: white;
-    padding: 0px 5% 10px;
+    padding: 0px 3%;
 }
 
 .footer-container footer {
@@ -1107,12 +1107,12 @@ li.situation {background-color: #e31a1c;}
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
+    /*   .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
+      -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
-    }
+    } */
 
 /* ============
     WIDE: Menu
@@ -1140,7 +1140,11 @@ li.situation {background-color: #e31a1c;}
 
     .main aside {
         float: right;
-        width: 28%;
+        width: 33%;
+    }
+
+    .main aside p {
+
     }
 }
 

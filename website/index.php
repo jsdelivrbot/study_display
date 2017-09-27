@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Project Files, Kevin G. Smith</title>
+        <title>Markup in the Writing Classroom</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -46,9 +46,9 @@
                   </section>
                 </article>
                 <aside>
-                    <h3>Display site</h3>
-                    <p>This is a site for the display of de-identified student work growing out of my dissertation research. For an overview of the project and the approach to using markup in writing classes, take a look at this <a href="http://wwp.northeastern.edu/blog/classroom-markup/" target="_blank">blog post I wrote for the Women Writers Project</a> at Northeastern University. Check out <a href="https://github.com/smithkevin1/study_display">my GitHub</a> if you are interested in playing with the raw XML or looking at the schemas. You can view the accompanying doumentation
-                      (element and attribute definitions) for <a href="https://docs.google.com/document/d/1BtBP2lXhl5EKoJmQFa9Ny0kGjURrpRHMNaB7dWzHL8c/edit?usp=sharing" target="_blank">FYW here</a> and for <a href="/php/crib_sheet.php">AWD here</a>. Notes: 1) All students displayed here consented to sharing their work as a part of this research. 2) This research is partially supported by a grant from the <a href="http://www.northeastern.edu/nulab/" target="_blank">NULab for Texts, Maps, and Networks</a>.</p>
+                    <h3>Markup in the Writing Classroom Display Site</h3>
+                    <p>This is a site for the display of de-identified student work growing out of my dissertation project using XML in undergraduate writing courses. For an overview of the project and the approach to using markup in writing classes, take a look at this <a href="http://wwp.northeastern.edu/blog/classroom-markup/" target="_blank">blog post I wrote for the Women Writers Project</a> at Northeastern University.</p> <p>Check out <a href="https://github.com/smithkevin1/study_display">my GitHub</a> if you are interested in playing with the raw XML or looking at the schemas or XSLT I used to transform the XML files for this display site. You can view the accompanying doumentation
+                      (element and attribute definitions), written collaboratively by students for <a href="https://docs.google.com/document/d/1BtBP2lXhl5EKoJmQFa9Ny0kGjURrpRHMNaB7dWzHL8c/edit?usp=sharing" target="_blank">First-year Writing (FYW) here</a> and for <a href="/php/crib_sheet.php">Advanced Writing for the Technical Professions (AWD) here</a>.</p> <p>Notes: <ol><li>All student work displayed here comes from students who consented to sharing their work as a part of this research</li> <li>This research is partially supported by a grant from the <a href="http://www.northeastern.edu/nulab/" target="_blank">NULab for Texts, Maps, and Networks</a>.</li><ol></p>
                 </aside>
                 <article>
                       <header>
