@@ -1,5 +1,5 @@
 # Markup in the Writing Classroom
-##Data and Display Site
+## Data and Display Site
 This is a repo for anonymized XML data generated in my dissertation research and for a site to display and interact with that data.
 
 ## Description
