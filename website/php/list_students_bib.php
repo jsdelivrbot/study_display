@@ -1,6 +1,6 @@
 <?php
   echo
-  '<li><a href=\'/php/project_page.php?id=b11&proj=1&genre=bib\'<span class="case_study">Jack</span> student id: b11</a></li>
+  '<li><a href=\'/php/project_page.php?id=b11&proj=1&genre=bib\'><span class="case_study">Jack</span> student id: b11</a></li>
   <li><a href=\'/php/project_page.php?id=c12&proj=1&genre=bib\'>student id: c12</a></li>
   <li><a href=\'/php/project_page.php?id=d13&proj=1&genre=bib\'>student id: d13</a></li>
   <li><a href=\'/php/project_page.php?id=g14&proj=1&genre=bib\'>student id: g14</a></li>
