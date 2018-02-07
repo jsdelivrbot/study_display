@@ -6,5 +6,5 @@
 </a></li>
   <li><a href=\'/php/project_page.php?id=ho.jo&proj=2&genre=resume\'>student id: ho.jo</a></li>
   <li><a href=\'/php/project_page.php?id=ko.di&proj=2&genre=resume\'>student id: ko.di</a></li>
-  <li><a href=\'/php/project_page.php?id=li.em&proj=3&genre=resume\'>student id: li.em</a></li>';
+  <li><a href=\'/php/project_page.php?id=li.em&proj=3&genre=resume\'><span class="case_study">Tara</span> student id: li.em</a></li>';
 ?>

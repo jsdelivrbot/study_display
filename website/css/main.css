@@ -306,7 +306,7 @@ article h2.assign_title {
 .main h2 {
 font-size: 1.6em;
 margin: 10px;
-  color: #e44d26;
+  color: #AC3E27;
 }
 .students a, .students a:visited {
   font-size: 1.2em;
@@ -414,7 +414,14 @@ sup {
     z-index: 50;
 }
 
+span.case_study {
+  color: #AC3E27;
+  font-size: 1.1em;
+}
 
+span.case_study:hover {
+  color: #e44d26;
+}
 
 figure {
     display: block;
